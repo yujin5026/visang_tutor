@@ -1,63 +1,173 @@
-#header {
-    position: relative;
-    width:100%;
-    border-bottom:1px solid #ddd;
-    #gnb {
-        width:1200px;
-        margin:0 auto;
-        padding:20px 0;
-        h1 {
-            display:inline-block;
-            margin-right:20px;
-        }
-        ul {
-            display:inline-block;
-            vertical-align: top;
-            li {
-                display:inline-block;
-                vertical-align: middle;
-            }
-        }
-        .gnb_right {
-            float:right;
-        }
-    }
+$primary-color : #33c3e6;
+$gray-color : #dbdbdb;
+$blue-color : #007aff;
+
+@mixin input100 {
+    border: 1px solid #bebebe;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
+// 버튼 사이즈
+.lg-btn {padding: 20px;width: 100%;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border:none;}
+.sm-btn {padding: 5px 10px;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border:none;}
 
+// 버튼 색상
+.bg-primary {background: $primary-color;color: #fff;}
+.bg-gray { background: $gray-color;color: #fff;}
+.bg-blue { background:$blue-color;color:#fff;}
+.line-primary {border:1px solid $primary-color;color:$primary-color;}
+.line-gray {border:1px solid $gray-color;color:$gray-color;}
+
+// 소셜 로그인 박스
+.sns_login {
+    border: 1px solid #bebebe;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+// 컨텐츠
 #container {
     width: 100%;
-    background: #f6f6f9;
     min-height: 700px;
     #guide {
-        display: table;
-        table-layout: fixed;
-        width: 1200px;
-        margin: 0 auto;
-        padding: 50px 0 100px;
-        #contents {
-            display: table-cell;
-            width: auto;
-        }
-    }
-}
-
-#footer {
-    width: 100%;
-    height: auto;
-    background-color: #f3f3f3;
-    border-top: 1px solid #e6e6e6;
-    #footer_wrap {
         position: relative;
         width: 1200px;
         margin: 0 auto;
-        padding: 50px 0;
-        .footer_info {
-            ul {
-                li {
-                    display:inline-block;
+        padding: 50px 0 100px;
+    }
+    // 로그인
+    #contents {
+        &.account {
+            padding-top: 50px;
+            text-align: center;
+            width: 350px;
+            margin: 0 auto;
+            // Title
+            h3 {
+                position: relative;
+                color: #222222;
+                font-weight: 700;
+                font-size: 30px;
+                margin-bottom: 40px;
+                &:after {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    background: $primary-color;
+                    position: absolute;
+                    top: -5px;
+                    border-radius: 50%;
+                }
+            }
+            form {
+                input {
+                    @include input100;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                }
+            }
+            // 비밀번호를 잊으셨나요?
+            h4 {
+                margin-bottom: 20px;
+                em {
+                    color: $primary-color;
+                    a {
+                        color: $primary-color;
+                    }
+                }
+            }
+            // OR
+            p {
+                margin-top: 40px;
+                &:before {
+                    content: "";
+                    width: 43%;
+                    height: 2px;
+                    display: inline-block;
+                    background: #000;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+                &:after {
+                    content: "";
+                    width: 43%;
+                    height: 2px;
+                    display: inline-block;
+                    background: #000;
+                    margin-left: 10px;
+                    vertical-align: middle;
                 }
             }
         }
     }
+}
+
+
+// 모달창
+.modal-window {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.41);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+
+    &:target {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    &>div {
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2em;
+        background: #ffffff;
+    }
+
+    header {
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 150%;
+        margin: 0 0 15px;
+    }
+}
+
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
+
+
+.modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
 }

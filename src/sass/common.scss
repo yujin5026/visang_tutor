@@ -1,16 +1,100 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+$primary-color : #33c3e6;
+$gray-color : #dbdbdb;
+$blue-color : #007aff;
+
+@mixin footer-select {
+    width: 130px;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    background: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -19,11 +103,139 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-ul, li {
-    list-style:none;
+ul,
+li {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
-    color:initial;
+    color: initial;
+}
+
+button {
+    outline: none;
+    background: initial;
+    cursor: pointer;
+}
+
+
+
+
+#header {
+    position: relative;
+    width: 100%;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    #gnb {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        padding: 20px 0;
+        // 로고
+        h1 {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        ul {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: auto;
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: 700;
+                &:nth-child(2) {
+                    margin: 0 10px;
+                }
+            }
+        }
+        .gnb_right {
+            float: right;
+            li {
+                a {
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+#footer {
+    width: 100%;
+    height: auto;
+    background-color: #1b2023;
+    #footer_wrap {
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 50px 0;
+        // 사이트 맵 ul
+        .footer_info {
+            display: inline-block;
+            ul {
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 50px;
+                font-size: 14px;
+                li {
+                    color: #fff;
+                    margin: 8px 0;
+                    &:first-child {
+                        margin-top: 0;
+                        margin-bottom: 30px;
+                        font-weight: 700;
+                    }
+                    a {
+                        color: #737373;
+                    }
+                }
+                &:last-child {
+                    li {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        // 언어,통화
+        .footer_right {
+            display: inline-block;
+            float: right;
+            color: #fff;
+            .footer_select {
+                text-align: right;
+                margin-bottom: 20px;
+                select {
+                    @include footer-select;
+                }
+            }
+            .footer_sns {
+                padding-top: 20px;
+                color: #fff;
+            }
+        }
+    }
+    // 카피라이트
+    .footer_bottom {
+        border-top: 1px solid #fff;
+        color: #737373;
+
+        .footer_wrap {
+            position: relative;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0 40px 0;
+
+            div {
+                display: inline-block;
+
+                &.footer_bottom_right {
+                    float: right;
+                }
+            }
+        }
+    }
+
 }
