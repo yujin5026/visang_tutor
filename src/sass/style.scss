@@ -58,8 +58,9 @@ $deep-gray-color:#444444;
         &.account {
             padding-top: 50px;
             text-align: center;
-            width: 380px;
+            width: 390px;
             margin: 0 auto;
+            position: relative;
             // Title
             h3 {
                 position: relative;
@@ -80,18 +81,55 @@ $deep-gray-color:#444444;
             form {
                 input {
                     @include input100;
-                    margin-bottom: 10px;
                     border-radius: 5px;
                 }
+                input[type=email] {margin-top:10px;}
+                input[type=password] {margin:10px 0;}
+                strong {
+                    color:#cb242b;
+                    font-size:14px;
+                    font-weight: normal;
+                    margin:8px 0 15px 0;
+                    float:left;
+                }
+            }
+
+            // 비밀번호 찾기
+            h2 {
+                font-size:18px;
+                font-weight:normal;
+                color:#666666;
+                margin-bottom:35px;
             }
             // 비밀번호를 잊으셨나요?
             h4 {
                 margin-bottom: 20px;
                 font-size:14px;
                 font-weight:normal;
-                color:#999999;
+                color:#666666;
                 a {
                     color: $primary-color;
+                }
+            }
+            // 회원가입 - 이미 계정이 있으신가요 ?
+            .join_h4 {
+                margin-top:60px;
+                border-top:1px solid #e3e3e3;
+                padding-top:22px;
+            }
+            // 비밀번호를 잊으셨나요?
+            h5 {
+                margin: 15px 0 35px 0;
+                font-size:14px;
+                font-weight:normal;
+                color:#999999;
+                em {
+                    font-weight:bold;
+                }
+                a {
+                    color: #333333;
+                    font-weight:bold;
+                    text-decoration: underline;
                 }
             }
             // OR
@@ -121,6 +159,32 @@ $deep-gray-color:#444444;
         }
     }
 }
+
+// 툴팁
+.tooltip {
+    position: absolute;
+    background: #f0f0f0;
+    border-radius: 3px;
+    color: #666666;
+    font-size: 14px;
+    bottom:30px;
+    padding: 13px;
+    width: 300px;
+    left:28px;
+    display:block;
+    box-shadow: 5px 5px 5px #d6d6d6;
+    &.password {bottom:-70px;}
+    &:before {
+        border: solid;
+        border-color: #f0f0f0 transparent;
+        border-width: 0 8px 12px 8px;
+        content: "";
+        left: 47%;
+        top: -12px;
+        position: absolute;
+    }
+    img {margin-right:10px;}
+  }
 
 
 // 모달창
