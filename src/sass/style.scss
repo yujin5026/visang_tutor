@@ -1,6 +1,7 @@
 $primary-color : #33c3e6;
+$blue-color : #1b4c87;
 $gray-color : #dbdbdb;
-$blue-color : #007aff;
+$deep-gray-color:#444444;
 
 @mixin input100 {
     border: 1px solid #bebebe;
@@ -12,25 +13,34 @@ $blue-color : #007aff;
 }
 
 // 버튼 사이즈
-.lg-btn {padding: 20px;width: 100%;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border:none;}
+.lg-btn {padding: 20px;width: 100%;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border:none;border-radius:32px;font-size:20px;font-weight:bold;}
 .sm-btn {padding: 5px 10px;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border:none;}
 
 // 버튼 색상
 .bg-primary {background: $primary-color;color: #fff;}
 .bg-gray { background: $gray-color;color: #fff;}
+.bg-deep-gray { background: $deep-gray-color;color: #fff;}
 .bg-blue { background:$blue-color;color:#fff;}
 .line-primary {border:1px solid $primary-color;color:$primary-color;}
 .line-gray {border:1px solid $gray-color;color:$gray-color;}
 
 // 소셜 로그인 박스
 .sns_login {
-    border: 1px solid #bebebe;
+    border: 1px solid #e8e8e8;
     padding: 10px;
     width: 100%;
+    color:#666666;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     margin-bottom: 10px;
+    img {
+        vertical-align: middle;
+        margin-right:10px;
+    }
+    span {
+        vertical-align: middle;
+    }
 }
 
 // 컨텐츠
@@ -48,22 +58,22 @@ $blue-color : #007aff;
         &.account {
             padding-top: 50px;
             text-align: center;
-            width: 350px;
+            width: 380px;
             margin: 0 auto;
             // Title
             h3 {
                 position: relative;
                 color: #222222;
                 font-weight: 700;
-                font-size: 30px;
-                margin-bottom: 40px;
+                font-size: 40px;
+                margin-bottom: 45px;
                 &:after {
                     content: '';
-                    width: 10px;
-                    height: 10px;
+                    width: 12px;
+                    height: 12px;
                     background: $primary-color;
                     position: absolute;
-                    top: -5px;
+                    top: -2px;
                     border-radius: 50%;
                 }
             }
@@ -77,32 +87,34 @@ $blue-color : #007aff;
             // 비밀번호를 잊으셨나요?
             h4 {
                 margin-bottom: 20px;
-                em {
+                font-size:14px;
+                font-weight:normal;
+                color:#999999;
+                a {
                     color: $primary-color;
-                    a {
-                        color: $primary-color;
-                    }
                 }
             }
             // OR
             p {
-                margin-top: 40px;
+                margin: 40px 0 20px 0;
+                color:#bebebe;
+                font-size:16px;
                 &:before {
                     content: "";
-                    width: 43%;
-                    height: 2px;
+                    width: 164px;
+                    height: 0.5px;
                     display: inline-block;
-                    background: #000;
-                    margin-right: 10px;
+                    background: #bebebe;
+                    margin-right: 15px;
                     vertical-align: middle;
                 }
                 &:after {
                     content: "";
-                    width: 43%;
-                    height: 2px;
+                    width: 164px;
+                    height: 0.5px;
                     display: inline-block;
-                    background: #000;
-                    margin-left: 10px;
+                    background: #bebebe;
+                    margin-left: 15px;
                     vertical-align: middle;
                 }
             }

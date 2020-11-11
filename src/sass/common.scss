@@ -1,6 +1,13 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
 $primary-color : #33c3e6;
+$blue-color : #1b4c87;
 $gray-color : #dbdbdb;
-$blue-color : #007aff;
+$deep-gray-color:#444444;
 
 @mixin footer-select {
     width: 130px;
@@ -99,8 +106,10 @@ video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    font-style: initial;
     vertical-align: baseline;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.2px;
 }
 
 ul,
@@ -114,24 +123,33 @@ a {
 }
 
 button {
+    font-family: 'Noto Sans KR', sans-serif;
     outline: none;
     background: initial;
     cursor: pointer;
 }
 
+input {
+    outline: none;
+}
+
+.mt55 {
+    margin-top:55px;
+}
 
 
 
+// 헤더
 #header {
     position: relative;
     width: 100%;
     background: #f7f7f7;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eaeaea;
     #gnb {
         width: 1200px;
         margin: 0 auto;
         display: flex;
-        padding: 20px 0;
+        padding: 15px 0;
         // 로고
         h1 {
             display: inline-block;
@@ -144,17 +162,35 @@ button {
             li {
                 display: inline-block;
                 vertical-align: middle;
-                font-weight: 700;
+                font-weight: bold;
+                font-size:15px;
+            }
+        }
+        .gnb_menu {
+            li {
                 &:nth-child(2) {
-                    margin: 0 10px;
+                    margin: 0 35px;
                 }
             }
         }
         .gnb_right {
             float: right;
             li {
+                &:first-child {
+                    a {
+                        color:#666666;
+                    }
+                }
+                &:nth-child(2) {
+                    margin-right:8px;
+                }
                 a {
+                    padding:5px 15px;
                     border-radius: 20px;
+                    font-size:14px;
+                    span {
+                        vertical-align: top;
+                    }
                 }
             }
         }
@@ -162,7 +198,7 @@ button {
 }
 
 
-
+// 푸터
 #footer {
     width: 100%;
     height: auto;
@@ -178,11 +214,11 @@ button {
             ul {
                 display: inline-block;
                 vertical-align: top;
-                margin-right: 50px;
+                margin-right: 60px;
                 font-size: 14px;
                 li {
                     color: #fff;
-                    margin: 8px 0;
+                    margin: 10px 0;
                     &:first-child {
                         margin-top: 0;
                         margin-bottom: 30px;
@@ -207,6 +243,9 @@ button {
             .footer_select {
                 text-align: right;
                 margin-bottom: 20px;
+                span {
+                    margin-right:20px;
+                }
                 select {
                     @include footer-select;
                 }
@@ -219,9 +258,9 @@ button {
     }
     // 카피라이트
     .footer_bottom {
-        border-top: 1px solid #fff;
-        color: #737373;
-
+        border-top: 1px solid #323739;
+        color: #777777;
+        font-size:14px;
         .footer_wrap {
             position: relative;
             width: 1200px;
@@ -230,7 +269,11 @@ button {
 
             div {
                 display: inline-block;
-
+                &.footer_bottom_left {
+                    img {
+                        margin-right:15px;
+                    }
+                }
                 &.footer_bottom_right {
                     float: right;
                 }
