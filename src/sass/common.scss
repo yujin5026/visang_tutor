@@ -248,6 +248,9 @@ input {
                 }
                 select {
                     @include footer-select;
+                    option {
+                        color:#000;
+                    }
                 }
             }
             .footer_sns {

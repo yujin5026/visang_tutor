@@ -13,11 +13,13 @@ $deep-gray-color:#444444;
 }
 
 // 버튼 사이즈
-.lg-btn {padding: 20px;width: 100%;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border:none;border-radius:32px;font-size:20px;font-weight:bold;}
-.sm-btn {padding: 5px 10px;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border:none;}
+.lg-btn {padding: 20px;width: 100%;display:inline-block;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border:none;border-radius:32px;font-size:20px;font-weight:bold;}
+.sm-btn {padding: 5px 10px;display:inline-block;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border:none;}
 
 // 버튼 색상
 .bg-primary {background: $primary-color;color: #fff;}
+.bg-primary:disabled,
+.bg-primary[disabled] {background: $gray-color;}
 .bg-gray { background: $gray-color;color: #fff;}
 .bg-deep-gray { background: $deep-gray-color;color: #fff;}
 .bg-blue { background:$blue-color;color:#fff;}
@@ -91,6 +93,11 @@ $deep-gray-color:#444444;
                     font-weight: normal;
                     margin:8px 0 15px 0;
                     float:left;
+                }
+            }
+            .bg-primary {
+                a {
+                    color:#fff;
                 }
             }
 
@@ -213,33 +220,33 @@ $deep-gray-color:#444444;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 2em;
         background: #ffffff;
     }
-
-    header {
-        font-weight: bold;
+    .modal_contents {
+        padding: 40px 20px;
+        color:#666666;
+        img {
+            margin-bottom:20px;
+        }
     }
-
-    h1 {
-        font-size: 150%;
-        margin: 0 0 15px;
-    }
-}
-
-.modal-close {
-    color: #aaa;
-    line-height: 50px;
-    font-size: 80%;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 70px;
-    text-decoration: none;
-
-    &:hover {
-        color: black;
+    .modal_buttons {
+        li {
+            width:50%;
+            float:left;
+            a {
+                display: inline-block;
+                background:#33c4e8;
+                width: 100%;
+                padding: 20px 0;
+                font-size:18px;
+                color:#fff;
+            }
+            &:first-child {
+                a {
+                    background:#bdbdbd;
+                }
+            }
+        }
     }
 }
 
