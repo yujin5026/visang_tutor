@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="gnb">
+            <h1>
+                <a href="#">
+                    <img src="../images/logo.png" alt="로고" />
+                </a>
+            </h1>
+            <ul class="gnb_menu">
+                <li>
+                    <a href="#">
+                        Find Tutors
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Lesson
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        About MK
+                    </a>
+                </li>
+            </ul>
+            <ul class="gnb_right">
+                <li>
+                    <a href="#">
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sm-btn bg-deep-gray">
+                        <span>Join</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sm-btn bg-blue">
+                        <span>Become a tutor</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="container">
+        <div id="guide">
+            <div id="contents" class="account">
+                <h3>로그인</h3>
+                <form>
+                    <input type="text" name="username" placeholder="이메일(email@address.com)">
+                    <input type="password" name="password" placeholder="비밀번호">
+                </form>
+                <h4><a href="#">비밀번호</a>를 잊으셨나요?</h4>
+
+                <a href="#open-modal" class="lg-btn bg-primary">
+                    로그인
+                </a>
+                
+                <!-- 모달 -->
+                <div id="open-modal" class="modal-window">
+                    <div>
+                        <div class="modal_contents">
+                            <h1>
+                                <img src="../images/login_danger.png" alt="경고창 아이콘" />
+                            </h1>
+                            <div>
+                                비밀번호를 <span>5</span>회 틀리셨습니다.<br />
+                                비밀번호 찾기로 이동하여<br />
+                                비밀번호를 재설정 하시기 바랍니다.
+                            </div>
+                        </div>
+                        <ul class="modal_buttons">
+                            <li>
+                                <a href="#" title="Close" class="modal-close">취소</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Close" class="modal-close">확인</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p>OR</p>
+
+                <button class="sns_login">
+                    <img src="../images/facebook.png" alt="페이스북 아이콘">
+                    <span>facebook으로 로그인</span>
+                </button>
+                <button class="sns_login">
+                    <img src="../images/google.png" alt="구글 아이콘">
+                    google로 로그인
+                </button>
+
+                <h4 class="mt55">아직 회원이 아니신가요?</h4>
+
+                <button class="lg-btn line-primary" onClick="location.href='join.html'">
+                    회원가입
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div id="footer_wrap">
+            <div class="footer_info">
+                <ul>
+                    <li>Sitemap</li>
+                    <li><a href="#" title="About MK">About MK</a></li>
+                    <li><a href="#" title="Find Tutors">Find Tutors</a></li>
+                    <li><a href="#" title="Lesson">Lesson</a></li>
+                    <li><a href="#" title="Price" class="bold">Price</a></li>
+                </ul>
+                <ul>
+                    <li>Terms of Use</li>
+                    <li><a href="#" title="Terms of Service">Terms of Service</a></li>
+                    <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="#" title="Refund Policy">Refund Policy</a></li>
+                </ul>
+                <ul>
+                    <li>Customer Service</li>
+                    <li><a href="#" title="FAQ">FAQ</a></li>
+                    <li><a href="#" title="rivacy Policy">QNA</a></li>
+                </ul>
+                <ul>
+                    <li>More</li>
+                    <li><a href="#" title="MK Apps">MK Apps</a></li>
+                    <li><a href="#" title="Affiliated inquiry">Affiliated inquiry</a></li>
+                    <li><a href="#" title="Company">Company</a></li>
+                    <li><a href="#" title="Contact Us">Contact Us</a></li>
+                </ul>
+                <ul>
+                    <li>Become a tutor</li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <div class="footer_select">
+                    <span>Language</span>
+                    <select>
+                        <option>English</option>
+                        <option>Korean</option>
+                    </select>
+                </div>
+                <div class="footer_select">
+                    <span>Currency</span>
+                    <select>
+                        <option>$ USD</option>
+                        <option>Korean</option>
+                    </select>
+                </div>
+                <div class="footer_sns">
+                    <a href="#" target="_blank">
+                        <img src="../images/sms_icon01.png" alt="페이스북,facebook" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="../images/sms_icon02.png" alt="트위터,twitter" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="../images/sms_icon03.png" alt="인스타그램,instagram" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="../images/sms_icon04.png" alt="" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="../images/sms_icon05.png" alt="유튜브,youtube" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="../images/sms_icon06.png" alt="" />
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="../images/sms_icon07.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_wrap">
+                <div class="footer_bottom_left">
+                    <img src="../images/footer_logo.png" alt="logo" />
+                    48 Digital-Ro 33 Gil,20F Daerung Post-Tower 7th, Guro-Gu, Seoul, Korea
+                </div>
+                <div class="footer_bottom_right">
+                    Copyright@VISANG Education,Inc.All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
