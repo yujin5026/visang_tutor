@@ -184,22 +184,87 @@ input {outline: none;}
     width: 100%;
     height: auto;
     background-color: #1b2023;
-    color:#ddd;
+
+
     #footer_wrap {
         position: relative;
         width: 1200px;
         margin: 0 auto;
-        padding: 30px 0;
-        div {
+        padding: 50px 0;
+        // 사이트 맵 ul
+        .footer_info {
             display: inline-block;
-            &.footer_bottom_left {
-                img {
-                    margin-right:15px;
+            ul {
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 60px;
+                font-size: 14px;
+                li {
+                    color: #fff;
+                    margin: 10px 0;
+                    &:first-child {
+                        margin-top: 0;
+                        margin-bottom: 30px;
+                        font-weight: 700;
+                    }
+                    a {
+                        color: #737373;
+                    }
+                }
+                &:last-child {
+                    li {
+                        color: $primary-color;
+                    }
                 }
             }
-            &.footer_bottom_right {
-                float: right;
+        }
+        // 언어,통화
+        .footer_right {
+            display: inline-block;
+            float: right;
+            color: #fff;
+            .footer_select {
+                text-align: right;
+                margin-bottom: 20px;
+                span {
+                    margin-right:20px;
+                }
+                select {
+                    @include footer-select;
+                    option {
+                        color:#000;
+                    }
+                }
+            }
+            .footer_sns {
+                padding-top: 20px;
+                color: #fff;
             }
         }
     }
+    // 카피라이트
+    .footer_bottom {
+        border-top: 1px solid #323739;
+        color: #777777;
+        font-size:14px;
+        .footer_wrap {
+            position: relative;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0 40px 0;
+
+            div {
+                display: inline-block;
+                &.footer_bottom_left {
+                    img {
+                        margin-right:15px;
+                    }
+                }
+                &.footer_bottom_right {
+                    float: right;
+                }
+            }
+        }
+    }
+
 }
