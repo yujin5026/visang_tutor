@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {
     font-family: 'Noto Sans KR', sans-serif;
+    // background:#000;
 }
 
 
@@ -111,40 +112,20 @@ video {
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: -0.2px;
 }
-
-ul,
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: initial;
-}
-
-button {
-    font-family: 'Noto Sans KR', sans-serif;
-    outline: none;
-    background: initial;
-    cursor: pointer;
-}
-
-input {
-    outline: none;
-}
+ul, li {list-style: none;}
+a {text-decoration: none;color: initial;}
+button {font-family: 'Noto Sans KR', sans-serif;outline: none;background: initial;cursor: pointer;}
+input {outline: none;}
 
 .mt55 {margin-top:55px;}
 .mb35 {margin-bottom:35px;}
 .mb30 {margin-bottom:30px !important;}
 
 
-
 // 헤더
 #header {
     position: relative;
     width: 100%;
-    background: #f7f7f7;
-    border-bottom: 1px solid #eaeaea;
     #gnb {
         width: 1200px;
         margin: 0 auto;
