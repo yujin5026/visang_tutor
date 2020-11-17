@@ -1,0 +1,200 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,
+form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
+canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,
+output,ruby,section,summary,time,mark,audio,video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-style: initial;
+    vertical-align: baseline;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.2px;
+}
+
+body,ul,li,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background: #000;
+}
+
+a{
+    color: initial;
+    text-decoration: none;
+}
+
+// 버튼 사이즈
+.lg-btn{
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background: #f5f2f2;
+    font-size: 20px ;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+// header
+#header{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    .gnb{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 15px 0;
+        h1{
+            display: inline-block;
+            a{
+                color: powderblue;
+            }
+        }
+        ul{
+            display: inline-block;
+            vertical-align: top;
+            margin-left: auto;
+            li{
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .gnb_right{
+            float: right;
+                li{
+                    display: inline-block;
+                    vertical-align: middle;
+                    &:nth-child(2){
+                        margin: 0 10px;
+                    }
+                    &:last-child{
+                        width: 48px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        border: none;
+                        border-radius: 32px;
+                        background-color: gray;
+                        a{
+                            color: #ffffff;
+                        }
+                    }
+                    a{
+                        color: #dbdbdbc2;
+                    }
+                    span{
+                        vertical-align: top;
+                    }
+                }
+            
+        }
+    }
+}
+
+// container
+#container{
+    width: 100%;
+    padding: 50px 0 0 0;
+    min-height: 800px;
+    .guide{
+        width: 1200px;
+        margin: 0 auto;
+        .guide_left{
+            display: inline-block;
+            height: 641px;
+            margin-top: 61px;
+            color: #ffffff;
+            h1{
+                font-size: 76px;
+                // color: #ffffff;
+                &:after {
+                    display: block;
+                    content: '';
+                    width: 115px;
+                    height: 1px;
+                    margin-top: 25px;
+                    background-color: blue;
+                }
+            }
+            p:not(:last-child){
+                padding-bottom: 24px;
+            }
+            
+        }
+        .guide_right{
+            display: inline-block;
+            padding: 70px 60px 130px 60px;
+            float: right;
+            border: none;
+            background: #ffffff;
+            h2{
+                strong{
+                    font-size: 38px;
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: gray;
+                    text-align: left;
+                }
+            }
+            form{
+                display: block;
+                input[type=text]{
+                    display: block;
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                }
+                input[type=password]{
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                }
+            }
+                p{
+                    text-align: center;
+                    color: blue;
+                    margin-bottom: 50px;
+                }
+                .login_btn{
+                    text-align: center;
+                    border-radius: 32px;
+                    font-size: 16px;
+                    color: #ffffff;
+                    background: rgb(6, 6, 202);
+                }
+        }
+       
+    }
+}
+
+// footer
+#footer{
+    width: 100%;
+    padding: 25px 0;
+    #footer_wrap{
+        width: 1200px;
+        margin: 0 auto;
+        color: #a5a0a0;
+        .footer_left{
+            display: inline-block;
+            img{
+                margin-right: 5px;
+            }
+        }
+        .footer_right{
+            margin-top: 5px;
+            float: right;
+
+        }
+    }
+}
