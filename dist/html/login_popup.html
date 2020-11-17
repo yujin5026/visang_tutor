@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script src="../js/index.js"></script>
 </head>
 
 <body>
@@ -61,14 +60,37 @@
                 <h3>로그인</h3>
                 <form>
                     <input type="text" name="username" placeholder="이메일(email@address.com)">
-                    <input type="password" name="password" placeholder="비밀번호" id="join_password">
+                    <input type="password" name="password" placeholder="비밀번호">
                 </form>
                 <h4><a href="#">비밀번호</a>를 잊으셨나요?</h4>
 
-                <button class="lg-btn bg-primary" id="join_button" disabled>
+                <a href="#open-modal" class="lg-btn bg-primary">
                     로그인
-                </button>
-
+                </a>
+                
+                <!-- 모달 -->
+                <div id="open-modal" class="modal-window on">
+                    <div>
+                        <div class="modal_contents">
+                            <h1>
+                                <img src="../images/login_danger.png" alt="경고창 아이콘" />
+                            </h1>
+                            <div>
+                                비밀번호를 <span>5</span>회 틀리셨습니다.<br />
+                                비밀번호 찾기로 이동하여<br />
+                                비밀번호를 재설정 하시기 바랍니다.
+                            </div>
+                        </div>
+                        <ul class="modal_buttons">
+                            <li>
+                                <a href="#" title="Close" class="modal-close">취소</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Close" class="modal-close">확인</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <p>OR</p>
 
                 <button class="sns_login">

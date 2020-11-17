@@ -204,11 +204,11 @@ $deep-gray-color:#444444;
     left: 0;
     z-index: 999;
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
     transition: all 0.3s;
 
-    &:target {
+    &.on {
         visibility: visible;
         opacity: 1;
         pointer-events: auto;
