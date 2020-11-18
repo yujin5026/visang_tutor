@@ -12,10 +12,6 @@ $deep-gray-color:#444444;
     -moz-box-sizing: border-box;
 }
 
-// 버튼 사이즈
-.lg-btn {padding: 20px;width: 100%;display:inline-block;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border:none;border-radius:32px;font-size:20px;font-weight:bold;}
-.sm-btn {padding: 5px 10px;display:inline-block;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;border:none;}
-
 // 버튼 색상
 .bg-primary {background: $primary-color;color: #fff;}
 .bg-primary:disabled,
