@@ -177,7 +177,7 @@ a{
                 }
                 li{
                     display: table-cell;
-                    padding-top: 265px;
+                    padding: 265px 0 0 25px;
                     width: 12%;
                     border-right: 1px solid rgb(43, 40, 40);
                     vertical-align: top;
@@ -247,7 +247,7 @@ a{
         .slide_wrapper{
             position: relative;
             height: 300px;
-            width: 1900px;
+            width: 1860px;
             margin: 0 auto;
             overflow: hidden;
             .slide{
