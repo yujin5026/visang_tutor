@@ -1,0 +1,272 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,
+form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
+canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,
+output,ruby,section,summary,time,mark,audio,video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-style: initial;
+    vertical-align: baseline;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.2px;
+    list-style: none;
+}
+
+a{
+    color: initial;
+    text-decoration: none;
+}
+
+#container{
+    position: relative;
+    width: 100%;
+    .chatbot{
+        position: absolute;
+        top: 29%;
+        right: 0;
+        margin-right: 20px;
+        width: 70px;
+        height: 70px;
+        background: rgb(226, 165, 34);
+        border: 1px solid none;
+        border-radius: 50%;
+    }
+    .page_title{
+        h2{
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+    }
+    #guide{
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid lightgray;
+        
+        // main_page-1
+        .main_page-1{
+            display: inline-block;
+            width: 100%;
+            padding: 83px 0 132px 0;
+            text-align: center;
+            background: linear-gradient(rgba(71, 71, 71, 0.5), rgba(71, 71, 71,0.5));
+            
+            ul{
+                padding: 15px 0;
+                li{
+                    display: inline-block;
+                    width: 380px;
+                    height: 450px;
+                    border: 1px solid black;
+                }
+                .page-list-1{
+                    position: relative;
+                    top: 25px;
+                    text-align: initial;
+                    a{
+                        position: absolute;
+                        padding: 10px 30px 10px 15px;
+                        bottom: 26px;
+                        right: 0;
+                        color: #fff;
+                        border: 1px solid none;
+                        background-color: rgb(184, 35, 35);
+                        h2{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 12px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .page-list-2{
+                    position: relative;
+                    margin: 0 20px;
+                    text-align: initial;
+                    a{
+                        position: absolute;
+                        bottom: 28px;
+                        right: 0;
+                        padding: 10px 30px 10px 15px;
+                        color: #fff;
+                        border: 1px solid none;
+                        background-color: rgb(226, 165, 34);
+                        h2{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 12px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .page-list-3{
+                    position: relative;
+                    top: 25px;
+                    text-align: initial;
+                    a{
+                        position: absolute;
+                        padding: 10px 30px 10px 15px;
+                        bottom: 26px;
+                        right: 0;
+                        color: #fff;
+                        border: 1px solid none;
+                        background-color: rgb(25, 80, 184);
+                        h2{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 12px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        // main_page-2
+        .main_page-2{
+            position: relative;
+            min-height: 400px;
+            text-align: center;
+            border-top: 1px solid black;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 103px 0 80px 0;
+            // .pageMenu{
+            //     display: table;
+            //     width: 100%;
+            //     table-layout: fixed;
+            //     .pageMenu-item{
+            //         display: table-cell;
+            //         vertical-align: middle;
+            //     }
+            // }
+            .page_title{
+                h2{
+                    color: #fff;
+                }
+                p{
+                    margin-bottom: 0;
+                    color: #c2b9b9;
+                }
+            }
+            ul{
+                display: table;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                table-layout: fixed;
+                margin: 0 auto;
+                text-align: left;
+                h3{
+                    min-height: 45px;
+                    margin-bottom: 30px;
+                }
+                li{
+                    display: table-cell;
+                    padding-top: 265px;
+                    width: 12%;
+                    border-right: 1px solid rgb(43, 40, 40);
+                    vertical-align: top;
+                    a{
+                        color: #c2b9b9;
+                        img{
+                            margin-bottom: 20px;
+                            width: 80px;
+                            height: 80px;
+                        }
+                        h3{
+                            display: block;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        // page-3
+        .main_page-3{
+            padding: 85px 0 64px 0;
+            border-top: 1px solid black;
+            text-align: center;
+            .slide_wrapper{
+                position: relative;
+                padding: 51px 0;
+                .text_section{
+                    position: relative;
+                    padding: 50px 0;
+                    text-align: left;
+                    z-index: 2;
+                    .section_title{
+                        line-height: 43px;
+                        h1{
+                            font-size: 59px;
+                        }
+                        h2{
+                            margin-bottom: 41px;
+                        }
+                    }
+                    .section_description{
+                        p{
+                            margin-bottom: 15px;
+                            color: #bbbbbb;
+                            font-size: 15px;
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                .vedio_section{
+                    position: absolute;
+                    top: 33px;
+                    right: 0;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+    // page-4
+    .main_page-4{
+        text-align: center;
+        border-top: 1px solid black;
+        background: red;
+        .slide_wrapper{
+            position: relative;
+            height: 300px;
+            width: 1900px;
+            margin: 0 auto;
+            overflow: hidden;
+            .slide{
+                position: absolute;
+                top: 0;
+                left: 113px;
+                transition: 0.5s ease-out;
+                li{
+                    float: left;
+                    margin: 18px;
+                }
+            }
+        }
+        .controls{
+            .prev_btn,
+            .next_btn{
+                margin: 0 10px;
+                padding: 8px 12px;
+            }
+        }
+    }
+}

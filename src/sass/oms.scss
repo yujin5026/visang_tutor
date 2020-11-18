@@ -22,7 +22,22 @@ body,ul,li,p{
 }
 
 body{
-    background: #000;
+    position: relative;
+    background-color: black;
+    z-index: 1;
+}
+
+body:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/background_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
 
 a{
@@ -55,14 +70,16 @@ a{
         padding: 15px 0;
         h1{
             display: inline-block;
+            font-size: 25px;
             a{
-                color: powderblue;
+                margin-bottom: 5px;
+                color: rgb(61, 167, 238);
             }
         }
         ul{
             display: inline-block;
             vertical-align: top;
-            margin-left: auto;
+            margin: 10px 0 0 0;
             li{
                 display: inline-block;
                 vertical-align: middle;
@@ -111,19 +128,43 @@ a{
         .guide_left{
             display: inline-block;
             height: 641px;
-            margin-top: 61px;
+            margin-top: 165px;
             color: #ffffff;
             h1{
                 font-size: 76px;
+                line-height: 72px;
                 // color: #ffffff;
                 &:after {
                     display: block;
                     content: '';
                     width: 115px;
                     height: 1px;
-                    margin-top: 25px;
+                    margin: 40px 0 50px 0;
                     background-color: blue;
                 }
+            }
+            ul{
+                li{
+                    text-indent: -0.88em;
+                    margin-left: 0.88em;
+                    position: relative;
+                    padding-right: 1em;
+                    &:first-child{
+                        margin-bottom: 20px;
+                        &:before{
+                            content: '학사모';
+                        }
+                    }
+                    &:last-child{
+                        &:before{
+                            content: '유튜브';
+                        }
+                        p{
+                            text-indent: 33px;
+                        }
+                    }
+                }
+                
             }
             p:not(:last-child){
                 padding-bottom: 24px;
@@ -131,7 +172,8 @@ a{
             
         }
         .guide_right{
-            padding: 70px 60px 130px 60px;
+            margin-top: 52px;
+            padding: 96px 55px 135px 55px;
             float: right;
             border: none;
             background: #ffffff;
@@ -180,6 +222,7 @@ a{
 #footer{
     width: 100%;
     padding: 25px 0;
+    background: rgb(44, 43, 43);
     #footer_wrap{
         width: 1200px;
         margin: 0 auto;
