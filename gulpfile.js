@@ -2,7 +2,7 @@
 const gulp = require("gulp");
 const src = "src";
 const dist = "dist";
-const port = 5060;
+const port = 5070;
 const path = {
     img: {
         src: src + "/images/",

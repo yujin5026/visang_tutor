@@ -319,3 +319,118 @@ $deep-gray-color:#444444;
 .modal-window div:not(:last-of-type) {
     margin-bottom: 15px;
 }
+
+
+
+
+.teacher_card {
+    position: relative;
+    background:#f3f3f3;
+    width:1280px;
+    margin:0 auto;
+    margin-bottom:30px;
+    padding:40px 80px;
+    .teacher_card_left {
+        position: relative;
+        display:inline-block;
+        .teacher {
+            display:inline-block;
+            margin-right:50px;
+            .teacher_cicle {
+                position: relative;
+                width: 135px;
+                height: 135px;
+                overflow: hidden;
+                border-radius: 50%;
+                border:2px solid #0e52a5;
+                padding:10px;
+                img {
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    margin-left: -50%;
+                }
+            }
+            &::after {
+            content:'';
+            background:url('../images/america.png');
+            position: absolute;
+            width:40px;
+            height:40px;
+            left:7rem;
+            top:6rem;
+            }
+        }
+        
+       
+    }
+   .teacher_card_right {
+       vertical-align: top;
+       display: inline-block;
+       .card_left {
+           display:inline-block;
+           .card_top {
+                h3 {
+                    font-size:32px;
+                    font-weight:700;
+                    margin-top:10px;
+                }
+                p {
+                    font-size:18px;
+                    color:#666666;
+                    margin-top:5px;
+                }
+           }
+           .card_bottom {
+               .skill {
+                   display:inline-block;
+                   margin-top:20px;
+                   p {
+                       font-size:14px;
+                       color:#999999;
+                   }
+                   span {
+                       font-size:16px;
+                       color:#333333;
+                   }
+               }
+           }
+       }
+       .card_right {
+            float: right;
+            margin-left: 40px;
+       }
+      
+   }
+   .teacher_tab {
+       display:inline-block;
+       float:right;
+       border-left:1px solid #ddd;
+       padding-left:70px;
+   }
+}
+
+
+
+input[type="radio"] {
+    display: none;
+}
+.tabs {overflow:hidden;}
+.tab {padding:0 20px;display:inline-block;color:#000;text-align:center;float:left;cursor: pointer;}
+.panel{display:none;padding-top:20px;animation: fadein .8s;}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+      opacity:1;
+  }
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel {display:block}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab {color:#0d52a7;}
