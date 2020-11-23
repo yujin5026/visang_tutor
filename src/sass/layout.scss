@@ -1,0 +1,240 @@
+$primary-color : #33c3e6;
+$blue-color : #1b4c87;
+$gray-color : #dbdbdb;
+$deep-gray-color:#444444;
+
+
+@mixin footer_select {
+    width: 130px;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    background: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+// 헤더
+#header {
+    position: relative;
+    width: 100%;
+    &.border {
+        border-bottom:1px solid #eaeaea;
+    }
+    #gnb {
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        padding: 15px 0;
+        // 로고
+        h1 {
+            display: inline-block;
+            margin-right: 30px;
+        }
+        ul {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: auto;
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: bold;
+                font-size:15px;
+            }
+        }
+        .gnb_menu {
+            li {
+                &:nth-child(2) {
+                    margin: 0 35px;
+                }
+            }
+        }
+        .gnb_left {
+            ul {
+                li {
+                    margin-right:40px;
+                }
+            }
+        }
+        .gnb_right {
+            float: right;
+            li {
+                margin-right:8px;
+                cursor: pointer;
+                &:first-child {
+                    margin-right:15px;
+                }
+                &:last-child {
+                    margin-right:0px;
+                }
+                a {
+                    padding:5px 15px; 
+                    border-radius: 20px;
+                    font-size:14px;
+                    span {
+                        vertical-align: top;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 필터 옵션
+.box_component_wrap {
+    border-bottom: 1px solid #eaeaea;
+    .box_component {
+        width:1280px;
+        margin:0 auto;
+        padding:18px 0;
+        ul {
+            li {
+                display:inline-block;
+                margin-right:10px;
+                &:last-child {
+                    margin-right:0;
+                }
+                button {
+                    padding:10px 20px;
+                    color:#666666;
+                    border:1px solid #eaeaea;
+                    border-radius:30px;
+                    img {
+                        margin-right:5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 메인
+#main {
+    display:flex;
+    min-height: 1000px;
+    .main_left {
+        min-width:1215px;
+        background:#ddd;
+        overflow:hidden;
+        .main_left_contents {
+            width:calc(100% - 310px);
+            height:100%;
+            float:right;
+            padding:50px 0;
+        }
+    }
+    .main_right {
+        background:#ccc;
+        width:100%;
+        padding:50px;
+    }
+}
+
+// 선생님
+#teacher {
+    display:flex;
+    width:1280px;
+    margin:0 auto;
+    min-height:1000px;
+    padding:50px 0;
+    .teacher_left {
+        background:#ddd;
+        min-width:920px;
+    }
+    .teacher_right {
+        background:#ccc;
+        width:100%;
+        margin-left:30px;
+    }
+}
+
+
+// 푸터
+#footer {
+    width: 100%;
+    height: auto;
+    background-color: #1b2023;
+    #footer_wrap {
+        position: relative;
+        width: 1280px;
+        margin: 0 auto;
+        padding: 50px 0;
+        // 사이트 맵 ul
+        .footer_info {
+            display: inline-block;
+            ul {
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 60px;
+                font-size: 14px;
+                li {
+                    color: #fff;
+                    margin: 10px 0;
+                    &:first-child {
+                        margin-top: 0;
+                        margin-bottom: 30px;
+                        font-weight: 700;
+                    }
+                    a {
+                        color: #737373;
+                    }
+                }
+                &:last-child {
+                    li {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        // 언어,통화
+        .footer_right {
+            float: right;
+            color: #fff;
+            .footer_select {
+                text-align: right;
+                margin-bottom: 20px;
+                span {
+                    margin-right:20px;
+                }
+                select {
+                    @include footer_select;
+                    option {
+                        color:#000;
+                    }
+                }
+            }
+            .footer_sns {
+                padding-top: 20px;
+                color: #fff;
+            }
+        }
+    }
+    // 카피라이트
+    .footer_bottom {
+        border-top: 1px solid #323739;
+        color: #777777;
+        font-size:14px;
+        .footer_wrap {
+            position: relative;
+            width: 1280px;
+            margin: 0 auto;
+            padding: 30px 0;
+
+            div {
+                display: inline-block;
+                &.footer_bottom_left {
+                    img {
+                        margin-right:15px;
+                    }
+                }
+                &.footer_bottom_right {
+                    float: right;
+                }
+            }
+        }
+    }
+
+}
+

@@ -12,38 +12,10 @@ $deep-gray-color:#444444;
     -moz-box-sizing: border-box;
 }
 
-// 버튼 색상
-.bg-primary {background: $primary-color;color: #fff;}
-.bg-primary:disabled,
-.bg-primary[disabled] {background: $gray-color;}
-.bg-gray { background: $gray-color;color: #fff;}
-.bg-deep-gray { background: $deep-gray-color;color: #fff;}
-.bg-blue { background:$blue-color;color:#fff;}
-.line-primary {border:1px solid $primary-color;color:$primary-color;}
-.line-gray {border:1px solid $gray-color;color:$gray-color;}
 
-// 소셜 로그인 박스
-.sns_login {
-    border: 1px solid #e8e8e8;
-    padding: 10px;
-    width: 100%;
-    color:#666666;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    margin-bottom: 10px;
-    img {
-        vertical-align: middle;
-        margin-right:10px;
-    }
-    span {
-        vertical-align: middle;
-    }
-}
-
-
+// 로그인
 #wrap {
-    width:1200px;
+    width:1280px;
     margin:0 auto;
     padding:6rem 0;
     min-height: 700px;
@@ -110,314 +82,140 @@ $deep-gray-color:#444444;
    
 }
 
-// 컨텐츠
-#container {
-    width: 100%;
-    min-height: 700px;
-    #guide {
-        position: relative;
-        width: 1200px;
-        margin: 0 auto;
-        padding: 50px 0 100px;
-    }
-    // 로그인
-    #contents {
-        &.account {
-            padding-top: 50px;
-            text-align: center;
-            width: 390px;
-            margin: 0 auto;
-            position: relative;
-            // Title
-            h3 {
-                position: relative;
-                color: #222222;
-                font-weight: 700;
-                font-size: 40px;
-                margin-bottom: 45px;
-                &:after {
-                    content: '';
-                    width: 12px;
-                    height: 12px;
-                    background: $primary-color;
-                    position: absolute;
-                    top: -2px;
-                    border-radius: 50%;
-                }
-            }
-            form {
-                input {
-                    @include input100;
-                    border-radius: 5px;
-                }
-                input[type=email] {margin-top:10px;}
-                input[type=password] {margin:10px 0;}
-                strong {
-                    color:#cb242b;
-                    font-size:14px;
-                    font-weight: normal;
-                    margin:8px 0 15px 0;
-                    float:left;
-                }
-            }
-            .bg-primary {
-                a {
-                    color:#fff;
-                }
-            }
 
-            // 비밀번호 찾기
-            h2 {
-                font-size:18px;
-                font-weight:normal;
-                color:#666666;
-                margin-bottom:35px;
-            }
-            // 비밀번호를 잊으셨나요?
-            h4 {
-                margin-bottom: 20px;
-                font-size:14px;
-                font-weight:normal;
-                color:#666666;
-                a {
-                    color: $primary-color;
-                }
-            }
-            // 회원가입 - 이미 계정이 있으신가요 ?
-            .join_h4 {
-                margin-top:60px;
-                border-top:1px solid #e3e3e3;
-                padding-top:22px;
-            }
-            // 비밀번호를 잊으셨나요?
-            h5 {
-                margin: 15px 0 35px 0;
-                font-size:14px;
-                font-weight:normal;
-                color:#999999;
-                em {
-                    font-weight:bold;
-                }
-                a {
-                    color: #333333;
-                    font-weight:bold;
-                    text-decoration: underline;
-                }
-            }
-            // OR
-            p {
-                margin: 40px 0 20px 0;
-                color:#bebebe;
-                font-size:16px;
-                &:before {
-                    content: "";
-                    width: 164px;
-                    height: 0.5px;
-                    display: inline-block;
-                    background: #bebebe;
-                    margin-right: 15px;
-                    vertical-align: middle;
-                }
-                &:after {
-                    content: "";
-                    width: 164px;
-                    height: 0.5px;
-                    display: inline-block;
-                    background: #bebebe;
-                    margin-left: 15px;
-                    vertical-align: middle;
-                }
-            }
-        }
-    }
-}
-
-// 툴팁
-.tooltip {
-    position: absolute;
-    background: #f0f0f0;
-    border-radius: 3px;
-    color: #666666;
-    font-size: 14px;
-    bottom:30px;
-    padding: 13px;
-    width: 300px;
-    left:28px;
-    display:block;
-    box-shadow: 5px 5px 5px #d6d6d6;
-    &.password {bottom:-70px;}
-    &:before {
-        border: solid;
-        border-color: #f0f0f0 transparent;
-        border-width: 0 8px 12px 8px;
-        content: "";
-        left: 47%;
-        top: -12px;
-        position: absolute;
-    }
-    img {margin-right:10px;}
-  }
-
-
-// 모달창
-.modal-window {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.41);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
-    visibility: hidden;
-    opacity: 1;
-    pointer-events: none;
-    transition: all 0.3s;
-
-    &.on {
-        visibility: visible;
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    &>div {
-        width: 400px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #ffffff;
-    }
-    .modal_contents {
-        padding: 40px 20px;
-        color:#666666;
-        img {
-            margin-bottom:20px;
-        }
-    }
-    .modal_buttons {
-        li {
-            width:50%;
-            float:left;
-            a {
-                display: inline-block;
-                background:#33c4e8;
-                width: 100%;
-                padding: 20px 0;
-                font-size:18px;
-                color:#fff;
-            }
-            &:first-child {
-                a {
-                    background:#bdbdbd;
-                }
-            }
-        }
-    }
-}
-
-
-.modal-window div:not(:last-of-type) {
-    margin-bottom: 15px;
-}
-
-
-
-
-.teacher_card {
+// 선생님 카드 리스트
+.teacher_card_wrap {
     position: relative;
-    background:#f3f3f3;
-    width:1280px;
-    margin:0 auto;
     margin-bottom:30px;
-    padding:40px 80px;
-    .teacher_card_left {
-        position: relative;
-        display:inline-block;
-        .teacher {
-            display:inline-block;
-            margin-right:50px;
-            .teacher_cicle {
-                position: relative;
-                width: 135px;
-                height: 135px;
-                overflow: hidden;
-                border-radius: 50%;
-                border:2px solid #0e52a5;
-                padding:10px;
-                img {
-                    position: absolute;
-                    top:0;
-                    left:0;
-                    margin-left: -50%;
+    box-shadow: 0px 4px 8px 2px #6f6f6f33;
+    overflow:hidden;
+    .teacher_card {
+        display:flex;
+        padding:40px 70px;
+        overflow:hidden;
+        &.sub {
+            padding:40px;
+            .teacher_card_right {
+                .card_right {
+                    padding-right:0;
                 }
-            }
-            &::after {
-            content:'';
-            background:url('../images/america.png');
-            position: absolute;
-            width:40px;
-            height:40px;
-            left:7rem;
-            top:6rem;
             }
         }
+        .teacher_card_left {
+            position: relative;
+            .teacher {
+                margin-right:50px;
+                .teacher_cicle {
+                    position: relative;
+                    width: 135px;
+                    height: 135px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    border:2px solid #0e52a5;
+                    padding:10px;
+                    img {
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        margin-left: -50%;
+                    }
+                }
+                &::after {
+                content:'';
+                background:url('../images/america.png');
+                position: absolute;
+                width:40px;
+                height:40px;
+                left:7rem;
+                top:6rem;
+                }
+            }
         
-       
-    }
-   .teacher_card_right {
-       vertical-align: top;
-       display: inline-block;
-       .card_left {
-           display:inline-block;
-           .card_top {
-                h3 {
-                    font-size:32px;
-                    font-weight:700;
-                    margin-top:10px;
+        }
+        .teacher_card_right {
+            vertical-align: top;
+            width:100%;
+            .card_left {
+                display:inline-block;
+                .card_top {
+                        h3 {
+                            font-size:32px;
+                            font-weight:700;
+                            margin-top:10px;
+                        }
+                        p {
+                            font-size:18px;
+                            color:#666666;
+                            margin-top:5px;
+                        }
                 }
-                p {
-                    font-size:18px;
-                    color:#666666;
-                    margin-top:5px;
+                .card_bottom {
+                    .skill {
+                        display:inline-block;
+                        margin-top:20px;
+                        p {
+                            font-size:14px;
+                            color:#999999;
+                        }
+                        span {
+                            font-size:16px;
+                            color:#333333;
+                        }
+                        .skill_bar01 {
+                            div {
+                                display:inline-block;
+                                width:12px;
+                                height:12px;
+                                background:#eaeaea;
+                                &:nth-child(-n+2) {
+                                    background:blue;
+                                }
+                            }
+                        }
+                        .skill_bar03 {
+                            div {
+                                display:inline-block;
+                                width:12px;
+                                height:12px;
+                                background:#eaeaea;
+                                &:nth-child(-n+3) {
+                                    background:blue;
+                                }
+                            }
+                        }
+                    }
                 }
-           }
-           .card_bottom {
-               .skill {
-                   display:inline-block;
-                   margin-top:20px;
-                   p {
-                       font-size:14px;
-                       color:#999999;
-                   }
-                   span {
-                       font-size:16px;
-                       color:#333333;
-                   }
-               }
-           }
-       }
-       .card_right {
-            float: right;
-            margin-left: 40px;
-       }
+            }
+            .card_right {
+                    float: right;
+                    padding-right:30px;
+            }
       
-   }
-   .teacher_tab {
-       display:inline-block;
-       float:right;
-       border-left:1px solid #ddd;
-       padding-left:70px;
-   }
+        }
+        .teacher_tab {
+            border-left:1px solid #ddd;
+            padding-left:50px;
+        }
+    }
+    .teacher_card_bottom {
+        background:#f8f8f8;
+        .card_wrap {
+            width:1140px;
+            margin:0 auto;
+            padding:20px 0;
+        }
+    }
 }
 
 
 
-input[type="radio"] {
-    display: none;
-}
-.tabs {overflow:hidden;}
-.tab {padding:0 20px;display:inline-block;color:#000;text-align:center;float:left;cursor: pointer;}
-.panel{display:none;padding-top:20px;animation: fadein .8s;}
+// 탭
+input[type="radio"] {display: none;}
+.tabs {overflow:hidden;text-align:center;}
+.tab {display:inline-block;color:#999999;text-align:center;cursor: pointer;font-size:14px;}
+.tabs > div {display:inline-block;overflow: hidden;}
+.tabs > div:nth-child(2) {margin:0 30px;}
+.panel{display:none;padding-top:20px;min-width: 280px;min-height: 160px;animation: fadein .8s;}
 @keyframes fadein {
     from {
         opacity:0;
@@ -434,3 +232,5 @@ input[type="radio"] {
 #two:checked ~ .tabs #two-tab,
 #three:checked ~ .tabs #three-tab,
 #four:checked ~ .tabs #four-tab {color:#0d52a7;}
+
+
