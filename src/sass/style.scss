@@ -154,6 +154,7 @@ $deep-gray-color:#444444;
                         display:inline-block;
                         margin-top:20px;
                         p {
+                            display: block;
                             font-size:14px;
                             color:#999999;
                         }
@@ -164,22 +165,55 @@ $deep-gray-color:#444444;
                         .skill_bar01 {
                             div {
                                 display:inline-block;
-                                width:12px;
+                                width:6px;
+                                height:12px;
+                                background:#eaeaea;
+                                &:nth-child(-n+1) { 
+                                    background: #75afcd;
+                                }
+                            }
+                        }
+                        .skill_bar02 {
+                            div {
+                                display:inline-block;
+                                width:6px;
                                 height:12px;
                                 background:#eaeaea;
                                 &:nth-child(-n+2) {
-                                    background:blue;
+                                    background: #75afcd;
                                 }
                             }
                         }
                         .skill_bar03 {
                             div {
                                 display:inline-block;
-                                width:12px;
+                                width:6px;
                                 height:12px;
                                 background:#eaeaea;
                                 &:nth-child(-n+3) {
-                                    background:blue;
+                                    background:#75afcd;
+                                }
+                            }
+                        }
+                        .skill_bar04 {
+                            div {
+                                display:inline-block;
+                                width:6px;
+                                height:12px;
+                                background:#eaeaea;
+                                &:nth-child(-n+4) {
+                                    background:#75afcd;
+                                }
+                            }
+                        }
+                        .skill_bar05 {
+                            div {
+                                display:inline-block;
+                                width:6px;
+                                height:12px;
+                                background:#eaeaea;
+                                &:nth-child(-n+5) {
+                                    background:#75afcd;
                                 }
                             }
                         }
