@@ -46,22 +46,40 @@
         <div class="box_component">
             <ul>
                 <li>
-                    <button type="button">
-                        <img src="../../images/icon_category.png" alt="category" />
-                        category
-                    </button>
+                    <div class="popup-wrap popup-closed">
+                        <button class="popup-button" id="popup-button-1" aria-haspopup="true">
+                            <img src="../../images/icon_category.png" alt="category" />
+                            category
+                        </button>
+                        <div class="popup-box popup-box-styles" aria-hidden="true" aria-labelledby="popup-button-1">
+                            <h2>Popup box 1</h2>
+                            <p>Contents here</p>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <button type="button">
-                        <img src="../../images/icon_teachertype.png" alt="teacher type" />
-                        teacher type
-                    </button>
+                    <div class="popup-wrap popup-closed">
+                        <button class="popup-button" id="popup-button-2" aria-haspopup="true">
+                            <img src="../../images/icon_teachertype.png" alt="teacher type" />
+                            teacher type
+                        </button>
+                        <div class="popup-box popup-box-styles" aria-hidden="true" aria-labelledby="popup-button-2">
+                            <h2>Popup box 1</h2>
+                            <p>Contents here</p>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <button type="button">
-                        <img src="../../images/icon_alsospeaks.png" alt="Availaility" />
-                        Availaility
-                    </button>
+                    <div class="popup-wrap popup-closed">
+                        <button class="popup-button" id="popup-button-3" aria-haspopup="true">
+                            <img src="../../images/icon_alsospeaks.png" alt="Availaility" />
+                            Availaility
+                        </button>
+                        <div class="popup-box popup-box-3" aria-hidden="true" aria-labelledby="popup-button-3">
+                            <h2>Popup box 3</h2>
+                            <p>Contents here</p>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <button type="button">
@@ -96,6 +114,7 @@
             </div>
             <!-- //search 기능 바 -->
         </div>
+        
     </div>
     <!-- // 필터 옵션 -->
 
@@ -242,7 +261,7 @@
     <!-- // 선생님 카드 -->
     </div>
     <!-- // 컨텐츠 영역 -->
-
+        <script src="../../js/index.js"></script>
     <script src="../../js/search_btn.js"></script>
     <!-- 푸터 영역 -->
     <footer id="footer">
