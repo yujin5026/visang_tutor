@@ -85,11 +85,9 @@ $deep-gray-color:#444444;
 
 // 필터 옵션
 .box_component_wrap {
-    position: relative;
     border-bottom: 1px solid #eaeaea;
     z-index: 3;
     .box_component {
-        position: relative;
         width:1280px;
         margin:0 auto;
         padding:18px 0;
@@ -117,8 +115,8 @@ $deep-gray-color:#444444;
 
             .sb-search{
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 63px;
+                right: 16.4%;
                 width: 0%;
                 min-width: 60px;
                 height: 78px;
@@ -130,10 +128,10 @@ $deep-gray-color:#444444;
                 -webkit-backface-visibility: hidden;
                 &.sb-search-open {
                     position: absolute;
-                    top: 0;
-                    right: 0;
+                    top: 63px;
+                    right: 16.4%;
                     width: 21px;
-                    width:32%;
+                    width:23%;
                     border-right: 1px solid #eaeaea;
                     border-left: 1px solid #eaeaea;
                 }
