@@ -243,19 +243,139 @@ $deep-gray-color:#444444;
     min-height: 1000px;
     .main_left {
         min-width:1215px;
-        background:#ddd;
+        background:#254e80;
         overflow:hidden;
         .main_left_contents {
             width:calc(100% - 310px);
             height:100%;
             float:right;
             padding:50px 0;
+            a{
+                margin: 40px 0;
+            }
+            p{
+                color: #739ad1;
+                font-size: 14px;
+            }
+            h2{
+                color: #fff;
+                font-size: 58px;
+            }
+            h3{
+                color: #fff;
+                font-size: 40px;
+            }
+            .main_left_contents_notification{
+                display: inline-block;
+                position: relative;
+                width: 92.6%;
+                p{
+                    margin-bottom: 0;
+                }
+                p:nth-child(1){
+                    display: inline-block;
+                    margin: 60px 10px 30px 0;
+                    color: #daa847;
+                    font-size: 15px;
+                }
+                p:nth-child(3){
+                    display: inline-block;
+                    color: #fff;
+                    line-height: 25px;
+                }
+                .notification_date{
+                    float: right;
+                }
+                .notification_line{
+                    display: inline-block;
+                    width: 87%;
+                    border: 1px solid white;
+                    vertical-align: middle;
+                    opacity: 0.2;
+                }
+            }
         }
     }
     .main_right {
         background:#ccc;
         width:100%;
         padding:50px;
+        h1{
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        div > a{
+            margin-right: 14px;
+        }
+        .main_my_class{
+            .class_img{
+                display: flex;
+                position: relative;
+                overflow: hidden;
+                .class_time{
+                    position: absolute;
+                    top: 0;
+                    margin-top: 9px;
+                    color: #fff;
+                    font-size: 11px;
+                    border: none;
+                    background: #2f66aa;
+                    p{
+                        padding: 4px 4px 4px 11px;
+                        opacity: 0.8;
+                        img{
+                            margin-bottom: 2px;
+                        }
+                    }
+                }
+                .class_description{
+                    position: absolute;
+                    margin-left: 17px;
+                    bottom: 19px;
+                    p:first-child{
+                        color: #fff;
+                    }
+                    p:last-child{
+                        color: #fff;
+                        font-size: 13px;
+                        opacity: 0.5 ;
+                    }
+                }
+            }
+        }
+        .main_program{
+            overflow: hidden;
+            .program_img{
+                display: flex;
+                .main_program_img1{
+                    position: relative;
+                    .program_description{
+                        position: absolute;
+                        margin-bottom: 0;
+                        padding: 10px;
+                        bottom: 25px;
+                        h3{
+                            margin-bottom: 5px;
+                            font-size: 17px;
+                        }
+                        p{
+                            color: #777777;
+                            font-size: 14px;
+                        }
+                        p:nth-child(2){
+                            margin-bottom: 14px;
+                        }
+                        p:last-child{
+                            color: #2f66aa;
+                            font-size: 13px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                
+            }
+        }
     }
 }
 
