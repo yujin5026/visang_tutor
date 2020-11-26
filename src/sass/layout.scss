@@ -1,8 +1,9 @@
-$primary-color : #33c3e6;
-$blue-color : #1b4c87;
+$primary-color : #de9d22;
+$blue-color : #0d52a7;
+$green-color : #208b73;
+$red-color : #d1452e;
 $gray-color : #dbdbdb;
 $deep-gray-color:#444444;
-
 
 @mixin footer_select {
     width: 130px;
@@ -14,7 +15,6 @@ $deep-gray-color:#444444;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-
 
 // 헤더
 #header {
@@ -234,8 +234,7 @@ $deep-gray-color:#444444;
             }
         }
         // 검색창 기능 [e]
-    }
-    
+    }  
 }
 
 // 메인

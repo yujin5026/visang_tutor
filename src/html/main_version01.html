@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../../css/layout.css">
+    <link type="text/css" rel="stylesheet" href="../../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../../css/slick-theme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+    <include src="include/header2.html"></include>
+    
+
+    <!-- 컨텐츠 영역 -->
+    <div id="main_wrap">
+       <div class="wrap">
+            <section>
+                <div class="main_title">
+                    <h1>
+                        Find your Learning Style
+                    </h1>
+                    <p>
+                        Meet the tutor who can tailor your study plan to fit you. <br />
+                        And double up your Korean language skill.
+                    </p>
+                    <div class="main_search">
+                        <input type="text" />
+                        <button type="submit">
+                            <img src="../images/icon_search.png" alt="search" />
+                        </button>
+                    </div>
+            
+                </div>
+            </section>
+            
+            
+            <section>
+                <!-- lesson 라이틀 -->
+                <div class="lesson_title">
+                    <h2>
+                        Looking for the lesson like...?
+                    </h2>
+                    <p>
+                        The most suitable courses are built up more than 100 everyday only for you.
+                    </p>
+                </div>
+                <!-- // lesson 라이틀 -->
+                <!-- lesson 리스트 -->
+                <div class="autoplay">
+                    <div class="lesson_box">
+                        <div class=lesson_box_top>
+                            <img src="../images/thum_bogum.png" alt="" />
+                        </div>
+                        <div class="lesson_box_bottom">
+                            <h3>
+                                Want to talk with <br />
+                                <em class="red">bogum</em>
+                            </h3>
+                            <p>Drama @ Record of Youth</p>
+                        </div>
+                    </div>
+                    <div class="lesson_box">
+                        <div class=lesson_box_top>
+                            <img src="../images/thum_food.png" alt="" />
+                        </div>
+                        <div class="lesson_box_bottom">
+                            <h3>
+                                Want to talk<br />about
+                                <em class="yellow">Korean food</em>
+                            </h3>
+                            <p>Food @ Bibim bap</p>
+                        </div>
+                    </div>
+                    <div class="lesson_box">
+                        <div class=lesson_box_top>
+                            <img src="../images/thum_expression.png" alt="" />
+                        </div>
+                        <div class="lesson_box_bottom">
+                            <h3>
+                                Want to know useful <br />
+                                <em class="green">Expression</em>
+                            </h3>
+                            <p>How to say? @ Travel</p>
+                        </div>
+                    </div>
+                    <div class="lesson_box">
+                        <div class=lesson_box_top>
+                            <img src="../images/thum_culture.png" alt="" />
+                        </div>
+                        <div class="lesson_box_bottom">
+                            <h3>
+                                Want to talk with <br />
+                                <em class="blue">Korean culture</em>
+                            </h3>
+                            <p>Travel? @ Hanok</p>
+                        </div>
+                    </div>
+                    <div class="lesson_box">your content</div>
+                </div>
+                <!-- // lesson 리스트 -->
+            </section>
+       </div>
+    </div>
+    <!-- // 컨텐츠 영역 -->
+
+    <div id="main_wrap02">
+        <div class="wrap">
+            <section>
+                <div class="tutor_card_title">
+                    <h2>
+                        Looking for the tutor like…?
+                    </h2>
+                    <p>
+                        The most various types of tutors are waiting only for you.
+                    </p>
+                </div>
+                <div class="tutor_card_list">
+                    <div class="tutor_card">
+                        <img src="../images/tutor01.png" alt="" />
+                        <div class="tutor_text">
+                            <h3>Professional tutor</h3>
+                            <p>
+                                who master Korean Education <br />
+                                Systematic course
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tutor_card">
+                        <img src="../images/tutor02.png" alt="" />
+                        <div class="tutor_text">
+                            <h3>General tutor</h3>
+                            <p>
+                                who master Korean together <br />
+                                No pressure
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tutor_card">
+                        <img src="../images/tutor03.png" alt="" />
+                        <div class="tutor_text">
+                            <h3>International tutor</h3>
+                            <p>
+                                who master Korean by <br />
+                                themselves share the tips
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script type="text/javascript">
+        $('.autoplay').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow: '<button type="button" class="slick-prev"></button>',
+            nextArrow: '<button type="button" class="slick-next"></button>',
+        });
+
+       
+
+    </script>
+    <include src="include/footer.html"></include>
+    <script src="../../js/index.js"></script>
+</body>
+
+</html>
