@@ -8,9 +8,10 @@
     <link type="text/css" rel="stylesheet" href="../../css/layout.css">
     <link type="text/css" rel="stylesheet" href="../../css/common.css">
     <link type="text/css" rel="stylesheet" href="../../css/style.css">
-    <link type="text/css" rel="stylesheet" href="../../css/slick-theme.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
 
+    
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="../../css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 </head>
@@ -142,7 +143,6 @@
                             <p>Travel? @ Hanok</p>
                         </div>
                     </div>
-                    <div class="lesson_box">your content</div>
                 </div>
                 <!-- // lesson 리스트 -->
             </section>
@@ -197,8 +197,11 @@
         </div>
     </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <script src="../../js/index.js"></script>
+
+    <!-- Slick -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
     <script type="text/javascript">
         $('.autoplay').slick({
             slidesToShow: 4,
@@ -206,14 +209,62 @@
             autoplay: true,
             autoplaySpeed: 2000,
             prevArrow: '<button type="button" class="slick-prev"></button>',
-            nextArrow: '<button type="button" class="slick-next"></button>',
+            nextArrow: '<button type="button" class="slick-next"></button>',gg
         });
-
-       
-
     </script>
+
     <!-- 푸터 영역 -->
     <footer id="footer">
+        <div id="footer_wrap">
+            <div class="footer_info">
+                <ul>
+                    <li>Sitemap</li>
+                    <li><a href="#" title="About MK">About MK</a></li>
+                    <li><a href="#" title="Find Tutors">Find Tutors</a></li>
+                    <li><a href="#" title="Lesson">Lesson</a></li>
+                    <li><a href="#" title="Price" class="bold">Price</a></li>
+                </ul>
+                <ul>
+                    <li>Terms of Use</li>
+                    <li><a href="#" title="Terms of Service">Terms of Service</a></li>
+                    <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="#" title="Refund Policy">Refund Policy</a></li>
+                </ul>
+                <ul>
+                    <li>Customer Service</li>
+                    <li><a href="#" title="FAQ">FAQ</a></li>
+                    <li><a href="#" title="rivacy Policy">QNA</a></li>
+                </ul>
+                <ul>
+                    <li>More</li>
+                    <li><a href="#" title="MK Apps">MK Apps</a></li>
+                    <li><a href="#" title="Affiliated inquiry">Affiliated inquiry</a></li>
+                    <li><a href="#" title="Company">Company</a></li>
+                    <li><a href="#" title="Contact Us">Contact Us</a></li>
+                </ul>
+                <ul>
+                    <li>Become a tutor</li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <div class="footer_select">
+                    <span>Language</span>
+                    <select>
+                        <option>English</option>
+                        <option>Korean</option>
+                    </select>
+                </div>
+                <div class="footer_select">
+                    <span>Currency</span>
+                    <select>
+                        <option>$ USD</option>
+                        <option>Korean</option>
+                    </select>
+                </div>
+                <div class="footer_sns">
+                </div>
+            </div>
+        </div>
         <div class="footer_bottom">
             <div class="footer_wrap">
                 <div class="footer_bottom_left">
@@ -227,7 +278,7 @@
         </div>
     </footer>
     <!-- // 푸터 영역 -->
-    <script src="../../js/index.js"></script>
+    
 </body>
 
 </html>
