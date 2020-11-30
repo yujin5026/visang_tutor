@@ -1,0 +1,296 @@
+#teacher {
+    .teacher_left {
+        background: #ddd;
+
+        .teacher_section {
+            width: 100%;
+
+            .section_guide {
+                background: #fff;
+                padding: 30px 40px;
+
+                .section_title {
+                    p {
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                // courses 부분
+                &.courses {
+                    .courses_description {
+                        display: flex;
+                        border: 1px solid black;
+                        border-radius: 8px;
+                        background: #ccc;
+
+                        .description_left {
+                            padding: 20px;
+                            width: 71%;
+
+                            p {
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+
+                            strong {
+                                color: #777777;
+                                font-size: 15px;
+                            }
+                        }
+
+                        .description_right {
+                            flex: 1;
+                            background: #fff;
+
+                            p {
+                                font-size: 15px;
+                                color: #777777;
+                                height: 100%;
+                                text-align: center;
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+                // courses 부분 [e]
+
+                // card 부분
+                &.card {
+                    .section_card {
+                        .card_box {
+                            display: inline-block;
+                            padding: 20px;
+
+                            // 색깔 없는거
+                            &.center {
+                                text-align: center;
+
+                                p {
+                                    font-size: 58px;
+                                    font-weight: 200;
+                                }
+
+                                div {
+                                    display: inline-block;
+                                }
+
+                                h3 {
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    color: #666666;
+                                }
+                            }
+
+                            // 색깔 있는거
+                            &.bg {
+                                background: #f8f8f8;
+
+                                .card_top {
+                                    div {
+                                        display: inline-block;
+                                    }
+
+                                    span {
+                                        font-size: 12px;
+                                        color: #999999;
+                                        vertical-align: middle;
+                                        float: right;
+                                    }
+                                }
+
+                                .card_description {
+                                    p {
+                                        font-size: 14px;
+                                        font-weight: 700;
+                                    }
+
+                                    h4 {
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        color: #666666;
+                                    }
+
+                                    .description_bottom {
+                                        display: flex;
+                                        align-items: center;
+
+                                        h5 {
+                                            font-size: 12px;
+                                            color: #666666;
+                                        }
+
+                                        h6 {
+                                            font-size: 12px;
+                                            color: #999999;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // card 부분[e]
+
+                // aboutMe 부분
+                &.aboutMe{
+                    .description_aboutMe{
+                        .aboutMe_top{
+                            width: 100%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .teacher_card_wrap {
+                            &.detail_card{
+                                padding: 20px;
+                                > div{
+                                    padding: 10px;
+                                }
+                                .teacher_card{
+                                    .teacher_card_right{
+                                        .card_right{
+                                            padding-right: 0;
+                                        }
+                                    }
+                                }
+                                .teacher_card_bar{
+                                    margin: 50px 0;
+                                    padding: 25px 40px;
+                                    border: none;
+                                    background: #f8f8f8;
+                                    .card_bar_left{
+                                        display: inline-block;
+                                        span{
+                                            vertical-align: middle;
+                                            padding-left: 10px;
+                                        }
+                                        em{
+                                            padding-left: 5px;
+                                            font-size: 12px;
+                                            color: #999999;
+                                        }
+                                    }
+                                    .card_bar_right{
+                                        margin-top: 5px;
+                                        float: right;
+                                        color: #666666;
+                                        font-size: 14px;
+                                        h5{
+                                            display: inline-block;
+                                            strong{
+                                                color: #333333;
+                                                font-weight: 700;
+                                            }
+                                            strong{
+                                                margin: 0 10px;
+                                            }
+                                            strong:before{
+                                                content: '';
+                                                padding-right: 10px;
+                                                border-left: 1px solid #dbdbdb;
+                                            }
+                                        }
+                                        h5:nth-child(2){
+                                            padding-left: 20px;
+                                        }
+                                    }
+                                }
+                                .teacher_description{
+                                    p:first-child{
+                                        padding-bottom: 30px;
+                                        color: #222222;
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                    }
+                                    p:last-child{
+                                        color: #666666;
+                                        font-size: 13px;
+                                        line-height: 28px;
+                                        em{
+                                            color: #2964ad;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                       
+                    }
+                }
+                // aboutMe 부분[e]
+            }
+        }
+
+        // teacher_left [e]
+    }
+
+    // teacher [e]
+}
+
+.teacher_right {
+    .right_card:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .right_card:last-child {
+        button {
+            &:last-child {
+                margin-top: 10px;
+                background: #fff;
+                color: #d1452e;
+                border: 1px solid #b94a38;
+            }
+        }
+    }
+
+    .right_card {
+        padding: 13px;
+        background-color: #ffffff;
+
+        .card_title {
+            padding: 15px 0;
+            border-bottom: 1px solid black;
+
+            p {
+                font-size: 20px;
+                font-weight: 700;
+
+                em {
+                    color: #ffffff;
+                    width: 20px;
+                    height: 20px;
+                    padding: 7px;
+                    background: #bbbbbb;
+                    border-radius: 50%;
+                    line-height: 20px;
+                    text-align: center;
+                    float: right;
+                }
+            }
+        }
+
+        .card_description {
+            padding: 20px 0;
+
+            span {
+                color: #333333;
+                font-size: 15px;
+
+                em {
+                    float: right;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        button {
+            padding: 15px 35px;
+            width: 100%;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            background: #b94a38;
+        }
+    }
+}
