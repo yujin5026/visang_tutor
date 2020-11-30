@@ -242,78 +242,103 @@ $deep-gray-color:#444444;
     display:flex;
     min-height: 1000px;
     .main_left {
-        min-width:1215px;
-        background:#254e80;
+        min-width:965px;
         overflow:hidden;
+        background:url('../images/left_background.png') no-repeat;
+        background-size:cover;
         .main_left_contents {
-            width:calc(100% - 310px);
+            width:460px;
             height:100%;
             float:right;
-            padding:50px 0;
+            padding:9.5rem 0 0 0;
+            margin-right:90px;
             a{
                 margin: 40px 0;
             }
             p{
-                color: #739ad1;
+                color: #f5f5f5;
                 font-size: 14px;
+                margin-top:30px;
+                line-height:25px;
             }
             h2{
                 color: #fff;
-                font-size: 58px;
+                font-size: 62px;
+                line-height: 4.5rem;
             }
             h3{
-                color: #fff;
-                font-size: 40px;
+                color: #de9d22;
+                font-size: 45px;
+                font-weight:normal;
             }
-            .main_left_contents_notification{
-                display: inline-block;
-                position: relative;
-                width: 92.6%;
-                p{
-                    margin-bottom: 0;
+            button {
+            }
+            
+            .autoplay3 {
+                margin-top:9rem;
+                .slick-list {
+                    margin-top:50px;
                 }
-                p:nth-child(1){
-                    display: inline-block;
-                    margin: 60px 10px 30px 0;
-                    color: #daa847;
-                    font-size: 15px;
+                .main_note {
+                    display:flex;
+                    padding-top:20px;
+                    border-top:1px solid #fff;
+                    .main_note_left {
+                        h3 {
+                            font-size:34px;
+                            font-weight:bold;
+                            color:#2f66aa;
+                            line-height:25px;
+                        }
+                        span {
+                            font-size:12px;
+                            color:#fff;
+                        }
+                    }
+                    .main_note_right {
+                        p {
+                            font-size:16px;
+                            font-weight:300;
+                            color:#fff;
+                            margin:0 0 0 15px;
+                        }
+                    }
                 }
-                p:nth-child(3){
-                    display: inline-block;
-                    color: #fff;
-                    line-height: 25px;
+                .slick-prev {
+                    top:-20px;
+                    left: 90%;
+                    background:url('../images/slick_arrow_left.png') no-repeat;
                 }
-                .notification_date{
-                    float: right;
-                }
-                .notification_line{
-                    display: inline-block;
-                    width: 87%;
-                    border: 1px solid white;
-                    vertical-align: middle;
-                    opacity: 0.2;
+                .slick-next {
+                    top: -20px;
+                    right: 0;
+                    background:url('../images/slick_arrow_right.png') no-repeat;
                 }
             }
         }
     }
     .main_right {
-        background:#ccc;
+        background:#f5f5f5;
         width:100%;
-        padding:50px;
+        padding:50px 0 50px 50px;
         overflow: hidden;
+        h1 {
+            font-size:24px;
+            color:#333333;
+            margin-bottom:20px;
+        }
         .autoplay2 {
-            &.myclass {
+            margin-bottom:30px;
                 .slick-prev {
-                    top:-20px;
-                    left: 45%;
-                    background:url('') no-repeat;
+                    top:-30px;
+                    left: 60%;
+                    background:url('../images/slick_arrow_left.png') no-repeat;
                 }
                 .slick-next {
-                    top: -20px;
-                    right: 45%;
-                    background:url('') no-repeat;
+                    top: -30px;
+                    right: 35%;
+                    background:url('../images/slick_arrow_right.png') no-repeat;
                 }
-            }
             // main_my_class
             .main_my_class{
                 .class_img{
@@ -358,22 +383,40 @@ $deep-gray-color:#444444;
                     display: flex;
                     .main_program_img {
                         background:#fff;
-                        margin-right: 10px;
+                        margin-right: 20px;
                         .program_img_top {
                             img {
                                 width:100%;
                             }
                         }
                         .program_description {
-                            padding:10px;
+                            position: relative;
+                            padding:30px;
+                            &.china {
+                                &::before {
+                                    content:'';
+                                    position:absolute;
+                                    top:-25px;
+                                    left:20px;
+                                    background:url(../images/main_country01.png) no-repeat;
+                                    width:55px;
+                                    height:55px;
+                                }
+                            }
+                             &.korea {
+                                &::before {
+                                    content:'';
+                                    position:absolute;
+                                    top:-25px;
+                                    left:20px;
+                                    background:url(../images/main_country02.png) no-repeat;
+                                    width:55px;
+                                    height:55px;
+                                }
+                            }
                             h3{
                                 color: #333333;
                                 font-size: 17px;
-                                margin-bottom: 10px;
-                            }
-                            p{
-                                color: #777777;
-                                font-size: 14px;
                                 margin-bottom: 10px;
                             }
                             p:last-child{
@@ -430,9 +473,6 @@ $deep-gray-color:#444444;
                 }
             }
         //main_information
-        }
-        div > a{
-            margin-right: 14px;
         }
         div {
             h1{
