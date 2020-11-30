@@ -1,0 +1,164 @@
+
+#teacher{
+    .teacher_left{
+        .teacher_card_wrap{
+            // teacher_card
+            .teacher_card{
+                background: #fff;
+                .teacher_card_right{
+                    position: relative;
+                    .card_left{
+                        .card_top{
+                            
+                            h3{overflow: hidden;}
+                        }
+                    }
+                    .card_right{
+                        position: absolute;
+                        top: 48%;
+                        left: 38%;
+                    }
+                }
+            }
+            // teacher_card [e]
+
+            // teacher_card_bottom
+            .teacher_card_bottom{
+                .card_wrap{
+                    padding: 20px 70px;
+                    width: 100%;
+                    .tutor_description{
+                        .tutor_price{
+                            span{
+                                color: #1b4c88;
+                                em{
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // teacher_card_bottom [e]
+        }
+        // teacher_card_wrap [e]
+        
+        // 선생님 영상
+        .aboutMe_top{
+            margin-bottom: 30px;
+            img{
+                width: 100%;
+                height: 315px;
+            }
+        }
+        // 선생님 영상 [e]
+
+        // 선생님 설명
+        .teacher_description{
+            padding: 50px;
+            margin-bottom: 30px;
+            background: #fff;
+            box-shadow: 0px 4px 8px 2px #6f6f6f33;
+            p:first-child{
+                margin-bottom: 30px;
+            }
+            p:last-child{
+                color: #666666;
+                font-size: 14px;
+                em{
+                    color: #2964ad;
+                }
+            }
+        }
+        // 선생님 설명[e]
+
+        // 선생님 시간표
+        .tutor_timetable{
+            padding: 50px;
+            background: #fff;
+            box-shadow: 0px 4px 8px 2px #6f6f6f33;
+            table{
+                width: 100%;
+                border-collapse: 1px solid black;
+                thead{
+                    border-top: 1px solid black;
+                    th{
+                        color: #666666;
+                        font-size: 13px;
+                        font-weight: 300;
+                        
+                    }
+                }
+                tbody{
+                    tr{
+                        td {
+                            &:first-child{
+                                color: #666666;
+                                font-size: 15px;
+                            }
+                            &:not(:first-child){
+                                background: #f2f2f2;
+                                padding: 15px 40px;
+                                border-radius: 3px;
+                            }
+                            &.blue {
+                                background: #75afcd;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 선생님 시간표[e]
+    }
+
+
+    // teacher_right
+    .teacher_right {
+        .right_card:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    
+        .right_card {
+            padding: 13px;
+            background-color: #ffffff;
+            text-align: center;
+            .right_card_list{
+                position: relative;
+                .card_list_item{
+                    padding-bottom: 20px;
+                    a{
+                        color: #999999;
+                    }
+                    img{
+                        display: none;
+                    }
+                }
+                .card_list_item:hover{
+                    img{
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 120px;
+                    }
+                }
+                .card_list_item:hover a{
+                    color: #0d52a7;
+                    
+                }
+            }
+            .button_guide{
+                width: 100%;
+                button{
+                    padding: 20px 100px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    // teacher_right //
+}
+
+
+
+
