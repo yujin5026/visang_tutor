@@ -300,107 +300,100 @@ $deep-gray-color:#444444;
         background:#ccc;
         width:100%;
         padding:50px;
-        
-        div > a{
-            margin-right: 14px;
-        }
-        div {
-            h1{
-                margin-bottom: 15px;
-                font-size: 24px;
-                margin-top: 40px;
-
-            }
-            &:first-child{
-                h1 {
-                    margin-top:0;
-                }  
-              }
-        }
-        
-        // main_my_class
-        .main_my_class{
-            .class_img{
-                display: flex;
-                position: relative;
-                overflow: hidden;
-                .class_time{
-                    position: absolute;
-                    top: 0;
-                    margin-top: 9px;
-                    color: #fff;
-                    font-size: 11px;
-                    border: none;
-                    background: #2f66aa;
-                    p{
-                        padding: 4px 4px 4px 11px;
-                        opacity: 0.8;
-                        img{
-                            margin-bottom: 2px;
-                        }
-                    }
+        overflow: hidden;
+        .autoplay2 {
+            &.myclass {
+                .slick-prev {
+                    top:-20px;
+                    left: 45%;
+                    background:url('') no-repeat;
                 }
-                .class_description{
-                    position: absolute;
-                    margin-left: 17px;
-                    bottom: 25px;
-                    p:first-child{
-                        color: #fff;
-                    }
-                    p:last-child{
-                        color: #fff;
-                        font-size: 13px;
-                        opacity: 0.5 ;
-                    }
+                .slick-next {
+                    top: -20px;
+                    right: 45%;
+                    background:url('') no-repeat;
                 }
             }
-        }
-        // main_my_class //
-
-        // main_program
-        .main_program{
-            .program_img{
-                display: flex;
-                .main_program_img {
-                    background:#fff;
-                    margin-right: 10px;
-                    .program_img_top {
-                        img {
-                            width:100%;
-                        }
-                    }
-                    .program_description {
-                        padding:10px;
-                        h3{
-                            color: #333333;
-                            font-size: 17px;
-                            margin-bottom: 10px;
-                        }
+            // main_my_class
+            .main_my_class{
+                .class_img{
+                    display: flex;
+                    position: relative;
+                    overflow: hidden;
+                    .class_time{
+                        position: absolute;
+                        top: 0;
+                        margin-top: 9px;
+                        color: #fff;
+                        font-size: 11px;
+                        border: none;
+                        background: #2f66aa;
                         p{
-                            color: #777777;
-                            font-size: 14px;
-                            margin-bottom: 10px;
+                            padding: 4px 4px 4px 11px;
+                            opacity: 0.8;
+                            img{
+                                margin-bottom: 2px;
+                            }
+                        }
+                    }
+                    .class_description{
+                        position: absolute;
+                        margin-left: 17px;
+                        bottom: 25px;
+                        p:first-child{
+                            color: #fff;
                         }
                         p:last-child{
-                            color: #2f66aa;
+                            color: #fff;
                             font-size: 13px;
-                            font-weight: 700;
-                        }
-                    }
-                }
-                .main_program_img:last-child{
-                    .program_img_top{
-                        img{
-                            height: 186.22px;
+                            opacity: 0.5 ;
                         }
                     }
                 }
             }
-        }
-        // main_program //
+            // main_my_class //
 
-        //main_information
-        .main_information{
+            // main_program
+                .program_img{
+                    display: flex;
+                    .main_program_img {
+                        background:#fff;
+                        margin-right: 10px;
+                        .program_img_top {
+                            img {
+                                width:100%;
+                            }
+                        }
+                        .program_description {
+                            padding:10px;
+                            h3{
+                                color: #333333;
+                                font-size: 17px;
+                                margin-bottom: 10px;
+                            }
+                            p{
+                                color: #777777;
+                                font-size: 14px;
+                                margin-bottom: 10px;
+                            }
+                            p:last-child{
+                                color: #2f66aa;
+                                font-size: 13px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .main_program_img:last-child{
+                        .program_img_top{
+                            img{
+                                height: 186.22px;
+                            }
+                        }
+                    }
+                }
+            // main_program //
+
+            //main_information
             .main_info_top{
                 h1{
                     display: inline-block;
@@ -436,7 +429,30 @@ $deep-gray-color:#444444;
                     }
                 }
             }
+        //main_information
         }
+        div > a{
+            margin-right: 14px;
+        }
+        div {
+            h1{
+                margin-bottom: 15px;
+                font-size: 24px;
+                margin-top: 40px;
+
+            }
+            &:first-child{
+                h1 {
+                    margin-top:0;
+                }  
+              }
+        }
+        
+        
+
+        
+
+        
     }
 }
 
