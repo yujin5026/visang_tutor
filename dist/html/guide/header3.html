@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../../css/layout.css">
+    <link type="text/css" rel="stylesheet" href="../../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+</head>
+
+<body>
+    <!-- 헤더 영역 -->
+    <header id="header" class="border">
+        <div id="gnb">
+            <div class="gnb_left">
+                <h1>
+                    <a href="#">
+                        <img src="../../images/master_logo.png" alt="로고" />
+                    </a>
+                </h1>
+            </div>
+            
+            <ul class="gnb_right">
+                <li>
+                    <img src="../../images/language.png" alt="language" />
+                </li>
+                <li>
+                    Login
+                </li>
+                <li>
+                    <a href="#" class="sm_btn round15 bg_gray">
+                        Join
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- // 헤더 영역 -->
+    <!-- 필터 옵션 -->
+    <div class="box_component_wrap">
+        <div class="box_component">
+            <ul>
+                <li>
+                    <!-- popup background -->
+                    <div class="background"></div>
+                    <div class="popup-wrap popup-closed">
+                        <button class="popup-button" id="popup-button-1" aria-haspopup="true">
+                            <img src="../../images/icon_category.png" alt="category" />
+                            category
+                        </button>
+                        <div class="popup-box popup-box-styles" aria-hidden="true" aria-labelledby="popup-button-1">
+                            <h2>Popup box 1</h2>
+                            <p>Contents here</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="popup-wrap popup-closed">
+                        <button class="popup-button" id="popup-button-2" aria-haspopup="true">
+                            <img src="../../images/icon_teachertype.png" alt="teacher type" />
+                            teacher type
+                        </button>
+                        <div class="popup-box popup-box-styles" aria-hidden="true" aria-labelledby="popup-button-2">
+                            <h2>Popup box 1</h2>
+                            <p>Contents here</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="popup-wrap popup-closed">
+                        <button class="popup-button" id="popup-button-3" aria-haspopup="true">
+                            <img src="../../images/icon_alsospeaks.png" alt="Availaility" />
+                            Availaility
+                        </button>
+                        <div class="popup-box popup-box-3" aria-hidden="true" aria-labelledby="popup-button-3">
+                            <h2>Popup box 3</h2>
+                            <p>Contents here</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <button type="button">
+                        <img src="../../images/icon_price.png" alt="Price" />
+                        Price
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <img src="../../images/icon_alsospeaks.png" alt="Also speaks" />
+                        Also speaks
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <img src="../../images/icon_filters.png" alt="Filters" />
+                        Filters
+                    </button>
+                </li>
+            </ul>
+            <!-- search 기능 바 -->
+            <div class="main_sb_search">
+                <div class="sb-search" class="sb-search">
+                    <form>
+                        <input class="sb-search-input" placeholder="Search by name Keyword" />
+                        <input class="sb-search-submit" type="submit" value="" />
+                        <span class="sb-icon-search">
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <!-- //search 기능 바 -->
+        </div>
+
+    </div>
+    <!-- // 필터 옵션 -->
+    
+    <script src="../../js/index.js"></script>
+</body>
+
+</html>
