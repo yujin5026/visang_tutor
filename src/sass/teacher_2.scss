@@ -1,5 +1,46 @@
 
+#teacher_background{
+    background: #fbfcfd;
+}
+.tutor_title{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    .title_left{
+        display: flex;
+        div{
+            margin-right: 25px;
+            p{
+                width: 540px;
+                font-size: 24px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        img{
+            margin-top: 13px;
+            padding-right: 5px;
+            width: 12px;
+            height: 14px;
+        }
+        span{
+            margin-top: 7px;
+            color: #777777;
+        }
+    }
+    .title_right{
+        select{
+            padding: 7px 90px 7px 10px;
+            option{
+                color: #666666;
+                font-size: 14px;
+            }
+        }
+    }
+}
 #teacher{
+    padding-top: 0;
     .teacher_left{
         .teacher_card_wrap{
             // teacher_card
@@ -9,14 +50,20 @@
                     position: relative;
                     .card_left{
                         .card_top{
-                            
-                            h3{overflow: hidden;}
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            h3{
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                width: 590px;
+                            }
                         }
                     }
                     .card_right{
                         position: absolute;
                         top: 48%;
-                        left: 38%;
+                        left: 37%;
                     }
                 }
             }
@@ -25,16 +72,25 @@
             // teacher_card_bottom
             .teacher_card_bottom{
                 .card_wrap{
-                    padding: 20px 70px;
+                    position: relative;
                     width: 100%;
                     .tutor_description{
+                        padding-left: 60px;
                         .tutor_price{
                             span{
                                 color: #1b4c88;
                                 em{
-
+                                    vertical-align: middle;
                                 }
                             }
+                        }
+                    }
+                    .lesson_like_btn{
+                        button{
+                            position: absolute;
+                            top: 18px;
+                            right: 60px;
+                            border: none;
                         }
                     }
                 }
@@ -127,7 +183,7 @@
         }
     
         .right_card {
-            padding: 13px;
+            padding: 20px;
             background-color: #ffffff;
             box-shadow: 0px 4px 8px 2px #6f6f6f33;
             text-align: center;
@@ -135,6 +191,7 @@
                 position: relative;
                 padding: 50px 0;
                 .card_list_item{
+                    position: relative;
                     padding-bottom: 20px;
                     a{
                         color: #999999;
