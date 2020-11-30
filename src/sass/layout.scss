@@ -16,7 +16,7 @@ $deep-gray-color:#444444;
     -moz-box-sizing: border-box;
 }
 
-// 헤더
+///////////////////////////////////////////////////////////////////////// 헤더
 #header {
     position: relative;
     width: 100%;
@@ -84,7 +84,7 @@ $deep-gray-color:#444444;
     }
 }
 
-// 필터 옵션
+///////////////////////////////////////////////////////////////////////// 필터 옵션
 .box_component_wrap {
     border-bottom: 1px solid #eaeaea;
     z-index: 3;
@@ -111,9 +111,7 @@ $deep-gray-color:#444444;
                 }
             }
         }
-        // 검색창 기능 [s]
         .main_sb_search{
-
             .sb-search{
                 position: absolute;
                 top: 63px;
@@ -187,11 +185,8 @@ $deep-gray-color:#444444;
                     }
                     .sb-search-submit {
                         background: #fff;
-                        /* IE needs this */
                         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-                        /* IE 8 */
                         filter: alpha(opacity=0);
-                        /* IE 5-7 */
                         opacity: 0;
                         color: transparent;
                         color: red;
@@ -234,11 +229,36 @@ $deep-gray-color:#444444;
                 }
             }
         }
-        // 검색창 기능 [e]
     }  
 }
 
-// 메인
+///////////////////////////////////////////////////////////////////////// 필터 탭
+.background{
+    display: none;
+    position: absolute;
+    background: black;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+///////////////////////////////////////////////////////////////////////// main_version01
+#main_wrap {
+    background:url('../images/visual.png') no-repeat;
+    background-size: 100%;
+    height: 85vh;
+}
+#main_wrap02 {
+    background:url('../images/visual02.png') no-repeat;
+    #wrap {
+        padding-top:11rem;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////// main_version02
 #main {
     display:flex;
     min-height: 1000px;
@@ -340,7 +360,6 @@ $deep-gray-color:#444444;
                     right: 35%;
                     background:url('../images/slick_arrow_right.png') no-repeat;
                 }
-            // main_my_class
             .main_my_class{
                 .class_img{
                     display: flex;
@@ -377,9 +396,6 @@ $deep-gray-color:#444444;
                     }
                 }
             }
-            // main_my_class //
-
-            // main_program
                 .program_img{
                     display: flex;
                     .main_program_img {
@@ -435,9 +451,6 @@ $deep-gray-color:#444444;
                         }
                     }
                 }
-            // main_program //
-
-            //main_information
             .main_info_top{
                 h1{
                     display: inline-block;
@@ -459,9 +472,6 @@ $deep-gray-color:#444444;
                         color: #fff;
                     }
                 }
-                // &:nth-child(2){
-                //     background: #dca741;
-                // }
                 .info_card_2{
                     display: inline-block;
                     padding: 35px;
@@ -473,31 +483,43 @@ $deep-gray-color:#444444;
                     }
                 }
             }
-        //main_information
         }
         div {
             h1{
                 margin-bottom: 15px;
                 font-size: 24px;
                 margin-top: 40px;
-
             }
             &:first-child{
                 h1 {
                     margin-top:0;
                 }  
-              }
+            }
         }
-        
-        
-
-        
-
-        
     }
 }
 
-// 선생님
+///////////////////////////////////////////////////////////////////////// 로그인
+.login {
+    background:url(../images/login_background.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    .wrap {
+        .login_wrap {
+            width: 600px;
+            margin:0 auto;
+            text-align:center;
+            padding:100px 0;
+            h3 {
+                font-size:46px;
+                font-weight:bold;
+                color:#fff;
+            }
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////// 선생님
 #teacher {
     display:flex;
     width:1280px;
@@ -515,8 +537,7 @@ $deep-gray-color:#444444;
     }
 }
 
-
-// 푸터
+///////////////////////////////////////////////////////////////////////// footer
 #footer {
     width: 100%;
     height: auto;
@@ -526,7 +547,6 @@ $deep-gray-color:#444444;
         width: 1280px;
         margin: 0 auto;
         padding: 50px 0;
-        // 사이트 맵 ul
         .footer_info {
             display: inline-block;
             ul {
@@ -553,7 +573,6 @@ $deep-gray-color:#444444;
                 }
             }
         }
-        // 언어,통화
         .footer_right {
             float: right;
             color: #fff;
@@ -576,7 +595,6 @@ $deep-gray-color:#444444;
             }
         }
     }
-    // 카피라이트
     .footer_bottom {
         border-top: 1px solid #323739;
         color: #777777;
@@ -604,144 +622,3 @@ $deep-gray-color:#444444;
 }
 
 
-
-// 로그인
-.login {
-    background:url(../images/login_background.png) no-repeat;
-    background-size: 100%;
-    background-position: center;
-    #wrap {
-        .login_wrap {
-            width: 600px;
-            margin:0 auto;
-            text-align:center;
-            padding:100px 0;
-            h3 {
-                font-size:46px;
-                font-weight:bold;
-                color:#fff;
-            }
-        }
-    }
-}
-
-
-
-
-.teacher_card{
-    .teacher_card_left{
-        p{
-            padding: 13px 0 0 37px;
-            color:#2d69b3;
-        }
-        p:before{
-            display: inline-block;
-            margin-right: 7px;
-            content: '';
-            width: 10px;
-            height: 10px;
-            border: none;
-            border-radius: 50%;
-            background: #2d69b3;
-        }
-    }
-}
-.card_bottom{
-    .skill{
-        margin-right: 77px;
-        &:nth-child(2){
-            margin-right: 50px;
-        }
-        &:nth-child(3){
-            margin: 0;
-        }
-        p{
-            margin-bottom: 14px;
-        }
-        span{
-            margin-right: 14px;
-            font-weight: 700;
-        }
-        .skill_bar01,
-        .skill_bar02,
-        .skill_bar03,
-        .skill_bar04,
-        .skill_bar05 {
-            display: inline-block;
-        }
-    }
-}
-
-// [s] like, book_btn common
-.like_btn_form{
-    padding: 9px 18px;
-    color: #999999;
-    border: 1px solid #bababa;
-    em{
-        color: #999999;
-    }
-}
-.book_btn_form{
-    padding: 10px 46px;
-    margin-left: 12px;
-    color: #fff;
-    border: 1px solid none;
-    background: #b94a38;
-}
-// [e] like, book_btn common
-.teacher_card_bottom{
-    .card_wrap{
-        position: relative;
-        .tutor_description{
-            display: inline-block;
-            div > span{
-                font-size: 14px;
-            }
-            div > span:first-child{
-                padding: 0 10px;
-                color: #666666;
-                border-right: thin solid #dbdbdb;
-                box-sizing: border-box;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-            }
-            div > span:last-child{
-                margin-left: 10px;
-                font-weight: 700;
-            }
-            
-            div:nth-child(2),div:nth-child(3){margin-left: 50px;}
-
-            .tutor_price{
-                display: inline-block;
-                em{
-                    display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    line-height: 20px;
-                    margin-left: 6px;
-                    margin-right: 10px;
-                    background: #444444;
-                    color: #fff;
-                    border-radius: 50%;
-                    font-size: 11px;
-                    text-align: center;
-                }
-            }
-            .lesson_time{
-                display: inline-block;
-            }
-            .lesson_count{
-                display: inline-block;
-            }
-        }
-        .tutor_btn{
-            position: absolute;
-            top: 11px;
-            right: 0;
-            .lg_btn.bg_red{
-                margin-left: 10px;
-            }
-        }
-    }
-}

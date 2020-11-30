@@ -15,82 +15,6 @@ $deep-gray-color:#444444;
 }
 
 
-// 로그인
-.wrap {
-    width:1280px;
-    margin:0 auto;
-    padding:6rem 0;
-    min-height: 800px;
-}
-
-#wrap {
-    width:1280px;
-    margin:0 auto;
-    padding:6rem 0;
-    min-height: 700px;
-    .container {
-        display:table;
-        width: 100%;
-        div {
-            display:table-cell;
-            &.wrap_left {
-                color:#fff;
-                h2 {
-                    font-size:50px;
-                    font-weight:700;
-                }
-                ul {
-                    li {
-                        &::before {
-                            content:'ss';
-                        }
-                    }
-                }
-            }
-            &.wrap_right {
-                width:350px;
-                background:#fff;
-                padding:8rem 3rem;
-                h3 {
-                    font-size:30px;
-                    font-weight:700;
-                    margin-bottom:5px;
-                }
-                h4 {
-                    color:#999999;
-                    font-weight:300;
-                    margin-bottom:30px;
-                }
-                input {
-                    width:100%;
-                    padding:20px;
-                    border:none;
-                    background:#f3f3f3;
-                    box-sizing : border-box;
-                    &[type="text"] {
-                        margin-bottom:10px;
-                    }
-                }
-                p {
-                    font-size:14px;
-                    color:#0066d0;
-                    text-align:center;
-                }
-                button {
-                    width:100%;
-                    border:none;
-                    background:#0066d0;
-                    color:#fff;
-                    padding:20px;
-                    border-radius: 30px;
-                    margin-top:40px;
-                }
-           }
-        }
-    }
-   
-}
-
 
 // 선생님 카드 리스트
 .teacher_card_wrap {
@@ -113,6 +37,20 @@ $deep-gray-color:#444444;
         }
         .teacher_card_left {
             position: relative;
+            p{
+            padding: 13px 0 0 37px;
+            color:#2d69b3;
+        }
+        p:before{
+            display: inline-block;
+            margin-right: 7px;
+            content: '';
+            width: 10px;
+            height: 10px;
+            border: none;
+            border-radius: 50%;
+            background: #2d69b3;
+        
             .teacher {
                 margin-right:50px;
                 .teacher_cicle {
@@ -247,10 +185,60 @@ $deep-gray-color:#444444;
             width:1140px;
             margin:0 auto;
             padding:20px 0;
+            .tutor_description{
+            display: inline-block;
+            div > span{
+                font-size: 14px;
+            }
+            div > span:first-child{
+                padding: 0 10px;
+                color: #666666;
+                border-right: thin solid #dbdbdb;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+            div > span:last-child{
+                margin-left: 10px;
+                font-weight: 700;
+            }
+            
+            div:nth-child(2),div:nth-child(3){margin-left: 50px;}
+
+            .tutor_price{
+                display: inline-block;
+                em{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    margin-left: 6px;
+                    margin-right: 10px;
+                    background: #444444;
+                    color: #fff;
+                    border-radius: 50%;
+                    font-size: 11px;
+                    text-align: center;
+                }
+            }
+            .lesson_time{
+                display: inline-block;
+            }
+            .lesson_count{
+                display: inline-block;
+            }
+        }
+        .tutor_btn{
+            position: absolute;
+            top: 11px;
+            right: 0;
+            .lg_btn.bg_red{
+                margin-left: 10px;
+            }
+        }
         }
     }
 }
-
 
 
 // 탭
@@ -276,12 +264,7 @@ input[type="radio"] {display: none;}
 #two:checked ~ .tabs #two-tab,
 #three:checked ~ .tabs #three-tab,
 #four:checked ~ .tabs #four-tab {color:#0d52a7;}
-
-
-
- .popup-wrap {
-	position: relative;
-}
+.popup-wrap {position: relative;}
 .popup-box-styles {
 	position: absolute;
 	left: 0;
@@ -298,24 +281,14 @@ input[type="radio"] {display: none;}
 	right: 0;
 	top: 2em;
 	z-index: 999999;
-  padding: 1em;
-  background-color: #fff;
-  color: #000;
-  font-size: .8em;
+    padding: 1em;
+    background-color: #fff;
+    color: #000;
+    font-size: .8em;
 }
-[aria-hidden=true] {
-  display: none;
-}
+[aria-hidden=true] {display: none;}
 
-
-
-
-// 메인
-#main_wrap {
-    background:url('../images/visual.png') no-repeat;
-    background-size: 100%;
-    height: 85vh;
-}
+///////////////////////////////////////////////////////////////////////// main_version01 레슨카드
 .main_title {
     text-align:center;
     color:#fff;
@@ -400,13 +373,8 @@ input[type="radio"] {display: none;}
     }
 }
 
-#main_wrap02 {
-    background:url('../images/visual02.png') no-repeat;
-    #wrap {
-        padding-top:11rem;
-    }
-}
 
+///////////////////////////////////////////////////////////////////////// main_version01 선생님 카드 3개
 .tutor_card_title {
     text-align:center;
     margin-bottom:20px;
@@ -418,7 +386,6 @@ input[type="radio"] {display: none;}
         font-size:16px;
     }
 }
-
 .tutor_card_list {
     margin-top:60px;
     .tutor_card {

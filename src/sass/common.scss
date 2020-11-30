@@ -1,11 +1,10 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-    // background:#000;
-}
+body {font-family: 'Noto Sans KR', sans-serif;}
 
-$primary-color : #33c3e6;
-$blue-color : #1b4c87;
+$primary-color : #de9d22;
+$blue-color : #0d52a7;
+$green-color : #208b73;
+$red-color : #d1452e;
 $gray-color : #dbdbdb;
 $deep-gray-color:#444444;
 
@@ -111,25 +110,25 @@ img {vertical-align:middle;}
 
 
 
-/* 뱃지 스타일 */
+// 뱃지 스타일
 .badge {display:inline-block;padding:4px 15px;font-size:14px;font-weight:700;border-radius:14px;margin-right:5px;}
 .badge.best {color:#fe8144;border:1px solid #fe8144;}
 .badge.new {color:#269d7d;border:1px solid #269d7d;}
 .badge.hot {color:#d1452e;border:1px solid #d1452e;}
 .badge.event {color:#1b4c88;border:1px solid #1b4c88;}
 
-/* 버튼 사이즈 */
+// 버튼 사이즈
 .lg_btn {display:inline-block;padding: 10px 50px;border:none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
 .md_btn {display:inline-block;padding:10px 25px;border:none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
 .sm_btn {display:inline-block;padding: 5px 10px;border:none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
 .xsm_btn {display:inline-block;padding: 10px 20px;border:none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
 
-/* 라운드 버튼 */
+// 라운드 버튼
 .round5 {border-radius:5px;}
 .round15 {border-radius: 15px;}
 .round30 {border-radius: 30px;}
 
-/* 버튼 스타일 */
+// 버튼 스타일
 .line_red {color:#b94a38;border:1px solid #b94a38;}
 .line_gray {color:#bababa;border:1px solid #bababa;}
 .line_text_gray {color:#666666;border:1px solid #eaeaea;}
@@ -139,11 +138,11 @@ img {vertical-align:middle;}
 .bg_blue {background:#1b4c88;color:#fff;border:1px solid #1b4c88;}
 .bg_white {background:#fff;border:1px solid #fff;border:1px solid #fff;}
 
-/* 평점 */
+// 평점 
 .star {position: relative;padding-left:30px;}
 .star::before {content:'';position: absolute;top:0;left:0;background:url('../images/star.png');width:24px;height:23px;}
 
-/* input 스타일 */
+// input 스타일
 input[type="checkbox"] {
     display:none;
     &+label {
@@ -173,4 +172,5 @@ input[type="checkbox"] {
     }
 }
 
+// slick 슬라이드
 .slick-initialized .slick-slide {outline:none;}
