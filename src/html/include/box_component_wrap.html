@@ -3,16 +3,57 @@
     <div class="box_component">
         <ul>
             <li>
-                <!-- popup background -->
-                <div class="background"></div>
                 <div class="popup-wrap popup-closed">
                     <button class="popup-button" id="popup-button-1" aria-haspopup="true">
-                        <img src="../../images/icon_category.png" alt="category" />
-                        category
+                        <img src="../../images/icon_category.png" alt="category" class="filter_icon" />
+                        Purpose
+                        <img src="../../images/filter_down.png" alt="filter_down" />
                     </button>
                     <div class="popup-box popup-box-styles" aria-hidden="true" aria-labelledby="popup-button-1">
-                        <h2>Popup box 1</h2>
-                        <p>Contents here</p>
+                        <div class="filter">
+                            <div class="filter_box">
+                                <img src="../../images/business_off.png" alt="business" />
+                                <p>Business</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/study_off.png" alt="study in Korea" />
+                                <p>Study in Korea</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/topik_off.png" alt="topik / exam" />
+                                <p>TOPIK / exam</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/conversation_off.png" alt="conversation" />
+                                <p>Conversation</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/grammar_off.png" alt="grammar" />
+                                <p>Grammar</p>
+                            </div>
+                        </div>
+                        <div class="filter">
+                            <div class="filter_box">
+                                <img src="../../images/listening_off.png" alt="listening" />
+                                <p>Listening</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/read_off.png" alt="read" />
+                                <p>Read</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/writing_off.png" alt="writing" />
+                                <p>Writing</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/hobby_off.png" alt="hobby" />
+                                <p>Hobby</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/custom_off.png" alt="customized" />
+                                <p>Customized</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -21,10 +62,23 @@
                     <button class="popup-button" id="popup-button-2" aria-haspopup="true">
                         <img src="../../images/icon_teachertype.png" alt="teacher type" />
                         teacher type
+                        <img src="../../images/filter_down.png" alt="filter_down" />
                     </button>
                     <div class="popup-box popup-box-styles" aria-hidden="true" aria-labelledby="popup-button-2">
-                        <h2>Popup box 1</h2>
-                        <p>Contents here</p>
+                        <div class="filter">
+                            <div class="filter_box">
+                                <img src="../../images/professional_off.png" alt="professional tutor" />
+                                <p>Professional <br />Tutor</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/general_off.png" alt="general tutor" />
+                                <p>General <br />Tutor</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/international_off.png" alt="international tutor" />
+                                <p>International <br />Tutor</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -32,11 +86,68 @@
                 <div class="popup-wrap popup-closed">
                     <button class="popup-button" id="popup-button-3" aria-haspopup="true">
                         <img src="../../images/icon_alsospeaks.png" alt="Availaility" />
-                        Availaility
+                        Native English
+                        <img src="../../images/filter_down.png" alt="filter_down" />
                     </button>
-                    <div class="popup-box popup-box-3" aria-hidden="true" aria-labelledby="popup-button-3">
-                        <h2>Popup box 3</h2>
-                        <p>Contents here</p>
+                    <div class="popup-box popup-box-styles" aria-hidden="true" aria-labelledby="popup-button-3">
+                        <div class="filter_title">
+                            <h3>Time range</h3>
+                            <p>
+                                Your Timezone : <span>Seoul 7:00 UTC+09:00</span>
+                                <img src="../../images/filter_qs.png" alt="" />
+                            </p>
+                        </div>
+                        <div class="filter">
+                            <div class="filter_box">
+                                <img src="../../images/dawn_off.png" alt="dawn" />
+                                <p>Dawn</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/morning_off.png" alt="morning" />
+                                <p>Morning</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/morning02_off.png" alt="morning02" />
+                                <p>Morning</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/afternoon_off.png" alt="afternoon" />
+                                <p>afternoon</p>
+                            </div>
+                            <div class="filter_box">
+                                <img src="../../images/dinner_off.png" alt="dinner" />
+                                <p>dinner</p>
+                            </div>
+                        </div>
+                        <div class="filter_title">
+                            <h3>Days of the week</h3>
+                        </div>
+                        <div class="filter">
+                            <div class="days">
+                                <ul>
+                                    <li>Sun</li>
+                                    <li>Mon</li>
+                                    <li>Tue</li>
+                                    <li>Wed</li>
+                                    <li>Thr</li>
+                                    <li>Fri</li>
+                                    <li>Sat</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter_title">
+                            <h3>Class time</h3>
+                        </div>
+                        <div class="filter">
+                            <div class="days">
+                                <ul>
+                                    <li>20min</li>
+                                    <li>40min</li>
+                                    <li>60min</li>
+                                    <li>80min</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -59,6 +170,14 @@
                 </button>
             </li>
         </ul>
+            <div class="search">
+                <input type="search" class="search-box" />
+                <span class="search-button">
+                    <span class="search-icon">
+                        <img src="../../images/filter_search.png" alt="filter_search" />
+                    </span>
+                </span>
+            </div>
     </div>
 
 </div>
