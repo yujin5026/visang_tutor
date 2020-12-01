@@ -30,3 +30,6 @@ let slides = document.querySelector('.slide'),
             moveSlide(slideCount - 3)
         }
     });
+
+
+
