@@ -16,295 +16,361 @@ $deep-gray-color:#444444;
 
 ///////////////////////////////////////////////////////////////////////// 기본 틀
 .wrap {
-    width:1280px;
-    margin:0 auto;
-    padding:6rem 0;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 6rem 0;
     min-height: 700px;
 }
 
 // 선생님 카드 리스트
 .teacher_card_wrap {
     position: relative;
-    margin-bottom:30px;
+    margin-bottom: 30px;
     box-shadow: 0px 4px 8px 2px #6f6f6f33;
-    overflow:hidden;
+    overflow: hidden;
     z-index: 1;
+
     .teacher_card {
-        display:flex;
-        padding:40px 70px;
-        overflow:hidden;
+        display: flex;
+        padding: 40px 70px;
+        overflow: hidden;
+
         .teacher_card_left {
             position: relative;
+
             .teacher {
-                margin-right:50px;
+                margin-right: 50px;
+
                 .teacher_cicle {
                     position: relative;
                     width: 135px;
                     height: 135px;
                     overflow: hidden;
                     border-radius: 50%;
-                    border:2px solid #0e52a5;
-                    padding:10px;
+                    border: 2px solid #0e52a5;
+                    padding: 10px;
+
                     img {
                         position: absolute;
-                        top:0;
-                        left:0;
+                        top: 0;
+                        left: 0;
                         margin-left: -50%;
                     }
                 }
+
                 &::after {
-                content:'';
-                background:url('../images/america.png');
-                position: absolute;
-                width:40px;
-                height:40px;
-                left:7rem;
-                top:10rem;
+                    content: '';
+                    background: url('../images/america.png');
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    left: 7rem;
+                    top: 10rem;
                 }
             }
         }
+
+        // teacher_card_right
         .teacher_card_right {
             vertical-align: top;
-            width:100%;
+            width: 100%;
+            // card_left
             .card_left {
-                display:inline-block;
+                display: inline-block;
+
                 .card_top {
-                        h3 {
-                            font-size:32px;
-                            font-weight:700;
-                            margin-top:10px;
-                        }
-                        p {
-                            font-size:18px;
-                            color:#666666;
-                            margin-top:5px;
-                        }
+                    h3 {
+                        font-size: 32px;
+                        font-weight: 700;
+                        margin-top: 10px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        color: #666666;
+                        margin-top: 5px;
+                    }
                 }
+
                 .card_bottom {
                     .skill {
-                        display:inline-block;
-                        margin-top:20px;
+                        display: inline-block;
+                        margin-top: 20px;
+
                         p {
                             display: block;
-                            font-size:14px;
-                            color:#999999;
+                            font-size: 14px;
+                            color: #999999;
                         }
+
                         span {
-                            font-size:16px;
-                            color:#333333;
+                            font-size: 16px;
+                            color: #333333;
                         }
+
                         .skill_bar01 {
                             div {
-                                display:inline-block;
-                                width:6px;
-                                height:12px;
-                                background:#eaeaea;
-                                &:nth-child(-n+1) { 
+                                display: inline-block;
+                                width: 6px;
+                                height: 12px;
+                                background: #eaeaea;
+
+                                &:nth-child(-n+1) {
                                     background: #75afcd;
                                 }
                             }
                         }
+
                         .skill_bar02 {
                             div {
-                                display:inline-block;
-                                width:6px;
-                                height:12px;
-                                background:#eaeaea;
+                                display: inline-block;
+                                width: 6px;
+                                height: 12px;
+                                background: #eaeaea;
+
                                 &:nth-child(-n+2) {
                                     background: #75afcd;
                                 }
                             }
                         }
+
                         .skill_bar03 {
                             div {
-                                display:inline-block;
-                                width:6px;
-                                height:12px;
-                                background:#eaeaea;
+                                display: inline-block;
+                                width: 6px;
+                                height: 12px;
+                                background: #eaeaea;
+
                                 &:nth-child(-n+3) {
-                                    background:#75afcd;
+                                    background: #75afcd;
                                 }
                             }
                         }
+
                         .skill_bar04 {
                             div {
-                                display:inline-block;
-                                width:6px;
-                                height:12px;
-                                background:#eaeaea;
+                                display: inline-block;
+                                width: 6px;
+                                height: 12px;
+                                background: #eaeaea;
+
                                 &:nth-child(-n+4) {
-                                    background:#75afcd;
+                                    background: #75afcd;
                                 }
                             }
                         }
+
                         .skill_bar05 {
                             div {
-                                display:inline-block;
-                                width:6px;
-                                height:12px;
-                                background:#eaeaea;
+                                display: inline-block;
+                                width: 6px;
+                                height: 12px;
+                                background: #eaeaea;
+
                                 &:nth-child(-n+5) {
-                                    background:#75afcd;
+                                    background: #75afcd;
                                 }
                             }
                         }
                     }
                 }
             }
-            .card_right {
-                    float: right;
-                    padding-right:30px;
-            }
-      
-        }
-        .teacher_tab {
-            border-left:1px solid #ddd;
-            padding-left:50px;
-        }
-    }
-    .teacher_card_bottom {
-        background:#f8f8f8;
-        .card_wrap {
-            width:1140px;
-            margin:0 auto;
-            padding:20px 0;
-            .tutor_description{
-            display: inline-block;
-            div > span{
-                font-size: 14px;
-            }
-            div > span:first-child{
-                padding: 0 10px;
-                color: #666666;
-                border-right: thin solid #dbdbdb;
-                box-sizing: border-box;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-            }
-            div > span:last-child{
-                margin-left: 10px;
-                font-weight: 700;
-            }
-            
-            div:nth-child(2),div:nth-child(3){margin-left: 50px;}
+            // card_left[e]
 
-            .tutor_price{
+            // card_right
+            .card_right {
+                float: right;
+                padding-right: 30px;
+            }
+            // card_right[e]
+        }
+        // teacher_card_right[e]
+
+        // teacher_tab
+        .teacher_tab {
+            border-left: 1px solid #ddd;
+            padding-left: 50px;
+        }
+        // teacher_tab[e]
+    }
+
+    .teacher_card_bottom {
+        background: #f8f8f8;
+        // card_wrap
+        .card_wrap {
+            width: 1140px;
+            margin: 0 auto;
+            padding: 20px 0;
+
+            .tutor_description {
                 display: inline-block;
-                em{
+
+                div>span {
+                    font-size: 14px;
+                }
+
+                div>span:first-child {
+                    padding: 0 10px;
+                    color: #666666;
+                    border-right: thin solid #dbdbdb;
+                    box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                }
+
+                div>span:last-child {
+                    margin-left: 10px;
+                    font-weight: 700;
+                }
+
+                div:nth-child(2),
+                div:nth-child(3) {
+                    margin-left: 50px;
+                }
+
+                .tutor_price {
                     display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    line-height: 20px;
-                    margin-left: 6px;
-                    margin-right: 10px;
-                    background: #444444;
-                    color: #fff;
-                    border-radius: 50%;
-                    font-size: 11px;
-                    text-align: center;
+
+                    em {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        line-height: 20px;
+                        margin-left: 6px;
+                        margin-right: 10px;
+                        background: #444444;
+                        color: #fff;
+                        border-radius: 50%;
+                        font-size: 11px;
+                        text-align: center;
+                    }
+                }
+
+                .lesson_time {
+                    display: inline-block;
+                }
+
+                .lesson_count {
+                    display: inline-block;
                 }
             }
-            .lesson_time{
-                display: inline-block;
-            }
-            .lesson_count{
-                display: inline-block;
-            }
-        }
-        .tutor_btn{
-            position: absolute;
-            top: 11px;
-            right: 0;
-            .lg_btn.bg_red{
-                margin-left: 10px;
+
+            .tutor_btn {
+                position: absolute;
+                top: 11px;
+                right: 0;
+
+                .lg_btn.bg_red {
+                    margin-left: 10px;
+                }
             }
         }
-        }
+        // card_wrap[e]
     }
-    }
+    // teacher_card_bottom[e]
+    
+}
 // 선생님 카드 리스트[e]
 
 ///////////////////////////////////////////////////////////////////////// main_version01 레슨카드
 .main_title {
-    text-align:center;
-    color:#fff;
+    text-align: center;
+    color: #fff;
+
     h1 {
-        font-size:68px;
-        margin-bottom:20px;
-        
+        font-size: 68px;
+        margin-bottom: 20px;
+
     }
+
     p {
-        font-size:24px;
-        margin-bottom:40px;
+        font-size: 24px;
+        margin-bottom: 40px;
     }
 }
+
 .main_search {
     display: flex;
     background-color: #fff;
     width: 640px;
     border-radius: 30px;
-    margin:0 auto;
+    margin: 0 auto;
+
     input {
         all: unset;
         width: 100%;
-        padding: 20px 40px;;
-        color:#000;
-        text-align:left;
-    }  
+        padding: 20px 40px;
+        ;
+        color: #000;
+        text-align: left;
+    }
+
     button {
         all: unset;
         cursor: pointer;
-        margin-right:20px;
+        margin-right: 20px;
     }
 }
+
 .lesson_title {
-    text-align:center;
-    margin-top:6rem;
-    margin-bottom:60px;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 60px;
+
     h2 {
-        font-size:32px;
-        color:$primary-color;
-        margin-bottom:20px;
+        font-size: 32px;
+        color: $primary-color;
+        margin-bottom: 20px;
     }
+
     p {
-        color:#a6a6a5;
+        color: #a6a6a5;
     }
 }
+
 .lesson_box {
-    background:#fff;
-    margin:10px;
+    background: #fff;
+    margin: 10px;
     outline: none;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+
     .lesson_box_top {
         img {
-            width:100%;
+            width: 100%;
         }
     }
+
     .lesson_box_bottom {
-        padding:25px;
+        padding: 25px;
+
         h3 {
-            font-size:20px;
-            font-weight:bold;
-            color:#333333;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333333;
+
             em {
                 &.red {
                     color: $red-color;
-                } 
+                }
+
                 &.yellow {
                     color: $primary-color;
                 }
+
                 &.green {
                     color: $green-color;
                 }
+
                 &.blue {
                     color: $blue-color;
-                } 
+                }
             }
         }
+
         p {
-            font-size:14px;
-            color:#999999;
-            margin-top:20px;
+            font-size: 14px;
+            color: #999999;
+            margin-top: 20px;
         }
     }
 }
@@ -312,49 +378,60 @@ $deep-gray-color:#444444;
 
 ///////////////////////////////////////////////////////////////////////// main_version01 선생님 카드 3개
 .tutor_card_title {
-    text-align:center;
-    margin-bottom:20px;
+    text-align: center;
+    margin-bottom: 20px;
+
     h2 {
-        font-size:38px;
-        margin-bottom:20px;
+        font-size: 38px;
+        margin-bottom: 20px;
     }
+
     p {
-        font-size:16px;
+        font-size: 16px;
     }
 }
+
 .tutor_card_list {
-    margin-top:60px;
+    margin-top: 60px;
+
     .tutor_card {
         position: relative;
-        display:inline-block;
+        display: inline-block;
+
         .tutor_text {
             position: absolute;
-            bottom:45px;
-            right:0;
-            color:#fff;
-            padding:30px 70px 30px 30px;
+            bottom: 45px;
+            right: 0;
+            color: #fff;
+            padding: 30px 70px 30px 30px;
+
             h3 {
-                font-size:26px;
-                margin-bottom:10px;
+                font-size: 26px;
+                margin-bottom: 10px;
             }
+
             p {
-                font-size:16px;
+                font-size: 16px;
             }
         }
+
         &:nth-child(1) {
             .tutor_text {
-                background:$red-color;
+                background: $red-color;
             }
         }
-         &:nth-child(2) {
-             margin:0 25px;
+
+        &:nth-child(2) {
+            margin: 0 25px;
+
             .tutor_text {
-                background:$primary-color;
+                background: $primary-color;
             }
         }
-         &:nth-child(3) {
+
+        &:nth-child(3) {
             .tutor_text {
-                background:$blue-color;
+                background: $blue-color;
             }
         }
     }
@@ -362,60 +439,73 @@ $deep-gray-color:#444444;
 
 
 //////////////////////////////////////// login_version01
-.login{
-    .wrap{
-        .login_wrap{
+.login {
+    .wrap {
+        .login_wrap {
             h3 {
-                font-size:46px;
-                font-weight:bold;
-                color:#fff;
+                font-size: 46px;
+                font-weight: bold;
+                color: #fff;
                 margin-bottom: 45px;
             }
-            ul{
-                li{
+
+            ul {
+                li {
                     margin-bottom: 45px;
-                    em{
+
+                    em {
                         color: #e6e8e7;
                         opacity: 0.8;
                     }
-                    img{
+
+                    img {
                         margin-right: 10px;
                     }
-                    &:first-child{
+
+                    &:first-child {
                         margin-bottom: 20px;
                     }
                 }
             }
-            form{
+
+            form {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 margin-bottom: 20px;
-                input{
+
+                input {
                     width: 370px;
                     padding: 20px;
-                    &:first-child{
+
+                    &:first-child {
                         margin-bottom: 15px;
                     }
                 }
             }
-            p{
+
+            p {
                 margin-bottom: 25px;
                 color: #aaaaaa;
                 font-size: 14px;
-                a{
+
+                a {
                     color: #1e89db;
                 }
             }
-            button{
+
+            button {
                 width: 410px;
                 padding: 20px;
                 font-size: 18px;
                 border-radius: 29px;
             }
         }
+
         //login_wrap[e]
     }
+
     // wrap [e]
 }
+
 //login [e]

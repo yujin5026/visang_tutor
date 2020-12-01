@@ -69,6 +69,19 @@
             }
             // teacher_card [e]
 
+            .teacher_aboutMe{
+                padding: 0px 70px 40px 70px;
+                .tutor_title.courses_title_size{
+                    margin-bottom: 0;
+                }
+                .aboutMe_description{
+                    color: #666666;
+                    font-size: 14px;
+                    em{
+                        color: #2964ad;
+                    }
+                }
+            }
         }
         // teacher_card_wrap [e]
         
@@ -86,8 +99,6 @@
         .teacher_description{
             padding: 104px 50px;
             margin-bottom: 30px;
-            background: #fff;
-            box-shadow: 0px 4px 8px 2px #6f6f6f33;
             p:first-child{
                 margin-bottom: 30px;
             }
@@ -151,49 +162,86 @@
     // teacher_right
     .teacher_right {
         .right_card:not(:last-child) {
-            padding: 20px 0;
             margin-bottom: 30px;
         }
-    
+        // right_card
         .right_card {
             padding: 20px;
             background-color: #ffffff;
             box-shadow: 0px 4px 8px 2px #6f6f6f33;
-            text-align: center;
-            .right_card_list{
-                position: relative;
-                padding: 50px 0;
-                .card_list_item{
-                    position: relative;
-                    padding-bottom: 20px;
-                    a{
-                        color: #999999;
-                    }
-                    img{
-                        display: none;
-                    }
+            p{
+                padding-bottom: 20px;
+                border-bottom: 1px solid #eaeaea;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            // right_card_middle
+            .right_card_middle{
+                padding: 30px 0;
+                span{
+                    color: #333333;
+                    font-size: 15px;
                 }
-                .card_list_item:hover{
-                    img{
-                        display: block;
-                        position: absolute;
-                        top: 0;
-                        right: 120px;
-                    }
-                }
-                .card_list_item:hover a{
-                    color: #0d52a7;
-                    
+                strong{
+                    float: right;
+                    font-size: 22px;
                 }
             }
+            // right_card_middle[e]
+
+            // button_guide
             .button_guide{
-                width: 100%;
+                margin: 10px 0;
+                text-align: center;
                 button{
-                    padding: 20px 100px;
+                    padding: 20px 0;
+                    width: 100%;
                     font-size: 18px;
+                    font-weight: 700;
                 }
             }
+            // button_guide[e]
+
+            // right_card.card_2
+            &.card_2{
+                h4{
+                    padding-bottom: 15px;
+                    color: #999999;
+                    font-size: 13px;
+                    font-weight: 400;
+                    border-bottom: 1px solid #eaeaea;
+                }
+                .right_card_middle{
+                    position: relative;
+                    padding: 30px 0 50px 0;
+                    border-bottom: 1px solid #eaeaea;
+                    del{
+                        position: absolute;
+                        font-size: 16px;
+                        color: #8d8d8d;
+                        top: 55%;
+                        right: 0;
+                    }
+                }
+                .right_card_bottom{
+                    margin: 25px 0;
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        text-align: right;
+                    }
+                }
+                .button_guide{
+                    button{
+                        &:first-child{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            // right_card.card_2[e]
         }
+        // right_card[e]
     }
     // teacher_right [e]
 }
@@ -290,15 +338,189 @@
 
 
 
+////////선생님 코스 title, list 공통 부분
+.courses_title_size{
+    margin-bottom: 35px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+
+.courses_list_top{
+    font-size: 20px;
+    font-weight: 700;
+}
+.courses_list_bottom{
+    color: #777777;
+    font-size: 15px;
+}
 
 
 
 
+.tutor_container{
+    margin-bottom: 30px;
+    background: #fff;
+    box-shadow: 0px 4px 8px 2px #6f6f6f33;
+    &.teacher_description  {
 
+    }
 
+    // teacher_courses
+    &.teacher_courses{
+        .courses_wrap{
+            .courses_title{
+                
+            }
+            .courses_list{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                border: 1px solid black;
+                border-radius: 5px;
+                .courses_list_left{
+                    width: 65%;
+                    padding: 20px;
+                    background: #ccc;
+                }
+                .courses_list_right{
+                    width: 35%;
+                    padding: 20px;
+                    .courses_list_top{
+                        .span1{
+                            position: absolute;
+                            top: 23%;
+                            right: 25%;
+                        }
+                        .span2{
+                            position: absolute;
+                            top: 23%;
+                            right: 15%;
+                        }
+                    }
+                    .courses_list_bottom{
+                        p{
+                            margin-top: 31px;
+                            margin-right: 25px;
+                            text-align: center;
+                            font-size: 22px;
+                            font-weight: 700;
+                            color: #222222;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // teacher_courses[e]
 
+    // teacher_availability
+    &.teacher_availability{
+
+    }
+    // teacher_availability[e]
+
+    // tutor_resume
+    &.tutor_resume{
+        padding: 50px;
+
+        .resume_name{
+            width: 100%;
+            background: #ccc;
+            padding: 30px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: 500;
+            box-sizing: border-box;
+        }
+
+        // resume_education
+        .resume_education{
+            display: flex;
+            border-bottom: 1px solid black;
+            padding: 25px 0;
+            .resume_left{
+                margin-right: 70px;
+            }
+            .resume_right{
+                display: flex;
+                .resume_description{
+                    &:first-child{
+                        margin-right: 60px;
+                    }
+                }
+            }
+        }
+        // resume_education[e]
+
+        // resume_workExperience
+        .resume_workExperience{
+            display: flex;
+            border-bottom: 1px solid black;
+            padding: 25px 0;
+            margin-bottom: 40px;
+            .resume_left{
+                margin-right: 70px;
+            }
+            .resume_right{
+                display: flex;
+                .resume_description{
+                    &:first-child{
+                        margin-right: 60px;
+                    }
+                }
+            }
+        }
+        // resume_workExperience[e]
+
+        //resume_btn
+        .resume_btn{
+            text-align: center;
+            button{
+                padding: 10px 40px;
+                border: 1px solid black;
+            }
+        }
+        //resume_btn [e]
+    }
+    // tutor_resume[e]
+
+    // tutor_interview
+    &.tutor_interview{
+        padding: 50px;
+        .tutor_interview_notification{
+            .inter_notification{
+                margin-bottom: 10px;
+                p{
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 10px;
+                    width: 35px;
+                    height: 35px;
+                    color: #fff;
+                    background: blue;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 29px;
+                }
+                span{
+                    display: inline-block;
+                    width: 94%;
+                    padding: 20px;
+                    background: #ccc;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+    // tutor_interview[e]
+
+}
+
+// teacher_card_bottom
 .teacher_card_bottom{
-    margin: 0px 70px 40px 70px;
+    margin: 0px 70px;
     .teacher_bottom_description{
         display: flex;
         position: relative;
@@ -316,8 +538,9 @@
             position: absolute;
             right: 30px;
         }
-            // teacher_card_bottom [e]
-
+    }
+}
+// teacher_card_bottom [e]
 
 
 ///////////////////////////////////////////////////////////////////////// 선생님
@@ -335,3 +558,5 @@
         margin-left:30px;
     }
 }
+
+
