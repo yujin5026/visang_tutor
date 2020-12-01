@@ -14,7 +14,13 @@ $deep-gray-color:#444444;
     -moz-box-sizing: border-box;
 }
 
-
+///////////////////////////////////////////////////////////////////////// 기본 틀
+.wrap {
+    width:1280px;
+    margin:0 auto;
+    padding:6rem 0;
+    min-height: 700px;
+}
 
 // 선생님 카드 리스트
 .teacher_card_wrap {
@@ -218,57 +224,6 @@ $deep-gray-color:#444444;
     }
 // 선생님 카드 리스트[e]
 
-
-
-
-
-// 탭
-input[type="radio"] {display: none;}
-.tabs {overflow:hidden;text-align:center;}
-.tab {display:inline-block;color:#999999;text-align:center;cursor: pointer;font-size:14px;}
-.tabs > div {display:inline-block;overflow: hidden;}
-.tabs > div:nth-child(2) {margin:0 30px;}
-.panel{display:none;padding-top:20px;min-width: 280px;min-height: 160px;animation: fadein .8s;}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-      opacity:1;
-  }
-}
-#one:checked ~ .panels #one-panel,
-#two:checked ~ .panels #two-panel,
-#three:checked ~ .panels #three-panel,
-#four:checked ~ .panels #four-panel {display:block}
-#one:checked ~ .tabs #one-tab,
-#two:checked ~ .tabs #two-tab,
-#three:checked ~ .tabs #three-tab,
-#four:checked ~ .tabs #four-tab {color:#0d52a7;}
-.popup-wrap {position: relative;}
-.popup-box-styles {
-	position: absolute;
-	left: 0;
-	top: 2.5em;
-	z-index: 999999;
-	width: 300px;
-	padding: 1em;
-	text-align: left;
-	background-color: #ccc;
-	color: #000;
-}
-.popup-box-3 {
-	position: absolute;
-	right: 0;
-	top: 2em;
-	z-index: 999999;
-    padding: 1em;
-    background-color: #fff;
-    color: #000;
-    font-size: .8em;
-}
-[aria-hidden=true] {display: none;}
-
 ///////////////////////////////////////////////////////////////////////// main_version01 레슨카드
 .main_title {
     text-align:center;
@@ -410,7 +365,10 @@ input[type="radio"] {display: none;}
 .login{
     .wrap{
         .login_wrap{
-            h3{
+            h3 {
+                font-size:46px;
+                font-weight:bold;
+                color:#fff;
                 margin-bottom: 45px;
             }
             ul{

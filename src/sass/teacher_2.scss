@@ -230,3 +230,21 @@
                 }
             }
             // teacher_card_bottom [e]
+
+
+
+///////////////////////////////////////////////////////////////////////// 선생님
+#teacher {
+    display:flex;
+    width:1280px;
+    margin:0 auto;
+    min-height:1000px;
+    padding:50px 0;
+    .teacher_left {
+        min-width:920px;
+    }
+    .teacher_right {
+        width:100%;
+        margin-left:30px;
+    }
+}
