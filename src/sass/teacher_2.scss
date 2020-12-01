@@ -195,38 +195,126 @@
             }
         }
     }
-    // teacher_right //
+    // teacher_right [e]
 }
+// #teacher [e]
 
 
 
 
 
 
-            // teacher_card_bottom
-            .teacher_card_bottom{
-                .card_wrap{
-                    position: relative;
-                    width: 100%;
-                    .tutor_description{
-                        padding-left: 60px;
-                        .tutor_price{
-                            span{
-                                color: #1b4c88;
-                                em{
-                                    vertical-align: middle;
-                                }
-                            }
-                        }
-                    }
-                    .lesson_like_btn{
-                        button{
-                            position: absolute;
-                            top: 18px;
-                            right: 60px;
-                            border: none;
-                        }
-                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.teacher_card_bottom{
+    margin: 0px 70px 40px 70px;
+    .teacher_bottom_description{
+        display: flex;
+        position: relative;
+        background: #efefef;
+        padding: 15px 40px;
+        .bottom_left{
+            display: flex;
+            .bottom_left{
+                &:not(:last-child){
+                    margin-right: 70px;
                 }
             }
-            // teacher_card_bottom [e]
+        }
+        .bottom_right{
+            position: absolute;
+            right: 30px;
+        }
+    }
+}
