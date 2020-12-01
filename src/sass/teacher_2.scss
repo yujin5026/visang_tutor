@@ -69,33 +69,6 @@
             }
             // teacher_card [e]
 
-            // teacher_card_bottom
-            .teacher_card_bottom{
-                .card_wrap{
-                    position: relative;
-                    width: 100%;
-                    .tutor_description{
-                        padding-left: 60px;
-                        .tutor_price{
-                            span{
-                                color: #1b4c88;
-                                em{
-                                    vertical-align: middle;
-                                }
-                            }
-                        }
-                    }
-                    .lesson_like_btn{
-                        button{
-                            position: absolute;
-                            top: 18px;
-                            right: 60px;
-                            border: none;
-                        }
-                    }
-                }
-            }
-            // teacher_card_bottom [e]
         }
         // teacher_card_wrap [e]
         
@@ -228,3 +201,32 @@
 
 
 
+
+
+            // teacher_card_bottom
+            .teacher_card_bottom{
+                .card_wrap{
+                    position: relative;
+                    width: 100%;
+                    .tutor_description{
+                        padding-left: 60px;
+                        .tutor_price{
+                            span{
+                                color: #1b4c88;
+                                em{
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                    .lesson_like_btn{
+                        button{
+                            position: absolute;
+                            top: 18px;
+                            right: 60px;
+                            border: none;
+                        }
+                    }
+                }
+            }
+            // teacher_card_bottom [e]
