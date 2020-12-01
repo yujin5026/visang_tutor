@@ -363,16 +363,16 @@
     margin-bottom: 30px;
     background: #fff;
     box-shadow: 0px 4px 8px 2px #6f6f6f33;
-    &.teacher_description  {
+    // &.teacher_description  {
 
-    }
+    // }
 
     // teacher_courses
     &.teacher_courses{
         .courses_wrap{
-            .courses_title{
+            // .courses_title{
                 
-            }
+            // }
             .courses_list{
                 display: flex;
                 justify-content: space-between;
@@ -416,9 +416,9 @@
     // teacher_courses[e]
 
     // teacher_availability
-    &.teacher_availability{
+    // &.teacher_availability{
 
-    }
+    // }
     // teacher_availability[e]
 
     // tutor_resume
