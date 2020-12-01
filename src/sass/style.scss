@@ -509,3 +509,103 @@ $deep-gray-color:#444444;
 }
 
 //login [e]
+
+.popup-box-styles {
+    .filter_title {
+        margin-bottom:10px;
+        h3 {
+            display:inline-block;
+            font-size:16px;
+        }
+        p {
+            float:right;
+            font-size:13px;
+            color:#bbbbbb;
+            margin-top:6px;
+            span {
+                color:#999999;
+            }
+        }
+        img {
+            margin-left:5px;
+            cursor: pointer;
+            vertical-align: top;
+        }
+    }
+    .filter {
+        //purpose box
+        .filter_box {
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            width:120px;
+            margin:10px;
+            border: 1px solid #999999;
+            cursor: pointer;
+            img {
+                margin-bottom:10px;
+            }
+            p {
+                font-size:14px;
+            }
+            &.selected {
+                font-weight:bold;
+                color:$blue-color;
+                border:1px solid $blue-color;
+            }
+        }
+        .days {
+            width:100%;
+            ul {
+                li {
+                    width:9%;
+                    text-align:center;
+                    padding:10px 20px;
+                    border:1px solid #ddd;
+                    float:left;
+                }
+            }
+        }
+    }
+}
+
+
+
+// filter Search
+.search {
+	width: 30px;
+    margin: 0 auto;
+    float:right;
+	position: relative;
+	overflow: hidden;
+    transition: all .5s ease;
+    &.open {
+        width: 420px;
+        background:#fff;
+        .search-icon {
+            margin: 0;
+            border-radius: 60px;
+        }
+    }
+    .search-box {
+        box-shadow: none;
+        border: none;
+        background: transparent;
+        font-size: 40px;
+        &:focus {
+            outline:none;
+        }
+    }
+    .search-button {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: all .5s ease;
+        .search-icon {
+            transition: all .5s ease;
+        }
+    }
+}
