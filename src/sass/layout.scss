@@ -505,6 +505,10 @@ $deep-gray-color:#444444;
     background-size: 100%;
     background-position: center;
     .wrap {
+        width:1280px;
+        margin:0 auto;
+        padding:6rem 0;
+        min-height: 800px;
         .login_wrap {
             width: 600px;
             margin:0 auto;
