@@ -170,14 +170,14 @@
             background-color: #ffffff;
             box-shadow: 0px 4px 8px 2px #6f6f6f33;
             p{
-                padding-bottom: 20px;
-                border-bottom: 1px solid #eaeaea;
                 font-size: 20px;
                 font-weight: 700;
             }
             // right_card_middle
             .right_card_middle{
                 padding: 30px 0;
+                border-top: 1px solid #ddd;
+                margin-top: 20px;
                 span{
                     color: #333333;
                     font-size: 15px;
@@ -205,16 +205,14 @@
             // right_card.card_2
             &.card_2{
                 h4{
-                    padding-bottom: 15px;
+                    margin-top: 10px;
                     color: #999999;
                     font-size: 13px;
                     font-weight: 400;
-                    border-bottom: 1px solid #eaeaea;
                 }
                 .right_card_middle{
                     position: relative;
                     padding: 30px 0 50px 0;
-                    border-bottom: 1px solid #eaeaea;
                     del{
                         position: absolute;
                         font-size: 16px;
@@ -226,6 +224,7 @@
                 .right_card_bottom{
                     margin: 25px 0;
                     p{
+                        color: #333333;
                         font-size: 16px;
                         font-weight: 400;
                         text-align: right;
@@ -240,6 +239,41 @@
                 }
             }
             // right_card.card_2[e]
+            &.card_2:last-child{
+                .button_guide{
+                    .inquiry_comment{
+                        margin-bottom: 10px;
+                        padding: 10px;
+                        width: 100%;
+                        border: 1px solid #eaeaea;
+                        box-sizing: border-box;
+                        p{
+                            overflow-x: hidden;
+                            overflow-y: auto;
+                            overflow: scroll;
+                            height: 250px;
+                            font-size: 16px;
+                            color: #999999;
+                            text-align: left;
+                        }
+                    }
+                    .inquiry_btn_items{
+                        display: flex;
+                        button{
+                            margin-right: 10px;
+                            margin-bottom: 0;
+                            width: 70%;
+                            &:first-child{
+                                color: #666666;
+                            }
+                            &:last-child{
+                                margin-right: 0;
+                                color: #d1452e;
+                            }
+                        }
+                    }
+                }
+            }
         }
         // right_card[e]
     }
