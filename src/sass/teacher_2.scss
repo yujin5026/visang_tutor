@@ -19,7 +19,7 @@
             }
         }
         img{
-            margin-top: 13px;
+            margin-top: 13px;  
             padding-right: 5px;
             width: 12px;
             height: 14px;
@@ -289,95 +289,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ////////선생님 코스 title, list 공통 부분
 .courses_title_size{
     margin-bottom: 35px;
@@ -399,13 +310,10 @@
 
 
 
+
 .tutor_container{
     margin-bottom: 30px;
-    background: #fff;
     box-shadow: 0px 4px 8px 2px #6f6f6f33;
-    // &.teacher_description  {
-
-    // }
 
     // teacher_courses
     &.teacher_courses{
@@ -557,11 +465,6 @@
     }
     // tutor_interview[e]
 
-
-    //////////////////////////////////// FindTutor_list_all
-    
-
-
 }
 
 // teacher_card_bottom
@@ -590,6 +493,12 @@
 
 
 ///////////////////////////////////////////////////////////////////////// 선생님
+
+// tutor_title guide
+
+// tutor_title guide[e]
+
+
 #teacher {
     display:flex;
     width:1280px;
@@ -598,6 +507,16 @@
     padding:50px 0;
     .teacher_left {
         min-width:920px;
+        .tutor_container{
+            padding: 60px;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 8px 2px #6f6f6f33;
+            &.teacher_card{
+                display: flex;
+                padding: 40px 70px;
+                overflow: hidden;
+            }
+        }
     }
     .teacher_right {
         width:100%;
