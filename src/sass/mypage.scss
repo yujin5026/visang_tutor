@@ -1,0 +1,124 @@
+.panels{
+    .panel{
+        // card_box
+        .card_box{
+            display: flex;
+            border: 1px solid #eaeaea;
+            border-radius: 6px;
+            padding: 50px;
+            // teacher_card_left
+            .teacher_card_left{
+                margin-right: 40px;
+                .teacher{
+                    .teacher_circle{
+                        position: relative;
+                        width: 110px;
+                        height: 110px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        border: 2px solid #0e52a5;
+                        padding: 10px;
+                        img{
+                            position: absolute;
+                            top: 0;
+                            left: -12px;
+                            margin-left: -50%;
+                        }
+                    }
+                }
+            }
+            // teacher_card_left[e]
+            
+            // teacher_card_right
+            .teacher_card_right{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .card_left{
+                    .left_top{
+                        h1{
+                            font-size: 28px;
+                        }
+                    }
+                    .left_middle{
+                        display: flex;
+                        h3{
+                            color: #666666;
+                            font-size: 18px;
+                            margin-right: 10px;
+                        }
+                        img{
+                            margin-right: 10px;
+                            height: 25px;
+                        }
+                    }
+                    .left_bottom{
+                        display: flex;
+                        .bottom_left{
+                            margin-right: 20px;
+                            p{
+                                strong{
+                                    font-size: 28px;
+                                    color: #0d52a7;
+                                    margin-right: 10px;
+                                }
+                            }
+                            h6{
+                                font-size: 13px;
+                                color: #999999;
+                            }
+                        }
+                        .bottom_middle{
+                            padding-top: 10px;
+                            margin-right: 20px;
+                            .img_box{
+                                text-align: center;
+                                img{
+                                    height: 30px;
+                                }
+                            }
+                        }
+
+                        .bottom_right{
+                            padding-top: 10px;
+                            margin-right: 20px;
+                            .img_box{
+                                text-align: center;
+                                img{
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                    // left_bottom
+                }
+
+                .card_right{
+                    text-align: right;
+                    .right_top{
+                        margin-bottom: 30px;
+                        img:nth-child(1){margin-right: 10px;}
+                    }
+                    .right_middle{
+                        margin-bottom: 10px;
+                        span{
+                            font-size: 14px;
+                            color: #1b4c88;
+                        }
+                    }
+                    .right_bottom{
+                        button{
+                            padding: 15px 40px;
+                            background: #1b4c88;
+                            font-size: 16px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            // teacher_card_right[e]
+        }
+        // card_box[e]
+    }
+}
