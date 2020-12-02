@@ -651,7 +651,6 @@ $deep-gray-color:#444444;
                 color:#000;
                 display:block;
                 padding:20px 0;
-                background:url("../images/lnb_plus.png") no-repeat right center;
                 &.active {
                     color:#b14248;
                 }
@@ -677,7 +676,7 @@ $deep-gray-color:#444444;
                 > a {
                     color:#b14248;
                     font-weight:bold;
-                    border:none;background:url("../images/lnb_minus.png") no-repeat right center;
+                    border:none;background:url("../images/lnb_plus.png") no-repeat right center;
                 }
             }
         }

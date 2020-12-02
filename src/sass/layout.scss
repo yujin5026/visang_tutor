@@ -509,4 +509,11 @@ $deep-gray-color:#444444;
 .mypage {
     width: calc(100% - 290px);
     margin-left: 70px;
+    > h3 {
+        font-size:26px;
+        font-weight:bold;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 5px solid #eaeaea;
+    }
 }
