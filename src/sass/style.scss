@@ -20,6 +20,10 @@ $deep-gray-color:#444444;
     margin: 0 auto;
     padding: 6rem 0;
     min-height: 700px;
+    overflow:hidden;
+}
+.wrap.flex {
+    display:flex;
 }
 
 // 선생님 카드 리스트
@@ -606,6 +610,76 @@ $deep-gray-color:#444444;
         transition: all .5s ease;
         .search-icon {
             transition: all .5s ease;
+        }
+    }
+}
+
+
+
+
+/* lnb */
+.lnb {
+    width:220px;
+    display:inline-block;
+    h3 {
+        position: relative;
+        font-size:26px;
+        font-weight:bold;
+        color:#b14248;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 5px solid;
+        border-image: linear-gradient(to right, #b14248 0%, #bd6d33 100%);
+        border-image-slice: 1;
+        &::after {
+            content:'';
+            position: absolute;
+            top: 15px;
+            right: 0;
+            width: 10px;
+            border-radius: 50%;
+            height: 10px;
+            background: #bd6d33;
+        }
+    }
+    .lnb-menu {
+        > li {
+            width:100%;
+            border-bottom:1px solid #eaebec;
+            > a {
+                font-size:15px;
+                color:#000;
+                display:block;
+                padding:20px 0;
+                background:url("../images/lnb_plus.png") no-repeat right center;
+                &.active {
+                    color:#b14248;
+                }
+            }
+            .lnb-depth03 {
+                display:none;
+                padding:10px;
+                li {
+                    margin-bottom:15px;
+                    a {
+                        display:block;
+                        position:relative;
+                        padding:0 25px;
+                        font-size:13px;
+                        color:#666666;
+                        &.active, &:hover {
+                            color:#b14248;
+                        }
+                    }
+                }
+            }
+            &.active {
+                > a {
+                    color:#b14248;
+                    font-weight:bold;
+                    border:none;background:url("../images/lnb_minus.png") no-repeat right center;
+                }
+            }
         }
     }
 }

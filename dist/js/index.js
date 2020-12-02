@@ -62,3 +62,44 @@ $(".filter_box").on("click", function (e) {
 $('.search-button').click(function () {
     $(this).parent().toggleClass('open');
 });
+
+
+
+// LNB
+$(document).ready(function () {
+    App.LnbSlide.init();
+
+});
+
+var App = new Object();
+App.LnbSlide = function () {
+    var self;
+    var $lnbDep02;
+    return {
+        init: function () {
+            self = this;
+            $lnbDep02 = $(".lnb-menu > li > a");
+
+            $(".lnb-menu > li.active").find(".lnb-depth03").show();
+
+            $lnbDep02.click(self.onClick);
+
+        },
+        onClick: function () {
+            if ($(this).attr("href") == "#none") {
+                if ($(this).parents("li").find(".lnb-depth03").is(":visible")) {
+                    $(this).parents("li").find(".lnb-depth03").slideUp();
+                    $(this).parent("li").removeClass("active");
+                    $(this).removeClass("active");
+                } else if ($(this).parents("li").find(".lnb-depth03").is(":hidden")) {
+                    $(this).parents("li").find(".lnb-depth03").slideDown();
+                    $(this).parent("li").addClass("active");
+                    $(this).addClass("active");
+                }
+
+
+                return false;
+            }
+        }
+    }
+}();
