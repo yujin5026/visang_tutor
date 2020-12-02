@@ -509,4 +509,37 @@ $deep-gray-color:#444444;
 .mypage {
     width: calc(100% - 290px);
     margin-left: 70px;
+    > h3 {
+        font-size:26px;
+        font-weight:bold;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        border-bottom: 5px solid #eaeaea;
+    }
+    > h4 {
+        font-size:24px;
+        font-weight:bold;
+        color:#333333;
+        margin-bottom:20px;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////// 목차
+.cate {
+    text-align:right;
+    color:#999999;
+    font-size:12px;
+     width: 1280px;
+    margin: 0 auto;
+    padding-top:20px;
+    a {
+        margin:0 5px;
+        color:#999999;
+        &:last-child {
+            color:#000;
+        }
+    }
+    span {
+        margin:0 5px;
+    }
 }
