@@ -555,6 +555,12 @@ $deep-gray-color:#444444;
 }
 
 .my_lesson_box {
+    .lesson_box_container {
+        border: 1px solid #eaeaea;
+        border-radius: 6px;
+        margin-bottom: 15px
+    }
+
     .my_lesson_title {
         margin-top:50px;
         h3 {
@@ -582,9 +588,6 @@ $deep-gray-color:#444444;
     }
     .my_lesson_contents {
         display: flex;
-        border: 1px solid #eaeaea;
-        border-radius: 6px;
-        margin-bottom: 15px;
         &.normal {
             padding:35px 50px;
         }
