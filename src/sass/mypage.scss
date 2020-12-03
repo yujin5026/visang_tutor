@@ -1,5 +1,5 @@
 
-        .lesson_box{
+        .my_lesson_box{
             display: flex;
             border: 1px solid #eaeaea;
             border-radius: 6px;
@@ -8,10 +8,18 @@
             .lesson_card_img{
                 margin-right: 30px;
                 margin-top: 20px;
+                position: relative;
                 img{
                     width: 100px;
                     height: 100px;
                     border-radius: 50%;
+                    &:last-child{
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 30px;
+                        height: 30px;
+                    }
                 }
             }
 
@@ -30,47 +38,9 @@
                         font-size: 18px;
                         font-weight: 400;
                     }
-                    .main_left_bottom{
-                        display: flex;
-                        .main_bottom_left{
-                            margin-right: 35px;
-                            strong{
-                                margin-right: 10px;
-                                color: #0d52a7;
-                                font-size: 26px;
-                            }
-                            span{
-                                color: #333333;
-                                font-size: 14px;
-                                font-weight: 500;
-                            }
-                            p{
-                                color: #999999;
-                                font-size: 13px;
-                            }
-                        }
-                        .main_bottom_middle{
-                            margin-right: 20px;
-                            padding: 0 20px;
-                            text-align: center;
-                            border-right: 1px solid #e3e3e3;
-                            border-left: 1px solid #e3e3e3;
-                            img{margin-top: 5px;}
-                            p{
-                                margin-top: 8px;
-                                color: #bbbbbb;
-                                font-size: 13px;
-                            }
-                        }
-                        .main_bottom_right{
-                            margin-right: 20px;
-                            text-align: center;
-                            p{
-                                margin-top: 12px;
-                                color: #0d52a7;
-                                font-size: 13px;
-                            }
-                        }
+                    p{
+                        color: #999999;
+                        font-size: 14px;
                     }
                 }
 
@@ -90,11 +60,12 @@
                         }
                     }
                     button{
-                        margin-top: 10px;
+                        margin-top: 50px;
                         padding: 15px 40px;
                         color: #fff;
                         font-size: 16px;
-                        background: #1b4c88;
+                        font-weight: 700;
+                        background: #444444;
                         border: none;
                     }
                 }
