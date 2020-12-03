@@ -787,5 +787,105 @@ input[type="radio"] {display:none;}
 
 
 
-
-
+///////////////////////////////////////////////////////////////////////// KETA_MY_003
+.my_lesson_contents {
+    .lesson_profile_img{
+        margin-right: 30px;
+    }   
+    .lesson_profile_main{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .lesson_profile_left{
+            .lesson_profile_title {
+                margin-bottom: 25px;
+                h1{
+                    font-size: 24px;
+                }
+                h3{
+                    color: #666666;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                a {
+                    font-size:14px;
+                    color:#0d52a7;
+                }
+            }
+            .lesson_profile_bottom{
+                display: flex;
+                div {
+                    text-align:center;
+                    margin-right:20px;
+                    padding-right:20px;
+                    border-right: 1px solid #e3e3e3;
+                    &.profile_bottom_left {
+                        text-align:left;
+                        padding-left:0;
+                    }
+                    &:last-child {
+                        margin-right:0;
+                        border-right:none;
+                    }
+                }
+                .profile_bottom_left{
+                    strong{
+                        margin-right: 10px;
+                        color: #0d52a7;
+                        font-size: 24px;
+                    }
+                    span{
+                        color: #333333;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    p{
+                        color: #999999;
+                        font-size: 14px;
+                    }
+                }
+                .profile_bottom_middle{
+                    img{
+                        margin-top: 5px;
+                    }
+                    p{
+                        margin-top: 8px;
+                        color: #bbbbbb;
+                        font-size: 13px;
+                    }
+                }
+                .profile_bottom_right{
+                    p{
+                        margin-top: 12px;
+                        color: #0d52a7;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .lesson_profile_right{
+            text-align: right;
+            .profile_right_img{
+                button {
+                    border:none;
+                }
+            }
+            p{
+                margin-top: 20px;
+                color: #1b4c88;
+                img{
+                    margin-right: 10px;
+                    margin-bottom: 4px;
+                }
+            }
+            > button{
+                margin-top: 10px;
+                padding: 15px 40px;
+                color: #fff;
+                font-size: 16px;
+                background: #1b4c88;
+                border: none;
+            }
+        }
+    }
+}

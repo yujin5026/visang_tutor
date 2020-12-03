@@ -518,6 +518,46 @@ $deep-gray-color:#444444;
     }
 }
 
+.lesson_detail_wrap {
+    h3 {
+        font-size:24px;
+        font-weight:bold;
+        color:#333333;
+        margin:50px 0 20px 0;
+    }
+}
+.my_lesson_box {
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    .my_lesson_contents {
+        display: flex;
+        padding: 35px 50px;
+    }
+    .my_lesson_sub {
+        padding: 20px 50px;
+        &.profile {
+            background:#f9fafe;
+        }
+        &.comment {
+            background:#fafafa;
+        }
+    }
+    &:last-child {
+        margin-bottom:0;
+    }
+}
+.lesson_bottom_btn {
+    text-align:center;
+    margin-top:40px;
+    > button {
+        width:210px;
+        &:first-child {
+            margin-right:10px;
+        }
+    }
+}
+
 ///////////////////////////////////////////////////////////////////////// 목차
 .cate {
     text-align:right;
