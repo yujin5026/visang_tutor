@@ -1,0 +1,134 @@
+.my_lesson_contents{
+
+    &.padding30{
+        // gray
+        &.gray{
+            // contents_category_box
+            .contents_category_box{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                div{
+                    text-align: center;
+                    &:nth-child(2){
+                        padding: 0 70px;
+                        border-right: 1px solid black;
+                        border-left: 1px solid black;
+                    }
+                    &:nth-child(3){
+                        padding-right: 70px;
+                        border-right: 1px solid black;
+                    }
+                }
+                .contents_category{
+                    h3{
+                        margin-bottom: 10px;
+                        color: #333333;
+                        font-size: 18px;
+                    }
+                    p{
+                        margin-bottom: 10px;
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                    strong{
+                        em{
+                            color: #b94a38;
+                        }
+                    }
+                    h4{
+                        color: #666666;
+                        strong{
+                            color: #333333;
+                            font-size: 22px;
+                        }
+                        em{
+                            padding: 0 5px;
+                            color: #333333;
+                            font-weight: 400;
+                            &:not(:first-child){
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+            // contents_category_box[e]
+        }
+        // gray[e]
+
+        .my_qanda_box{
+            width: 100%;
+            .qanda_top{
+                margin-bottom: 15px;
+                padding: 10px;
+                background: #f9fafe;
+                text-align: center;
+                span{
+                    &:first-child{
+                        margin-right: 30px;
+                        strong{
+                            color:#b94a38;
+                        }
+                    }
+                    em{
+                        padding: 0 10px;
+                        color: #666666;
+                    }
+                    strong{
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .qanda_bottom{
+                .qanda_line{
+                    &:nth-child(1){
+                        margin-bottom: 15px;
+                    }
+                    h4{
+                        margin-top: 5px;
+                        color: #0d52a7;
+                        font-size: 14px;
+                    }
+                    h5{
+                        margin-top: 10px;
+                        color: #666666;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .today_lesson_box{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            .today_content{
+                h1{
+                    margin-bottom: 15px;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+                h2{
+                    margin-bottom: 5px;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                h3{
+                    margin-bottom: 20px;
+                    color: #666666;
+                    font-size: 14px;
+                }
+                h4{
+                    margin-bottom: 20px;
+                }
+                button{
+                    width: 260px;
+                    border-radius: 0;
+                }
+            }
+        }
+
+    }
+}
