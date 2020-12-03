@@ -509,30 +509,92 @@ $deep-gray-color:#444444;
 .mypage {
     width: calc(100% - 290px);
     margin-left: 70px;
-    > h3 {
-        font-size:26px;
-        font-weight:bold;
+    .mypage_title {
         margin-bottom: 50px;
         padding-bottom: 20px;
         border-bottom: 5px solid #eaeaea;
+        > h3 {
+            display:inline-block;
+            font-size:26px;
+            font-weight:bold;
+        }
+        .mypage_title_date {
+            margin-top:10px;
+            float:right;
+            span {
+                font-size:12px;
+                color:#999999;
+                margin-right:5px;
+            }
+        }
+    }
+    
+}
+
+///////////////////////////////////////////////////////////////////////// 대쉬보드
+.dashboard_title {
+    padding-bottom:20px;
+    border-bottom:1px solid #ddd;
+    .dashboard_left {
+        display: inline-block;
+        strong {
+            font-size:24px;
+            font-weight:normal;
+            color:#333333;
+        }
+        span {
+            font-size:18px;
+            color:#333333;
+            margin-left:10px;
+        }
+    }
+    .dashboard_right {
+        float:right;
+        margin-top:10px;
     }
 }
 
-.lesson_detail_wrap {
-    h3 {
-        font-size:24px;
-        font-weight:bold;
-        color:#333333;
-        margin:50px 0 20px 0;
-    }
-}
 .my_lesson_box {
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    margin-bottom: 15px;
+    .my_lesson_title {
+        margin-top:50px;
+        h3 {
+            display:inline-block;
+            font-size:24px;
+            font-weight:bold;
+            color:#333333;
+            margin-bottom:20px;
+        }
+        h2 {
+            display:inline-block;
+            font-size:32px;
+            font-weight:bold;
+            color:#222222;
+            margin-bottom:20px;
+        }
+        .see_all {
+            margin-top:10px;
+            float:right;
+            a {
+                font-size:14px;
+                color:#777777;
+            }
+        }
+    }
     .my_lesson_contents {
         display: flex;
-        padding: 35px 50px;
+        border: 1px solid #eaeaea;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        &.normal {
+            padding:35px 50px;
+        }
+        &.padding30 {
+            padding:30px;
+        }
+        &.gray {
+            background:#fafafa;
+            border:1px solid #fafafa;
+        }
     }
     .my_lesson_sub {
         padding: 20px 50px;
@@ -554,6 +616,17 @@ $deep-gray-color:#444444;
         width:210px;
         &:first-child {
             margin-right:10px;
+        }
+    }
+}
+
+.lesson_box_two {
+    display:flex;
+    .my_lesson_box {
+        width:100%;
+        box-sizing: border-box;
+        &:first-child {
+            margin-right:20px;
         }
     }
 }

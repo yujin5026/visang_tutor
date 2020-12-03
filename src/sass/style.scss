@@ -791,6 +791,9 @@ input[type="radio"] {display:none;}
 .my_lesson_contents {
     .lesson_profile_img{
         margin-right: 30px;
+        &.round {
+            border-radius: 50%;
+        }
     }   
     .lesson_profile_main{
         display: flex;
