@@ -131,16 +131,10 @@ $deep-gray-color:#444444;
 }
 
 ///////////////////////////////////////////////////////////////////////// main_version01
-#main_wrap {
+#teacher_search {
     background:url('../images/visual.png') no-repeat;
     background-size: 100%;
-    height: 85vh;
-}
-#main_wrap02 {
-    background:url('../images/visual02.png') no-repeat;
-    #wrap {
-        padding-top:11rem;
-    }
+    min-height: 85vh;
 }
 
 ///////////////////////////////////////////////////////////////////////// main_version02

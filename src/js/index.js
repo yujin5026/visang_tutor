@@ -103,3 +103,53 @@ App.LnbSlide = function () {
         }
     }
 }();
+
+
+// KETA_SE_011 Tabs
+var selector_tabs = $('.selector_tabs');
+var selector = $('.selector_tabs').find('li').length;
+var activeItem = selector_tabs.find('.active');
+var activeWidth = activeItem.innerWidth();
+$(".selector").css({
+    "left": activeItem.position.left + "px",
+    "width": activeWidth + "px"
+});
+
+$(".selector_tabs").on("click", "li", function (e) {
+    e.preventDefault();
+    $('.selector_tabs li').removeClass("active");
+    $(this).addClass('active');
+    var activeWidth = $(this).innerWidth();
+    var itemPos = $(this).position();
+    $(".selector").css({
+        "left": itemPos.left + "px",
+        "width": activeWidth + "px"
+    });
+});
+
+$(".tab_content").hide();
+$(".tab_content:first").show();
+
+$("ul.selector_tabs li").click(function () {
+    $(".tab_content").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+
+    $("ul.selector_tabs li").removeClass("active");
+    $(this).addClass("active");
+
+    $(".tab_drawer_heading").removeClass("d_active");
+    $(".tab_drawer_heading[rel^='" + activeTab + "']").addClass("d_active");
+});
+
+$(".tab_drawer_heading").click(function () {
+    $(".tab_content").hide();
+    var d_activeTab = $(this).attr("rel");
+    $("#" + d_activeTab).fadeIn();
+    $(".tab_drawer_heading").removeClass("d_active");
+    $(this).addClass("d_active");
+    $("ul.selector_tabs li").removeClass("active");
+    $("ul.selector_tabs li[rel^='" + d_activeTab + "']").addClass("active");
+});
+
+$('ul.selector_tabs li').last().addClass("tab_last");

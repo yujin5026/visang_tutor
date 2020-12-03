@@ -331,7 +331,7 @@ $deep-gray-color:#444444;
 
 
 ///////////////////////////////////////////////////////////////////////// main_version01 레슨카드
-.main_title {
+.teacher_search {
     text-align: center;
     color: #fff;
 
@@ -370,14 +370,14 @@ $deep-gray-color:#444444;
     }
 }
 
-.lesson_title {
+.teacher_search_title {
     text-align: center;
     margin-top: 6rem;
     margin-bottom: 60px;
 
     h2 {
         font-size: 32px;
-        color: $primary-color;
+        color: #fff;
         margin-bottom: 20px;
     }
 
@@ -386,7 +386,7 @@ $deep-gray-color:#444444;
     }
 }
 
-.lesson_box {
+.teacher_search_box {
     background: #fff;
     margin: 10px;
     outline: none;
@@ -433,67 +433,6 @@ $deep-gray-color:#444444;
     }
 }
 
-
-///////////////////////////////////////////////////////////////////////// main_version01 선생님 카드 3개
-.tutor_card_title {
-    text-align: center;
-    margin-bottom: 20px;
-
-    h2 {
-        font-size: 38px;
-        margin-bottom: 20px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-}
-
-.tutor_card_list {
-    margin-top: 60px;
-
-    .tutor_card {
-        position: relative;
-        display: inline-block;
-
-        .tutor_text {
-            position: absolute;
-            bottom: 45px;
-            right: 0;
-            color: #fff;
-            padding: 30px 70px 30px 30px;
-
-            h3 {
-                font-size: 26px;
-                margin-bottom: 10px;
-            }
-
-            p {
-                font-size: 16px;
-            }
-        }
-
-        &:nth-child(1) {
-            .tutor_text {
-                background: $red-color;
-            }
-        }
-
-        &:nth-child(2) {
-            margin: 0 25px;
-
-            .tutor_text {
-                background: $primary-color;
-            }
-        }
-
-        &:nth-child(3) {
-            .tutor_text {
-                background: $blue-color;
-            }
-        }
-    }
-}
 
 
 //////////////////////////////////////// login_version01
@@ -892,3 +831,49 @@ input[type="radio"] {display:none;}
         }
     }
 }
+
+
+
+
+/*------------ tab ------------*/
+
+.wrapper{
+    text-align:center;
+    margin:50px auto;
+    .selector_tabs{
+        background:#fff;
+        box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+        display:inline-block;
+        border-radius:50px;
+        position:relative;
+        li{
+            cursor: pointer;
+            text-transform:uppercase;
+            padding:10px 20px;
+            display:inline-block;
+            position:relative;
+            z-index:1;
+            transition-duration:0.6s;
+            &.active {
+                color:#fff;
+            }
+        }
+        .selector{
+            height:100%;
+            display:inline-block;
+            position:absolute;
+            left:0px;
+            top:0px;
+            z-index:1;
+            border-radius:50px;
+            transition-duration:0.6s;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            background: #05abe0;
+            background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+            background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+            background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+        }
+    }
+}
+
