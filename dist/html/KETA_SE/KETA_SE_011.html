@@ -61,10 +61,11 @@
 
     <!-- 컨텐츠 영역 -->
     <div id="teacher_search">
-        <div class="wrap">
 
-            <!-- section 01 -->
-            <section class="teacher_search_list">
+
+        <!-- section 01 -->
+        <section class="teacher_search_list">
+            <div class="teacher_wrap">
                 <div class="teacher_search_title">
                     <h2>
                         Looking for the lesson like...?
@@ -135,10 +136,14 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <!-- section 02 -->
-            <section class="introductory">
+        </section>
+
+
+        <!-- section 02 -->
+        <section class="introductory">
+            <div class="teacher_wrap">
                 <div class="wrapper">
                     <ul class="selector_tabs">
                         <div class="selector"></div>
@@ -147,159 +152,251 @@
                         <li rel="tab3">Price</li>
                     </ul>
                 </div>
-                    <div class="tab_container">
-                        <!-- tab 01 -->
-                        <div id="tab1" class="tab_content" rel="tab1">
-                            <section>
-                                <div class="autoplay">
-                                    <div class="introductory_box">
-                                        <div class=introductory_box_top>
-                                            <img src="../../images/level01.png" alt="" />
-                                        </div>
-                                        <div class="introductory_box_bottom">
-                                            <h3>
-                                                Essential English <br />
-                                                : Trevel Basics Practice 1 <br />
-                                                Want to sing a song
-                                            </h3>
-                                            <p>Drama @ Record of Youth</p>
-                                        </div>
+                <div class="tab_container">
+                    <!-- tab 01 -->
+                    <div id="tab1" class="tab_content" rel="tab1">
+                        <section>
+                            <div class="level_title">
+                                <div class="level_title_left">
+                                    <h3>Introductory level</h3>
+                                    <div class="see_all">
+                                        <a href="">
+                                            see all
+                                            <img src="../../images/seeall.png" alt="">
+                                        </a>
                                     </div>
-                                    <div class="introductory_box">
-                                        <div class=introductory_box_top>
-                                            <img src="../../images/level02.png" alt="" />
-                                        </div>
-                                        <div class="introductory_box_bottom">
-                                            <h3>
-                                                Want to sing a song <br />
-                                                with BTS
-                                            </h3>
-                                            <p>Food @ Bibim bap</p>
-                                        </div>
+                                </div>
+                                <select>
+                                    <option>ss</option>
+                                </select>
+                            </div>
+                            <div class="autoplay">
+                                <div class="level_box">
+                                    <div class=level_box_top>
+                                        <img src="../../images/level01.png" alt="" />
                                     </div>
-                                    <div class="introductory_box">
-                                        <div class=introductory_box_top>
-                                            <img src="../../images/level03.png" alt="" />
-                                        </div>
-                                        <div class="introductory_box_bottom">
-                                            <h3>
-                                                Want to talk <br />
-                                                with BLACK PINK
-                                            </h3>
-                                            <p>How to say? @ Travel</p>
-                                        </div>
-                                    </div>
-                                    <div class="introductory_box">
-                                        <div class=introductory_box_top>
-                                            <img src="../../images/level04.png" alt="" />
-                                        </div>
-                                        <div class="introductory_box_bottom">
-                                            <h3>
-                                                Essential English <br />
-                                                : Understand Korean culture
-                                            </h3>
-                                            <p>Travel? @ Hanok</p>
-                                        </div>
-                                    </div>
-                                    <div class="introductory_box">
-                                        <div class=introductory_box_top>
-                                            <img src="../../images/level01.png" alt="" />
-                                        </div>
-                                        <div class="introductory_box_bottom">
-                                            <h3>
-                                                Want to talk with <br />
-                                                <em class="blue">Korean culture</em>
-                                            </h3>
-                                            <p>Travel? @ Hanok</p>
+                                    <div class="level_box_bottom">
+                                        <h3>
+                                            Essential English <br />
+                                            : Trevel Basics Practice 1 <br />
+                                            Want to sing a song
+                                        </h3>
+                                        <div class="level_box_sub">
+                                            <p>Want to talk about korean food trip <br />
+                                                ㆍUnder $10 ~</p>
+                                            <button type="button">
+                                                <img src="../../images/icon_heart_on.png" alt="" />
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            </section>
-                        </div>
+                                <div class="level_box">
+                                    <div class=level_box_top>
+                                        <img src="../../images/level02.png" alt="" />
+                                    </div>
+                                    <div class="level_box_bottom">
+                                        <h3>
+                                            Want to sing a song <br />
+                                            with BTS
+                                        </h3>
+                                        <div class="level_box_sub">
+                                            <p>BuisnessㆍUnder $10 ~</p>
+                                            <button type="button">
+                                                <img src="../../images/icon_heart_off.png" alt="" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="level_box">
+                                    <div class=level_box_top>
+                                        <img src="../../images/level03.png" alt="" />
+                                    </div>
+                                    <div class="level_box_bottom">
+                                        <h3>
+                                            Want to talk <br />
+                                            with BLACK PINK
+                                        </h3>
+                                        <div class="level_box_sub">
+                                            <p>Want to talk about korea K-pop music
+                                                & K starㆍUnder $10 ~</p>
+                                            <button type="button">
+                                                <img src="../../images/icon_heart_off.png" alt="" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="level_box">
+                                    <div class=level_box_top>
+                                        <img src="../../images/level04.png" alt="" />
+                                    </div>
+                                    <div class="level_box_bottom">
+                                        <h3>
+                                            Essential English <br />
+                                            : Understand Korean culture
+                                        </h3>
+                                        <div class="level_box_sub">
+                                            <p>Essential English: Understand Korean <br />
+                                                ㆍUnder $10 ~</p>
+                                            <button type="button">
+                                                <img src="../../images/icon_heart_off.png" alt="" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="level_box">
+                                    <div class=level_box_top>
+                                        <img src="../../images/level01.png" alt="" />
+                                    </div>
+                                    <div class="level_box_bottom">
+                                        <h3>
+                                            Essential English <br />
+                                            : Trevel Basics Practice 1 <br />
+                                            Want to sing a song
+                                        </h3>
+                                        <div class="level_box_sub">
+                                            <p>Want to talk about korean food trip <br />
+                                                ㆍUnder $10 ~</p>
+                                            <button type="button">
+                                                <img src="../../images/icon_heart_on.png" alt="" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                    </div>
 
-                        <!-- tab 02 -->
-                        <div id="tab2" class="tab_content" rel="tab2">
-                            <h2>Tab 2 content</h2>
-                            <p>Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend
-                                vestibulum odio non
-                                vulputate.</p>
-                        </div>
-                        <!-- tab 03 -->
-                        <div id="tab3" class="tab_content" rel="tab3">
-                            <h2>Tab 3 content</h2>
-                            <p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit.
-                                Pellentesque sem lorem,
-                                scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
+                    <!-- tab 02 -->
+                    <div id="tab2" class="tab_content" rel="tab2">
+                        <h2>Tab 2 content</h2>
+                        <p>Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend
+                            vestibulum odio non
+                            vulputate.</p>
+                    </div>
+                    <!-- tab 03 -->
+                    <div id="tab3" class="tab_content" rel="tab3">
+                        <h2>Tab 3 content</h2>
+                        <p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit.
+                            Pellentesque sem lorem,
+                            scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- section 03 -->
+        <section class="beginner">
+            <div class="teacher_wrap">
+                <div class="level_title">
+                    <div class="level_title_left">
+                        <h3>Beginner level</h3>
+                        <div class="see_all">
+                            <a href="">
+                                see all
+                                <img src="../../images/seeall.png" alt="">
+                            </a>
                         </div>
                     </div>
-            </section>
-
-            <!-- section 03 -->
-            <section>
+                    <select>
+                        <option>ss</option>
+                    </select>
+                </div>
                 <div class="autoplay">
-                    <div class="teacher_search_box">
-                        <div class=lesson_box_top>
-                            <img src="../../images/thum_bogum.png" alt="" />
+                    <div class="level_box">
+                        <div class=level_box_top>
+                            <img src="../../images/beginner01.png" alt="" />
                         </div>
-                        <div class="lesson_box_bottom">
+                        <div class="level_box_bottom">
                             <h3>
                                 Want to talk with <br />
-                                <em class="red">bogum</em>
+                                bogum
                             </h3>
-                            <p>Drama @ Record of Youth</p>
+                            <div class="level_box_sub">
+                                <p>Want to talk about korean food trip <br />
+                                    ㆍUnder $10 ~</p>
+                                <button type="button">
+                                    <img src="../../images/icon_heart_on.png" alt="" />
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="teacher_search_box">
-                        <div class=lesson_box_top>
-                            <img src="../../images/thum_food.png" alt="" />
+                    <div class="level_box">
+                        <div class=level_box_top>
+                            <img src="../../images/beginner02.png" alt="" />
                         </div>
-                        <div class="lesson_box_bottom">
+                        <div class="level_box_bottom">
                             <h3>
-                                Want to talk<br />about
-                                <em class="yellow">Korean food</em>
+                                Want to talk <br />
+                                about korean food with <br />
+                                korea K-pop star
                             </h3>
-                            <p>Food @ Bibim bap</p>
+                            <div class="level_box_sub">
+                                <p>BuisnessㆍUnder $10 ~</p>
+                                <button type="button">
+                                    <img src="../../images/icon_heart_off.png" alt="" />
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="teacher_search_box">
-                        <div class=lesson_box_top>
-                            <img src="../../images/thum_expression.png" alt="" />
+                    <div class="level_box">
+                        <div class=level_box_top>
+                            <img src="../../images/beginner03.png" alt="" />
                         </div>
-                        <div class="lesson_box_bottom">
+                        <div class="level_box_bottom">
                             <h3>
-                                Want to know useful <br />
-                                <em class="green">Expression</em>
+                                Lessons for career <br />
+                                advancement in korean
                             </h3>
-                            <p>How to say? @ Travel</p>
+                            <div class="level_box_sub">
+                                <p>Want to talk about korea K-pop music
+                                    & K starㆍUnder $10 ~</p>
+                                <button type="button">
+                                    <img src="../../images/icon_heart_off.png" alt="" />
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="teacher_search_box">
-                        <div class=lesson_box_top>
-                            <img src="../../images/thum_culture.png" alt="" />
+                    <div class="level_box">
+                        <div class=level_box_top>
+                            <img src="../../images/beginner04.png" alt="" />
                         </div>
-                        <div class="lesson_box_bottom">
+                        <div class="level_box_bottom">
                             <h3>
                                 Want to talk with <br />
-                                <em class="blue">Korean culture</em>
+                                korean culture
                             </h3>
-                            <p>Travel? @ Hanok</p>
+                            <div class="level_box_sub">
+                                <p>Essential English: Understand Korean <br />
+                                    ㆍUnder $10 ~</p>
+                                <button type="button">
+                                    <img src="../../images/icon_heart_off.png" alt="" />
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="teacher_search_box">
-                        <div class=lesson_box_top>
-                            <img src="../../images/thum_culture.png" alt="" />
+                    <div class="level_box">
+                        <div class=level_box_top>
+                            <img src="../../images/beginner01.png" alt="" />
                         </div>
-                        <div class="lesson_box_bottom">
+                        <div class="level_box_bottom">
                             <h3>
-                                Want to talk with <br />
-                                <em class="blue">Korean culture</em>
+                                Essential English <br />
+                                : Trevel Basics Practice 1 <br />
+                                Want to sing a song
                             </h3>
-                            <p>Travel? @ Hanok</p>
+                            <div class="level_box_sub">
+                                <p>Want to talk about korean food trip <br />
+                                    ㆍUnder $10 ~</p>
+                                <button type="button">
+                                    <img src="../../images/icon_heart_on.png" alt="" />
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-        </div>
+        </section>
+
     </div>
     <!-- // 컨텐츠 영역 -->
 
