@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../../css/layout.css">
+    <link type="text/css" rel="stylesheet" href="../../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../../css/popup.css">
+    <style>
+        .guide {
+            width: 1280px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <include src="../include/header01.html"></include>
+    <include src="../include/box_component_wrap.html"></include>
+
+    <!-- 컨텐츠 영역(new) -->
+
+    <div class="wrap">
+        <button type="button" class="btn-navy btn-large" onclick="modalView('pop-alert')"><span>+</span>추가</button>
+        <div class="modalpop">
+            <div class="popupwrap pop-alert">
+                <button type="button" class="btn-popclose" onclick="modalHide('pop-alert')" title="닫기">닫기</button>
+                <h1>메뉴추가</h1>
+                <div class="popcontents">
+                    <div class="table_contents">
+                        내용을 입력하세요.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 버전 1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <script src="../../js/index.js"></script>
+    <include src="../include/footer.html"></include>
+
+</body>
+
+</html>

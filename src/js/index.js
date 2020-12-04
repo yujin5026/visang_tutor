@@ -153,3 +153,38 @@ $(".tab_drawer_heading").click(function () {
 });
 
 $('ul.selector_tabs li').last().addClass("tab_last");
+
+
+
+
+
+// 모달 컨트롤
+function modalView(modalName) {
+    var modalWidth = $(".modalpop .popupwrap." + modalName).innerWidth() / 2;
+    var modalHeight = $(".modalpop .popupwrap." + modalName).innerHeight() / 2;
+    $(".transparents-layer").remove();
+    $(".popupwrap").removeClass("active").css("left", "-99999px").css("top", "-99999px").css("opacity", "0");
+    $(".modalpop").show().css({ "top": 0, "left": 0 });
+    if ($("." + modalName).outerHeight() > $(window).height() - 50) {
+        $("." + modalName + " .popcontents").css({ maxHeight: $(window).height() * 0.8, overflowY: 'auto' });
+        modalHeight = $(".modalpop .popupwrap." + modalName).height() / 2;
+    }
+
+    $("body").append("<div class='transparents-layer' style='background:#000; opacity:0.7'></div>");
+    $(".popupwrap." + modalName).addClass("active").css("top", "40%").css("left", "50%").css("margin-top", -($(".modalpop .popupwrap." + modalName).innerHeight() / 2.7) + "px").css("margin-left", -modalWidth + "px").animate({ opacity: 1 }, 500);
+
+    $(".transparents-layer").attr("onclick", "modalHide('" + modalName + "')");
+    $(".popupwrap." + modalName).addClass("active");
+
+}
+
+function modalHide(modalName) {
+    $(".popupwrap." + modalName).animate({ opacity: 0 }, 400, function () {
+        $(".popupwrap." + modalName).css("top", "-99999px").css("left", "-99999px");
+        $(".modalpop").css({ "top": "-99999px", "left": "-99999px" });
+        $(".transparents-layer").animate({ opacity: 0 }, 400, function () {
+            $(this).remove();
+        });
+        $(".popupwrap." + modalName).removeClass("active");
+    });
+}
