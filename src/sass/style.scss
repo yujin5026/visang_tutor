@@ -24,6 +24,16 @@ $deep-gray-color:#444444;
     &.padding10 {
         padding-top:1.5rem;
     }
+    &.padding0 {
+        padding:0;
+        min-height:auto;
+    }
+}
+.teacher_wrap {
+    width: 1280px;
+    margin: 0 auto;
+    overflow:hidden;
+    padding:2rem 0;
 }
 .flex {
     display:flex;
@@ -370,6 +380,18 @@ $deep-gray-color:#444444;
     }
 }
 
+
+
+///////////////////////////////////////////////////////////////////////// KETA_SE_011.html
+.teacher_search_list {
+    background:url('../images/visual.png') no-repeat;
+    background-size: 100%;
+}
+.beginner {
+    background:#fff;
+    padding-bottom: 12rem;
+}
+
 .teacher_search_title {
     text-align: center;
     margin-top: 6rem;
@@ -391,40 +413,18 @@ $deep-gray-color:#444444;
     margin: 10px;
     outline: none;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
-
     .lesson_box_top {
         img {
             width: 100%;
         }
     }
-
     .lesson_box_bottom {
         padding: 25px;
-
         h3 {
             font-size: 20px;
             font-weight: bold;
             color: #333333;
-
-            em {
-                &.red {
-                    color: $red-color;
-                }
-
-                &.yellow {
-                    color: $primary-color;
-                }
-
-                &.green {
-                    color: $green-color;
-                }
-
-                &.blue {
-                    color: $blue-color;
-                }
-            }
         }
-
         p {
             font-size: 14px;
             color: #999999;
@@ -433,46 +433,60 @@ $deep-gray-color:#444444;
     }
 }
 
+.level_title {
+    display:flex;
+    .level_title_left {
+        width:100%;
+        display:flex;
+        margin-bottom:10px;
+        h3 {
+            font-size:28px;
+        }
+        .see_all {
+            font-size:14px;
+            font-weight:300;
+            color:#777777;
+            margin:15px 0 0 10px;
+        }
+    }
+}
 
-.introductory_box {
+.level_box {
     margin: 10px;
     outline: none;
-    .introductory_box_top {
+    .level_box_top {
         img {
             width: 100%;
         }
     }
-    .introductory_box_bottom {
+    .level_box_bottom {
         padding: 15px 0;
         h3 {
             font-size: 20px;
             font-weight: bold;
             color: #333333;
-            min-height:100px;
-            em {
-                &.red {
-                    color: $red-color;
-                }
-
-                &.yellow {
-                    color: $primary-color;
-                }
-
-                &.green {
-                    color: $green-color;
-                }
-
-                &.blue {
-                    color: $blue-color;
-                }
+            min-height: 110px;
+        }
+        .level_box_sub {
+            display:flex;
+            padding-top:10px;
+            border-top:1px solid #ddd;
+            p {
+                display:inline-block;
+                width:100%;
+                font-size: 14px;
+                color: #999999;
             }
+            button {
+                    border: none;
+                    vertical-align: top;
+                    width: 26px;
+                    height: 24px;
+                    overflow: hidden;
+            }
+            
         }
-
-        p {
-            font-size: 14px;
-            color: #999999;
-            margin-top: 20px;
-        }
+        
     }
 }
 
@@ -609,50 +623,7 @@ $deep-gray-color:#444444;
 }
 
 
-
-// filter Search
-.search {
-	width: 30px;
-    margin: 0 auto;
-    float:right;
-	position: relative;
-	overflow: hidden;
-    transition: all .5s ease;
-    &.open {
-        width: 420px;
-        background:#fff;
-        .search-icon {
-            margin: 0;
-            border-radius: 60px;
-        }
-    }
-    .search-box {
-        box-shadow: none;
-        border: none;
-        background: transparent;
-        font-size: 40px;
-        &:focus {
-            outline:none;
-        }
-    }
-    .search-button {
-        position: absolute;
-        left: 0;
-        top: 10px;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        transition: all .5s ease;
-        .search-icon {
-            transition: all .5s ease;
-        }
-    }
-}
-
-
-
-
-/* lnb */
+///////////////////////////////////////////////////////////////////////// KETA_MY
 .lnb {
     width:220px;
     display:inline-block;
@@ -876,9 +847,7 @@ input[type="radio"] {display:none;}
 
 
 
-
-/*------------ tab ------------*/
-
+///////////////////////////////////////////////////////////////////////// KETA_SE_011.html
 .wrapper{
     text-align:center;
     margin:50px auto;
