@@ -27,36 +27,30 @@
 
     table {
         width: 100%;
-
+        border-collapse: collapse;
         thead {
             padding: 10px;
+            
             th {
                 padding: 10px;
-                text-align: left;
-            }
-
-            .schedule_date {
-                width: 7%;
                 text-align: center;
+                border:1px solid #ddd;
             }
         }
     }
 
     tbody {
         tr {
+            td{
+                padding: 10px;
+                text-align: center;
+                border:1px solid #ddd;
+                
+            }
             &:nth-child(1){
                 td{
-                    padding: 10px;
+                    
                 }
-            }
-                .text_statue{
-                    text-align: center;
-                }
-            
-
-            .chapter_row {
-                width: 10%;
-                text-align: left;
             }
         }
     }
