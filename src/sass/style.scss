@@ -434,6 +434,48 @@ $deep-gray-color:#444444;
 }
 
 
+.introductory_box {
+    margin: 10px;
+    outline: none;
+    .introductory_box_top {
+        img {
+            width: 100%;
+        }
+    }
+    .introductory_box_bottom {
+        padding: 15px 0;
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333333;
+            min-height:100px;
+            em {
+                &.red {
+                    color: $red-color;
+                }
+
+                &.yellow {
+                    color: $primary-color;
+                }
+
+                &.green {
+                    color: $green-color;
+                }
+
+                &.blue {
+                    color: $blue-color;
+                }
+            }
+        }
+
+        p {
+            font-size: 14px;
+            color: #999999;
+            margin-top: 20px;
+        }
+    }
+}
+
 
 //////////////////////////////////////// login_version01
 .login {
@@ -841,15 +883,14 @@ input[type="radio"] {display:none;}
     text-align:center;
     margin:50px auto;
     .selector_tabs{
-        background:#fff;
-        box-shadow:0px 5px 20px rgba(0,0,0,0.1);
         display:inline-block;
-        border-radius:50px;
         position:relative;
+        margin-bottom:30px;
         li{
             cursor: pointer;
-            text-transform:uppercase;
-            padding:10px 20px;
+            width:190px;
+            padding:10px 0;
+            font-weight:700;
             display:inline-block;
             position:relative;
             z-index:1;
@@ -868,11 +909,7 @@ input[type="radio"] {display:none;}
             border-radius:50px;
             transition-duration:0.6s;
             transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            background: #05abe0;
-            background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
-            background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
-            background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+            background: #444444;
         }
     }
 }
