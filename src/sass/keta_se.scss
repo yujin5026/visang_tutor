@@ -18,8 +18,6 @@
         display: flex;
         justify-content: space-between;
         padding: 25px 0;
-        font-size: 24px;
-        font-weight: 700;
         .list_title_left{
             display: flex;
             div{
@@ -58,11 +56,6 @@
         .teacher_list_left {
             position: relative;
             min-width:920px;
-            .list_item_container{
-                padding: 60px;
-                margin-bottom: 30px;
-                box-shadow: 0px 4px 8px 2px #6f6f6f33;
-            }
         }
         .teacher_list_right {
             width:100%;
