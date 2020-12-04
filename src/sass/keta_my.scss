@@ -593,3 +593,144 @@
         font-weight: 400;
     }
 }
+
+
+
+
+
+
+input[type="radio"] {display:none;}
+.tabs {
+    display:flex;
+    overflow:hidden;
+    .tab {
+        width:25%;
+        padding: 20px;
+        display:inline-block;
+        font-size:16px;
+        color:#666666;
+        text-align:center;
+        border:1px solid #eaebec;
+        cursor: pointer;
+        span {
+            font-size:20px;
+            font-weight:bold;
+            color:#b94a38;
+            margin-left:10px;
+        }
+    }
+}
+
+.panel{display:none;padding-top:20px;animation: fadein .8s;}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+      opacity:1;
+  }
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel {display:block}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab {background:#b94a38;color:#fff;border:1px solid #b94a38;}
+#one:checked ~ .tabs #one-tab span,
+#two:checked ~ .tabs #two-tab span,
+#three:checked ~ .tabs #three-tab span,
+#four:checked ~ .tabs #four-tab span {color:#fff;}
+
+
+
+ .mypage{
+     
+     .mypage_date{
+        display: flex;
+        justify-content: space-between;
+         .date_box_left{
+            display: flex;
+            margin-bottom: 15px;
+            img{
+                margin-right: 10px;
+            }
+            h2{
+                margin-top: 5px;
+                font-size: 20px;
+            }
+         }
+         .date_box_right{
+             button{
+                 &:nth-child(2){
+                     margin-left: -4px;
+                 }
+             }
+         }
+     }
+    .orange{
+        background: #d99e2d;
+    }
+    .green{
+        background: #208b73;
+    }
+    .mypage_contents{
+         .tutor_container{
+             margin-bottom: 40px;
+             &.timetable{
+                 table{
+                     tbody{
+                         tr{
+                             td{
+                                 div{
+                                    padding: 0;
+                                    margin: 0;
+                                    height: 28px;
+                                    color: #fff;
+                                    border: 1px solid #eaeaea;
+                                    font-size: 15.46px;
+                                    border-radius: 0;
+                                    text-align: center;
+                                 }
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+    .mypage_bottom_contents{
+        display: flex;
+        padding: 25px 15px;
+        border-top: 1px solid #999999;
+        border-bottom: 1px solid #999999;
+        .mypage_contents_left{
+            display: flex;
+            img{
+                margin-right: 15px;
+                width: 50px;
+                height: 50px;
+            }
+            p{
+                width: 100%;
+                font-weight: 700;
+            }
+        }
+        .mypage_contents_right{
+            display: flex;
+            justify-content: space-around;
+            width: 75%;
+            .contents_description{
+                h2{
+                    margin-bottom: 3px;
+                    color: #999999;
+                    font-weight: 400;
+                }
+                h3{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+ }

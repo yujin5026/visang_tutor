@@ -16,6 +16,39 @@ $deep-gray-color:#444444;
     -moz-box-sizing: border-box;
 }
 
+
+@mixin input100 {
+    border: 1px solid #bebebe;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+///////////////////////////////////////////////////////////////////////// 기본 틀
+.wrap {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 6rem 0;
+    min-height: 700px;
+    overflow:hidden;
+    &.padding10 {
+        padding-top:1.5rem;
+    }
+    &.padding0 {
+        padding:0;
+        min-height:auto;
+    }
+}
+
+.flex {
+    display:flex;
+}
+
+
+
 ///////////////////////////////////////////////////////////////////////// 헤더
 #header {
     position: relative;
@@ -130,263 +163,198 @@ $deep-gray-color:#444444;
     }  
 }
 
-///////////////////////////////////////////////////////////////////////// main_version01
-#teacher_search {
-    background:#f8f8f8;
-}   
 
-///////////////////////////////////////////////////////////////////////// main_version02
-#main {
-    display:flex;
-    min-height: 1000px;
-    .main_left {
-        min-width:965px;
+///////////////////////////////////////////////////////////////////////// 필터 옵션 레이어팝업
+ .popup-wrap {
+    position: relative;
+    .popup-box-styles {
+        position: absolute;
+        left: 0;
+        top: 3em;
+        z-index: 999999;
+        padding: 1em;
+        text-align: left;
+        background-color: #fff;
+        color: #000;
+        box-shadow: 0px 4px 8px 2px #6f6f6f33;
+    }
+    .filter {
+         display:flex;
         overflow:hidden;
-        background:url('../images/left_background.png') no-repeat;
-        background-size:cover;
-        .main_left_contents {
-            width:460px;
-            height:100%;
+    }
+    [aria-hidden=true] {
+        display: none;
+    }
+}
+
+
+.popup-box-styles {
+    .filter_title {
+        margin-bottom:10px;
+        h3 {
+            display:inline-block;
+            font-size:16px;
+        }
+        p {
             float:right;
-            padding:9.5rem 0 0 0;
-            margin-right:90px;
-            a{
-                margin: 40px 0;
+            font-size:13px;
+            color:#bbbbbb;
+            margin-top:6px;
+            span {
+                color:#999999;
             }
-            p{
-                color: #f5f5f5;
-                font-size: 14px;
-                margin-top:30px;
-                line-height:25px;
-            }
-            h2{
-                color: #fff;
-                font-size: 62px;
-                line-height: 4.5rem;
-            }
-            h3{
-                color: #de9d22;
-                font-size: 45px;
-                font-weight:normal;
-            }
-            .autoplay3 {
-                margin-top:9rem;
-                .slick-list {
-                    margin-top:50px;
-                }
-                .main_note {
-                    display:flex;
-                    padding-top:20px;
-                    border-top:1px solid #fff;
-                    .main_note_left {
-                        h3 {
-                            font-size:34px;
-                            font-weight:bold;
-                            color:#2f66aa;
-                            line-height:25px;
-                        }
-                        span {
-                            font-size:12px;
-                            color:#fff;
-                        }
-                    }
-                    .main_note_right {
-                        p {
-                            font-size:16px;
-                            font-weight:300;
-                            color:#fff;
-                            margin:0 0 0 15px;
-                        }
-                    }
-                }
-                .slick-prev {
-                    top:-20px;
-                    left: 90%;
-                    background:url('../images/slick_arrow_left.png') no-repeat;
-                }
-                .slick-next {
-                    top: -20px;
-                    right: 0;
-                    background:url('../images/slick_arrow_right.png') no-repeat;
-                }
-            }
+        }
+        img {
+            margin-left:5px;
+            cursor: pointer;
+            vertical-align: top;
         }
     }
-    .main_right {
-        background:#f5f5f5;
-        width:100%;
-        padding:50px 0 50px 50px;
-        overflow: hidden;
-        h1 {
-            font-size:24px;
-            color:#333333;
-            margin-bottom:20px;
-        }
-        .autoplay2 {
-            margin-bottom:30px;
-                .slick-prev {
-                    top:-30px;
-                    left: 60%;
-                    background:url('../images/slick_arrow_left.png') no-repeat;
-                }
-                .slick-next {
-                    top: -30px;
-                    right: 35%;
-                    background:url('../images/slick_arrow_right.png') no-repeat;
-                }
-            .main_my_class{
-                .class_img{
-                    display: flex;
-                    position: relative;
-                    overflow: hidden;
-                    .class_time{
-                        position: absolute;
-                        top: 0;
-                        margin-top: 9px;
-                        color: #fff;
-                        font-size: 11px;
-                        border: none;
-                        background: #2f66aa;
-                        p{
-                            padding: 4px 4px 4px 11px;
-                            opacity: 0.8;
-                            img{
-                                margin-bottom: 2px;
-                            }
-                        }
-                    }
-                    .class_description{
-                        position: absolute;
-                        margin-left: 17px;
-                        bottom: 25px;
-                        p:first-child{
-                            color: #fff;
-                        }
-                        p:last-child{
-                            color: #fff;
-                            font-size: 13px;
-                            opacity: 0.5 ;
-                        }
-                    }
-                }
+    .filter {
+        //purpose box
+        .filter_box {
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            width:120px;
+            margin:10px;
+            border: 1px solid #999999;
+            cursor: pointer;
+            img {
+                margin-bottom:10px;
             }
-                .program_img{
-                    display: flex;
-                    .main_program_img {
-                        background:#fff;
-                        margin-right: 20px;
-                        .program_img_top {
-                            img {
-                                width:100%;
-                            }
-                        }
-                        .program_description {
-                            position: relative;
-                            padding:30px;
-                            &.china {
-                                &::before {
-                                    content:'';
-                                    position:absolute;
-                                    top:-25px;
-                                    left:20px;
-                                    background:url(../images/main_country01.png) no-repeat;
-                                    width:55px;
-                                    height:55px;
-                                }
-                            }
-                             &.korea {
-                                &::before {
-                                    content:'';
-                                    position:absolute;
-                                    top:-25px;
-                                    left:20px;
-                                    background:url(../images/main_country02.png) no-repeat;
-                                    width:55px;
-                                    height:55px;
-                                }
-                            }
-                            h3{
-                                color: #333333;
-                                font-size: 17px;
-                                margin-bottom: 10px;
-                            }
-                            p:last-child{
-                                color: #2f66aa;
-                                font-size: 13px;
-                                font-weight: 700;
-                            }
-                        }
-                    }
-                    .main_program_img:last-child{
-                        .program_img_top{
-                            img{
-                                height: 186.22px;
-                            }
-                        }
-                    }
-                }
-            .main_info_top{
-                h1{
-                    display: inline-block;
-                    margin-right: 140px;
-                }
-                img{
-                    margin-left: 11px;
-                    vertical-align: initial;
-                }
+            p {
+                font-size:14px;
             }
-            .information_description{ 
-                .info_card{
-                    display: inline-block;
-                    padding: 35px;
-                    background: #bf5b4a;
-                    border-radius: 8px;
-                    span{
-                        padding-right: 102px;
-                        color: #fff;
-                    }
-                }
-                .info_card_2{
-                    display: inline-block;
-                    padding: 35px;
-                    background: #dca741;
-                    border-radius: 8px;
-                    span{
-                        padding-right: 102px;
-                        color: #fff;
-                    }
-                }
+            &.selected {
+                font-weight:bold;
+                color:$blue-color;
+                border:1px solid $blue-color;
             }
         }
-        div {
-            h1{
-                margin-bottom: 15px;
-                font-size: 24px;
-                margin-top: 40px;
-            }
-            &:first-child{
-                h1 {
-                    margin-top:0;
-                }  
+        .days {
+            width:100%;
+            ul {
+                li {
+                    width:9%;
+                    text-align:center;
+                    padding:10px 20px;
+                    border:1px solid #ddd;
+                    float:left;
+                }
             }
         }
     }
 }
 
-///////////////////////////////////////////////////////////////////////// 로그인
-.login {
-    background:url(../images/login_background.png) no-repeat;
-    background-size: 100%;
-    background-position: center;
-    .wrap {
-        .login_wrap {
-            width: 600px;
-            margin:0 auto;
-            text-align:center;
-            padding:100px 0;
+
+
+
+///////////////////////////////////////////////////////////////////////// KETA_MY
+.lnb {
+    width:220px;
+    display:inline-block;
+    h3 {
+        position: relative;
+        font-size:26px;
+        font-weight:bold;
+        color:#b14248;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 5px solid;
+        border-image: linear-gradient(to right, #b14248 0%, #bd6d33 100%);
+        border-image-slice: 1;
+        &::after {
+            content:'';
+            position: absolute;
+            top: 15px;
+            right: 0;
+            width: 10px;
+            border-radius: 50%;
+            height: 10px;
+            background: #bd6d33;
+        }
+    }
+    .lnb-menu {
+        > li {
+            width:100%;
+            border-bottom:1px solid #eaebec;
+            > a {
+                font-size:15px;
+                color:#000;
+                display:block;
+                padding:20px 0;
+                &.active {
+                    color:#b14248;
+                }
+            }
+            .lnb-depth03 {
+                display:none;
+                padding:10px;
+                li {
+                    margin-bottom:15px;
+                    a {
+                        display:block;
+                        position:relative;
+                        padding:0 25px;
+                        font-size:13px;
+                        color:#666666;
+                        &.active, &:hover {
+                            color:#b14248;
+                        }
+                    }
+                }
+            }
+            &.active {
+                > a {
+                    color:#b14248;
+                    font-weight:bold;
+                    border:none;background:url("../images/lnb_plus.png") no-repeat right center;
+                }
+            }
         }
     }
 }
+
+///////////////////////////////////////////////////////////////////////// timetable
+.timetable{
+    table{
+        width: 100%;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        border-collapse: collapse;
+        thead{
+            th{
+                color: #666666;
+                font-size: 13px;
+                font-weight: 300;
+                padding:5px;
+                border-bottom:1px solid #dddddd;
+            }
+        }
+            tbody{
+                tr{
+                    td {
+                            vertical-align: middle;
+                        div{
+                            background: #f2f2f2;
+                            margin:5px;
+                            padding: 15px 40px;
+                            border-radius: 3px;
+                            &.blue {
+                                background: #75afcd;
+                            }
+                        }
+                        &:first-child{
+                            color: #666666;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+}
+
 
 ///////////////////////////////////////////////////////////////////////// footer
 #footer {
@@ -471,63 +439,3 @@ $deep-gray-color:#444444;
     }
 
 }
-
-
-///////////////////////////////////////////////////////////////////////// 필터 옵션 레이어팝업
- .popup-wrap {
-    position: relative;
-    .popup-box-styles {
-        position: absolute;
-        left: 0;
-        top: 3em;
-        z-index: 999999;
-        padding: 1em;
-        text-align: left;
-        background-color: #fff;
-        color: #000;
-        box-shadow: 0px 4px 8px 2px #6f6f6f33;
-    }
-    .filter {
-         display:flex;
-        overflow:hidden;
-    }
-    [aria-hidden=true] {
-        display: none;
-    }
-}
-
-
-
-
-///////////////////////////////////////////////////////////////////////// 강의 상세
-#teacher {
-    display:flex;
-    width:1280px;
-    margin:0 auto;
-    min-height:1000px;
-    padding:50px 0;
-    .teacher_left {
-        position: relative;
-        min-width:920px;
-        .tutor_container{
-            padding: 60px;
-            margin-bottom: 30px;
-            box-shadow: 0px 4px 8px 2px #6f6f6f33;
-            &.teacher {
-                .teacher_card{
-                display: flex;
-                overflow: hidden;
-                }
-                .teacher_card_bottom{
-                    background:#ddd;
-                }
-            }
-        }
-    }
-    .teacher_right {
-        width:100%;
-        margin-left:30px;
-    }
-}
-
-
