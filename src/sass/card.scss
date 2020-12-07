@@ -26,6 +26,26 @@
     }
 }
 
+
+.card_text_title {
+    h1{
+        position: relative;
+        &.new {
+            &::after {
+                content:'';
+                position: absolute;
+                top:0;
+                left:40px;
+                width:6px;
+                height:6px;
+                border-radius: 50%;
+                background:#aa3238;
+            }
+        }
+    }
+}
+
+
 .card_contants {
     display: flex;
     .card_text{
@@ -128,13 +148,59 @@
 
 ///////////////////////////////////////////////////// .card_container_sub - couseList
 .card_container_sub{
-    background:#f9fafe;
     &.couseList {
         button {
             width:140px;
             font-size:16px;
             padding:10px 0;
             text-align:center;
+        }
+    }
+}
+
+///////////////////////////////////////////////////// .card_container_sub - comment
+.card_container_sub{
+    display:block;
+    &.comment {
+        .comment_text {
+            position: relative;
+            &::after {
+                content:'';
+                position: absolute;
+                top:5px;
+                left:0;
+                width:12px;
+                height:13px;
+                background:url('../images/comment_text.png') no-repeat;
+            }
+            p {
+                width:80%;
+                padding-left:20px;
+            }
+            span {
+                font-size:13px;
+                color:#999999;
+                padding-left: 20px;
+            }
+        }
+        .comment_btn {
+            text-align:right;
+            button {
+                font-size:14px;
+                width:85px;
+                padding:10px 0;
+            }
+        }
+    }
+}
+
+///////////////////////////////////////////////////// .card_container_sub - comment_write
+.card_container_sub{
+    background:#f9fafe;
+    display:block;
+    &.comment_write {
+        textarea {
+            width:100%;
         }
     }
 }
@@ -297,6 +363,7 @@
     .card_text_left {
         .card_text_title {
             h1{
+                position: relative;
                 font-size: 32px;
                 color:#111111;
                 margin: 5px 0 15px;
@@ -364,6 +431,201 @@
             button {
                 border:none;
             }
+        }
+    }
+}
+
+
+
+///////////////////////////////////////////////////// usage_history01
+.usage_history01{
+    .card_text_left {
+        .card_text_title {
+            h1{
+                font-size: 24px;
+                color:#222222;
+                margin: 5px 0 15px;
+                img {
+                    margin-right:5px;
+                }
+            }
+        }
+        .card_text_bottom {
+            div {
+                strong {
+                    font-size:24px;
+                    font-weight:700;
+                    margin-right:5px;
+                    color:#0d52a7;
+                }
+                span {
+                    font-size:14px;
+                    color:#333333;
+                }
+            }
+            p {
+                font-size:14px;
+                font-weight:500;
+                color:#999999;
+            }
+        }
+    }
+    .card_text_right {
+        text-align: right;
+        .card_right_img{
+            margin-bottom:30px;
+            button {
+                border:none;
+            }
+        }
+    }
+}
+
+
+
+///////////////////////////////////////////////////// usage_history03
+.usage_history03{
+    .card_text_left {
+        .card_text_title {
+            h1{
+                font-size: 24px;
+                color:#222222;
+                margin: 5px 0 15px;
+                img {
+                    margin-right:5px;
+                }
+            }
+        }
+        .card_text_bottom {
+            div {
+                strong {
+                    font-size:24px;
+                    font-weight:700;
+                    margin-right:5px;
+                    color:#999999;
+                }
+                span {
+                    font-size:14px;
+                    font-weight:500;
+                    color:#999999;
+                }
+            }
+            p {
+                font-size:14px;
+                font-weight:500;
+                color:#999999;
+            }
+        }
+    }
+    .card_text_right {
+        text-align: right;
+        .card_right_img{
+            margin-bottom:30px;
+            button {
+                border:none;
+            }
+        }
+        .card_star {
+            display:inline-block;
+            span {
+                display:block;
+            }
+        }
+    }
+}
+
+
+///////////////////////////////////////////////////// usage_history02
+.usage_history02{
+    .card_text_left {
+        .card_text_title {
+            h1{
+                font-size: 24px;
+                color:#222222;
+                margin: 5px 0 15px;
+                img {
+                    margin-right:5px;
+                }
+            }
+        }
+        .card_text_bottom {
+            h4 {
+                font-size:24px;
+                font-weight:500;
+                color:#333333;
+                strong {
+                    font-weight:700;
+                }
+            }
+            p {
+                font-size:14px;
+                color:#0d52a7;
+            }
+        }
+    }
+    .card_text_right {
+        text-align: right;
+        .card_right_img{
+            margin-bottom:30px;
+            button {
+                border:none;
+            }
+        }
+    }
+}
+
+
+///////////////////////////////////////////////////// usage_history04
+.usage_history04{
+    .card_text_left {
+        .card_text_title {
+            h1{
+                position: relative;
+                font-size: 24px;
+                color:#222222;
+                margin: 5px 0 15px;
+                img {
+                    position: relative;
+                    margin-right:5px;
+                    
+                }
+            }
+        }
+        .card_text_bottom {
+            div {
+                strong {
+                    font-size:24px;
+                    font-weight:700;
+                    margin-right:5px;
+                    color:#0d52a7;
+                }
+                span {
+                    font-size:14px;
+                    color:#333333;
+                }
+            }
+            p {
+                font-size:14px;
+                font-weight:500;
+                color:#999999;
+            }
+        }
+    }
+    .card_text_right {
+        text-align: right;
+        .card_right_img{
+            margin-bottom:30px;
+        }
+        p {
+            font-size:13px;
+            color:#666666;
+            text-align:center;
+            margin-bottom:5px;
+        }
+        button {
+            width:130px;
+            padding:10px 0;
+            font-weight:700;
         }
     }
 }
