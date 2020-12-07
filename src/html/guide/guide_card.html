@@ -18,8 +18,16 @@
             margin: 30px 0 10px 0;
             font-size: 30px;
         }
-        .guide > h5 {margin:30px 0 15px 0;}
-        .guide > h5 > span {color:red;}
+
+        .guide>h5 {
+            margin: 30px 0 15px 0;
+            background:#ccc;
+            padding:10px;
+        }
+
+        .guide>h5>span {
+            color: red;
+        }
     </style>
 </head>
 
@@ -119,25 +127,14 @@
                     <div class="card_text">
                         <div class="card_text_left">
                             <h2>Uncovering youth records</h2>
-                            <h3>Pablo Ruiz Pocasso de kicaboo<img src="../../images/international_mark.png" alt=""><img src="../../images/star.png"
-                                    alt=""><em>5.0</em> </h3>
+                            <h3>Pablo Ruiz Pocasso de kicaboo<img src="../../images/international_mark.png" alt=""><img
+                                    src="../../images/star.png" alt=""><em>5.0</em> </h3>
                             <h4>20.11.01(Fri)</h4>
                         </div>
                         <div class="card_text_right">
                             <button type="button" class="md_btn bg_gray">CONFIRMATION</button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- card style 03 -->
-        <h5>
-            .card_container02
-        </h5>
-        <div class="card_wrap02">
-            <div class="card_container">
-                <div class="card_contants card03">
-                    내용을 입력하세요.
                 </div>
             </div>
         </div>
@@ -149,7 +146,7 @@
         <div class="card_wrap01">
             <div class="card_container normal">
                 <div class="card_contants card03">
-                    
+
                     <div class="card_img">
                         <img src="../../images/teacher01.png" alt="teacher01">
                     </div>
@@ -162,7 +159,7 @@
                             <div class="card_text_bottom">
                                 <dl>
                                     <dt>Course period</dt>
-                                    <dd>YY-MM-DD ~ YY-MM-DD  30 week</dd>
+                                    <dd>YY-MM-DD ~ YY-MM-DD 30 week</dd>
                                 </dl>
                                 <dl>
                                     <dt>Number of class</dt>
@@ -196,24 +193,73 @@
             </div>
         </div>
 
+        <!-- card style 03 -->
+        <h5>
+            .card_container02
+        </h5>
+        <div class="card_wrap02">
+            <div class="card_container">
+                <div class="card_contants card03">
+                    내용을 입력하세요.
+                </div>
+            </div>
+        </div>
+
         <!-- card style 04 -->
         <h5>
-            .card04
+            .usage_history
         </h5>
+
+
         <div class="card_wrap01">
             <div class="card_container normal">
-                <div class="card_contants card04">
+                <div class="card_contants usage_history01">
                     <div class="card_text">
                         <div class="card_text_left">
                             <div class="card_text_title">
                                 <h1>
-                                    <img src="../../images/reserved01.png" alt="reserved" />
+                                    <img src="../../images/reserved01_on.png" alt="reserved" />
+                                    Let's sing along with BTS' Life goes on.
+                                </h1>
+                            </div>
+                            <div class="card_text_bottom">
+                                <div>
+                                    <strong>04:00</strong>
+                                    <span>20.10.30 (thu)</span>
+                                </div>
+                                <p>Reserved lessons</p>
+                            </div>
+                        </div>
+                        <div class="card_text_right">
+                            <div class="card_right_img">
+                                <button type="button">
+                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                </button>
+                            </div>
+                            <p><img src="../../images/icon_timer.png" alt="icon_timer">00:15:00</p>
+                            <button type="button" class="md_btn bg_red">Reservation</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card_wrap01">
+            <div class="card_container normal">
+                <div class="card_contants usage_history02">
+                    <div class="card_text">
+                        <div class="card_text_left">
+                            <div class="card_text_title">
+                                <h1>
+                                    <img src="../../images/usage_unused.png" alt="usage_unused" />
                                     Order an Americano at Stopbucks-2
                                 </h1>
                             </div>
                             <div class="card_text_bottom">
-                                <h3>
-                                    <strong>2</strong>unused lessons</h3>
+                                <h4>
+                                    <strong>2</strong>
+                                    unused lessons
+                                </h4>
                                 <p>Book a lesson!</p>
                             </div>
                         </div>
@@ -229,21 +275,27 @@
                 </div>
             </div>
         </div>
+
         <div class="card_wrap01">
             <div class="card_container normal">
-                <div class="card_contants card04">
+                <div class="card_contants usage_history03">
                     <div class="card_text">
                         <div class="card_text_left">
                             <div class="card_text_title">
                                 <h1>
-                                    <img src="../../images/reserved01.png" alt="reserved" />
+                                    <img src="../../images/usage_complete.png" alt="usage_complete" />
                                     Order an Americano at Stopbucks-2
                                 </h1>
                             </div>
                             <div class="card_text_bottom">
-                                <h3>
-                                    <strong>2</strong>unused lessons</h3>
-                                <p>Book a lesson!</p>
+                                <div>
+                                    <strong>04:00</strong>
+                                    <span>20.10.30 (thu)</span>
+                                    <em class="badge best">
+                                        Revlse
+                                    </em>
+                                </div>
+                                <p>Reserved lessons</p>
                             </div>
                         </div>
                         <div class="card_text_right">
@@ -252,9 +304,122 @@
                                     <img src="../../images/btn_more.png" alt="btn_more">
                                 </button>
                             </div>
-                            <button type="button" class="md_btn bg_red">Reservation</button>
+                            <div class="card_star">
+                                <img src="../../images/star.png" />
+                                <img src="../../images/star.png" />
+                                <img src="../../images/star.png" />
+                                <img src="../../images/star.png" />
+                                <img src="../../images/star.png" />
+                                <span>20.11.30</span>
+                            </div>
+                            <button type="button" class="md_btn bg_gray">View Reviews</button>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="card_container_sub comment">
+                <div class="comment_text">
+                    <p>
+                        Hi, my name is Itay and I'm a professional English tutor with my own business. My native
+                        language is
+                        German
+                        but I'm also fluent in English, French, Hebrew, Portuguese and Spanish. I'm learning Greek
+                    </p>
+                </div>
+                <div class="comment_btn">
+                    <button>Close</button>
+                    <button>Modify</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card_wrap01">
+            <div class="card_container normal">
+                <div class="card_contants usage_history03">
+                    <div class="card_text">
+                        <div class="card_text_left">
+                            <div class="card_text_title">
+                                <h1>
+                                    <img src="../../images/usage_complete.png" alt="usage_complete" />
+                                    Order an Americano at Stopbucks-2
+                                </h1>
+                            </div>
+                            <div class="card_text_bottom">
+                                <div>
+                                    <strong>04:00</strong>
+                                    <span>20.10.30 (thu)</span>
+                                    <em class="badge best">
+                                        Revlse
+                                    </em>
+                                </div>
+                                <p>Reserved lessons</p>
+                            </div>
+                        </div>
+                        <div class="card_text_right">
+                            <div class="card_right_img">
+                                <button type="button">
+                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                </button>
+                            </div>
+                            <button type="button" class="md_btn bg_gray">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container_sub comment_write">
+                <textarea>ss</textarea>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="card_wrap01">
+            <div class="card_container normal">
+                <div class="card_contants usage_history04">
+                    <div class="card_text">
+                        <div class="card_text_left">
+                            <div class="card_text_title">
+                                <h1 class="new">
+                                    <img src="../../images/usage_other.png" alt="usage_other" />
+                                    Order an Americano at Stopbucks-4
+                                </h1>
+                            </div>
+                            <div class="card_text_bottom">
+                                <div>
+                                    <strong>04:00</strong>
+                                    <span>20.10.30 (thu)</span>
+                                    <span>11:00 ~ 11:40</span>
+                                </div>
+                                <h4>
+                                    <p>Reserved lessons</p>
+                            </div>
+                        </div>
+                        <div class="card_text_right">
+                            <div class="card_right_img">
+                                <button type="button">
+                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                </button>
+                            </div>
+                            <p>Tutor Cancle</p>
+                            <button type="button" class="line_red">No show</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container_sub comment">
+                <div class="comment_text">
+                    <p>
+                        The student didn't come in without a call.
+                    </p>
+                    <span>20.11.19 (Thu) 11:00:00</span>
+                </div>
+                <div class="comment_btn">
+                    <button type="button" class="line_button_gray">agree</button>
+                    <button tyle="button" class="line_red">disagree</button>
                 </div>
             </div>
         </div>
