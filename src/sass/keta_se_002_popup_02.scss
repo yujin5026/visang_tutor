@@ -9,7 +9,7 @@
     }
     
     .select_list{
-        margin-bottom: 30px;
+        margin: 40px 0;
         text-align: center;
         .select_list_menu{
             display: inline-block;
@@ -43,64 +43,6 @@
             }
         }
     }
-    // slect_menu
-    .select_menu{
-        border: 1px solid #eaeaea;
-        border-radius: 6px;
-        margin-bottom: 15px;
-        // select_menu_box
-        .select_menu_box{
-            padding: 30px;
-            background: #fcfcfc;
-            // select_left
-            .select_left{
-                display: inline-block;
-                h4:first-child{
-                    display: block;
-                    color: #000000;
-                    font-size: 18px;
-                    font-weight: 700;
-                    border-right: none;
-                }
-                h4{
-                    display: inline-block;
-                    padding-right: 10px;
-                    color: #777777;
-                    font-size: 14px;
-                    font-weight: 400;
-                    border-right: 1px solid #cdcece;
-                    &:nth-child(3){
-                        padding-left: 10px;
-                    }
-                    &:nth-child(4){
-                        padding-left: 10px;
-                    }
-                    &:last-child{
-                        border-right: none;
-                    }
-                }
-            }
-            // select_left[e]
-    
-            // select_right
-            .select_right{
-                float: right;
-                h3{
-                    display: inline-block;
-                    margin-right: 5px;
-                }
-                h4{
-                    margin-right: 5px;
-                    font-size: 20px;
-                    text-align: right;
-                }
-            }
-            // select_right[e]
-        }
-        // select_menu_box[e]
-    }
-    // slect_menu[e]
-    
     // select_bottom
     .select_bottom{
         position: relative;
@@ -174,3 +116,53 @@
     }
     // select_footer[e]
 }
+
+
+///////////////////// select_course_option
+.select_option_box{
+    text-align: center;
+    .select_course_option{
+        display: inline-block;
+        vertical-align: top;
+        &:last-child{
+            li{
+                margin-right: 0;
+            }
+        }
+        li{
+            margin-bottom: 15px;
+            border: 1px solid #eaeaea;
+            border-radius: 4px;
+            padding: 10px;
+            margin-right: 10px;
+            background: #fafafa;
+            text-align: left;
+            &:first-child {
+                margin-bottom: 20px;
+                text-align: center;
+                border: 1px solid #999999;
+                border-radius: 0;
+                padding: 5px 55px;
+                text-align:center;
+            }
+            h3{
+                color: #666666;
+                font-size: 15px;
+                font-weight: 400;
+            }
+            h2{
+                display: inline-block;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .badge{
+                &.hot{
+                    padding: 2px 8px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+///////////////////// select_course_option[e]
+
