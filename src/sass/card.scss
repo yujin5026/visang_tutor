@@ -1,175 +1,62 @@
-.my_lesson_box {
-    .lesson_box_container {
-        border: 1px solid #eaeaea;
-        border-radius: 6px;
-        margin-bottom: 15px
-    }
 
-    .my_lesson_title {
-        margin-top:50px;
-        h3 {
-            display:inline-block;
-            font-size:24px;
-            font-weight:bold;
-            color:#333333;
-            margin-bottom:20px;
-        }
-        h2 {
-            display:inline-block;
-            font-size:32px;
-            font-weight:bold;
-            color:#222222;
-            margin-bottom:20px;
-        }
-        .see_all {
-            margin-top:10px;
-            float:right;
-            a {
-                font-size:14px;
-                color:#777777;
-            }
-        }
+///////////////////////////////////////////////////// 카드 레이아웃
+.card_wrap01 {
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.card_wrap02{
+    padding: 60px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 8px 2px #6f6f6f33;
+    background:#fff;
+}
+
+.card_container {
+    &.normal {
+        padding:35px 50px;
     }
-    .my_lesson_contents {
-        display: flex;
-        &.normal {
-            padding:35px 50px;
-        }
-        &.padding30 {
-            padding:30px;
-        }
-        &.gray {
-            background:#fafafa;
-            border:1px solid #fafafa;
-        }
+    &.padding30 {
+        padding:30px;
     }
-    .my_lesson_sub {
-        padding: 20px 50px;
-        &.profile {
-            background:#f9fafe;
-        }
-        &.comment {
-            background:#fafafa;
-        }
-    }
-    &:last-child {
-        margin-bottom:0;
+    &.gray {
+        background:#fafafa;
+        border:1px solid #fafafa;
     }
 }
 
-.lesson_profile {
+.card_contants {
     display: flex;
-    .lesson_profile_img{
-        margin-right: 30px;
-        &.round {
-            border-radius: 50%;
-        }
-    }   
-    .lesson_profile_main{
+    .card_text{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        .lesson_profile_left{
-            .lesson_profile_title {
-                margin-bottom: 25px;
-                h1{
-                    font-size: 24px;
-                }
-                h3{
-                    color: #666666;
-                    font-size: 18px;
-                    font-weight: 400;
-                }
-                a {
-                    font-size:14px;
-                    color:#0d52a7;
-                }
-            }
-            .lesson_profile_bottom{
-                display: flex;
-                div {
-                    text-align:center;
-                    margin-right:20px;
-                    padding-right:20px;
-                    border-right: 1px solid #e3e3e3;
-                    &.profile_bottom_left {
-                        text-align:left;
-                        padding-left:0;
-                    }
-                    &:last-child {
-                        margin-right:0;
-                        border-right:none;
-                    }
-                }
-                .profile_bottom_left{
-                    strong{
-                        margin-right: 10px;
-                        color: #0d52a7;
-                        font-size: 24px;
-                    }
-                    span{
-                        color: #333333;
-                        font-size: 14px;
-                        font-weight: 500;
-                    }
-                    p{
-                        color: #999999;
-                        font-size: 14px;
-                    }
-                }
-                .profile_bottom_middle{
-                    img{
-                        margin-top: 5px;
-                    }
-                    p{
-                        margin-top: 8px;
-                        color: #bbbbbb;
-                        font-size: 13px;
-                    }
-                }
-                .profile_bottom_right{
-                    p{
-                        margin-top: 12px;
-                        color: #0d52a7;
-                        font-size: 13px;
-                    }
-                }
-            }
-        }
-        .lesson_profile_right{
-            text-align: right;
-            .profile_right_img{
-                button {
-                    border:none;
-                }
-            }
-            p{
-                margin-top: 20px;
-                color: #1b4c88;
-                img{
-                    margin-right: 10px;
-                    margin-bottom: 4px;
-                }
-            }
-            > button{
-                margin-top: 10px;
-                padding: 15px 40px;
-                color: #fff;
-                font-size: 16px;
-                background: #1b4c88;
-                border: none;
-            }
-        }
     }
 }
 
-
-
-
-.my_lesson_sub{
+///////////////////////////////////////////////////// .card_container_sub
+.card_container_sub{
+    padding: 20px 50px;
+    display: flex;
     &.profile {
+        background:#f9fafe;
+    }
+    &.comment {
+        background:#fafafa;
+    }
+    .card_sub_description{
         display: flex;
-        .lesson_sub_img{
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+///////////////////////////////////////////////////// .card_container_sub - profile
+.card_container_sub{
+    &.profile {
+        background:#f9fafe;
+        .card_sub_img{
             position: relative;
             img{
                 margin-right: 20px;
@@ -185,10 +72,7 @@
                 }
             }
         }
-        .lesson_sub_description{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
+        .card_sub_description{
             .sub_des_left{
                 p{
                     color: #222222;
@@ -242,11 +126,123 @@
     }
 }
 
-.certificate_box{
-    display: flex;
-    position: relative;
-    width: 100%;
-    .certi_img{
+///////////////////////////////////////////////////// .card_container_sub - couseList
+.card_container_sub{
+    background:#f9fafe;
+    &.couseList {
+        button {
+            width:140px;
+            font-size:16px;
+            padding:10px 0;
+            text-align:center;
+        }
+    }
+}
+
+///////////////////////////////////////////////////// 카드타입 01
+.card01 {
+    .card_img {
+        margin-right:30px;
+    }
+    .card_text {
+        .card_text_left {
+            .card_text_title {
+                margin-bottom: 25px;
+                h1 {
+                    font-size:24px;
+                }
+                h3 {
+                    color: #666666;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                a {
+                    font-size:14px;
+                    color:#0d52a7;
+                }
+            }
+            .card_text_bottom{
+                display: flex;
+                div {
+                    text-align:center;
+                    margin-right:20px;
+                    padding-right:20px;
+                    border-right: 1px solid #e3e3e3;
+                    &.profile_bottom_left {
+                        text-align:left;
+                        padding-left:0;
+                    }
+                    &:last-child {
+                        margin-right:0;
+                        border-right:none;
+                    }
+                }
+                .profile_bottom_left{
+                    strong{
+                        margin-right: 10px;
+                        color: #0d52a7;
+                        font-size: 24px;
+                    }
+                    span{
+                        color: #333333;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    p{
+                        color: #999999;
+                        font-size: 14px;
+                    }
+                }
+                .profile_bottom_middle{
+                    img{
+                        margin-top: 5px;
+                    }
+                    p{
+                        margin-top: 8px;
+                        color: #bbbbbb;
+                        font-size: 13px;
+                    }
+                }
+                .profile_bottom_right{
+                    p{
+                        margin-top: 12px;
+                        color: #0d52a7;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .card_text_right{
+            text-align: right;
+            .card_right_img{
+                button {
+                    border:none;
+                }
+            }
+            p{
+                margin-top: 20px;
+                color: #1b4c88;
+                img{
+                    margin-right: 10px;
+                    margin-bottom: 4px;
+                }
+            }
+            > button{
+                margin-top: 10px;
+                padding: 15px 40px;
+                color: #fff;
+                font-size: 16px;
+                background: #1b4c88;
+                border: none;
+            }
+        }
+    }
+}
+
+
+///////////////////////////////////////////////////// 카드타입 02
+.card02{
+    .card_img{
         margin-right: 20px;
         position: relative;
         img{
@@ -254,53 +250,122 @@
             height: 100px;
         }
     }
-    button{
-        position: absolute;
-        top: 50%;
-        right: 0;
+    .card_text_left {
+        h2{
+            margin-bottom: 5px;
+            font-size: 24PX;
+            width: 460px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        h3{
+            margin-bottom: 10px;
+            color: #666666;
+            font-size: 18PX;
+            font-weight: 400;
+            img:nth-child(1){
+                margin-left: 5px;
+                width: 17px;
+                height: 17px;
+            }
+            img:nth-child(2){
+                margin: 0 5px;
+                width: 17px;
+                height: 17px;
+            }
+            em{
+                vertical-align: middle;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+        h4{
+            color: #999999;
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
 }
 
-.certi_description{
-    h2{
-        margin-bottom: 5px;
-        font-size: 24PX;
-        width: 460px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+
+///////////////////////////////////////////////////// 카드타입 03
+.card03{
+    .card_img {
+        margin-right:30px;
     }
-    h3{
-        margin-bottom: 10px;
-        color: #666666;
-        font-size: 18PX;
-        font-weight: 400;
-        img:nth-child(1){
-            margin-left: 5px;
-            width: 17px;
-            height: 17px;
+    .card_text_left {
+        .card_text_title {
+            h1{
+                font-size: 32px;
+                color:#111111;
+                margin: 5px 0 15px;
+            }
         }
-        img:nth-child(2){
-            margin: 0 5px;
-            width: 17px;
-            height: 17px;
+        .card_text_bottom {
+            dl {
+                font-size:14px;
+                margin:10px 0;
+                dt {
+                    display:inline-block;
+                    color:#666666;
+                    padding-right:15px;
+                    margin-right:10px;
+                    border-right:1px solid #dbdbdb;
+                    &.dt_right {
+                        margin-left:50px;
+                    }
+                }
+                dd {
+                    font-weight: 500;
+                    color:#333333;
+                    display:inline-block;
+                }
+            }
         }
-        em{
-            vertical-align: middle;
-            font-size: 18px;
-            font-weight: 600;
-        }
-    }
-    h4{
-        color: #999999;
-        font-size: 14px;
-        font-weight: 400;
+        
     }
 }
 
-.list_item_container{
-    padding: 60px;
-    margin-bottom: 30px;
-    box-shadow: 0px 4px 8px 2px #6f6f6f33;
-    background:#fff;
+///////////////////////////////////////////////////// 카드타입 04
+.card04{
+    .card_text_left {
+        .card_text_title {
+            h1{
+                font-size: 24px;
+                color:#222222;
+                margin: 5px 0 15px;
+                img {
+                    margin-right:5px;
+                }
+            }
+        }
+        .card_text_bottom {
+            h3 {
+                font-size:24px;
+                font-weight:300;
+                color:#333333;
+                strong {
+                    font-weight:500;
+                    margin-right:5px;
+                }
+            }
+            p {
+                font-size:14px;
+                font-weight:500;
+                color:#0d52a7;
+            }
+        }
+    }
+    .card_text_right {
+        text-align: right;
+        .card_right_img{
+            margin-bottom:30px;
+            button {
+                border:none;
+            }
+        }
+    }
 }
+
+
