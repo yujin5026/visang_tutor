@@ -103,3 +103,88 @@ App.LnbSlide = function () {
         }
     }
 }();
+
+
+// KETA_SE_011 Tabs
+var selector_tabs = $('.selector_tabs');
+var selector = $('.selector_tabs').find('li').length;
+var activeItem = selector_tabs.find('.active');
+var activeWidth = activeItem.innerWidth();
+$(".selector").css({
+    "left": activeItem.position.left + "px",
+    "width": activeWidth + "px"
+});
+
+$(".selector_tabs").on("click", "li", function (e) {
+    e.preventDefault();
+    $('.selector_tabs li').removeClass("active");
+    $(this).addClass('active');
+    var activeWidth = $(this).innerWidth();
+    var itemPos = $(this).position();
+    $(".selector").css({
+        "left": itemPos.left + "px",
+        "width": activeWidth + "px"
+    });
+});
+
+$(".tab_content").hide();
+$(".tab_content:first").show();
+
+$("ul.selector_tabs li").click(function () {
+    $(".tab_content").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+
+    $("ul.selector_tabs li").removeClass("active");
+    $(this).addClass("active");
+
+    $(".tab_drawer_heading").removeClass("d_active");
+    $(".tab_drawer_heading[rel^='" + activeTab + "']").addClass("d_active");
+});
+
+$(".tab_drawer_heading").click(function () {
+    $(".tab_content").hide();
+    var d_activeTab = $(this).attr("rel");
+    $("#" + d_activeTab).fadeIn();
+    $(".tab_drawer_heading").removeClass("d_active");
+    $(this).addClass("d_active");
+    $("ul.selector_tabs li").removeClass("active");
+    $("ul.selector_tabs li[rel^='" + d_activeTab + "']").addClass("active");
+});
+
+$('ul.selector_tabs li').last().addClass("tab_last");
+
+
+
+
+
+// 모달 컨트롤
+function modalView(modalName) {
+    var modalWidth = $(".modalpop .popupwrap." + modalName).innerWidth() / 2;
+    var modalHeight = $(".modalpop .popupwrap." + modalName).innerHeight() / 2;
+    $(".transparents-layer").remove();
+    $(".popupwrap").removeClass("active").css("left", "-99999px").css("top", "-99999px").css("opacity", "0");
+    $(".modalpop").show().css({ "top": 0, "left": 0 });
+    if ($("." + modalName).outerHeight() > $(window).height() - 50) {
+        $("." + modalName + " .popcontents").css({ maxHeight: $(window).height() * 0.8, overflowY: 'auto' });
+        modalHeight = $(".modalpop .popupwrap." + modalName).height() / 2;
+    }
+
+    $("body").append("<div class='transparents-layer' style='background:#000; opacity:0.7'></div>");
+    $(".popupwrap." + modalName).addClass("active").css("top", "40%").css("left", "50%").css("margin-top", -($(".modalpop .popupwrap." + modalName).innerHeight() / 2.7) + "px").css("margin-left", -modalWidth + "px").animate({ opacity: 1 }, 500);
+
+    $(".transparents-layer").attr("onclick", "modalHide('" + modalName + "')");
+    $(".popupwrap." + modalName).addClass("active");
+
+}
+
+function modalHide(modalName) {
+    $(".popupwrap." + modalName).animate({ opacity: 0 }, 400, function () {
+        $(".popupwrap." + modalName).css("top", "-99999px").css("left", "-99999px");
+        $(".modalpop").css({ "top": "-99999px", "left": "-99999px" });
+        $(".transparents-layer").animate({ opacity: 0 }, 400, function () {
+            $(this).remove();
+        });
+        $(".popupwrap." + modalName).removeClass("active");
+    });
+}
