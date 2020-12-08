@@ -1,0 +1,51 @@
+#teacher_search {
+    background:#f8f8f8;
+}   
+.teacher_wrap {
+    width: 1280px;
+    margin: 0 auto;
+    overflow:hidden;
+    padding:2rem 0;
+}
+
+
+.tutor_title{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+        margin-bottom: 35px;
+    font-size: 24px;
+    font-weight: 700;
+    .title_left{
+        display: flex;
+        div{
+            margin-right: 25px;
+            p{
+                width: 540px;
+                font-size: 24px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        img{
+            margin-top: 13px;  
+            padding-right: 5px;
+            width: 12px;
+            height: 14px;
+        }
+        span{
+            margin-top: 7px;
+            color: #777777;
+        }
+    }
+    .title_right{
+        select{
+            padding: 7px 90px 7px 10px;
+            option{
+                color: #666666;
+                font-size: 14px;
+            }
+        }
+    }
+}
