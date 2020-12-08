@@ -47,6 +47,7 @@
     .select_bottom{
         position: relative;
         padding: 50px 0;
+        margin-top: 30px;
         text-align: center;
         border-top: 1px solid #eaeaea;
         button:first-child{
@@ -118,7 +119,105 @@
 }
 
 
-///////////////////// select_classTime
+///////////////////// confirm_selection_box
 
-///////////////////// select_classTime[e]
+    // table
+    table{
+        &.confirm_selection_box {
+            width: 100%;
+            border-top: 2px solid black;
+            border-collapse: collapse;
+            tbody{
+                tr{
+                    &:nth-child(1){
+                        th{
+                            p{
+                                color: #000;
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        td{
+                            padding-left: 20px;
+                            color: #666666;
+                            font-size: 14px;
+                            &:nth-child(2){
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        td{
+                            text-align: right;
+                            select{
+                                width: 80%;
+                                margin-right: 20px;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                    &:nth-child(4){
+                        td{
+                            padding-right: 20px;
+                            text-align: right;
+                            font-weight: 700;
+                            p{
+                                color: #666666;
+                                font-size: 15px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    &:nth-child(5){
+                        th{
+                            border-bottom: none;
+                        }
+                        td{
+                            padding-right: 20px;
+                            font-size: 22px;
+                            font-weight: 700;
+                            text-align: right;
+                            border-bottom: none;
+                        }
+                    }
+                    // th
+                    th{
+                        padding: 20px;
+                        width: 200px;
+                        text-align: left;
+                        border-bottom: 1px solid #cccccc;
+                        p{
+                            color: #666666;
+                        }
+                        h2{
+                            color: #333333;
+                            font-size: 18px;
+                        }
+                        h4{
+                            margin-bottom: 5px;
+                            color: #333333;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        h5{
+                            margin-top: 10px;
+                            color: #666666;
+                            font-size: 15px;
+                        }
+                        h6{
+                            font-size: 12px;
+                        }
+                    }
+                    // th[e]
+                    td{
+                        border-bottom: 1px solid #cccccc;
+                    }
+                }
+            }
+        }
+    }
+    // table[e]
+
+
+///////////////////// confirm_selection_box[e]
 
