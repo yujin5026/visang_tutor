@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../../css/layout.css">
     <link type="text/css" rel="stylesheet" href="../../css/common.css">
-    <link type="text/css" rel="stylesheet" href="../../css/page/search.css">
+    <link type="text/css" rel="stylesheet" href="../../css/page.css">
+    <link type="text/css" rel="stylesheet" href="../../css/keta_se_002_popup_05.css">
+    <style>
+        .guide {
+            width: 1280px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -244,130 +252,48 @@
                 <button type="button" class="btn-popclose" onclick="modalHide('pop-alert')" title="닫기">닫기</button>
                 <h1>메뉴추가</h1>
                 <div class="popcontents">
-
-                    <div class="popup_box">
-
-                        <div class="popup_box_title01">
-                            <p>Please confirm your selection</p>
+                    <div class="table_contents">
+                        <div class="select_course_box">
+                        <!-- select_title -->
+                        <div class="select_title">
+                            <img src="../../images/popup_check_icon.png" alt="popup_check_icon">
+                            <p>Course schedule reset completed</p>
+                            <h3>
+                                The class reservation has been changed.<br/>
+                                You can check the reservation details on My Page.
+                            </h3>
                         </div>
+                        <!-- // select_title -->
 
-                        <div class="popup_chapter">
-                            <div class="popup_chapter_list">
-                                <p>Course</p>
-                                <span>1</span>
-                            </div>
-                            <div class="popup_chapter_list">
-                                <p>Option</p>
-                                <span>2</span>
-                            </div>
-                            <div class="popup_chapter_list">
-                                <p>Time</p>
-                                <span>3</span>
-                            </div>
-                            <div class="popup_chapter_list">
-                                <p>Contents</p>
-                                <span>4</span>
-                            </div>
+                        <!-- schedule_completed -->
+                        <div class="schedule_completed_box">
+                            <p><img src="../../images/guidance_icon.png" alt="guidance_icon"><em>Guidance</em></p>
+                            <ul>
+                                <li>
+                                    Cancellations and changes can only be made if there are more than 24 hours left.
+                                </li>
+                                <li>
+                                    Degree acquisition is an academic background recognition system.
+                                </li>
+                                <h3>Payment wife</h3>
+                                <li>
+                                    Qualification acquisition is not an employment test, but a competency recognition test in a related<br/>
+                                    field.Degree acquisition is an academic background recognition system, qualification acquisition is<br/>
+                                    a competency recognition system. If other abilities are the same, the effect of obtaining a<br/>
+                                    qualification upon employment or employment will be recognized.
+                                </li>
+                            </ul>
                         </div>
+                        <!-- // schedule_completed -->
 
-<<<<<<< HEAD
-                        <table class="popup_contants_table">
-                            <tbody>
-                                <tr>
-                                    <th colspan="2">
-                                        <p>conversation</p>
-                                        <h4>Business</h4>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <h4>20minutes,5 lessons</h4>
-                                        <h6 class="badge hot">10%off</h6>
-                                    </th>
-                                    <td>10.26(Mon) 01:00~02:00 / 10.27(Tue) 01:00~02:00</td>
-
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <p>Coupon</p>
-                                    </th>
-                                    <td>
-                                        <select>
-                                            <option value="">Sort by</option>
-                                            <option value="">1</option>
-                                            <option value="">2</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <p>payment</p>
-                                        <h5>details</h5>
-                                    </th>
-                                    <td>$90.00<p>$1.00 / 10%</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <h2>Total</h2>
-                                    </th>
-                                    <td>$44.00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-=======
-                        <!-- confirm_selection_box -->
-                            <table class="confirm_selection_box">
-                                <tbody>
-                                    <tr>
-                                        <th colspan="2">
-                                            <p>conversation</p>
-                                            <h4>Business</h4>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                           <h4>20minutes,5 lessons</h4>
-                                           <h6 class="badge hot">10%off</h6>
-                                        </th>
-                                        <td>10.26(Mon) 01:00~02:00 / 10.27(Tue) 01:00~02:00</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                           <p>Coupon</p>
-                                        </th>
-                                        <td>
-                                            <select>
-                                                <option value=""  >Sort by</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <p>payment</p>
-                                            <h5>details</h5>
-                                        </th>
-                                        <td>$90.00<p>$1.00 / 10%</p></td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <h2>Total</h2>
-                                        </th>
-                                        <td>$44.00</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        <!-- // confirm_selection_box -->
->>>>>>> 9fc28d6d256003caee61691e66e8f9cbdd059a04
-
+                        <div class="btn_box">
+                            <button type="button" class="lg_btn line_button_gray">Confirm</button>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- 푸터 버전 1 -->
