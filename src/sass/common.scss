@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-body {font-family: 'Noto Sans KR', sans-serif;}
 @import 'card.scss';
-
+@import 'table.scss';
+body {font-family: 'Noto Sans KR', sans-serif;}
 
 $primary-color : #de9d22;
 $blue-color : #0d52a7;
@@ -99,6 +99,10 @@ input[type="checkbox"] {
 // slick 슬라이드
 .slick-initialized .slick-slide {outline:none;}
 
+
+
+
+
 ///////////////////////////////////////////////////////////////////////// 기본 틀
 .wrap {
     width: 1280px;
@@ -138,6 +142,8 @@ input[type="checkbox"] {
         margin:0 5px;
     }
 }
+
+
 
 ///////////////////////////////////////////////////////////////////////// 필터 옵션
 .box_component_wrap {

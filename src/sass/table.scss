@@ -1,0 +1,84 @@
+.table {
+    width:100%;
+    border-collapse: collapse;
+}
+.primary_table {
+    border-top:2px solid #1b4c88;
+    thead {
+        border-bottom:1px solid #eaeaea;
+        th {
+            font-size:15px;
+            color:#333333;
+            padding:10px;
+        }
+    }
+    tbody {
+        tr {
+            td {
+                font-size:14px;
+                color:#666666;
+                padding:15px 10px;
+                text-align:center;
+                border-bottom:1px solid #eaeaea;
+            }
+            &:nth-child(odd) {
+                background:#fafafa;
+            }
+        }
+    }
+    &.rowspan01 {
+        tr {
+            &:first-child {
+                td {
+                    &:first-child {
+                        background:#fff;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            td {
+                border-right:1px solid #eaeaea;
+                &:last-child {
+                    border-right:none;
+                }
+            }
+        }
+    }
+    &.rowspan02 {
+        tbody {
+            tr {
+                th {
+                    background:#fff;
+                    vertical-align: middle;
+                    border-bottom:1px solid #eaeaea;
+                    border-right:1px solid #eaeaea;
+                }
+                &:nth-child(n+1):nth-child(-n+5) {
+                    td {
+                        background:#fafafa;
+                        border-bottom:none;
+                        &:first-child {
+                            text-align:left;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    td {
+                        &:last-child {
+                            vertical-align: middle;
+                            border-bottom:1px solid #eaeaea;
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    border-bottom:1px solid #eaeaea;
+                }
+                td {
+                    border-right:1px solid #eaeaea;
+                    border-bottom:1px solid #eaeaea;
+                }
+            }
+            
+        }
+    }
+}

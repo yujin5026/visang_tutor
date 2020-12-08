@@ -158,6 +158,44 @@ input[type="radio"] {display:none;}
     }
 }
 
+///////////////////////////////////////////////////////////////////////// 마이페이지 - 타이틀
+.my_lesson_title {
+    margin-top:50px;
+    h3 {
+        display:inline-block;
+        font-size:24px;
+        font-weight:bold;
+        color:#333333;
+        margin-bottom:20px;
+    }
+    h2 {
+        display:inline-block;
+        font-size:32px;
+        font-weight:bold;
+        color:#222222;
+        margin-bottom:20px;
+    }
+    .see_all {
+        margin-top:10px;
+        float:right;
+        a {
+            font-size:14px;
+            color:#777777;
+        }
+    }
+}
+
+.lesson_box_two {
+    display:flex;
+    .my_lesson_box {
+        width:100%;
+        box-sizing: border-box;
+        &:first-child {
+            margin-right:20px;
+        }
+    }
+}
+
 ///////////////////////////////////////////////////////////////////////// KETA_MY_008.html
  .mypage{
      .mypage_date{
@@ -247,6 +285,7 @@ input[type="radio"] {display:none;}
         }
     }
  }
+
 // mypage_date
 .mypage_date {
     display: flex;

@@ -11,9 +11,10 @@
 
 .tutor_title{
     display: flex;
+    width:1280px;
     justify-content: space-between;
     padding: 25px 0;
-        margin-bottom: 35px;
+    margin:0 auto;
     font-size: 24px;
     font-weight: 700;
     .title_left{
@@ -52,9 +53,42 @@
 
 
 
+///////////////////////////////////////////////////////////////////////// KETA_SE_002
+#teacher {
+    display:flex;
+    width:1280px;
+    margin:0 auto;
+    min-height:1000px;
+    padding:50px 0;
+    .teacher_left {
+        position: relative;
+        min-width:920px;
+        .tutor_container{
+            padding: 60px;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 8px 2px #6f6f6f33;
+            &.teacher {
+                .teacher_card{
+                display: flex;
+                overflow: hidden;
+                }
+                .teacher_card_bottom{
+                    background:#ddd;
+                }
+            }
+        }
+    }
+    .teacher_right {
+        width:100%;
+        margin-left:30px;
+    }
+}
+
+
+
 ///////////////////////////////////////////////////////////////////////// KETA_SE_011 레벨 탭
 .teacher_search_list {
-    background:url('../images/visual.png') no-repeat;
+    background:url('../../images/visual.png') no-repeat;
     background-size: 100%;
 }
 .beginner {
@@ -207,6 +241,22 @@
             text-align: center;
         }
     }
+    .popup_box_title02{
+        margin-bottom: 50px;
+        text-align: center;
+        p{
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            margin: 20px 0;
+        }
+        h3{
+            color: #444444;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
     .popup_chapter{
         margin: 40px 0;
         text-align: center;
@@ -435,6 +485,36 @@
     }
 }
 
+
+///////////////////////////////////////////////////// schedule_completed_box
+.schedule_completed_box{
+    padding: 40px;
+    margin-bottom: 30px;
+    background: #f8f8f8;
+    p{
+        margin-bottom: 10px;
+        color: #666666;
+        em{
+            margin-left: 5px;
+            font-size: 14px;
+        }
+    }
+    ul {
+        padding-left: 20px;
+        line-height: 22px;
+        li{
+            color: #999999;
+            list-style-type: disc;
+            font-size: 13px;
+        }
+        h3{
+            padding: 10px 0;
+            color: #999999;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
 
 ///////////////////////////////////////////////////// popup_footer
 .popup_footer{

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../../css/common.css">
+    <style>
+        .guide {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        .guide>h1 {
+            margin: 30px 0 10px 0;
+            font-size: 30px;
+        }
+
+        .guide>h5 {
+            margin: 30px 0 15px 0;
+            background: #ccc;
+            padding: 10px;
+        }
+
+        .guide>h5>span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="guide">
+        <h1>Table</h1>
+
+        <h5>
+            .primary_table
+        </h5>
+        <table class="table primary_table">
+            <thead>
+                <th>Name of class (Time)</th>
+                <th>Name</th>
+                <th>sales day</th>
+                <th>Use/Purchase</th>
+                <th>sales money</th>
+                <th>real profit</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>course breaking (15:00)</td>
+                    <td>Gildong hong</td>
+                    <td>YY.MM.DD</td>
+                    <td>10/10</td>
+                    <td>$50.00</td>
+                    <td>-$2.5</td>
+                </tr>
+                <tr>
+                    <td>Processing Fee (15:00)</td>
+                    <td>master K</td>
+                    <td>YY.MM.DD</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-$2.5</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5>
+            .primary_table.rowspan01
+        </h5>
+        <table class="table primary_table rowspan01">
+            <thead>
+                <th colspan="2">Time</th>
+                <th>Price</th>
+                <th>Last Price</th>
+                <th>Discount</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="6">20min</td>
+                    <td>1 time</td>
+                    <td>10 USD</td>
+                    <td>10.00 USD</td>
+                    <td>0%</td>
+                </tr>
+                <tr>
+                    <td>5 times</td>
+                    <td>50 USD</td>
+                    <td>40.00 USD</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <td>10 times</td>
+                    <td>100 USD</td>
+                    <td>100.00 USD</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20 times</td>
+                    <td>20 USD</td>
+                    <td>200.00 USD</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5>
+            .primary_table.rowspan02
+        </h5>
+        <table class="table primary_table rowspan02">
+            <colgroup>
+                <col width="200px;"/>
+                <col width=";"/>
+                <col />
+                <col width="100px;"/>
+            </colgroup>
+            <thead>
+                <th colspan="2">contents</th>
+                <th>Score per unit</th>
+                <th>Total score</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="5">preview</th>
+                </tr>
+                <tr>
+                    <td>ㆍSchoolbook (Display file name)</td>
+                    <td><input type="text" /></td>
+                    <td rowspan="4">100</td>
+                </tr>
+                <tr>
+                    <td>ㆍSchoolbook (Display file name)</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>ㆍSchoolbook (Display file name)</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>ㆍSchoolbook (Display file name)</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>ss</td>
+                    <td>ㆍSchoolbook (Display file name)</td>
+                    <td><input type="text" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ss</td>
+                    <td>ㆍSchoolbook (Display file name)</td>
+                    <td><input type="text" /></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
