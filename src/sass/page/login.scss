@@ -1,8 +1,7 @@
 
-
  ///////////////////////////////////////////////////////////////////////// KETA_LO_001.html
 .login {
-    background:url(../images/login_background.png) no-repeat;
+    background:url(../../images/login_background.png) no-repeat;
     background-size: 100%;
     background-position: center;
     .wrap {
@@ -80,7 +79,7 @@
     .main_left {
         min-width:965px;
         overflow:hidden;
-        background:url('../images/left_background.png') no-repeat;
+        background:url('../../images/left_background.png') no-repeat;
         background-size:cover;
         .main_left_contents {
             width:460px;
@@ -140,12 +139,12 @@
                 .slick-prev {
                     top:-20px;
                     left: 90%;
-                    background:url('../images/slick_arrow_left.png') no-repeat;
+                    background:url('../../images/slick_arrow_left.png') no-repeat;
                 }
                 .slick-next {
                     top: -20px;
                     right: 0;
-                    background:url('../images/slick_arrow_right.png') no-repeat;
+                    background:url('../../images/slick_arrow_right.png') no-repeat;
                 }
             }
         }
@@ -165,12 +164,12 @@
                 .slick-prev {
                     top:-30px;
                     left: 60%;
-                    background:url('../images/slick_arrow_left.png') no-repeat;
+                    background:url('../../images/slick_arrow_left.png') no-repeat;
                 }
                 .slick-next {
                     top: -30px;
                     right: 35%;
-                    background:url('../images/slick_arrow_right.png') no-repeat;
+                    background:url('../../images/slick_arrow_right.png') no-repeat;
                 }
             .main_my_class{
                 .class_img{
@@ -227,7 +226,7 @@
                                     position:absolute;
                                     top:-25px;
                                     left:20px;
-                                    background:url(../images/main_country01.png) no-repeat;
+                                    background:url(../../images/main_country01.png) no-repeat;
                                     width:55px;
                                     height:55px;
                                 }
@@ -238,7 +237,7 @@
                                     position:absolute;
                                     top:-25px;
                                     left:20px;
-                                    background:url(../images/main_country02.png) no-repeat;
+                                    background:url(../../images/main_country02.png) no-repeat;
                                     width:55px;
                                     height:55px;
                                 }
@@ -309,189 +308,4 @@
             }
         }
     }
-}
-
-
-///////////////////////////////////////////////////////////////////////// KETA_SE_011 레벨 탭
-.teacher_search_list {
-    background:url('../images/visual.png') no-repeat;
-    background-size: 100%;
-}
-.beginner {
-    background:#fff;
-    padding-bottom: 12rem;
-}
-
-.teacher_search_title {
-    text-align: center;
-    margin-top: 6rem;
-    margin-bottom: 60px;
-
-    h2 {
-        font-size: 32px;
-        color: #fff;
-        margin-bottom: 20px;
-    }
-
-    p {
-        color: #a6a6a5;
-    }
-}
-
-.teacher_search_box {
-    background: #fff;
-    margin: 10px;
-    outline: none;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
-    .lesson_box_top {
-        img {
-            width: 100%;
-        }
-    }
-    .lesson_box_bottom {
-        padding: 25px;
-        h3 {
-            font-size: 20px;
-            font-weight: bold;
-            color: #333333;
-        }
-        p {
-            font-size: 14px;
-            color: #999999;
-            margin-top: 20px;
-        }
-    }
-}
-
-.level_title {
-    display:flex;
-    .level_title_left {
-        width:100%;
-        display:flex;
-        margin-bottom:10px;
-        h3 {
-            font-size:28px;
-        }
-        .see_all {
-            font-size:14px;
-            font-weight:300;
-            color:#777777;
-            margin:15px 0 0 10px;
-        }
-    }
-}
-
-.level_box {
-    margin: 10px;
-    outline: none;
-    .level_box_top {
-        img {
-            width: 100%;
-        }
-    }
-    .level_box_bottom {
-        padding: 15px 0;
-        h3 {
-            font-size: 20px;
-            font-weight: bold;
-            color: #333333;
-            min-height: 110px;
-        }
-        .level_box_sub {
-            display:flex;
-            padding-top:10px;
-            border-top:1px solid #ddd;
-            p {
-                display:inline-block;
-                width:100%;
-                font-size: 14px;
-                color: #999999;
-            }
-            button {
-                    border: none;
-                    vertical-align: top;
-                    width: 26px;
-                    height: 24px;
-                    overflow: hidden;
-            }
-            
-        }
-        
-    }
-}
-
-.level_tab{
-    text-align:center;
-    margin:50px auto;
-    .selector_tabs{
-        display:inline-block;
-        position:relative;
-        margin-bottom:30px;
-        li{
-            cursor: pointer;
-            width:190px;
-            padding:10px 0;
-            font-weight:700;
-            display:inline-block;
-            position:relative;
-            z-index:1;
-            transition-duration:0.6s;
-            &.active {
-                color:#fff;
-            }
-        }
-        .selector{
-            height:100%;
-            display:inline-block;
-            position:absolute;
-            left:0px;
-            top:0px;
-            z-index:1;
-            border-radius:50px;
-            transition-duration:0.6s;
-            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            background: #444444;
-        }
-    }
-}
-
-
-
-///////////////////////////////////////////////////////////////////////// 시간표
-.timetable{
-    table{
-        width: 100%;
-        border-top: 1px solid #dddddd;
-        border-bottom: 1px solid #dddddd;
-        border-collapse: collapse;
-        thead{
-            th{
-                color: #666666;
-                font-size: 13px;
-                font-weight: 300;
-                padding:5px;
-                border-bottom:1px solid #dddddd;
-            }
-        }
-            tbody{
-                tr{
-                    td {
-                            vertical-align: middle;
-                        div{
-                            background: #f2f2f2;
-                            margin:5px;
-                            padding: 15px 40px;
-                            border-radius: 3px;
-                            &.blue {
-                                background: #75afcd;
-                            }
-                        }
-                        &:first-child{
-                            color: #666666;
-                            font-size: 15px;
-                        }
-                    }
-                }
-            }
-        }
 }

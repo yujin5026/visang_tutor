@@ -436,6 +436,54 @@
 }
 
 ///////////////////////////////////////////////////// uncovering
+.classList {
+    background:#fcfcfc;
+    .card_container {
+        .card_contants {
+            justify-content: space-between;
+            .select_left{
+                h4:first-child{
+                    display: block;
+                    color: #000000;
+                    font-size: 18px;
+                    font-weight: 700;
+                    border-right: none;
+                }
+                h4{
+                    display: inline-block;
+                    padding-right: 10px;
+                    color: #777777;
+                    font-size: 14px;
+                    font-weight: 400;
+                    border-right: 1px solid #cdcece;
+                    &:nth-child(3){
+                        padding-left: 10px;
+                    }
+                    &:nth-child(4){
+                        padding-left: 10px;
+                    }
+                    &:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+            .select_right{
+                h3{
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+                h4{
+                    margin-right: 5px;
+                    font-size: 20px;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+       
+
+///////////////////////////////////////////////////// uncovering
 .todyLesson{
     justify-content: space-between;
     .today_content{
