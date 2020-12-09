@@ -207,10 +207,137 @@
 
 
 ///////////////////////////////////////////////////// 카드타입 00
+
+
 .card00 {
-    
+    .card_contants_left{
+        img{
+            margin-right: 30px;
+        }
+    }
+    .card_contants_right{
+        // contants_middle
+        .contants_middle{
+            p{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 643px;
+                font-size: 32px;
+                font-weight: 700;
+            }
+            span{
+                margin-bottom: 10px;
+                img{
+                    width: 14px;
+                    height: 14px;
+                }
+                em{
+                    margin: 0 10px;
+                    color: #666666;
+                    font-size: 14px;
+                }
+                strong{
+                    margin-left: 10px;
+                    font-size: 14px;
+                }
+            }
+        }
+        // contants_middle[e]
+
+        // contants_bottom
+        .contants_bottom{
+            margin-top: 20px;
+            h5{
+                margin-bottom: 5px;
+                color: #999999;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            span{
+                margin-right: 5px;
+                font-weight: 700;
+            }
+            span:not(:nth-child(2)){
+                margin-left: 10px;
+            }
+            .language_skill_statue{
+                display: inline-block;
+                div{
+                    display: inline-block;
+                    width: 7px;
+                    height: 13px;
+                    background: #eaeaea;
+                    &:not(:last-child){
+                        margin-right: 2px;
+                    }
+                }
+                &.skill01 {
+                    div {
+                        &:first-child {
+                            background:#75afcd;
+                        }
+                    }
+                }
+                &.skill02 {
+                    div {
+                        &:nth-child(n+1):nth-child(-n+2) {
+                            background:#75afcd;
+                        }
+                    }
+                }
+                &.skill03 {
+                    div {
+                        &:nth-child(n+1):nth-child(-n+3) {
+                            background:#75afcd;
+                        }
+                    }
+                }
+            }
+        }
+        // contants_bottom[e]
+    }
 }
 
+
+
+.contants_footer{
+    margin-top: 30px;
+    padding: 20px;
+    background: #efefef;
+    .contants_footer_list{
+        display: inline-block;
+        &:first-child{
+            h5{
+                color: #b94a38;
+                font-size: 18px;
+            }
+        }
+        &:not(:first-child){
+            span{
+                margin-left: 30px;
+            }
+        }
+        span{
+            padding-right: 5px;
+            color: #666666;
+            font-size: 14px;
+            font-weight: 500;
+            border-right: 1px solid #dbdbdb;
+        }
+        img{
+            color: #b94a38;
+        }
+        h5{
+            display: inline-block;
+            font-size: 14px;
+        }
+    }
+    .heart_break_btn{
+        float: right;
+        border: none;
+    }
+}
 ///////////////////////////////////////////////////// 카드타입 01
 .card01 {
     .card_img {
