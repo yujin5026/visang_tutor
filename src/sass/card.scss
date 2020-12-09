@@ -293,6 +293,27 @@
                         }
                     }
                 }
+                &.skill04 {
+                    div {
+                        &:nth-child(n+1):nth-child(-n+4) {
+                            background:#75afcd;
+                        }
+                    }
+                }
+                &.skill05 {
+                    div {
+                        &:nth-child(n+1):nth-child(-n+5) {
+                            background:#75afcd;
+                        }
+                    }
+                }
+                &.skill06 {
+                    div {
+                        &:nth-child(n+1):nth-child(-n+6) {
+                            background:#75afcd;
+                        }
+                    }
+                }
             }
         }
         // contants_bottom[e]
