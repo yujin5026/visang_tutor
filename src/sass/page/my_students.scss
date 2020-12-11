@@ -712,7 +712,8 @@ input[type="radio"] {display:none;}
 }
 
 .review_question_box{
-    border: 1px solid black;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
     // review_question_contents
     .review_question_contents{
         padding: 40px;
