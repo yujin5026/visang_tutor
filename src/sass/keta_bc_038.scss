@@ -1,0 +1,119 @@
+// class지정시 날짜 배경 바뀜
+.background_skyblue{
+    background: #75afcd;
+}
+
+.lesson_runnig_box{
+    margin-bottom: 50px;
+    // lesson_runnig_top
+    .lesson_running_top{
+        // lesson_top_left
+        .lesson_top_left{
+            display: inline-block;
+            p{
+                display: inline-block;
+            }
+            h2{
+                display: inline-block;
+                margin-left: 10px;
+                font-size: 20px;
+            }
+        }
+        // lesson_top_left[e]
+
+        .lesson_top_right{
+            float: right;
+            h3{
+                color: #999;
+                font-size: 14px;
+                em{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    // lesson_runnig_top[e]
+
+    // table_1
+    .table_1{
+        margin-top: 20px;
+        border-top: 2px solid #1b4c88;
+        width: 100%;
+        border-collapse: collapse;
+        thead{
+            th{
+                padding: 10px 0;
+                &:not(:last-child){
+                    border-right: 1px solid #eaeaea;
+                }
+            }
+        }
+        tbody{
+            td{
+                padding: 15px 3px;
+                border: 1px solid #eaeaea;
+                &:first-child{
+                    border-left: none;
+                }
+            }
+        }
+
+        &.sub{
+
+        }
+    }
+    // table_1[e]
+}
+
+
+.lesson_running_box{
+    margin-bottom: 50px;
+    .running_box_title{
+        h1{
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+    }
+    // table_2
+    .table_2{
+        margin-top: 20px;
+        border-top: 2px solid #1b4c88;
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        thead{
+            th{
+                padding: 10px;
+                font-size: 15px;
+            }
+        }
+        tbody{
+            border-top: 1px solid  #eaeaea;
+            border-bottom: 1px solid  #eaeaea;
+            tr{
+                td{
+                    padding: 16px;
+                    color: #666666;
+                    font-size: 14px;
+                    input{
+                        padding: 10px;
+                        font-size: 14px;
+                        &::placeholder{
+                            color: #000;
+                            font-weight: 700;
+                        }
+                    }
+                    label{
+                        color: #000;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    // table_2[e]
+    
+    textarea{
+        padding: 20px;
+    }
+}
