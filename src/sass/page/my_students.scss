@@ -1,19 +1,21 @@
 ///////////////////////////////////////////////////////////////////////// 마이페이지 LNB
 .lnb {
-    width:220px;
-    display:inline-block;
+    width: 220px;
+    display: inline-block;
+
     h3 {
         position: relative;
-        font-size:26px;
-        font-weight:bold;
-        color:#b14248;
+        font-size: 26px;
+        font-weight: bold;
+        color: #b14248;
         margin-bottom: 20px;
         padding-bottom: 20px;
         border-bottom: 5px solid;
         border-image: linear-gradient(to right, #b14248 0%, #bd6d33 100%);
         border-image-slice: 1;
+
         &::after {
-            content:'';
+            content: '';
             position: absolute;
             top: 15px;
             right: 0;
@@ -23,41 +25,51 @@
             background: #bd6d33;
         }
     }
+
     .lnb-menu {
-        > li {
-            width:100%;
-            border-bottom:1px solid #eaebec;
-            > a {
-                font-size:15px;
-                color:#000;
-                display:block;
-                padding:20px 0;
+        >li {
+            width: 100%;
+            border-bottom: 1px solid #eaebec;
+
+            >a {
+                font-size: 15px;
+                color: #000;
+                display: block;
+                padding: 20px 0;
+
                 &.active {
-                    color:#b14248;
+                    color: #b14248;
                 }
             }
+
             .lnb-depth03 {
-                display:none;
-                padding:10px;
+                display: none;
+                padding: 10px;
+
                 li {
-                    margin-bottom:15px;
+                    margin-bottom: 15px;
+
                     a {
-                        display:block;
-                        position:relative;
-                        padding:0 25px;
-                        font-size:13px;
-                        color:#666666;
-                        &.active, &:hover {
-                            color:#b14248;
+                        display: block;
+                        position: relative;
+                        padding: 0 25px;
+                        font-size: 13px;
+                        color: #666666;
+
+                        &.active,
+                        &:hover {
+                            color: #b14248;
                         }
                     }
                 }
             }
+
             &.active {
-                > a {
-                    color:#b14248;
-                    font-weight:bold;
-                    border:none;background:url("../images/lnb_plus.png") no-repeat right center;
+                >a {
+                    color: #b14248;
+                    font-weight: bold;
+                    border: none;
+                    background: url("../images/lnb_plus.png") no-repeat right center;
                 }
             }
         }
@@ -66,70 +78,96 @@
 
 
 ///////////////////////////////////////////////////////////////////////// 마이페이지 탭
-input[type="radio"] {display:none;}
+input[type="radio"] {
+    display: none;
+}
+
 .tabs {
-    display:flex;
-    overflow:hidden;
+    display: flex;
+    overflow: hidden;
+
     .tab {
-        width:25%;
+        width: 25%;
         padding: 20px;
-        display:inline-block;
-        font-size:16px;
-        color:#666666;
-        text-align:center;
-        border:1px solid #eaebec;
+        display: inline-block;
+        font-size: 16px;
+        color: #666666;
+        text-align: center;
+        border: 1px solid #eaebec;
         cursor: pointer;
+
         span {
-            font-size:20px;
-            font-weight:bold;
-            color:#b94a38;
-            margin-left:10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #b94a38;
+            margin-left: 10px;
         }
     }
 }
 
-.panel{display:none;padding-top:20px;animation: fadein .8s;}
+.panel {
+    display: none;
+    padding-top: 20px;
+    animation: fadein .8s;
+}
+
 @keyframes fadein {
     from {
-        opacity:0;
+        opacity: 0;
     }
+
     to {
-      opacity:1;
-  }
+        opacity: 1;
+    }
 }
-#one:checked ~ .panels #one-panel,
-#two:checked ~ .panels #two-panel,
-#three:checked ~ .panels #three-panel,
-#four:checked ~ .panels #four-panel {display:block}
-#one:checked ~ .tabs #one-tab,
-#two:checked ~ .tabs #two-tab,
-#three:checked ~ .tabs #three-tab,
-#four:checked ~ .tabs #four-tab {background:#b94a38;color:#fff;border:1px solid #b94a38;}
-#one:checked ~ .tabs #one-tab span,
-#two:checked ~ .tabs #two-tab span,
-#three:checked ~ .tabs #three-tab span,
-#four:checked ~ .tabs #four-tab span {color:#fff;}
+
+#one:checked~.panels #one-panel,
+#two:checked~.panels #two-panel,
+#three:checked~.panels #three-panel,
+#four:checked~.panels #four-panel {
+    display: block
+}
+
+#one:checked~.tabs #one-tab,
+#two:checked~.tabs #two-tab,
+#three:checked~.tabs #three-tab,
+#four:checked~.tabs #four-tab {
+    background: #b94a38;
+    color: #fff;
+    border: 1px solid #b94a38;
+}
+
+#one:checked~.tabs #one-tab span,
+#two:checked~.tabs #two-tab span,
+#three:checked~.tabs #three-tab span,
+#four:checked~.tabs #four-tab span {
+    color: #fff;
+}
 
 ///////////////////////////////////////////////////////////////////////// 마이페이지 레이아웃
 .mypage {
     width: calc(100% - 290px);
     margin-left: 70px;
+
     .mypage_title {
         margin-bottom: 50px;
         padding-bottom: 20px;
         border-bottom: 5px solid #eaeaea;
-        > h3 {
-            display:inline-block;
-            font-size:26px;
-            font-weight:bold;
+
+        >h3 {
+            display: inline-block;
+            font-size: 26px;
+            font-weight: bold;
         }
+
         .mypage_title_date {
-            margin-top:10px;
-            float:right;
+            margin-top: 10px;
+            float: right;
+
             span {
-                font-size:12px;
-                color:#999999;
-                margin-right:5px;
+                font-size: 12px;
+                color: #999999;
+                margin-right: 5px;
             }
         }
     }
@@ -137,106 +175,125 @@ input[type="radio"] {display:none;}
 
 ///////////////////////////////////////////////////////////////////////// 대쉬보드
 .dashboard_title {
-    padding-bottom:20px;
-    border-bottom:1px solid #ddd;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+
     .dashboard_left {
         display: inline-block;
+
         strong {
-            font-size:24px;
-            font-weight:normal;
-            color:#333333;
+            font-size: 24px;
+            font-weight: normal;
+            color: #333333;
         }
+
         span {
-            font-size:18px;
-            color:#333333;
-            margin-left:10px;
+            font-size: 18px;
+            color: #333333;
+            margin-left: 10px;
         }
     }
+
     .dashboard_right {
-        float:right;
-        margin-top:10px;
+        float: right;
+        margin-top: 10px;
     }
 }
 
 ///////////////////////////////////////////////////////////////////////// 마이페이지 - 타이틀
 .my_lesson_title {
-    margin-top:50px;
+    margin-top: 50px;
+
     h3 {
-        display:inline-block;
-        font-size:24px;
-        font-weight:bold;
-        color:#333333;
-        margin-bottom:20px;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333333;
+        margin-bottom: 20px;
     }
+
     h2 {
-        display:inline-block;
-        font-size:32px;
-        font-weight:bold;
-        color:#222222;
-        margin-bottom:20px;
+        display: inline-block;
+        font-size: 32px;
+        font-weight: bold;
+        color: #222222;
+        margin-bottom: 20px;
     }
+
     .see_all {
-        margin-top:10px;
-        float:right;
+        margin-top: 10px;
+        float: right;
+
         a {
-            font-size:14px;
-            color:#777777;
+            font-size: 14px;
+            color: #777777;
         }
     }
 }
+
 ///////////////////////////////////////////////////////////////////////// 마이페이지 - 타이틀[e]
 
 
 .lesson_box_two {
-    display:flex;
+    display: flex;
+
     .my_lesson_box {
-        width:100%;
+        width: 100%;
         box-sizing: border-box;
+
         &:first-child {
-            margin-right:20px;
+            margin-right: 20px;
         }
     }
 }
 
 ///////////////////////////////////////////////////////////////////////// KETA_MY_008.html
- .mypage{
-     .mypage_date{
+.mypage {
+    .mypage_date {
         display: flex;
         justify-content: space-between;
-         .date_box_left{
+
+        .date_box_left {
             display: flex;
             margin-bottom: 15px;
-            img{
+
+            img {
                 margin-right: 10px;
             }
-            h2{
+
+            h2 {
                 margin-top: 5px;
                 font-size: 20px;
             }
-         }
-         .date_box_right{
-             button{
-                 &:nth-child(2){
-                     margin-left: -4px;
-                 }
-             }
-         }
-     }
-    .orange{
+        }
+
+        .date_box_right {
+            button {
+                &:nth-child(2) {
+                    margin-left: -4px;
+                }
+            }
+        }
+    }
+
+    .orange {
         background: #d99e2d;
     }
-    .green{
+
+    .green {
         background: #208b73;
     }
-    .mypage_contents{
-         .tutor_container{
-             margin-bottom: 40px;
-             &.timetable{
-                 table{
-                     tbody{
-                         tr{
-                             td{
-                                 div{
+
+    .mypage_contents {
+        .tutor_container {
+            margin-bottom: 40px;
+
+            &.timetable {
+                table {
+                    tbody {
+                        tr {
+                            td {
+                                div {
                                     padding: 0;
                                     margin: 0;
                                     height: 28px;
@@ -245,54 +302,62 @@ input[type="radio"] {display:none;}
                                     font-size: 15.46px;
                                     border-radius: 0;
                                     text-align: center;
-                                 }
-                             }
-                         }
-                     }
-                 }
-             }
-         }
-     }
-    .mypage_bottom_contents{
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mypage_bottom_contents {
         display: flex;
         padding: 25px 15px;
         border-top: 1px solid #999999;
         border-bottom: 1px solid #999999;
-        .mypage_contents_left{
+
+        .mypage_contents_left {
             display: flex;
-            img{
+
+            img {
                 margin-right: 15px;
                 width: 50px;
                 height: 50px;
             }
-            p{
+
+            p {
                 width: 100%;
                 font-weight: 700;
             }
         }
-        .mypage_contents_right{
+
+        .mypage_contents_right {
             display: flex;
             justify-content: space-around;
             width: 75%;
-            .contents_description{
-                h2{
+
+            .contents_description {
+                h2 {
                     margin-bottom: 3px;
                     color: #999999;
                     font-weight: 400;
                 }
-                h3{
+
+                h3 {
                     font-weight: 700;
                 }
             }
         }
     }
- }
+}
 
 // mypage_date
 .mypage_date {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+
     .date_box_left {
         display: flex;
 
@@ -308,34 +373,37 @@ input[type="radio"] {display:none;}
         }
     }
 }
+
 .class_schedule_box {
     border-top: 5px solid black;
     border-bottom: 1px solid black;
+
     table {
         width: 100%;
         border-collapse: collapse;
+
         thead {
             padding: 10px;
-            
+
             th {
                 padding: 10px;
                 text-align: center;
-                border:1px solid #ddd;
+                border: 1px solid #ddd;
             }
         }
     }
+
     tbody {
         tr {
-            td{
+            td {
                 padding: 10px;
                 text-align: center;
-                border:1px solid #ddd;
-                
+                border: 1px solid #ddd;
+
             }
-            &:nth-child(1){
-                td{
-                    
-                }
+
+            &:nth-child(1) {
+                td {}
             }
         }
     }
@@ -344,36 +412,40 @@ input[type="radio"] {display:none;}
 
 
 /////////////////////////// mypage 작업
-.mypage_contents{
-    &.flex{
+.mypage_contents {
+    &.flex {
         display: flex;
     }
+
     // mypage_contents_box
-    .mypage_contents_box{
-        margin:20px 0;
+    .mypage_contents_box {
+        margin: 20px 0;
         width: 100%;
-        .mypage_title_box{
+
+        .mypage_title_box {
             margin-bottom: 30px;
             font-size: 24px;
             font-weight: 700;
         }
-        .contents_box{
+
+        .contents_box {
             flex: 1;
-            border:1px solid #ddd;
-            padding:30px;
+            border: 1px solid #ddd;
+            padding: 30px;
             border-radius: 5px;
 
             // My Q&A part
-            .contents_top_part{
+            .contents_top_part {
                 margin-bottom: 30px;
                 padding: 10px 20px;
                 text-align: center;
                 background: #f9fafe;
             }
 
-            .contents_bottom_part{
+            .contents_bottom_part {
                 line-height: 28px;
-                h2{
+
+                h2 {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
@@ -381,22 +453,26 @@ input[type="radio"] {display:none;}
                     font-size: 18px;
                     font-weight: 500;
                 }
-                h3{
+
+                h3 {
                     color: #0d52a7;
                     font-size: 14px;
                 }
-                h4{
+
+                h4 {
                     margin-bottom: 20px;
                     color: #666666;
                     font-size: 14px;
                 }
             }
         }
+
         // cardlist_box
-        .cardlist_box{
+        .cardlist_box {
             padding: 0;
             border: none;
-            .contents_leftcard_box{
+
+            .contents_leftcard_box {
                 margin: 0 20px;
                 padding: 99px 30px;
                 flex: 1;
@@ -405,168 +481,201 @@ input[type="radio"] {display:none;}
                 background: #d99e2d;
                 text-align: center;
                 border-radius: 6px;
-                h1{
+
+                h1 {
                     color: #fff;
                     font-size: 36px;
-                    font-weight: 400; 
+                    font-weight: 400;
                 }
-                h2{
+
+                h2 {
                     color: #fff;
                     font-weight: 400;
                     opacity: 0.5;
                 }
             }
-            .contents_rightcard_box{
+
+            .contents_rightcard_box {
                 padding: 99px 30px;
                 flex: 1;
                 width: 100%;
                 background: #f3f3f3;
                 text-align: center;
                 border-radius: 6px;
-                h1{
+
+                h1 {
                     color: #d99e2d;
                     font-size: 36px;
                 }
-                h2{
+
+                h2 {
                     color: #777777;
                     font-size: 15px;
                     font-weight: 400;
                 }
             }
         }
+
         // cardlist_box[e]
 
 
         // contents_box_wrapper
-        .contents_box_wrapper{
+        .contents_box_wrapper {
             display: flex;
             border: 1px solid #ddd;
             padding: 30px;
             border-radius: 5px;
-            > div{
+
+            >div {
                 flex: 1;
-                &:not(:last-child){
+
+                &:not(:last-child) {
                     border-right: 1px solid black;
                 }
-                &:nth-child(1){
+
+                &:nth-child(1) {
                     padding-right: 20px;
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     margin-left: 30px;
                     padding-right: 35px;
                 }
-                &:nth-child(3){
+
+                &:nth-child(3) {
                     text-align: center;
                     padding-left: 19px;
                     padding-right: 15px;
-                    img{
+
+                    img {
                         margin-top: 50px;
                     }
-                    p{
+
+                    p {
                         margin-top: 20px;
                         color: #999999;
                         font-size: 18px;
                     }
                 }
-                h1{
+
+                h1 {
                     margin-bottom: 20px;
                     font-size: 24px;
                 }
-                h3{
+
+                h3 {
                     color: #666666;
                     font-size: 14px;
-                    &:nth-child(2){
+
+                    &:nth-child(2) {
                         margin-bottom: 10px;
                     }
-                    b{
+
+                    b {
                         display: inline-block;
                         width: 75px;
                     }
-                    em{
+
+                    em {
                         padding-left: 5px;
                         color: #333333;
                         border-left: 1px solid black;
                     }
                 }
-                h4{
+
+                h4 {
                     margin: 25px 0 10px 0;
                     color: #b94a38;
                     font-size: 14px;
                     font-weight: 500;
                 }
-                
-                button{
+
+                button {
                     width: 100%;
                 }
             }
         }
+
         // contents_box_wrapper[e]
 
         // mycourse_contents_left
-        .mycourse_contents_left{
+        .mycourse_contents_left {
             display: inline-block;
-            .mycourse_contents_top{
+
+            .mycourse_contents_top {
                 margin-bottom: 10px;
-                img{
+
+                img {
                     margin-right: 10px;
                 }
-                span{
+
+                span {
                     font-size: 24px;
                     font-weight: 700;
                 }
             }
-            .mycourse_contents_bottom{
-                .mycourse_left{
+
+            .mycourse_contents_bottom {
+                .mycourse_left {
                     display: inline-block;
                     margin-right: 30px;
-                    h3{
+
+                    h3 {
                         color: #0d52a7;
                         font-size: 24px;
-                        em{
+
+                        em {
                             margin-left: 10px;
                             color: #333;
                             font-size: 14px;
                         }
                     }
-                    p{
+
+                    p {
                         color: #999999;
                         font-size: 14px;
                     }
                 }
-                .mycourse_right{
+
+                .mycourse_right {
                     display: inline-block;
                     margin-top: 22px;
                     margin-left: 30px;
                     vertical-align: top;
-                    h3{
-                        em{
+
+                    h3 {
+                        em {
                             font-size: 14px;
                             font-weight: 500;
                         }
-                        img{
+
+                        img {
                             margin-left: 10px;
                         }
                     }
                 }
             }
         }
+
         // mycourse_contents_left[e]
-        .mycourse_contents_right{
+        .mycourse_contents_right {
             display: inline-block;
             margin-top: 30px;
-              
-            p{
+
+            p {
                 margin-bottom: 10px;
                 color: #1b4c88;
                 text-align: right;
             }
-            span{
+
+            span {
                 margin-right: 10px;
                 background: #ccc;
                 border: 32px;
             }
         }
     }
+
     // mypage_contents_box[e]
 }
 
@@ -574,17 +683,20 @@ input[type="radio"] {display:none;}
 
 
 /////////// KETA_BC_003 작업
-.my_lesson_box{
-    .table_date{
+.my_lesson_box {
+    .table_date {
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
-        .table_date_left{
+
+        .table_date_left {
             display: flex;
-            img:first-child(1){
+
+            img:first-child(1) {
                 margin-right: 10px;
-            }   
-            h2{
+            }
+
+            h2 {
                 margin-top: 5px;
                 margin-left: 20px;
                 font-size: 20px;
@@ -592,116 +704,140 @@ input[type="radio"] {display:none;}
         }
     }
 
-    .backgorund_blue{
+    .backgorund_blue {
         color: #fff;
         background: #75afcd;
     }
+
     // table
-    table{
+    table {
         width: 100%;
         border-top: 3px solid #1b4c88;
         border-bottom: 1px solid black;
         border-collapse: collapse;
-        thead{
+
+        thead {
             text-align: center;
-            tr{
-                td{
+
+            tr {
+                td {
                     padding: 10px 0;
                     border: 1px solid black;
                     font-weight: 500;
                 }
             }
         }
+
         // tbody
-        tbody{
+        tbody {
+
             // tr
-            tr{
-                td{
+            tr {
+                td {
                     padding: 10px 0;
                     color: #666666;
                     font-size: 14px;
                     border: 1px solid black;
                     vertical-align: middle;
                     text-align: center;
-                    
+
                 }
+
                 &:nth-child(1),
-                &:nth-child(7){
-                    background:#f9fafe;
-                    td:first-child{
+                &:nth-child(7) {
+                    background: #f9fafe;
+
+                    td:first-child {
                         padding-left: 20px;
                         color: #0d52a7;
                         font-size: 15px;
                         font-weight: 700;
                         text-align: left;
                     }
-                    td:not(first-child){
+
+                    td:not(first-child) {
                         font-weight: 700;
                     }
                 }
+
                 &:nth-child(2),
-                &:nth-child(8){
-                    td{
+                &:nth-child(8) {
+                    td {
                         color: #333333;
                         font-size: 15px;
                         font-weight: 700;
                     }
                 }
+
                 &:nth-child(4),
-                &:nth-child(6){
+                &:nth-child(6) {
                     background: #ccc;
                 }
+
                 &:nth-child(10),
-                &:nth-child(12){
+                &:nth-child(12) {
                     background: #ccc;
                 }
-                .text_part{
+
+                .text_part {
                     padding-left: 15px;
                     text-align: left;
                 }
             }
+
             // tr[e]
         }
+
         // tbody[e]
     }
+
     // table[e]
 
     // keta_bc_003_btn
-    .keta_bc_003_btn{
+    .keta_bc_003_btn {
         margin-top: 40px;
-        .btn_left{
+
+        .btn_left {
             display: inline-block;
         }
-        .btn_right{
+
+        .btn_right {
             float: right;
         }
     }
 }
+
 /////////// KETA_BC_003 작업[e]
 
 
 
 /////////// KETA_BC_013,015 작업
-.review_qanda_toptile{
+.review_qanda_toptile {
     margin-bottom: 50px;
-    h2{
+
+    h2 {
         display: inline-block;
         font-size: 24px;
-        strong{
+
+        strong {
             margin-left: 10px;
             color: #d1452e;
         }
-        em{
+
+        em {
             margin-left: 10px;
-            img{
+
+            img {
                 margin-right: 10px;
-                margin-bottom: 7px; 
+                margin-bottom: 7px;
             }
         }
     }
-    .myqanda_topbtn{
+
+    .myqanda_topbtn {
         float: right;
-        select{
+
+        select {
             width: 180px;
             padding: 5px;
             text-align: left;
@@ -711,49 +847,59 @@ input[type="radio"] {display:none;}
     }
 }
 
-.review_question_box{
+.review_question_box {
     border: 1px solid #eaeaea;
     border-radius: 5px;
+
     // review_question_contents
-    .review_question_contents{
+    .review_question_contents {
         padding: 40px;
+
         // question_contents_box
-        .question_contents_box{
-            span{
+        .question_contents_box {
+            span {
                 margin-bottom: 20px;
             }
-            h5{
+
+            h5 {
                 color: #666666;
                 font-weight: 400;
                 float: right;
-                em{
+
+                em {
                     color: #000;
                 }
             }
         }
+
         // question_contents_box[e]
 
-        h2{
-                margin-bottom: 30px;
-                font-size: 28px; 
+        h2 {
+            margin-bottom: 30px;
+            font-size: 28px;
         }
-        h3{
+
+        h3 {
             margin-bottom: 20px;
             color: #666666;
             font-size: 14px;
-            img{
+
+            img {
                 margin-right: 10px;
                 vertical-align: bottom;
             }
         }
+
         // question_contents_box2
-        .question_contents_box2{
+        .question_contents_box2 {
             margin-bottom: 30px;
-            span{
+
+            span {
                 display: inline-block;
                 margin-right: 15px;
                 vertical-align: top;
-                &.black_q{
+
+                &.black_q {
                     width: 37px;
                     height: 36px;
                     color: #fff;
@@ -763,7 +909,8 @@ input[type="radio"] {display:none;}
                     text-align: center;
                     border-radius: 50%;
                 }
-                &.orange_a{
+
+                &.orange_a {
                     width: 37px;
                     height: 36px;
                     color: #fff;
@@ -774,30 +921,34 @@ input[type="radio"] {display:none;}
                     border-radius: 50%;
                 }
             }
-            .question_box2_description{
+
+            .question_box2_description {
                 display: inline-block;
                 margin-bottom: 25px;
-                h3{
+
+                h3 {
                     color: #999999;
                     font-size: 14px;
                     font-weight: 400;
                 }
-                h4{
+
+                h4 {
                     color: #666666;
                     font-size: 15px;
                     font-weight: 400;
                 }
             }
 
-            .question_box2_btn{
+            .question_box2_btn {
                 margin-left: 55px;
             }
         }
+
         // question_contents_box2[e]
 
         // question_contents_box3
-        .question_contents_box3{
-            span{
+        .question_contents_box3 {
+            span {
                 display: inline-block;
                 margin-right: 15px;
                 vertical-align: top;
@@ -810,12 +961,16 @@ input[type="radio"] {display:none;}
                 text-align: center;
                 border-radius: 50%;
             }
-            .question_box3_description{
+
+            .question_box3_description {
                 display: inline-block;
-                h2{
+                margin-bottom: 30px;
+                h2 {
                     margin-bottom: 5px;
-                    font-size: 18px;}
-                h3{
+                    font-size: 18px;
+                }
+
+                h3 {
                     display: inline-block;
                     margin-bottom: 10px;
                     padding-right: 5px;
@@ -824,49 +979,57 @@ input[type="radio"] {display:none;}
                     font-weight: 700;
                     border-right: 1px solid #dddddd;
                 }
-                h4{
+
+                h4 {
                     display: inline-block;
                     padding-left: 10px;
                     color: #b1b1b1;
                     font-size: 14px;
                     font-weight: 400;
                 }
-                h5{
+
+                h5 {
                     color: #666666;
                     font-size: 14px;
                     font-weight: 400;
                 }
-                
+
             }
         }
+
         // question_contents_box3[e]
 
         // more_fold_Box
-        .more_fold_box{
-            p{
+        .more_fold_box {
+            p {
                 color: #0d52a7;
                 font-size: 14px;
             }
-            button{
+
+            button {
                 color: #0d52a7;
                 font-size: 14px;
                 border: none;
-                img{
+
+                img {
                     margin-left: 5px;
                     margin-bottom: 5px;
                 }
             }
         }
+
         // more_fold_Box[e]   
     }
+
     // review_question_contents[e]
 
     // question_typing_box
-    .question_typing_box{
+    .question_typing_box {
         padding: 40px;
         background: #f7f7f7;
-        .question_typing_select{
-            select{
+
+        .question_typing_select {
+            select {
                 margin-bottom: 10px;
                 padding: 10px;
                 width: 100%;
@@ -874,7 +1037,8 @@ input[type="radio"] {display:none;}
                 font-size: 14px;
                 border: 1px solid #dddddd;
             }
-            textarea{
+
+            textarea {
                 padding: 20px;
                 width: 95.4%;
                 color: #999999;
@@ -882,27 +1046,106 @@ input[type="radio"] {display:none;}
                 border: 1px solid #dddddd;
             }
         }
-        .review_question_btn{
+
+        .review_question_btn {
             margin-top: 20px;
             text-align: right;
-            button{
-                &:first-child{
+
+            button {
+                &:first-child {
                     color: #666666;
                     border: none;
                 }
-                &:last-child{
+
+                &:last-child {
                     margin-left: 20px;
                 }
             }
         }
     }
+
     // question_typing_box[e]
 
     // question_sub_box
-    .question_sub_box{
+    .question_sub_box {
         text-align: right;
         background: #f7f7f7;
     }
+
     // question_sub_box[e]
 }
+
 /////////// KETA_BC_013,015 작업[e]
+
+
+
+//////////// KETA_BC_016 작업
+.mypage_notification_box {
+    .notification_delete_btn {
+        margin-bottom: 20px;
+        text-align: right;
+    }
+    // .mypage_notification_main
+
+    .mypage_notification_main {
+        display: inline-block;
+        padding: 40px;
+        width: 100%;
+        border: 1px solid black;
+        box-sizing: border-box;
+        // noti_main_card
+
+        .noti_main_card {
+            margin-bottom: 20px;
+            .noti_card_title{
+                span {
+                    display: inline-block;
+                    margin-right: 20px;
+                    width: 48px;
+                    height: 48px;
+                    color: #fff;
+                    line-height: 46px;
+                    background: #1b4c88;
+                    border-radius: 50%;
+                    text-align: center;
+                    vertical-align: top;
+                }
+                h2{
+                    display: inline-block;
+                    margin-top: 8px;
+                    color: #0d52a7;
+                    font-size: 18px;
+                }
+                h3{
+                    margin-top: 8px;
+                    color: #999999;
+                    font-size: 14px;
+                    font-weight: 400;
+                    float: right;
+                    em{
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .noti_card_box{
+                margin-left: 70px;
+                padding: 20px;
+                background: #fafafa;
+                h2{
+                    margin-bottom: 10px;
+                }
+                h3{
+                    color: #666666;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 25px;
+                }
+            }
+        }
+        // noti_main_card[e]
+    }
+    // .mypage_notification_main[e]
+}
+
+//////////// KETA_BC_016 작업[e]
