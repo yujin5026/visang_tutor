@@ -82,3 +82,75 @@
         }
     }
 }
+
+
+.table_date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .table_date_left {
+        display: flex;
+        img:first-child(1) {
+            margin-right: 10px;
+        }
+        h2 {
+            margin-top: 5px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+    }
+}
+.certificates_table {
+    tbody {
+        tr {
+            td {
+                vertical-align: middle;
+                &.backgorund_blue {
+                    color: #fff;
+                    background: #75afcd;
+                } 
+            }
+            &:nth-child(1),
+            &:nth-child(7) {
+                background: #f9fafe;
+                td:first-child {
+                    padding-left: 20px;
+                    color: #0d52a7;
+                    font-size: 15px;
+                    font-weight: 700;
+                    text-align: left;
+                }
+            }
+            &:nth-child(2),
+            &:nth-child(8) {
+                td {
+                    color: #333333;
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+            }
+            &:nth-child(4),
+            &:nth-child(6) {
+                background: #ccc;
+            }
+            &:nth-child(10),
+            &:nth-child(12) {
+                background: #ccc;
+            }
+            .text_part {
+                padding-left: 15px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.keta_bc_003_btn {
+    margin-top: 40px;
+    .btn_left {
+        display: inline-block;
+    }
+    .btn_right {
+        float: right;
+    }
+}
