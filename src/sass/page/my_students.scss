@@ -351,8 +351,6 @@ input[type="radio"] {
         }
     }
 }
-
-// mypage_date
 .mypage_date {
     display: flex;
     justify-content: space-between;
@@ -409,287 +407,9 @@ input[type="radio"] {
     }
 }
 
-
-
-/////////////////////////// mypage 작업
-.mypage_contents {
-    &.flex {
-        display: flex;
-    }
-
-    // mypage_contents_box
-    .mypage_contents_box {
-        margin: 20px 0;
-        width: 100%;
-
-        .mypage_title_box {
-            margin-bottom: 30px;
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        .contents_box {
-            flex: 1;
-            border: 1px solid #ddd;
-            padding: 30px;
-            border-radius: 5px;
-
-            // My Q&A part
-            .contents_top_part {
-                margin-bottom: 30px;
-                padding: 10px 20px;
-                text-align: center;
-                background: #f9fafe;
-            }
-
-            .contents_bottom_part {
-                line-height: 28px;
-
-                h2 {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    width: 354px;
-                    font-size: 18px;
-                    font-weight: 500;
-                }
-
-                h3 {
-                    color: #0d52a7;
-                    font-size: 14px;
-                }
-
-                h4 {
-                    margin-bottom: 20px;
-                    color: #666666;
-                    font-size: 14px;
-                }
-            }
-        }
-
-        // cardlist_box
-        .cardlist_box {
-            padding: 0;
-            border: none;
-
-            .contents_leftcard_box {
-                margin: 0 20px;
-                padding: 99px 30px;
-                flex: 1;
-                width: 100%;
-                height: 100%;
-                background: #d99e2d;
-                text-align: center;
-                border-radius: 6px;
-
-                h1 {
-                    color: #fff;
-                    font-size: 36px;
-                    font-weight: 400;
-                }
-
-                h2 {
-                    color: #fff;
-                    font-weight: 400;
-                    opacity: 0.5;
-                }
-            }
-
-            .contents_rightcard_box {
-                padding: 99px 30px;
-                flex: 1;
-                width: 100%;
-                background: #f3f3f3;
-                text-align: center;
-                border-radius: 6px;
-
-                h1 {
-                    color: #d99e2d;
-                    font-size: 36px;
-                }
-
-                h2 {
-                    color: #777777;
-                    font-size: 15px;
-                    font-weight: 400;
-                }
-            }
-        }
-
-        // cardlist_box[e]
-
-
-        // contents_box_wrapper
-        .contents_box_wrapper {
-            display: flex;
-            border: 1px solid #ddd;
-            padding: 30px;
-            border-radius: 5px;
-
-            >div {
-                flex: 1;
-
-                &:not(:last-child) {
-                    border-right: 1px solid black;
-                }
-
-                &:nth-child(1) {
-                    padding-right: 20px;
-                }
-
-                &:nth-child(2) {
-                    margin-left: 30px;
-                    padding-right: 35px;
-                }
-
-                &:nth-child(3) {
-                    text-align: center;
-                    padding-left: 19px;
-                    padding-right: 15px;
-
-                    img {
-                        margin-top: 50px;
-                    }
-
-                    p {
-                        margin-top: 20px;
-                        color: #999999;
-                        font-size: 18px;
-                    }
-                }
-
-                h1 {
-                    margin-bottom: 20px;
-                    font-size: 24px;
-                }
-
-                h3 {
-                    color: #666666;
-                    font-size: 14px;
-
-                    &:nth-child(2) {
-                        margin-bottom: 10px;
-                    }
-
-                    b {
-                        display: inline-block;
-                        width: 75px;
-                    }
-
-                    em {
-                        padding-left: 5px;
-                        color: #333333;
-                        border-left: 1px solid black;
-                    }
-                }
-
-                h4 {
-                    margin: 25px 0 10px 0;
-                    color: #b94a38;
-                    font-size: 14px;
-                    font-weight: 500;
-                }
-
-                button {
-                    width: 100%;
-                }
-            }
-        }
-
-        // contents_box_wrapper[e]
-
-        // mycourse_contents_left
-        .mycourse_contents_left {
-            display: inline-block;
-
-            .mycourse_contents_top {
-                margin-bottom: 10px;
-
-                img {
-                    margin-right: 10px;
-                }
-
-                span {
-                    font-size: 24px;
-                    font-weight: 700;
-                }
-            }
-
-            .mycourse_contents_bottom {
-                .mycourse_left {
-                    display: inline-block;
-                    margin-right: 30px;
-
-                    h3 {
-                        color: #0d52a7;
-                        font-size: 24px;
-
-                        em {
-                            margin-left: 10px;
-                            color: #333;
-                            font-size: 14px;
-                        }
-                    }
-
-                    p {
-                        color: #999999;
-                        font-size: 14px;
-                    }
-                }
-
-                .mycourse_right {
-                    display: inline-block;
-                    margin-top: 22px;
-                    margin-left: 30px;
-                    vertical-align: top;
-
-                    h3 {
-                        em {
-                            font-size: 14px;
-                            font-weight: 500;
-                        }
-
-                        img {
-                            margin-left: 10px;
-                        }
-                    }
-                }
-            }
-        }
-
-        // mycourse_contents_left[e]
-        .mycourse_contents_right {
-            display: inline-block;
-            margin-top: 30px;
-
-            p {
-                margin-bottom: 10px;
-                color: #1b4c88;
-                text-align: right;
-            }
-
-            span {
-                margin-right: 10px;
-                background: #ccc;
-                border: 32px;
-            }
-        }
-    }
-
-    // mypage_contents_box[e]
-}
-
-
-
-
-
-
-
-
-/////////// KETA_BC_013,015 작업
+///////////////////////////////////////////////////////////////////////// KETA_BC_013,015
 .review_qanda_toptile {
     margin-bottom: 50px;
-
     h2 {
         display: inline-block;
         font-size: 24px;
@@ -708,7 +428,6 @@ input[type="radio"] {
             }
         }
     }
-
     .myqanda_topbtn {
         float: right;
 
@@ -725,12 +444,8 @@ input[type="radio"] {
 .review_question_box {
     border: 1px solid #eaeaea;
     border-radius: 5px;
-
-    // review_question_contents
     .review_question_contents {
         padding: 40px;
-
-        // question_contents_box
         .question_contents_box {
             span {
                 margin-bottom: 20px;
@@ -746,14 +461,10 @@ input[type="radio"] {
                 }
             }
         }
-
-        // question_contents_box[e]
-
         h2 {
             margin-bottom: 30px;
             font-size: 28px;
         }
-
         h3 {
             margin-bottom: 20px;
             color: #666666;
@@ -764,8 +475,7 @@ input[type="radio"] {
                 vertical-align: bottom;
             }
         }
-
-        // question_contents_box2
+        
         .question_contents_box2 {
             margin-bottom: 30px;
 
@@ -818,10 +528,7 @@ input[type="radio"] {
                 margin-left: 55px;
             }
         }
-
-        // question_contents_box2[e]
-
-        // question_contents_box3
+        
         .question_contents_box3 {
             span {
                 display: inline-block;
@@ -871,10 +578,7 @@ input[type="radio"] {
 
             }
         }
-
-        // question_contents_box3[e]
-
-        // more_fold_Box
+        
         .more_fold_box {
             p {
                 color: #0d52a7;
@@ -891,14 +595,8 @@ input[type="radio"] {
                     margin-bottom: 5px;
                 }
             }
-        }
-
-        // more_fold_Box[e]   
+        }  
     }
-
-    // review_question_contents[e]
-
-    // question_typing_box
     .question_typing_box {
         padding: 40px;
         background: #f7f7f7;
@@ -938,38 +636,26 @@ input[type="radio"] {
             }
         }
     }
-
-    // question_typing_box[e]
-
-    // question_sub_box
     .question_sub_box {
         text-align: right;
         background: #f7f7f7;
     }
-
-    // question_sub_box[e]
 }
 
-/////////// KETA_BC_013,015 작업[e]
 
 
-
-//////////// KETA_BC_016 작업
+///////////////////////////////////////////////////////////////////////// KETA_BC_016.html
 .mypage_notification_box {
     .notification_delete_btn {
         margin-bottom: 20px;
         text-align: right;
     }
-    // .mypage_notification_main
-
     .mypage_notification_main {
         display: inline-block;
         padding: 40px;
         width: 100%;
         border: 1px solid black;
         box-sizing: border-box;
-        // noti_main_card
-
         .noti_main_card {
             margin-bottom: 20px;
             .noti_card_title{
@@ -1002,7 +688,6 @@ input[type="radio"] {
                     }
                 }
             }
-
             .noti_card_box{
                 margin-left: 70px;
                 padding: 20px;
@@ -1018,9 +703,5 @@ input[type="radio"] {
                 }
             }
         }
-        // noti_main_card[e]
     }
-    // .mypage_notification_main[e]
 }
-
-//////////// KETA_BC_016 작업[e]

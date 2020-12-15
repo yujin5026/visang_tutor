@@ -1,0 +1,368 @@
+
+///////////////////////////////////////////////////////////////////////// 모달 창
+.modalpop {
+    display:none;
+    .popupwrap {
+        position:fixed;
+        left:-99999px; top:-99999px;
+        z-index:101;
+        overflow:hidden;
+        background:#fff;
+        opacity:0;
+        &.sm_popup {
+            width:500px;
+        }
+        &.md_popup {
+            width:800px;
+        }
+        &.lg_popup {
+            width:1200px;
+        }
+        
+        .btn-popclose {
+            position:absolute;
+            top:15px;
+            right:20px;
+            width:20px;
+            height:20px;
+            background:url('../images/icon_layerclose.png') no-repeat 50%;
+            font-size:0;
+            text-indent:-99999px;
+            border:none;
+        }
+        .popcontents {
+            clear:both;
+            overflow:hidden;
+            padding:40px;
+            border-top:10px solid #aa3238;
+            .popup_contents{
+                padding: 20px;
+            }
+        }
+    }
+    .btn_box{
+        text-align: center;
+        button{
+            color: #666666;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+
+
+.popup_title{
+    margin-bottom: 50px;
+    text-align: center;
+    p{
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+    }
+    h3{
+        color: #444444;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+.popup_title02{
+    margin-bottom: 40px;
+    text-align: center;
+    h2{
+        font-size: 28px;
+    }
+    h4{
+        color: #444444;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+
+.transparents-layer {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:100;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.5;
+    filter:alpha(opacity="50");
+}
+
+// modal에 ribbon class를 추가하면 창 끝에 리본이 생깁니다.
+.modalpop{
+    &.ribbon{
+        .popupwrap{
+            overflow: initial;
+            .popcontents {
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 166px;
+                    height: 166px;
+                    top: -9px;
+                    left: -9px;
+                    background: url(../images/ribbon_icon_1.png);
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 166px;
+                    height: 166px;
+                    bottom: -8px;
+                    right: -8px;
+                    background: url(../images/ribbon_icon_2.png);
+                }
+            }
+        }
+    }
+}
+.detail_story_box{
+    margin-bottom: 40px;
+    p{
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    h4{
+        color: #666666;
+        font-size: 14px;
+        font-weight: 400;
+        em{
+            color: #0d52a7;
+            font-size: 14px;
+            font-weight: 500;
+            img{
+                margin-right: 3px;
+                color: #0d52a7;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////// KETA_MY_003
+.detail_description_box{
+    margin-bottom: 40px;
+    .detail_description_left{
+        display: inline-block;
+        width: 42%;
+        .detail_description_item{
+            display: inline-block;
+            h3{
+                display: inline-block;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+                color: #999999;
+                font-size: 14px;
+                border-bottom: 1px solid #999999;
+            }
+            h4{
+                font-size: 14px;
+            }
+            &:nth-child(2){
+                float: right;
+            }
+        }
+    }
+    .detail_description_right{
+        display: inline-block;
+        margin-left: 100px;
+        width: 37%;
+        .detail_description_item{
+            display: inline-block;
+            &:nth-child(2){
+                float: right;
+            }
+            h3{
+                display: inline-block;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+                color: #999999;
+                font-size: 14px;
+                border-bottom: 1px solid #999999;
+            }
+            h4{
+                font-size: 14px;
+            }
+            .detail_language_list{
+                h4{
+                    display: inline-block;
+                    &:not(:last-child){
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////// KETA_MY_011
+.course_confirm_main{
+    padding: 30px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    .course_confirm_card{
+        margin-bottom: 35px;
+        .confirm_card_left{
+            display: inline-block;
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                vertical-align: text-bottom;
+            }
+        }
+        .confirm_card_right{
+            display: inline-block;
+        }
+    }
+    .course_confirm_detail{
+        padding: 20px 0;
+        border-top: 1px solid #eaeaea;
+        &:last-child{
+            padding-bottom: 0;
+        }
+        h3{
+            margin: 10px 0 15px 0;
+            color: #999999;
+            font-size: 13px;
+            font-weight: 400;
+            img{
+                margin-right: 5px;
+            }
+        }
+        h4{
+            color: #666666;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+.course_confirm_bottom{
+    margin-bottom: 25px;
+    text-align: center;
+    h2{
+        color: #666666;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    h3{
+        color: #666666;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    h4{
+        text-align: right;
+    }
+}
+.course_confirm_btn{
+    padding-top: 50px;
+    border-top: 1px solid #999999;
+    text-align: center;
+    button{
+        &:last-child{
+            margin-left: 10px;
+        }
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////// KETA_BC_021
+.add_class_popup{
+    box-sizing: border-box;
+    h2{
+        margin-bottom: 15px;
+        font-size: 18px;
+        img{
+            margin-bottom: 10px;
+        }
+    }
+    input{
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #e9e9e9;
+    }
+    select{
+        margin-bottom: 30px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #e9e9e9;
+    }
+    .addclass_main_box{
+        .addclass_box_left{
+            display: inline-block;
+            h2{
+                margin-bottom: 15px;
+                font-size: 18px;
+                img{
+                    margin-bottom: 10px;
+                }
+            }
+            input[type=date]{
+                padding: 10px;
+                width: 212px;
+            }
+        }
+        .addclass_box_right{
+            display: inline-block;
+            margin-left: 15px;
+            h2{
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+            input{
+                width: 200px;
+                padding: 12.5px;
+            }
+        }
+
+        &.kk{
+            .addclass_box_left{
+                width: 48.5%;
+                select{
+                    width: 95%;
+                    padding: 10px;
+                }
+            }
+            .addclass_box_right{
+                width: 48.5%;
+            }
+        }
+    }
+}
+.addclass_dayofweek{
+    display: flex;
+    box-sizing: border-box;
+}
+.addclass_week_box{
+    position: relative;
+    padding: 34px;
+    background: #fafafa;
+    border-radius: 10px;
+    &:not(last-child){
+        margin-right: 5px;
+    }
+    &.blue{
+        position: relative;
+        border: 2px solid #315f97;
+        &::after{
+            position: absolute;
+            content: '';
+            top: 5px;
+            right: 10px;
+            width: 15px;
+            height: 15px;
+            background: url(../images/check_blue.png) no-repeat;
+        }
+    }
+    
+}
+

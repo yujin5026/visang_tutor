@@ -1,9 +1,7 @@
 // class지정시 날짜 배경 바뀜
-.background_skyblue {
-    background: #75afcd;
-}
 
-.running_box_title {
+
+.lesson_management_contents {
     h1 {
         margin-bottom: 15px;
         font-size: 20px;
@@ -75,6 +73,9 @@
 
                     &:first-child {
                         border-left: none;
+                    }
+                    &.background_skyblue {
+                        background: #75afcd;
                     }
                 }
             }

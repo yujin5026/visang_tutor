@@ -10,12 +10,6 @@
     <link type="text/css" rel="stylesheet" href="../../css/page.css">
     <link type="text/css" rel="stylesheet" href="../../css/keta_my_003_popup_02.css">
     <link rel="stylesheet" href="../../css/keta_my_011_popup.css">
-    <style>
-        .guide {
-            width: 1280px;
-            margin: 0 auto;
-        }
-    </style>
 </head>
 
 <body>
@@ -25,46 +19,42 @@
     <!-- 컨텐츠 영역(new) -->
 
     <div class="wrap">
-        <button type="button" class="btn-navy btn-large" onclick="modalView('pop-alert')"><span>+</span>추가</button>
+        <button type="button" class="btn-navy btn-large" onclick="modalView('md_popup')"><span>+</span>추가</button>
         <div class="modalpop ribbon">
-            <div class="popupwrap pop-alert">
-                <button type="button" class="btn-popclose" onclick="modalHide('pop-alert')" title="닫기">닫기</button>
-                <h1>메뉴추가</h1>
+            <div class="popupwrap md_popup">
                 <div class="popcontents">
-                    <div class="table_contents">
-                        <div class="select_course_box">
 
-                        <div class="select_title">
-                            <p>Course details</p>
-                        </div>
+                    <div class="popup_title">
+                        <p>Course details</p>
+                    </div>
 
-                        <!-- course_details_popupBox -->
-                        <div class="detail_story_box">
-                            <p>Lesson curriculum</p>
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="curriculum">
-                                        <div class="curriculum_list">
-                                            <span>1</span>
-                                            <p><strong>Order an Americano at Stopbucks.</strong></p>
-                                        </div>
-                                        <div class="curriculum_list">
-                                            <span>2</span>
-                                            <p><strong>Let’s sing along with BTS’ Life goes on.</strong></p>
-                                        </div>
-                                        <div class="curriculum_list">
-                                            <span>3</span>
-                                            <p><strong>It is not difficult to take the airport train from Incheon Airport.</strong></p>
-                                        </div>
+                    <!-- course_details_popupBox -->
+                    <div class="detail_story_box">
+                        <p>Lesson curriculum</p>
+                        <div class="card_wrap01">
+                            <div class="card_container normal">
+                                <div class="curriculum">
+                                    <div class="curriculum_list">
+                                        <span>1</span>
+                                        <p><strong>Order an Americano at Stopbucks.</strong></p>
+                                    </div>
+                                    <div class="curriculum_list">
+                                        <span>2</span>
+                                        <p><strong>Let’s sing along with BTS’ Life goes on.</strong></p>
+                                    </div>
+                                    <div class="curriculum_list">
+                                        <span>3</span>
+                                        <p><strong>It is not difficult to take the airport train from Incheon
+                                                Airport.</strong></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- // course_details_popupBox -->
-                        <div class="btn_box">
-                            <button type="button" class="lg_btn line_button_gray">Close</button>
-                        </div>
                     </div>
+                    <!-- // course_details_popupBox -->
+                    <div class="btn_box">
+                        <button type="button" class="lg_btn line_button_gray" onclick="modalHide('md_popup')"
+                            title="닫기">Close</button>
                     </div>
                 </div>
             </div>

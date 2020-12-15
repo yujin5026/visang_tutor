@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import 'card.scss';
 @import 'table.scss';
+@import 'popup.scss';
 body {font-family: 'Noto Sans KR', sans-serif;}
 
 $primary-color : #de9d22;
@@ -332,66 +333,6 @@ input[type="checkbox"] {
             }
         }
     }
-}
-
-///////////////////////////////////////////////////////////////////////// 모달 창
-.modalpop {
-    display:none;
-    .popupwrap {
-        position:fixed;
-        left:-99999px; top:-99999px;
-        z-index:101;
-        overflow:hidden;
-        background:#fff;
-        opacity:0;
-        &.pop-alert {
-            width:800px;
-            .txt-msg {
-                margin:0;
-                text-align:left;
-            }
-        }
-        .btn-popclose {
-            position:absolute;
-            top:15px;
-            right:20px;
-            width:20px;
-            height:20px;
-            background:url('../images/icon_layerclose.png') no-repeat 50%;
-            font-size:0;
-            text-indent:-99999px;
-            border:none;
-        }
-        h1 {
-            height:50px;
-            padding:0 20px;
-            text-align:left;
-            background:#1f59b9;
-            color:#fff;
-            font-size:16px;
-            line-height:50px;
-            font-weight:bold;
-        }
-        .popcontents {
-            clear:both;
-            overflow:hidden;
-            width:100%;
-            .popup_contents{
-                padding: 20px;
-            }
-        }
-    }
-}
-.transparents-layer {
-    position:fixed;
-    left:0;
-    top:0;
-    z-index:100;
-    width:100%;
-    height:100%;
-    background:#000;
-    opacity:0.5;
-    filter:alpha(opacity="50");
 }
 
 
