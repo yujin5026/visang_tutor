@@ -1,20 +1,32 @@
+// modal에 ribbon class를 추가하면 창 끝에 리본이 생깁니다.
 .modalpop{
-    position: relative;
-    &::before{
-        position: absolute;
-        content: '';
-        width: 166px;
-        height: 166px;
-        top: 0;
-        left: 0;
-        background: url(../images/ribbon_icon_1.png);
+    &.ribbon{
+        .popupwrap{
+            overflow: initial;
+            &::before{
+                position: absolute;
+                content: '';
+                width: 166px;
+                height: 166px;
+                top: -9px;
+                left: -9px;
+                background: url(../images/ribbon_icon_1.png);
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 166px;
+                height: 166px;
+                bottom: -8px;
+                right: -8px;
+                background: url(../images/ribbon_icon_2.png);
+            }
+        }
     }
 }
 
 .course_confirm_box{
-    
     padding: 50px;
-    
     .confirm_box_title{
         margin-bottom: 40px;
         text-align: center;
