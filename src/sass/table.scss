@@ -293,4 +293,16 @@
     }
 
     // sub3[e]
+
+    &.my_classes_table2{
+        tbody{
+            tr{
+                td{
+                    border: none;
+                    border-top: 1px solid #eaeaea;
+                    border-bottom:  1px solid #eaeaea;
+                }
+            }
+        }
+    }
 }
