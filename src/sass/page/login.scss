@@ -67,10 +67,114 @@
                 padding: 20px;
                 font-size: 18px;
                 border-radius: 29px;
+                &.facebook_login,
+                &.google_login{
+                    color: #666666;
+                    font-size: 16px;
+                    border-radius: 5px;
+                }
             }
         }
     }
 }
+
+///////////////////////////////////////////////////////////keta_lo_002.css
+.login_lo_002{
+    background:#f6f6f6;
+    background-size: 100%;
+    background-position: center;
+}
+.lo_title{
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    img{
+        position: absolute;
+        top: -3px;
+        right: 39%;
+    }
+}
+.lo_main_box{
+    input{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        font-size: 15px;
+        color: #bebebe;
+        width: 370px;
+        padding: 20px;
+        border: 1px solid #bebebe;
+        border-radius: 5px;
+        &:nth-child(2){
+            margin-bottom: 20px;
+        }
+    }
+    a{
+        display: block;
+        color: #999999;
+        font-size: 14px;
+        em{
+            color: #33c4e8;
+        }
+    }
+    .login_btn{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background: #dbdbdb;
+        border: none;
+        a{
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+    p{
+        em{
+            padding: 0 10px;
+        }
+        &::before{
+            display: inline-block;
+            content: '';
+            border-top: 1px solid #e3e3e3;
+            width: 30%;
+            height: 5px;
+            vertical-align: middle;
+        }
+        &::after{
+            display: inline-block;
+            content: '';
+            border-top: 1px solid #e3e3e3;
+            width: 30%;
+            height: 5px;
+            vertical-align: middle;
+        }
+    }
+    .sign_in_btn{
+    margin-top: 20px;
+    border: 1px solid #33c4e8;
+        a{
+            color: #33c4e8;
+            font-size: 20px;
+        }
+    }
+    .facebook_login,
+    .google_login{
+        background: #fff;
+        text-align: center;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        img{
+            margin-right: 10px;
+        }
+    }
+    .facebook_login{
+        margin-bottom: 15px;
+    }
+    .google_login{
+        margin-bottom: 40px;
+    }
+}
+
 
 ///////////////////////////////////////////////////////////////////////// KETA_MI_002.html
 #main {
