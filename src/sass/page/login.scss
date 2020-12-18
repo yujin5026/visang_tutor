@@ -175,6 +175,89 @@
     }
 }
 
+//////////////////////////////////////////////////////////////////////// keta_jm_008.html
+.jm_008{
+    .lo_title{
+        margin-bottom: 20px;
+        img{
+            position: absolute;
+            top: -3px;
+            right: 29%;
+        }
+    }
+    .lo_main_box{
+        h1{
+            margin-bottom: 40px;
+            color: #666666;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .login_btn{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            // jm_008 비밀번호 찾기 확인 눌렀을시 메일 발송 문자 창과 함께 확인 버튼 색상이 바뀌게 하기
+            &.check_btn_background{
+                color:#fff;
+                background: #00b5e2;
+            }
+        }
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+       }
+       .tooltip .tooltip-text {
+        width: 120px;
+        background-color: #f0f0f0;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 0.3s;
+       }
+       
+       /* Tooltip bottom content */
+       .bottom .tooltip-text {
+        margin-left: -60px; /* 120/2 = 60 */
+        display: inline-block;
+        padding: 20px 0;
+        width: 100%;
+        top: 100%;
+        left: 15%; 
+        color: #666666;
+        font-size: 14px;
+        font-weight: 500;
+        img{
+            margin-right: 10px;
+            vertical-align: initial;
+        }
+       }
+       
+       .tooltip .tooltip-text::after {
+        content: "";
+        position: absolute;
+        border-width: 5px;
+        border-style: solid;
+       }
+       
+       /* Tooltip bottom arrow */
+       // 화살표 만들기 위해 사용됨
+       .bottom .tooltip-text::after {
+        margin-left: -5px;
+        bottom: 100%;
+        left: 50%;
+        border-color: transparent transparent #f0f0f0 transparent;
+       }
+       
+       
+}
+
+
+
 
 ///////////////////////////////////////////////////////////////////////// KETA_MI_002.html
 #main {
