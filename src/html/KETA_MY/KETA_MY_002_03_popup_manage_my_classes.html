@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../../css/layout.css">
+    <link type="text/css" rel="stylesheet" href="../../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../css/page.css">
+    <link type="text/css" rel="stylesheet" href="../../css/keta_my_002_03_popup_manage_my_classes.css">
+    <style>
+        .guide {
+            width: 1280px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <include src="../include/header01.html"></include>
+    <include src="../include/box_component_wrap.html"></include>
+
+    <!-- 컨텐츠 영역(new) -->
+
+    <div class="wrap">
+        <button type="button" class="btn-navy btn-large" onclick="modalView('md_popup')"><span>+</span>추가</button>
+        <div class="modalpop">
+            <div class="popupwrap md_popup">
+                <!-- <button type="button" class="btn-popclose" onclick="modalHide('md_popup')" title="닫기">닫기</button> -->
+                <div class="popcontents">
+                    <div class="popup_title">
+                        <p>Manage my classes</p>
+                    </div>
+                    <div class="tableday_title">
+                        <h1>11.26 3rd period</h1>
+                    </div>
+                    <table class="table_1 sub3 my_classes_table">
+                        <colgroup>
+                            <col>
+                            <col >
+                            <col width="10px">
+                        </colgroup>
+                        <thead>
+                            <tr><th colspan="2">Contents</th>
+                            <th width="100px">Total score</th>
+                        </tr></thead>
+                        <tbody>
+                            <tr>
+                                <th> Preview</th>
+                                <td>
+                                    <div class="badge event">Schoolbook</div>
+                                    <h4><u>Display file name.pptx</u></h4>
+                                    <div class="badge hot">Quiz</div>
+                                    <h4><u>Display file name.pptx</u></h4>
+                                    <div class="badge best">Assignment</div>
+                                    <h4><u>Display file name.pptx</u></h4>
+                                    <div class="badge best">Assignment</div>
+                                    <h4><u>Exam,Quiz. Survey name</u></h4>
+                                </td>
+                                <td><em>100</em></td>
+                            </tr>
+                            <tr>
+                                <th>Class</th>
+                                <td>
+                                    <div class="badge best">Assignment</div>
+                                    <h4><u>Exam,Quiz. Survey name</u></h4>
+                                    <div class="badge event">Schoolbook</div>
+                                    <h4><u>Display file name.pptx</u></h4>
+                                </td>
+                                <td><em>100</em></td>
+                            </tr>
+                            <tr>
+                                <th>Homework</th>
+                                <td>
+                                    <div class="badge best">Assignment</div>
+                                    <h4><u>Exam,Quiz. Survey name</u></h4>
+                                    <div class="badge event">Schoolbook</div>
+                                    <h4><u>Display file name.pptx</u></h4>
+                                </td>
+                                <td><em>100</em></td>
+                            </tr>
+                            <tr>
+                                <th>Exam(Test)</th>
+                                <td>
+                                    <div class="badge best">Assignment</div>
+                                    <h4><u>Exam,Quiz. Survey name</u></h4>
+                                </td>
+                                <td><em>100</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btn_box">
+                        <button type="button" class="lg_btn line_button_gray" onclick="modalHide('sm_popup')" title="닫기">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 버전 1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <script src="../../js/index.js"></script>
+    <include src="../include/footer.html"></include>
+
+</body>
+
+</html>
