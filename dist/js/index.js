@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
     pilau_popups = $('.popup-wrap');
 
     pilau_popups.on('click', '.popup-button', function (e) {
-        var pw = $(this).parents('.popup-wrap');
+        var pw = $(this).parents('.popup-wrap')
         if (pw.hasClass('popup-closed')) {
             // By default, close all others before opening
             pilau_popups.not(this).each(function () {

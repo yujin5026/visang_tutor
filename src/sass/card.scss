@@ -4,6 +4,7 @@
     border: 1px solid #eaeaea;
     border-radius: 6px;
     margin-bottom: 15px;
+    background:#fff;
 }
 
 .card_wrap02{
@@ -219,23 +220,24 @@
         // contants_middle
         .contants_middle{
             p{
+                width: 643px;
+                font-size: 32px;
+                font-weight: 500;
+                margin-top:10px;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
-                width: 643px;
-                font-size: 32px;
-                font-weight: 700;
             }
             span{
-                margin-bottom: 10px;
+                display: inline-block;
+                margin:10px 0;
                 img{
                     width: 14px;
                     height: 14px;
                 }
                 em{
-                    margin: 0 10px;
                     color: #666666;
-                    font-size: 14px;
+                    font-size: 18px;
                 }
                 strong{
                     margin-left: 10px;
@@ -257,9 +259,10 @@
             span{
                 margin-right: 5px;
                 font-weight: 700;
+                color:#333333;
             }
             span:not(:nth-child(2)){
-                margin-left: 10px;
+                margin-left: 40px;
             }
             .language_skill_statue{
                 display: inline-block;
@@ -268,9 +271,6 @@
                     width: 7px;
                     height: 13px;
                     background: #eaeaea;
-                    &:not(:last-child){
-                        margin-right: 2px;
-                    }
                 }
                 &.skill01 {
                     div {
@@ -324,7 +324,7 @@
 
 .contants_footer{
     margin-top: 30px;
-    padding: 20px;
+    padding: 20px 50px;
     background: #efefef;
     .contants_footer_list{
         display: inline-block;
@@ -336,11 +336,11 @@
         }
         &:not(:first-child){
             span{
-                margin-left: 30px;
+                margin-left: 100px;
             }
         }
         span{
-            padding-right: 5px;
+            padding-right: 15px;
             color: #666666;
             font-size: 14px;
             font-weight: 500;
@@ -348,10 +348,14 @@
         }
         img{
             color: #b94a38;
+            margin-left: 10px;
+            vertical-align: top;
+            margin-top: 5px;
         }
         h5{
             display: inline-block;
             font-size: 14px;
+            margin-left: 10px;
         }
     }
     .heart_break_btn{
@@ -450,9 +454,7 @@
             > button{
                 margin-top: 10px;
                 padding: 15px 40px;
-                color: #fff;
                 font-size: 16px;
-                background: #1b4c88;
                 border: none;
             }
         }

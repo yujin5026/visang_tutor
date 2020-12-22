@@ -49,16 +49,22 @@ $deep-gray-color:#444444;
 
 // 버튼 스타일
 .line_red {color:#b94a38;border:1px solid #b94a38;}
-.line_gray {color:#bababa;border:1px solid #bababa;}
-.line_text_gray {color:#666666;border:1px solid #eaeaea;}
-.line_button_gray {color:#333333;border:1px solid #bfbfbf;}
+.line_gray01 {color:#bababa;border:1px solid #bababa;}
+.line_gray02 {color:#666666;border:1px solid #eaeaea;background:#f8f8f8;}
+.line_gray03 {color:#666666;border:1px solid #cccccc;}
+.line_gray04 {color:#333333;border:1px solid #bfbfbf;}
+
+
 .line_white {color:#fff;border:1px solid #fff;}
 .line_blue {color:#0d52a7;border:1px solid #0d52a7;}
 .bg_red {background:#b94a38;color:#fff;border:1px solid #b94a38;}
 .bg_gray {background:#444444;color:#fff;border:1px solid #444444;}
+.bg_gray02 {background:#bbbbbb;color:#fff;border:1px solid #bbbbbb;}
+.bg_gray03 {background:#aaaaaa;color:#fff;border:1px solid #aaaaaa;}
 .bg_light_gray {background:#bbbbbb;color:#fff;border:1px solid #bbbbbb;}
 .bg_blue {background:#1b4c88;color:#fff;border:1px solid #1b4c88;}
 .bg_white {background:#fff;border:1px solid #fff;border:1px solid #fff;}
+.bg_green {color:#2f7e69;background:#e0f1ec;border:1px solid #e0f1ec;}
 
 // 평점 
 .star {position: relative;padding-left:30px;}
@@ -105,12 +111,14 @@ input[type="checkbox"] {
 
 
 ///////////////////////////////////////////////////////////////////////// 기본 틀
+body.teacher {
+    background:#f6f6f6;
+}
 .wrap {
     width: 1280px;
     margin: 0 auto;
     padding: 6rem 0;
     min-height: 700px;
-    overflow:hidden;
     &.padding10 {
         padding-top:1.5rem;
     }
@@ -159,6 +167,13 @@ input[type="checkbox"] {
             display:inline-block;
             li {
                 display:inline-block;
+                &:first-child {
+                    .popup-wrap {
+                        .popup-box {
+                            width:724px;
+                        }
+                    }
+                }
                 &:last-child {
                     margin-right:0;
                 }
@@ -218,7 +233,10 @@ input[type="checkbox"] {
 
 .popup-box-styles {
     .filter_title {
-        margin-bottom:10px;
+        margin:20px 0 10px 0;
+        &.sub {
+            margin:0;
+        }
         h3 {
             display:inline-block;
             font-size:16px;
@@ -238,12 +256,10 @@ input[type="checkbox"] {
             vertical-align: top;
         }
     }
-    .filter {
-        //purpose box
         .filter_box {
             display: inline-block;
             text-align: center;
-            padding: 20px;
+            padding: 20px 0;
             width:120px;
             margin:10px;
             border: 1px solid #999999;
@@ -272,70 +288,12 @@ input[type="checkbox"] {
                 }
             }
         }
-    }
 }
 
-///////////////////////////////////////////////////////////////////////// 필터 탭
-.popup-box-styles {
-    .filter_title {
-        margin-bottom:10px;
-        h3 {
-            display:inline-block;
-            font-size:16px;
-        }
-        p {
-            float:right;
-            font-size:13px;
-            color:#bbbbbb;
-            margin-top:6px;
-            span {
-                color:#999999;
-            }
-        }
-        img {
-            margin-left:5px;
-            cursor: pointer;
-            vertical-align: top;
-        }
-    }
-    .filter {
-        //purpose box
-        .filter_box {
-            display: inline-block;
-            text-align: center;
-            padding: 20px;
-            width:120px;
-            margin:10px;
-            border: 1px solid #999999;
-            cursor: pointer;
-            img {
-                margin-bottom:10px;
-            }
-            p {
-                font-size:14px;
-            }
-            &.selected {
-                font-weight:bold;
-                color:$blue-color;
-                border:1px solid $blue-color;
-            }
-        }
-        .days {
-            width:100%;
-            ul {
-                li {
-                    width:9%;
-                    text-align:center;
-                    padding:10px 20px;
-                    border:1px solid #ddd;
-                    float:left;
-                }
-            }
-        }
+#popup-button-3 {
+    &+.popup-box {
     }
 }
-
-
 
 ///////////////////////////////////////////////////////////////////////// timetable
 .timetable{
@@ -376,14 +334,79 @@ input[type="checkbox"] {
         }
 }
 
+///////////////////////////////////////////////////////////////////////// 마이페이지 탭
+input[type="radio"] {
+    display: none;
+}
 
+.tabs {
+    display: flex;
+    overflow: hidden;
 
+    .tab {
+        width: 25%;
+        padding: 20px;
+        display: inline-block;
+        font-size: 16px;
+        color: #666666;
+        text-align: center;
+        border: 1px solid #eaebec;
+        cursor: pointer;
+
+        span {
+            font-size: 20px;
+            font-weight: bold;
+            color: #b94a38;
+            margin-left: 10px;
+        }
+    }
+}
+
+.panel {
+    display: none;
+    padding-top: 20px;
+    animation: fadein .8s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#one:checked~.panels #one-panel,
+#two:checked~.panels #two-panel,
+#three:checked~.panels #three-panel,
+#four:checked~.panels #four-panel {
+    display: block
+}
+
+#one:checked~.tabs #one-tab,
+#two:checked~.tabs #two-tab,
+#three:checked~.tabs #three-tab,
+#four:checked~.tabs #four-tab {
+    background: #b94a38;
+    color: #fff;
+    border: 1px solid #b94a38;
+}
+
+#one:checked~.tabs #one-tab span,
+#two:checked~.tabs #two-tab span,
+#three:checked~.tabs #three-tab span,
+#four:checked~.tabs #four-tab span {
+    color: #fff;
+}
 
 ///////////////////////////////////////////////////////////////////////// 헤더
 #header {
     position: relative;
     width: 100%;
     z-index: 3;
+    background:#fff;
     &.border {
         border-bottom:1px solid #eaeaea;
     }
@@ -396,6 +419,13 @@ input[type="checkbox"] {
         h1 {
             display: inline-block;
             margin-right: 30px;
+            a {
+                img {
+                    &.korea_logo {
+                        width:30px;
+                    } 
+                }
+            }
         }
         ul {
             display: inline-block;
@@ -421,6 +451,15 @@ input[type="checkbox"] {
                     margin-right:40px;
                 }
             }
+            h1 {
+                a {
+                    span {
+                        font-size:18px;
+                        margin-left:15px;
+                        vertical-align: middle;
+                    }
+                }
+            }
         }
         .gnb_right {
             float: right;
@@ -441,6 +480,12 @@ input[type="checkbox"] {
                     span {
                         vertical-align: top;
                     }
+                }
+                strong {
+                    color:#0d52a7;
+                }
+                span {
+                    font-weight:normal;
                 }
             }
         }

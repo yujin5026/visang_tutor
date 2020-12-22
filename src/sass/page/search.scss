@@ -11,12 +11,8 @@
 
 .tutor_title{
     display: flex;
-    width:1280px;
     justify-content: space-between;
-    padding: 25px 0;
-    margin:0 auto;
-    font-size: 24px;
-    font-weight: 700;
+    padding: 40px 0 25px;
     .title_left{
         display: flex;
         div{
@@ -24,6 +20,8 @@
             p{
                 width: 540px;
                 font-size: 24px;
+                font-weight:500;
+                color:#333333;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -36,17 +34,18 @@
             height: 14px;
         }
         span{
-            margin-top: 7px;
+            margin-top: 10px;
             color: #777777;
+            font-size:14px;
+            font-weight:500;
         }
     }
     .title_right{
         select{
-            padding: 7px 90px 7px 10px;
-            option{
-                color: #666666;
-                font-size: 14px;
-            }
+            width: 160px;
+            color: #666666;
+            padding: 10px;
+            border: 1px solid #c1c1c1;
         }
     }
 }
@@ -56,13 +55,10 @@
 ///////////////////////////////////////////////////////////////////////// KETA_SE_002
 #teacher {
     display:flex;
-    width:1280px;
-    margin:0 auto;
     min-height:1000px;
-    padding:50px 0;
     .teacher_left {
         position: relative;
-        min-width:920px;
+        min-width:1000px;
         .tutor_container{
             padding: 60px;
             margin-bottom: 30px;
