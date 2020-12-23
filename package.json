@@ -9,7 +9,8 @@
   "dependencies": {
     "core-js": "^3.7.0",
     "gulp-util": "^3.0.7",
-    "gulp.spritesmith": "^6.11.0"
+    "gulp.spritesmith": "^6.11.0",
+    "swiper": "^6.4.5"
   },
   "devDependencies": {
     "browser-sync": "^2.26.10",
