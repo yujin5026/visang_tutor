@@ -26,6 +26,9 @@
     &.sub4{
         background: url('../images/gray_korean_background.png');
     }
+    &.sub5{
+        height: 500px;
+    }
 }
 
 .teacher_search_title{
@@ -57,6 +60,7 @@
 }
 
 .section_title{
+    margin-bottom: 90px;
     text-align: center;
     &.sub{
         margin-top: 200px;
@@ -69,7 +73,6 @@
         font-weight: 400;
     }
     &.sub2{
-        margin-bottom: 90px;
         h1{
             color: #fff;
         }
@@ -140,7 +143,11 @@
 }
 
 .tutor_intro_left{
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
     h1{
+        margin-bottom: 30px;
         font-size: 60px;
         line-height: 55px;
         em{
@@ -160,10 +167,60 @@
     
 }
 .tutor_intro_right{
+    display: block;
+    position: relative;
+    margin-left: 420px;
+    z-index: 1;
     img{
         width: 850px;
         height: 480px;
     }
 }
 
+
+.slides__wrapper{
+    position: relative;
+    width: 1030px;
+    height: 175px;
+    margin: 0 auto;
+    overflow: hidden;
+    .slides{
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: left 0.5s ease-out;
+        li{
+            margin-right: 30px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 5px;
+            h1{
+                font-size: 14px;
+            }
+            h2{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.controls{
+    text-align: center;
+}
+.prev__btn,
+.next__btn {
+    margin: 0 10px;
+    padding: 5px 20px;
+    border: 2px solid pink;
+    border-radius: 5px;
+    color: #4d4d4d;
+    cursor: pointer;
+    background-color: white;
+}
+
+.prev__btn:hover,
+.next__btn:hover {
+    background-color: thistle;
+}
 
