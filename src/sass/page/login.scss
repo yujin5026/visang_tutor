@@ -74,6 +74,9 @@
                     border-radius: 5px;
                 }
             }
+            &.sub{
+                width: 380px;
+            }
         }
     }
 }
@@ -83,100 +86,123 @@
     background:#f6f6f6;
     background-size: 100%;
     background-position: center;
-}
-.lo_title{
-    position: relative;
-    margin-bottom: 40px;
-    font-size: 40px;
-    font-weight: 700;
-    img{
-        position: absolute;
-        top: -3px;
-        right: 39%;
-    }
-}
-.lo_main_box{
-    input{
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 40px;
-        font-size: 15px;
-        color: #bebebe;
-        width: 370px;
-        padding: 20px;
-        border: 1px solid #bebebe;
-        border-radius: 5px;
-        &:nth-child(2){
-            margin-bottom: 20px;
+    .wrap{
+        .lo_002_page{
+            width: 380px;
+            margin:0 auto;
+            text-align:center;
+            padding:100px 0;
+            .lo_title{
+                position: relative;
+                margin-bottom: 40px;
+                font-size: 40px;
+                font-weight: 700;
+                img{
+                    position: absolute;
+                    top: -3px;
+                    right: 32%;
+                }
+            }
+            .lo_main_box{
+                input{
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                    font-size: 15px;
+                    color: #bebebe;
+                    width: 100%;
+                    padding: 20px;
+                    border: 1px solid #bebebe;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    &:nth-child(2){
+                        margin-bottom: 20px;
+                    }
+                }
+                a{
+                    display: block;
+                    color: #999999;
+                    font-size: 14px;
+                    em{
+                        color: #33c4e8;
+                    }
+                }
+                .login_btn{
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    padding: 20px;
+                    width: 100%;
+                    background: #dbdbdb;
+                    border: none;
+                    border-radius: 32px;
+                    a{
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                }
+                p{
+                    margin-bottom: 40px;
+                    em{
+                        padding: 0 10px;
+                        color: #bebebe;
+                        font-size: 16px;
+                    }
+                    &::before{
+                        display: inline-block;
+                        content: '';
+                        border-top: 1px solid #e3e3e3;
+                        width: 40%;
+                        height: 5px;
+                        vertical-align: middle;
+                    }
+                    &::after{
+                        display: inline-block;
+                        content: '';
+                        border-top: 1px solid #e3e3e3;
+                        width: 40%;
+                        height: 5px;
+                        vertical-align: middle;
+                    }
+                }
+                .login_link_btn{
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                    width: 100%;
+                    padding: 15px;
+                    border: 1px solid #e8e8e8;
+                    border-radius: 5px;
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+                .ask_signin{
+                    margin-top: 40px;
+                }
+                .sign_in_btn{
+                margin-top: 20px;
+                width: 100%;
+                padding: 15px;
+                border: 1px solid #33c4e8;
+                border-radius: 32px;
+                    a{
+                        color: #33c4e8;
+                        font-size: 20px;
+                    }
+                }
+            }
         }
-    }
-    a{
-        display: block;
-        color: #999999;
-        font-size: 14px;
-        em{
-            color: #33c4e8;
-        }
-    }
-    .login_btn{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        background: #dbdbdb;
-        border: none;
-        a{
-            color: #fff;
-            font-size: 20px;
-        }
-    }
-    p{
-        em{
-            padding: 0 10px;
-        }
-        &::before{
-            display: inline-block;
-            content: '';
-            border-top: 1px solid #e3e3e3;
-            width: 30%;
-            height: 5px;
-            vertical-align: middle;
-        }
-        &::after{
-            display: inline-block;
-            content: '';
-            border-top: 1px solid #e3e3e3;
-            width: 30%;
-            height: 5px;
-            vertical-align: middle;
-        }
-    }
-    .sign_in_btn{
-    margin-top: 20px;
-    border: 1px solid #33c4e8;
-        a{
-            color: #33c4e8;
-            font-size: 20px;
-        }
-    }
-    .facebook_login,
-    .google_login{
-        background: #fff;
-        text-align: center;
-        border: 1px solid #e8e8e8;
-        border-radius: 5px;
-        img{
-            margin-right: 10px;
-        }
-    }
-    .facebook_login{
-        margin-bottom: 15px;
-    }
-    .google_login{
-        margin-bottom: 40px;
     }
 }
 
+
+
 //////////////////////////////////////////////////////////////////////// keta_jm_008.html
 .jm_008{
+    width: 600px;
+    margin:0 auto;
+    text-align:center;
+    padding:100px 0;
     .lo_title{
         margin-bottom: 20px;
         img{
