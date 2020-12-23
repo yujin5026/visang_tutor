@@ -41,13 +41,25 @@
         font-weight: 100;
         opacity: 0.8;
     }
-    input{
-        margin: 20px 0 150px 0;
-        width: 355px;
-        padding: 20px 130px;
-        border: none;
-        border-radius: 44px;
+    .teacher_search_bar{
+        position: relative;
+        label{
+            position: absolute;
+            top: 32px;
+            right: 28%;
+        }
+        input{
+            margin: 20px 0 150px 0;
+            width: 555px;
+            height: 53px;
+            padding: 0 20px;
+            font-size: 15px;
+            font-weight: 700;
+            border: none;
+            border-radius: 44px;
+        }
     }
+    
     h4{
         color: #fff;
         font-size: 34px;
@@ -59,11 +71,13 @@
     }
 }
 
+
+
 .section_title{
     margin-bottom: 90px;
     text-align: center;
     &.sub{
-        margin-top: 200px;
+        margin-top: 110px;
     }
     h1{
         font-size: 38px;
