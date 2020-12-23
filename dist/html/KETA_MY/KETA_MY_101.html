@@ -128,44 +128,56 @@
                 </div>
                 <div class="mypage_contents">
 
-                    <div class="dashboard_title">
-                        <div class="dashboard_left">
-                            <strong>KIM BISANG</strong>
-                            <span>student</span>
-                            <img src="../../images/dashboard_change.png" alt="change" />
-                        </div>
-                        <div class="dashboard_right">
-                            <select>
-                                <option>
-                                    Uncovering youth records
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-
                     <div class="my_lesson_box">
-                        <div class="my_lesson_title">
-                            <h2>Uncovering youth records</h2>
-                            <div class="see_all">
-                                <a href="">
-                                    see all
-                                    <img src="../../images/seeall.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card_wrap01">
-                            <div class="card_container normal">
-                                <div class="card_contants card01">
+                        <div class="card_wrap01 youth">
+                            <div class="card_container">
+                                <div class="youth_card">
+                                    <h3>Lesson</h3>
+                                    <div class="lesson">
+                                        <!-- div 에 active 클래스가 추가되면 빨간색 알림모양-->
+                                        <div class="active">
+                                            <span>3</span>
+                                            <h4>Scheduled</h4>
+                                        </div>
+                                        <!-- div.active 에 sub 클래스가 추가되면 회색 알림모양-->
+                                        <div class="active sub">
+                                            <span>30</span>
+                                            <h4>Total</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="youth_card">
+                                    <h3>Coin</h3>
+                                    <div class="coin">
+                                        <h3>
+                                            <img src="../../images/coin.png" />
+                                            50,000
+                                        </h3>
+                                        <h4>
+                                            Point will be expired <em>2,000 P</em>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="youth_card">
+                                    <h3>Level</h3>
+                                    <div class="level">
+                                        <h3>Upper-Intermediate</h3>
+                                        <p>
+                                            <img src="../../images/arrow_01.png" />
+                                            Advanced
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="lesson_box_two">
-                        <!-- lesson_box 01 -->
+                        <!-- Notification -->
                         <div class="my_lesson_box">
                             <div class="my_lesson_title">
-                                <h3>My Q&A</h3>
+                                <h3>Notification</h3>
                                 <div class="see_all">
                                     <a href="">
                                         see all
@@ -173,19 +185,54 @@
                                     </a>
                                 </div>
                             </div>
+                            <!-- check 클래스 추가 시 빨간동그라미 표시-->
+                            <div class="card_wrap01 check">
+                                <div class="card_container noti_card">
+                                    <div class="card_contants">
+                                        <img src="../../images/noti_01.png" />
+                                        <div class="noti_card_txt">
+                                            <h3>[Answer complete]</h3>
+                                            <h4>Tutor : Pablo Puiz Picasso de kicaboo</h4>
+                                            <p>20.10.31</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- noti_c 클래스 추가 시 배경색 변경-->
+                            <div class="card_wrap01 noti_c">
+                                <div class="card_container noti_card">
+                                    <div class="card_contants">
+                                        <img src="../../images/noti_02.png" />
+                                        <div class="noti_card_txt">
+                                            <h3>[System update]</h3>
+                                            <h4>10.31 (Mon) 00:00</h4>
+                                            <p>20.10.31</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants card01">
+                                <div class="card_container noti_card">
+                                    <div class="card_contants">
+                                        <img src="../../images/noti_03.png" />
+                                        <div class="noti_card_txt">
+                                            <h3>The next lesson is <em>10.31 20:00.</em></h3>
+                                            <h4>Lesson name display</h4>
+                                            <p>20.10.31</p>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- // Notification -->
 
-                        <!-- lesson_box 01 -->
-
+                        <!-- Recommended Tutor -->
                         <div class="my_lesson_box">
                             <div class="my_lesson_title">
-                                <h3>Notice</h3>
+                                <h3>Recommended Tutor</h3>
                                 <div class="see_all">
                                     <a href="">
                                         see all
@@ -193,31 +240,28 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants card01">
+                            <div class="card_wrap01 tutor">
+                                <div class="card_container">
+                                    <div class="card_contants">
+                                        <div class="tutor_profile">
+                                            <img src="../../images/noti_03.png" />
+                                        </div>
+                                        <div class="tutor_card_txt">
+                                            <h3>Pablo Ruiz Picasso de kicab...</h3>
+                                            <h4>Lesson name display</h4>
+                                            <p>20.10.31</p>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
+                    <!-- // Recommended Tutor -->
 
 
-                    <!-- lesson_box 01 -->
-
-                    <div class="my_lesson_box">
-                        <div class="my_lesson_title">
-                            <h3>Today lesson</h3>
-                        </div>
-                        <div class="card_wrap01">
-                            <div class="card_container normal">
-                                <div class="card_contants card01">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
+                    <!-- My Class -->
                     <div class="my_lesson_box">
                         <div class="my_lesson_title">
                             <h3>My Class</h3>
@@ -232,16 +276,97 @@
                         <div class="card_wrap01">
                             <div class="card_container normal">
                                 <div class="card_contants card01">
+                                    <div class="card_img round">
+                                        <img src="../../images/teacher01.png" alt="teacher01">
+                                    </div>
+                                    <div class="card_text">
+                                        <div class="card_text_left">
+                                            <div class="card_text_title">
+                                                <h1>Uncovering youth records</h1>
+                                                <h3>Pablo Ruiz Pocasso de kicaboo</h3>
+                                            </div>
+                                            <div class="card_text_bottom">
+                                                <div class="profile_bottom_left">
+                                                    <strong>08:00</strong>
+                                                    <span>20.10.29(Wed)</span>
+                                                    <p>Reserved lessons</p>
+                                                </div>
+                                                <div class="profile_bottom_middle">
+                                                    <img src="../../images/icon_교재.png" alt="icon_교재">
+                                                    <p>Textbook</p>
+                                                </div>
+                                                <div class="profile_bottom_right">
+                                                    <img src="../../images/icon_학습스타일_blue.png" alt="icon_학습스타일">
+                                                    <p>Learning style</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="card_text_right">
+                                            <div class="card_right_img">
+                                                <button type="button">
+                                                    <img src="../../images/icon_heart_off2.png" alt="icon_heart_off2">
+                                                </button>
+                                                <button type="button">
+                                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                                </button>
+                                            </div>
+                                            <p><img src="../../images/icon_timer.png" alt="icon_timer">00:15:00</p>
+                                            <button type="button" class="bg_blue">ENTER LESSON</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- // lesson_box 01 -->
+
                         <!-- lesson_box 02 -->
                         <div class="card_wrap01">
                             <div class="card_container normal">
                                 <div class="card_contants card01">
+                                    <div class="card_img round">
+                                        <img src="../../images/teacher01.png" alt="teacher01">
+                                    </div>
+                                    <div class="card_text">
+                                        <div class="card_text_left">
+                                            <div class="card_text_title">
+                                                <h1>Uncovering youth records</h1>
+                                                <h3>Pablo Ruiz Pocasso de kicaboo</h3>
+                                            </div>
+                                            <div class="card_text_bottom">
+                                                <div class="profile_bottom_left">
+                                                    <strong>08:00</strong>
+                                                    <span>20.10.29(Wed)</span>
+                                                    <p>Reserved lessons</p>
+                                                </div>
+                                                <div class="profile_bottom_middle">
+                                                    <img src="../../images/icon_교재.png" alt="icon_교재">
+                                                    <p>Textbook</p>
+                                                </div>
+                                                <div class="profile_bottom_right">
+                                                    <img src="../../images/icon_학습스타일_blue.png" alt="icon_학습스타일">
+                                                    <p>Learning style</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="card_text_right">
+                                            <div class="card_right_img">
+                                                <button type="button">
+                                                    <img src="../../images/icon_heart_off2.png" alt="icon_heart_off2">
+                                                </button>
+                                                <button type="button">
+                                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                                </button>
+                                            </div>
+                                            <p><img src="../../images/icon_timer.png" alt="icon_timer">00:15:00</p>
+                                            <button type="button" class="bg_blue">ENTER LESSON</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                         <!-- // lesson_box 02 -->
 
                     </div>
                 </div>

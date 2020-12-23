@@ -77,72 +77,6 @@
 }
 
 
-///////////////////////////////////////////////////////////////////////// 마이페이지 탭
-input[type="radio"] {
-    display: none;
-}
-
-.tabs {
-    display: flex;
-    overflow: hidden;
-
-    .tab {
-        width: 25%;
-        padding: 20px;
-        display: inline-block;
-        font-size: 16px;
-        color: #666666;
-        text-align: center;
-        border: 1px solid #eaebec;
-        cursor: pointer;
-
-        span {
-            font-size: 20px;
-            font-weight: bold;
-            color: #b94a38;
-            margin-left: 10px;
-        }
-    }
-}
-
-.panel {
-    display: none;
-    padding-top: 20px;
-    animation: fadein .8s;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-#one:checked~.panels #one-panel,
-#two:checked~.panels #two-panel,
-#three:checked~.panels #three-panel,
-#four:checked~.panels #four-panel {
-    display: block
-}
-
-#one:checked~.tabs #one-tab,
-#two:checked~.tabs #two-tab,
-#three:checked~.tabs #three-tab,
-#four:checked~.tabs #four-tab {
-    background: #b94a38;
-    color: #fff;
-    border: 1px solid #b94a38;
-}
-
-#one:checked~.tabs #one-tab span,
-#two:checked~.tabs #two-tab span,
-#three:checked~.tabs #three-tab span,
-#four:checked~.tabs #four-tab span {
-    color: #fff;
-}
 
 ///////////////////////////////////////////////////////////////////////// 마이페이지 레이아웃
 .mypage {
@@ -242,7 +176,7 @@ input[type="radio"] {
         box-sizing: border-box;
 
         &:first-child {
-            margin-right: 20px;
+            margin-right: 40px;
         }
     }
 }
@@ -703,5 +637,153 @@ input[type="radio"] {
                 }
             }
         }
+    }
+}
+
+
+
+///////////////////////////////////////////////////////////////////////// KETA_MY_010.html
+.noti_c {
+    background:#f9fafe;
+}
+.noti_card {
+    padding:20px;
+    .card_contants {
+        img {
+            width:40px;
+            height:40px;
+        }
+        .noti_card_txt {
+            margin-left:15px;
+            h3 {
+                font-size:16px;
+                font-weight:bold;
+                color:#333333;
+                em {
+                    color:#0d52a7;
+                }
+            }
+            h4 {
+                font-size:14px;
+                color:#0d52a7;
+            }
+            p {
+                font-size:13px;
+                color:#999999;
+                margin-top:10px;
+            }
+        }
+    }
+}
+
+.youth {
+    background:#fafafa;
+    border:none;
+    .card_container {
+        display:flex;
+        justify-content: space-between;
+        padding:20px 0;
+        .youth_card {
+            width:100%;
+            padding:0 10px;
+            &:nth-child(2) {
+                border-left:1px solid #ddd;
+                border-right:1px solid #ddd;
+            }
+            > h3 {
+                font-size:18px;
+                color:#333333;
+                margin-left: 20px;
+            }
+            .lesson {
+                display: flex;
+                text-align:center;
+                margin-top:30px;
+                > div {
+                    position: relative;
+                    width:100%;
+                    span {
+                        font-size:30px;
+                        font-weight:bold;
+                    }
+                    h4 {
+                        font-size:14px;
+                        color:#666666;
+                    }
+                    &:first-child {
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width:1px;
+                            height:30px;
+                            background:#e3e3e3;
+                            top:20px;
+                            right:0;
+                        }
+                    }
+                    &.active {
+                        span {
+                            &::after {
+                                content:'';
+                                position: absolute;
+                                width:7px;
+                                height:7px;
+                                background:#b94a38;
+                                border-radius: 50%;
+                                top:3px;
+                            }
+                        }
+                        &.sub {
+                            span {
+                                &::after {
+                                    background:#cccccc;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .coin {
+                text-align:center;
+                margin-top:20px;
+                h3 {
+                    font-size:30px;
+                    color:#333333;
+                }
+                h4 {
+                    font-size:13px;
+                    font-weight:normal;
+                    color:#999999;
+                    em {
+                        font-size:15px;
+                        font-weight:bold;
+                        color:#b94a38;
+                        margin-left:5px;
+                    }
+                }
+            }
+            .level {
+                text-align:center;
+                margin-top:20px;
+                h3 {
+                    font-size:24px;
+                    color:#333333;
+                }
+                p {
+                    font-size:15px;
+                    font-weight:bold;
+                    color:#2f7e69;
+                    margin-top:5px;
+                }
+            }
+        }
+    }
+}
+
+.tutor {
+    .card_container {
+        display:flex;
+        justify-content: space-between;
+        padding:20px 0;
     }
 }
