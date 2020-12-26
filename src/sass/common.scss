@@ -67,8 +67,8 @@ $deep-gray-color:#444444;
 .bg_green {color:#2f7e69;background:#e0f1ec;border:1px solid #e0f1ec;}
 
 // 평점 
-.star {position: relative;padding-left:30px;}
-.star::before {content:'';position: absolute;top:0;left:0;background:url('../images/star.png');width:24px;height:23px;}
+.star {position: relative;padding-left:26px;}
+.star::before {content:'';position: absolute;top:3px;left:0;background:url('../images/star.png');width:20px;height:19px;}
 
 // 더보기
 .showMore {font-size:14px;color:#0d52a7;font-weight:500;}
@@ -348,6 +348,7 @@ input[type="radio"] {
     overflow: hidden;
 
     .tab {
+        position:relative;
         width: 25%;
         padding: 20px;
         display: inline-block;
@@ -362,6 +363,18 @@ input[type="radio"] {
             font-weight: bold;
             color: #b94a38;
             margin-left: 10px;
+        }
+        &.label_check {
+            &::after {
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background: #b94a38;
+                top: 13px;
+                border-radius: 50%;
+                right: 15px;
+            }
         }
     }
 }
@@ -396,6 +409,15 @@ input[type="radio"] {
     background: #b94a38;
     color: #fff;
     border: 1px solid #b94a38;
+}
+
+#one:checked~.tabs #one-tab,
+#two:checked~.tabs #two-tab,
+#three:checked~.tabs #three-tab,
+#four:checked~.tabs #four-tab {
+    &::after {
+        background: #fff;
+    }
 }
 
 #one:checked~.tabs #one-tab span,

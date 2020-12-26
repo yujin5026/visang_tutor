@@ -66,6 +66,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        margin-left:50px;
     }
 }
 
@@ -379,7 +380,47 @@
 ///////////////////////////////////////////////////// 카드타입 01
 .card01 {
     .card_img {
-        margin-right:30px;
+        display: block;
+        background: url(../images/user_icon.png) no-repeat left top;
+        background-size: cover;
+        width: 140px;
+        height: 120px;
+        text-decoration: none;
+        position: relative;
+        border: 0;
+        span {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            background: url(../images/teacher01.png) center center / cover no-repeat;
+            left: 0;
+            overflow: hidden;
+        }
+        &::after {
+            content: '';
+            background: url(../images/america.png) no-repeat;
+            width: 40px;
+            height: 50px;
+            position: absolute;
+            right: -17px;
+            bottom: -5px;
+        }
+        &.sub01 {
+            span {
+                background: url(../images/teacher02.png) center center / cover no-repeat;
+            }
+        }
+        &.sub02 {
+            span {
+                background: url(../images/teacher03.png) center center / cover no-repeat;
+            }
+        }
+        &.sub03 {
+            span {
+                background: url(../images/teacher04.png) center center / cover no-repeat;
+            }
+        }
     }
     .card_text {
         .card_text_left {
@@ -389,6 +430,7 @@
                     font-size:24px;
                 }
                 h3 {
+                    display:inline-block;
                     color: #666666;
                     font-size: 18px;
                     font-weight: 400;
@@ -396,6 +438,10 @@
                 a {
                     font-size:14px;
                     color:#0d52a7;
+                }
+                img {
+                    margin:0 5px;
+                    margin-top:-5px;
                 }
             }
             .card_text_bottom{
@@ -433,42 +479,117 @@
                 .profile_bottom_middle{
                     img{
                         margin-top: 5px;
+                        display:none;
                     }
                     p{
                         margin-top: 8px;
-                        color: #bbbbbb;
                         font-size: 13px;
+                    }
+                    &.on {
+                        .on {
+                            display:inline-block;
+                        }
+                        p {
+                            color: #0d52a7;
+                        }
+                    }
+                    &.off {
+                        .off {
+                            display:inline-block;
+                        }
+                        p {
+                            color: #bbbbbb;
+                        }
                     }
                 }
                 .profile_bottom_right{
+                    img {
+                        display:none;
+                    }
                     p{
                         margin-top: 12px;
                         color: #0d52a7;
                         font-size: 13px;
                     }
+                    &.on {
+                        .on {
+                            display:inline-block;
+                        }
+                        p {
+                            color: #0d52a7;
+                        }
+                    }
+                    &.off {
+                        .off {
+                            display:inline-block;
+                        }
+                        p {
+                            color: #bbbbbb;
+                        }
+                    }
                 }
             }
         }
         .card_text_right{
+            position:relative;
             text-align: right;
             .card_right_img{
                 button {
                     border:none;
+                    &.heart {
+                        img {
+                            display:none;
+                        }
+                        &.on {
+                            img {
+                                &.on {
+                                    display:inline-block;
+                                }
+                            }
+                        }
+                        &.off {
+                            img {
+                                &.off {
+                                    display:inline-block;
+                                }
+                            }
+                        }
+                    }
                 }
             }
-            p{
+            p {
                 margin-top: 20px;
-                color: #1b4c88;
-                img{
+                img {
                     margin-right: 10px;
                     margin-bottom: 4px;
+                    display:none;
+                }
+                &.on {
+                    color: #1b4c88;
+                    img {
+                        &.on {
+                            display:inline-block;
+                        }
+                    }
+                }
+                &.off {
+                    color: #777777;
+                    img {
+                        &.off {
+                            display:inline-block;
+                        }
+                    }
                 }
             }
             > button{
+                position: absolute;
+                width:180px;
                 margin-top: 10px;
-                padding: 15px 40px;
+                padding: 15px 0;
                 font-size: 16px;
                 border: none;
+                right:0;
+                bottom:0;
             }
         }
     }
