@@ -66,7 +66,9 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-left:50px;
+        &.sub {
+            margin-left:50px;
+        }
     }
 }
 
@@ -777,6 +779,8 @@
 .todyLesson{
     justify-content: space-between;
     .today_content{
+        display:inline-block;
+        width:285px;
         h1{
             margin-bottom: 15px;
             font-size: 24px;
@@ -793,11 +797,25 @@
             font-size: 14px;
         }
         h4{
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
         button{
             width: 260px;
-            border-radius: 0;
+            padding:15px 0;
+        }
+        &:nth-child(2) {
+            padding:0 30px;
+            border-left:1px solid #ddd;
+            border-right:1px solid #ddd;
+        }
+        &:last-child {
+            margin-top:40px;
+            text-align:center;
+            vertical-align: top;
+            h2 {
+                color:#999999;
+                margin-top:10px;
+            }
         }
     }
 }
@@ -946,6 +964,7 @@
         }
         .card_text_bottom {
             div {
+                display:inline-block;
                 strong {
                     font-size:24px;
                     font-weight:700;
@@ -956,6 +975,22 @@
                     font-size:14px;
                     color:#333333;
                 }
+                &:first-child {
+                    padding-right:50px;
+                }
+                &:last-child {
+                    vertical-align: top;
+                    margin-top:20px;
+                    padding-left: 30px;
+                    border-left: 1px solid #ddd;
+                    span {
+                        font-size:14px;
+                        color:#333333;
+                    }
+                    img {
+                        margin-left:5px;
+                    }
+                }
             }
             p {
                 font-size:14px;
@@ -965,11 +1000,64 @@
         }
     }
     .card_text_right {
+        position:relative;
         text-align: right;
         .card_right_img{
             margin-bottom:30px;
             button {
                 border:none;
+            }
+        }
+        > p {
+            margin-top: 20px;
+            img {
+                margin-right: 10px;
+                margin-bottom: 4px;
+                display:none;
+            }
+            &.on {
+                color: #1b4c88;
+                img {
+                    &.on {
+                        display:inline-block;
+                    }
+                }
+            }
+            &.off {
+                color: #777777;
+                img {
+                    &.off {
+                        display:inline-block;
+                    }
+                }
+            }
+        }
+        > button {
+            width: 180px;
+            margin-top: 10px;
+            padding: 15px 0;
+            font-size: 16px;
+            position: absolute;
+            border: none;
+            right: 0;
+            bottom: 0;
+        }
+        > span {
+            position: absolute;
+            right: 200px;
+            border-radius: 20px;
+            font-size: 14px;
+            padding: 5px 15px 7px 15px;
+            bottom: 12px;
+            vertical-align: middle;
+            white-space: nowrap;
+            &.off {
+                background: #bbbbbb;
+                color: #fff;
+            }
+            &.on {
+                background:#e0f1ec;
+                color:#2f7e69;
             }
         }
     }
