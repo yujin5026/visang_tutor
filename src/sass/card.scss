@@ -40,7 +40,6 @@
     }
 }
 
-
 .card_text_title {
     h1{
         position: relative;
@@ -69,6 +68,10 @@
         &.sub {
             margin-left:50px;
         }
+    }
+    .myfees {
+        width:100%;
+        margin:0 5px;
     }
 }
 
@@ -779,32 +782,67 @@
 .todyLesson{
     justify-content: space-between;
     .today_content{
+        vertical-align: top;
         display:inline-block;
         width:285px;
         h1{
             margin-bottom: 15px;
             font-size: 24px;
-            font-weight: 500;
-        }
-        h2{
-            margin-bottom: 5px;
-            font-size: 18px;
             font-weight: 700;
         }
-        h3{
-            margin-bottom: 20px;
-            color: #666666;
-            font-size: 14px;
+        dl {
+            margin:10px 0;
+            dt {
+                display: inline-block;
+                color: #666666;
+                width: 70px;
+                font-size: 14px;
+                margin-right: 10px;
+                border-right: 1px solid #ddd;
+            }
+            dd {
+                display: inline-block;
+                color: #333333;
+                font-weight: 700;
+                font-size: 14px;
+            }
         }
-        h4{
-            margin-bottom: 5px;
+        h4 {
+            font-size:14px;
+            color: #777777;
+            font-weight: 500;
+            margin: 25px 0 10px;
+            img {
+                margin-right: 5px;
+                vertical-align: top;
+                margin-top: 3px;
+                display:none;
+                &.off {
+                    display:inline-block;
+                }
+            }
+            &.on {
+                color:#b94a38;
+                img {
+                    &.on {
+                        display:inline-block;
+                    }
+                    &.off {
+                        display:none;
+                    }
+                    
+                }
+            }
         }
         button{
             width: 260px;
             padding:15px 0;
+            font-size:16px;
+            font-weight:700;
         }
         &:nth-child(2) {
-            padding:0 30px;
+            padding:0 40px;
+            margin:0 30px;
             border-left:1px solid #ddd;
             border-right:1px solid #ddd;
         }
@@ -816,6 +854,7 @@
                 color:#999999;
                 margin-top:10px;
             }
+            width:200px;
         }
     }
 }
@@ -1009,7 +1048,7 @@
             }
         }
         > p {
-            margin-top: 20px;
+            margin-top: 30px;
             img {
                 margin-right: 10px;
                 margin-bottom: 4px;

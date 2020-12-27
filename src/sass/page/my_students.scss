@@ -137,7 +137,9 @@
 ///////////////////////////////////////////////////////////////////////// 마이페이지 - 타이틀
 .my_lesson_title {
     margin-top: 50px;
-
+    &.sub {
+        margin-top:0;
+    }
     h3 {
         display: inline-block;
         font-size: 24px;
@@ -789,13 +791,104 @@
 }
 
 ///////////////////////////////////////////////////////////////////////// KETA_MY_101.html
+.qanda {
+    min-height:295px;
+}
 .qanda_top {
     background:#f9fafe;
-    padding:20px;
+    padding: 20px 50px;
     div {
         display:inline-block;
     }
+    .waiting {
+        font-size:16px;
+        color:#666666;
+        strong {
+            font-size:20px;
+            color:#b94a38;
+            font-weight:700;
+            margin-left:5px;
+        }
+    }
     .complete {
+        font-size:16px;
+        color:#666666;
         float:right;
+        strong {
+            font-size:20px;
+            color:#333333;
+            font-weight:700;
+            margin-left:5px;
+        }
+    }
+}
+
+.qanda_list {
+    margin:25px 0 15px 0;
+    h3 {
+        font-size:18px;
+        color:#333333;
+        font-weight:500;
+        &.on {
+            &::before {
+                content: '';
+                display:inline-block;
+                width:5px;
+                height:5px;
+                background:#aa3238;
+                vertical-align: top;
+                margin-right:5px;
+                border-radius: 50%;
+            }
+        }
+    }
+    h4 {
+        font-size:14px;
+        color:#0d52a7;
+        font-weight:500;
+        margin:5px 0 10px 0;
+    }
+    p {
+        font-size:14px;
+        color:#666666;
+    }
+}
+
+.myfees {
+    padding:30px;
+    min-height:295px;
+    text-align: center;
+    img {
+        margin-top:70px;
+    }
+    p {
+        font-size:36px;
+        margin-top:10px;
+    }
+    span {
+        font-weight:300;
+    }
+    &.sub01 {
+        background:#d99e2d;
+        p {
+            color:#fff;
+        }
+        span {
+            color:#fff;
+            opacity: 0.8;
+        }
+        button {
+            padding:10px 20px;
+            margin-top:40px;
+        }
+    }
+    &.sub02 {
+        background:#f3f3f3;
+        p {
+            color:#d99e2d;
+        }
+        span {
+            color:#777777;
+        }
     }
 }
