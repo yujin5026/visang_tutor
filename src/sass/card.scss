@@ -96,19 +96,49 @@
 .card_container_sub{
     &.profile {
         background:#f9fafe;
-        .card_sub_img{
+        display:flex;
+        .card_sub_img {
+            display: block;
+            background: url(../images/user_icon.png) no-repeat left top;
+            background-size: cover;
+            width: 70px;
+            height: 70px;
+            text-decoration: none;
             position: relative;
-            img{
-                margin-right: 20px;
+            border: 0;
+            margin-right: 35px;
+            span {
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
-                &:nth-child(2){
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    width: 30px;
-                    height: 30px;
+                position: absolute;
+                background: url(../images/tutor01.png) center center / cover no-repeat;
+                left: 0;
+                overflow: hidden;
+            }
+            &::after {
+                content: '';
+                background: url(../images/america.png) no-repeat;
+                background-size: 100%;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                right: -15px;
+                bottom: 1px;
+            }
+            &.sub01 {
+                span {
+                    background: url(../images/teacher02.png) center center / cover no-repeat;
+                }
+            }
+            &.sub02 {
+                span {
+                    background: url(../images/teacher03.png) center center / cover no-repeat;
+                }
+            }
+            &.sub03 {
+                span {
+                    background: url(../images/teacher04.png) center center / cover no-repeat;
                 }
             }
         }
@@ -151,7 +181,7 @@
                         font-weight: 700;
                     }
                     &:nth-child(2){
-                        margin: 0 20px;
+                        margin: 0 50px;
                     }
                     &:nth-child(3){
                         a{
@@ -159,6 +189,9 @@
                                 color: #0d52a7;
                             }
                         }
+                    }
+                    &:last-child {
+                        margin-right:0;
                     }
                 }
             }
@@ -427,6 +460,9 @@
             }
         }
     }
+    .card_img01 {
+        margin-right:30px;
+    }
     .card_text {
         .card_text_left {
             .card_text_title {
@@ -561,6 +597,7 @@
                         }
                     }
                 }
+               
             }
             p {
                 margin-top: 20px;
@@ -662,6 +699,10 @@
                 font-size: 32px;
                 color:#111111;
                 margin: 5px 0 15px;
+            }
+            h4 {
+                font-size:14px;
+                color:#2964ad;
             }
         }
         .card_text_bottom {
@@ -1046,11 +1087,18 @@
             button {
                 border:none;
             }
+            &.sub {
+                margin-bottom:10px;
+            }
         }
         > p {
+            font-size:14px;
             margin-top: 30px;
+            &.sub {
+                margin-top:0;
+            }
             img {
-                margin-right: 10px;
+                margin-right: 5px;
                 margin-bottom: 4px;
                 display:none;
             }
@@ -1252,3 +1300,18 @@
 }
 
 
+
+
+.card_bottom {
+    text-align:center;
+    margin-top:50px;
+    > button {
+        font-size:18px;
+        font-weight:500;
+        width:220px;
+        padding:15px 0;
+        &:first-child {
+            margin-right:10px;
+        }
+    }
+}
