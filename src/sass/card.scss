@@ -1065,11 +1065,28 @@
                         margin-left:5px;
                     }
                 }
+                &.off {
+                    &:first-child {
+                        padding-right:15px;
+                    }
+                    strong {
+                        color:#999999;
+                    }
+                    span {
+                        color:#999999;
+                    }
+                }
+                
             }
             p {
                 font-size:14px;
                 font-weight:500;
                 color:#999999;
+            }
+            em {
+                font-size:14px;
+                padding:5px 10px;
+                border-radius: 20px
             }
         }
     }
@@ -1122,6 +1139,10 @@
             border: none;
             right: 0;
             bottom: 0;
+            &.review {
+                padding:10px 0;
+                border:1px solid #bbbbbb;card_star
+            }
         }
         > span {
             position: absolute;
@@ -1141,9 +1162,9 @@
                 color:#2f7e69;
             }
         }
+        
     }
 }
-
 
 
 ///////////////////////////////////////////////////// usage_history03
@@ -1306,6 +1327,9 @@
         padding:15px 0;
         &:first-child {
             margin-right:10px;
+        }
+        &.one {
+            width:auto;
         }
     }
 }
