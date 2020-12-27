@@ -951,11 +951,8 @@
 
 ///////////////////////////////////////////////////// curriculum
 .curriculum{
-    width: 100%;
     .curriculum_list{
-        display: inline-block;
-        padding: 20px 5px;
-        width: 100%;
+        padding: 20px;
         &:not(:last-child){
             margin-bottom: 10px;
         }
@@ -963,7 +960,7 @@
             background: #fafafa;
         }
         span{
-            margin-right: 10px;
+            margin-right: 20px;
             color: #bbbbbb;
             font-size: 14px;
         }
@@ -974,11 +971,8 @@
         }
         button{
             padding: 5px 10px;
-            border: none;
-            background: #ccc;
             border-radius: 14px;
             float: right;
-            
             img{
                 margin-bottom: 5px;
                 margin-right: 5px
