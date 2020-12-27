@@ -1088,6 +1088,21 @@
                 padding:5px 10px;
                 border-radius: 20px
             }
+            > h1 {
+                font-size:24px;
+                font-weight:500;
+                color:#333333;
+                em {
+                    font-size:24px;
+                    font-weight:700;
+                    padding:0;
+                }
+            }
+            > span {
+                font-size:14px;
+                font-weight:500;
+                color:#0d52a7;
+            }
         }
     }
     .card_text_right {
@@ -1130,6 +1145,12 @@
                 }
             }
         }
+        > strong {
+            font-size:13px;
+            font-weight:500;
+            color:#666666;
+            margin-right:50px;
+        }
         > button {
             width: 180px;
             margin-top: 10px;
@@ -1141,7 +1162,11 @@
             bottom: 0;
             &.review {
                 padding:10px 0;
-                border:1px solid #bbbbbb;card_star
+                border:1px solid #bbbbbb;
+            }
+            &.cancle {
+                padding:10px 0;
+                border:1px solid #b94a38;
             }
         }
         > span {
@@ -1327,9 +1352,11 @@
         padding:15px 0;
         &:first-child {
             margin-right:10px;
+            &.one {
+                width:auto;
+                padding:15px 20px;
+            }
         }
-        &.one {
-            width:auto;
-        }
+        
     }
 }
