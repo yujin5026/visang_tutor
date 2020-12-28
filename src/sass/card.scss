@@ -244,6 +244,18 @@
                 padding:10px 0;
             }
         }
+        .comment_textarea {
+            textarea {
+                margin-top:20px;
+                width: 100%;
+                height: 100px;
+                padding: 10px;
+                box-sizing: border-box;
+                border: solid 1px #eaeaea;
+                font-size: 16px;
+                resize: none;
+            }
+        }
     }
 }
 
@@ -1187,7 +1199,19 @@
                 color:#2f7e69;
             }
         }
-        
+        .card_star {
+            position:absolute;
+            right:200px;
+            bottom:0;
+            width:120px;
+            > img {
+                display:inline-block;
+            }
+            > span {
+                font-size:13px;
+                color:#aaaaaa;
+            }
+        }
     }
 }
 
