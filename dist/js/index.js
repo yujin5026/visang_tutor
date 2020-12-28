@@ -171,7 +171,7 @@ function modalView(modalName) {
     }
 
     $("body").append("<div class='transparents-layer' style='background:#000; opacity:0.7'></div>");
-    $(".popupwrap." + modalName).addClass("active").css("top", "40%").css("left", "50%").css("margin-top", -($(".modalpop .popupwrap." + modalName).innerHeight() / 2.7) + "px").css("margin-left", -modalWidth + "px").animate({ opacity: 1 }, 500);
+    $(".popupwrap." + modalName).addClass("active").css("top", "40%").css("left", "50%").css("margin-top", -($(".modalpop .popupwrap." + modalName).innerHeight() / 2.7) + "px").css("margin-left", -modalWidth + "px").animate({ opacity: 1 }, 300);
 
     $(".transparents-layer").attr("onclick", "modalHide('" + modalName + "')");
     $(".popupwrap." + modalName).addClass("active");
@@ -179,10 +179,10 @@ function modalView(modalName) {
 }
 
 function modalHide(modalName) {
-    $(".popupwrap." + modalName).animate({ opacity: 0 }, 400, function () {
+    $(".popupwrap." + modalName).animate({ opacity: 0 }, 300, function () {
         $(".popupwrap." + modalName).css("top", "-99999px").css("left", "-99999px");
         $(".modalpop").css({ "top": "-99999px", "left": "-99999px" });
-        $(".transparents-layer").animate({ opacity: 0 }, 400, function () {
+        $(".transparents-layer").animate({ opacity: 0 }, 300, function () {
             $(this).remove();
         });
         $(".popupwrap." + modalName).removeClass("active");

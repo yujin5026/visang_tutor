@@ -2,6 +2,128 @@
     width:100%;
     border-collapse: collapse;
 }
+
+///////////////////////////////////////////////////////////////////////// curri_table
+.curri_table {
+    thead {
+        th {
+            font-size:14px;
+            color:#333333;
+            padding-bottom:20px;
+             &:first-child {
+                font-size:15px;
+                font-weight:700;
+                text-align:left;
+            }
+        }
+    }
+    tbody {
+        td {
+            font-size:14px;
+            font-weight:700;
+            color:#333333;
+            padding:15px;
+            text-align:center;
+            &:first-child {
+                color:#bbbbbb;
+                text-align:left;
+            }
+            &:nth-child(2) {
+                text-align:left;
+            }
+        }
+        tr {
+            &:nth-child(even) {
+                td {
+                    background:#fafafa;
+                }
+            }
+        }
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////// sche_table
+.sche_table {
+    tbody {
+        tr {
+            td {
+                vertical-align: middle;
+                border-right:1px solid #eaeaea;
+                padding:15px 5px;
+                &.backgorund_blue {
+                    color: #fff;
+                    background: #75afcd;
+                } 
+            }
+            &:nth-child(1),
+            &:nth-child(7),
+            &:nth-child(13) {
+                background: #f9fafe;
+                td {
+                    font-weight:700;
+                }
+                td:first-child {
+                    padding-left: 20px;
+                    color: #0d52a7;
+                    font-size: 15px;
+                    font-weight: 700;
+                    text-align: left;
+                }
+            }
+            &:nth-child(2),
+            &:nth-child(8) {
+                td {
+                    color: #333333;
+                    font-size: 15px;
+                    font-weight: 700;
+                    border-right: 1px solid #eaeaea;
+                }
+            }
+            &:nth-child(4),
+            &:nth-child(6) {
+                background: #fbfbfb;
+            }
+            &:nth-child(10),
+            &:nth-child(12) {
+                background: #fbfbfb;
+            }
+            .text_part {
+                padding-left: 15px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+
+
+///////////////////////////////////////////////////////////////////////// sche_table
+.manager_table {
+    margin-top: 20px;
+    border-top: 2px solid #1b4c88;
+    thead {
+        th {
+            padding: 10px 0;
+        }
+    }
+    tbody {
+        td {
+            padding: 15px 3px;
+            border: 1px solid #eaeaea;
+
+            &:first-child {
+                border-left: none;
+            }
+            &.background_skyblue {
+                background: #75afcd;
+            }
+        }
+    }
+}
+        
+///////////////////////////////////////////////////////////////////////// common_table
 .primary_table {
     border-top:2px solid #1b4c88;
     thead {
@@ -22,286 +144,7 @@
                 border-bottom:1px solid #eaeaea;
             }
             &:nth-child(odd) {
-                background:#fafafa;
-            }
-        }
-    }
-    &.rowspan01 {
-        tr {
-            &:first-child {
-                td {
-                    &:first-child {
-                        background:#fff;
-                        vertical-align: middle;
-                    }
-                }
-            }
-            td {
-                border-right:1px solid #eaeaea;
-                &:last-child {
-                    border-right:none;
-                }
-            }
-        }
-    }
-    &.rowspan02 {
-        tbody {
-            tr {
-                th {
-                    background:#fff;
-                    vertical-align: middle;
-                    border-bottom:1px solid #eaeaea;
-                    border-right:1px solid #eaeaea;
-                }
-                &:nth-child(n+1):nth-child(-n+5) {
-                    td {
-                        background:#fafafa;
-                        border-bottom:none;
-                        &:first-child {
-                            text-align:left;
-                        }
-                    }
-                }
-                &:nth-child(2) {
-                    td {
-                        &:last-child {
-                            vertical-align: middle;
-                            border-bottom:1px solid #eaeaea;
-                        }
-                    }
-                }
-                &:nth-child(5) {
-                    border-bottom:1px solid #eaeaea;
-                }
-                td {
-                    border-right:1px solid #eaeaea;
-                    border-bottom:1px solid #eaeaea;
-                }
-            }
-            
-        }
-    }
-}
-
-
-.table_date {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    .table_date_left {
-        display: flex;
-        img:first-child(1) {
-            margin-right: 10px;
-        }
-        h2 {
-            margin-top: 5px;
-            margin-left: 20px;
-            font-size: 20px;
-        }
-    }
-}
-.certificates_table {
-    tbody {
-        tr {
-            td {
-                vertical-align: middle;
-                &.backgorund_blue {
-                    color: #fff;
-                    background: #75afcd;
-                } 
-            }
-            &:nth-child(1),
-            &:nth-child(7) {
-                background: #f9fafe;
-                td:first-child {
-                    padding-left: 20px;
-                    color: #0d52a7;
-                    font-size: 15px;
-                    font-weight: 700;
-                    text-align: left;
-                }
-            }
-            &:nth-child(2),
-            &:nth-child(8) {
-                td {
-                    color: #333333;
-                    font-size: 15px;
-                    font-weight: 700;
-                }
-            }
-            &:nth-child(4),
-            &:nth-child(6) {
-                background: #ccc;
-            }
-            &:nth-child(10),
-            &:nth-child(12) {
-                background: #ccc;
-            }
-            .text_part {
-                padding-left: 15px;
-                text-align: left;
-            }
-        }
-    }
-}
-
-.keta_bc_003_btn {
-    margin-top: 40px;
-    .btn_left {
-        display: inline-block;
-    }
-    .btn_right {
-        float: right;
-    }
-}
-
-
-
-
-
-
-
-
-// table_1
-.table_1 {
-    margin-top: 20px;
-    border-top: 2px solid #1b4c88;
-    width: 100%;
-    border-collapse: collapse;
-
-    thead {
-        th {
-            padding: 10px 0;
-        }
-    }
-
-    tbody {
-        td {
-            padding: 15px 3px;
-            border: 1px solid #eaeaea;
-
-            &:first-child {
-                border-left: none;
-            }
-            &.background_skyblue {
-                background: #75afcd;
-            }
-        }
-    }
-
-    // sub2
-    &.sub2 {
-        text-align: center;
-
-        tbody {
-            tr {
-                td {
-                    input {
-                        padding: 10px;
-                        font-size: 14px;
-
-                        &::placeholder {
-                            color: #000;
-                            font-weight: 700;
-                        }
-                    }
-
-                    label {
-                        color: #000;
-                        font-weight: 700;
-                    }
-                }
-            }
-        }
-    }
-
-    // sub2[e]
-
-    // sub3
-    &.sub3 {
-        tbody {
-            tr {
-                th {
-                    font-size: 15px;
-                    border-top: 1px solid #eaeaea;
-                    vertical-align: middle;
-                }
-
-                td {
-
-                    color: #666666;
-                    font-size: 14px;
-                    text-align: center;
-
-                    h4 {
-                        color: #666666;
-                        font-size: 14px;
-                        font-weight: 400;
-                        line-height: 55px;
-                        text-align: left;
-
-                        em {
-                            margin-left: 5px;
-                        }
-                    }
-                }
-
-                &:nth-child(1) {
-                    td {
-                        padding: 10px 20px;
-
-                        input {
-                            display: block;
-                            padding: 10px 0;
-                            margin: 0 auto;
-                            border: 1px solid #eaeaea;
-                        }
-
-                        input:not(:nth-child(4)) {
-                            margin-bottom: 20px;
-                        }
-                    }
-                }
-
-                &:nth-child(1),
-                &:nth-child(3) {
-                    td {
-                        background: #fbfbfb;
-                        vertical-align: middle;
-                    }
-                }
-
-                &:nth-child(5) {
-                    td {
-                        color: #000;
-                        font-size: 15px;
-                        font-weight: 700;
-                        background: #f9fafe;
-                    }
-                }
-            }
-        }
-        &.my_classes_table {
-            tbody{
-                tr{
-                    td{
-                        text-align: left;
-                    }
-                }
-            }
-        }
-    }
-
-    // sub3[e]
-
-    &.my_classes_table2{
-        tbody{
-            tr{
-                td{
-                    border: none;
-                    border-top: 1px solid #eaeaea;
-                    border-bottom:  1px solid #eaeaea;
-                }
+                background:#fff;
             }
         }
     }
