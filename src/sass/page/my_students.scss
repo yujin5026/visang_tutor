@@ -186,10 +186,29 @@
     .my_lesson_box {
         width: 100%;
         box-sizing: border-box;
-
         &:first-child {
             margin-right: 40px;
         }
+        &.rel {
+            position:relative;
+            overflow:hidden;
+            img {
+                width:100%;
+            }
+            .banner_wrap {
+                position: absolute;
+                bottom:0;
+                width:100%;
+                color:#fff;
+                opacity: 0.7;
+                background:#000;
+                padding:20px 30px;
+                span {
+                    font-size:18px;
+                }
+            }
+        }
+        
     }
 }
 
@@ -896,6 +915,52 @@
         background:#f3f3f3;
         p {
             color:#d99e2d;
+        }
+        span {
+            color:#777777;
+        }
+    }
+}
+
+.mytime {
+    padding:30px;
+    min-height:295px;
+    text-align: center;
+    img {
+        margin-top:70px;
+    }
+    p {
+        font-size:36px;
+        margin-top:10px;
+    }
+    span {
+        font-weight:300;
+    }
+    &.sub01 {
+        background:#2f7e69;
+        p {
+            color:#fff;
+        }
+        span {
+            color:#fff;
+            opacity: 0.8;
+        }
+        button {
+            padding:10px 20px;
+            margin-top:40px;
+        }
+        strong {
+            display:inline-block;
+            font-weight:300;
+            color:#fff;
+            opacity: 0.4;
+            margin-top:40px;
+        }
+    }
+    &.sub02 {
+        background:#f3f3f3;
+        p {
+            color:#2f7e69;
         }
         span {
             color:#777777;
