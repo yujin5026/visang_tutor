@@ -30,7 +30,6 @@
         >li {
             width: 100%;
             border-bottom: 1px solid #eaebec;
-
             >a {
                 font-size: 15px;
                 color: #000;
@@ -71,6 +70,17 @@
                     border: none;
                     background: url("../images/lnb_plus.png") no-repeat right center;
                 }
+            }
+            &.sub {
+                a {
+                    color:#d89d2d;
+                }
+                img {
+                    margin-right:5px;
+                }
+            }
+            > img {
+                margin-top:40px;
             }
         }
     }
