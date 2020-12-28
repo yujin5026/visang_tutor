@@ -8,6 +8,7 @@
 }
 .teacher_search_list{
     &.sub{
+        height: 93vh;
         background: url('../images/page_background.png') no-repeat;
         background-size: cover;
     }
@@ -33,29 +34,33 @@
     }
     &.sub4{
         position: relative;
+        height: 92vh;
         background: url('../images/pattern222222.png');
         background-size: cover;
         background-position: bottom;
-        .arrow_box_left{
-            position: absolute;
-            top: 50%;
-            left: 14%;
-        }
-        .arrow_box_right{
-            position: absolute;
-            top: 50%;
-            right: 14%;
-        }
+        
     }
     &.sub5{
+        position: relative;
+        padding: 70px 0;
         height: 500px;
         background: #fff;
+        &::after{
+            position: absolute;
+            content: '';
+            bottom: -273px;
+            right: 72px;
+            width: 490px;
+            height: 398px;
+            background: url(../images/white_korean_background.png) no-repeat;
+        }
     }
 }
 
 .teacher_wrap{
     &.padd{
-        padding: 7rem 25px 14rem 25px;
+        height: 64vh;
+        padding: 7rem 25px 0rem 25px;
     }
     &.padd2{
         padding: 5rem 0;
@@ -142,10 +147,6 @@
     margin-bottom: 70px;
     .tutor_images_box{
         position: relative;
-        img{
-            width: 350px;
-            height: 530px;
-        }
         a{
             .tutor_images_description{
                 position: absolute;
@@ -185,7 +186,12 @@
 
 .search_card{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: absolute;
+    padding: 16px;
+    top: 45%;
+    left: 16%;
+    width: 1424px;
     .search_card_list{
         h1{
             margin-top: 30px;
@@ -193,12 +199,31 @@
             font-size: 24px;
         }
         h2{
-
             color: #fff;
             font-size: 18px;
             font-weight: 100;
             opacity: 0.8;
         }
+        div{
+            padding: 30px 25px 0 25px;
+            width: 234px;
+            height: 394px;
+        }
+    }
+    .list_color1:hover{
+        background: #aa3238;
+    }
+    .list_color2:hover{
+        background: #bd6524;
+    }
+    .list_color3:hover{
+        background: #dca010;
+    }
+    .list_color4:hover{
+        background: #2f7e69;
+    }
+    .list_color5:hover{
+        background: #1b4c88;
     }
 }
 
@@ -235,27 +260,24 @@
     img{
         width: 850px;
         height: 480px;
+        content: '';
     }
 }
 
 
 .slides__wrapper{
+    display: flex;
     position: relative;
     width: 100%;
     height: 175px;
     margin: 0 auto;
     overflow: hidden;
-    .slides{
-        display: flex;
-        position: absolute;
-        left: 0;
-        top: 0;
-        transition: left 0.5s ease-out;
-        li{
-            margin-right: 30px;
+    &.center{
+        .slides_box{
+            margin-right: 10px;
             padding: 20px 7px;
-            width: 400px;
             background: #f8f8f8;
+            border-radius: 5px;
             border-radius: 5px;
             h1{
                 margin-top: 5px;
@@ -263,31 +285,48 @@
                 font-size: 22px;
             }
             h2{
-                margin-bottom: 20px;
+                margin-bottom: 6px;
                 color: #666666;
                 font-size: 16px;
                 font-weight: 400;
+            }
+            .comment_user{
+                h2{
+                    display: inline-block;
+                    color: #666666;
+                    font-size: 18px;
+                }
+                h3{
+                    color: #999999;
+                    font-size: 14px;
+                    font-weight: 400;
+                    float: right;
+                }
             }
         }
     }
 }
 
-.controls{
-    text-align: center;
-}
-.prev__btn,
-.next__btn {
-    margin: 0 10px;
-    padding: 5px 20px;
-    border: 2px solid pink;
-    border-radius: 5px;
-    color: #4d4d4d;
-    cursor: pointer;
-    background-color: white;
+.single-item{
+    margin-left: 19%;
+    margin-top: -3%;
 }
 
-.prev__btn:hover,
-.next__btn:hover {
-    background-color: thistle;
+.slick-prev{
+    position:absolute; 
+    top:50%; 
+    left:-6%;
+    &:before{
+       content: '';
+    }
+    
 }
 
+.slick-next{
+    position:absolute; 
+    top:50%; 
+    right:22%;
+    &:before{
+        content: '';
+    }
+}
