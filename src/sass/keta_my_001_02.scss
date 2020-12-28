@@ -307,26 +307,31 @@
     }
 }
 
+.center{
+    .slick-prev{}
+}
+
 .single-item{
     margin-left: 19%;
     margin-top: -3%;
-}
-
-.slick-prev{
-    position:absolute; 
-    top:50%; 
-    left:-6%;
-    &:before{
-       content: '';
+    .slick-prev{
+        position:absolute; 
+        top:50%; 
+        left:-6%;
+        &:before{
+           content: '';
+        }
+        
     }
     
-}
-
-.slick-next{
-    position:absolute; 
-    top:50%; 
-    right:22%;
-    &:before{
-        content: '';
+    .slick-next{
+        position:absolute; 
+        top:50%; 
+        right:22%;
+        &:before{
+            content: '';
+        }
     }
 }
+
+
