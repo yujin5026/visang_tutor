@@ -980,12 +980,12 @@
             color: #bbbbbb;
             font-size: 14px;
         }
-        p{
+        > p{
             display: inline-block;
             color: #333333;
             font-size: 18px;
         }
-        button{
+        > button{
             padding: 5px 10px;
             border-radius: 14px;
             float: right;
