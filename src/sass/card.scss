@@ -1,4 +1,12 @@
 
+$primary-color : #de9d22;
+$blue-color : #0d52a7;
+$green-color : #208b73;
+$red-color : #d1452e;
+$gray-color : #dbdbdb;
+$gray02-color:#333333;
+$gray03-color:#444444;
+
 ///////////////////////////////////////////////////// 카드 레이아웃
 .card_wrap01 {
     border: 1px solid #eaeaea;
@@ -94,6 +102,54 @@
         justify-content: space-between;
         width: 100%;
     }
+}
+
+.card_sub {
+    padding: 20px 50px;
+    display: block;
+    &.gray {
+        background:#fafafa;
+    }
+    button {
+        font-size:16px;
+        font-weight:700;
+        width:180px;
+        padding:10px 0;
+        text-transform:uppercase;
+    }
+}
+.time_red {
+    font-size:18px;
+    font-weight:700;
+    color:$red-color;
+    margin-right:10px;
+    > img {
+        margin-right:5px;
+    }
+}
+
+.card_badge {
+    margin-top: 30px;
+    span {
+        background:#f6f8fc;
+        padding:10px 20px;
+        font-size:13px;
+        font-weight:700;
+        color:$gray02-color;
+        border-radius: 30px;
+        &:not(:last-child) {
+            margin-right:10px;
+        }
+        img {
+            margin-right:5px;
+        }
+    }
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 ///////////////////////////////////////////////////// .card_container_sub - profile
@@ -653,6 +709,43 @@
     }
 }
 
+.card_tt {
+    h1 {
+        font-size: 30px;
+        margin-bottom:20px;
+    }
+}
+.card_bt {
+    dl {
+        display:flex;
+        font-size:14px;
+        dt {
+            min-width: 100px;
+            color:#666666;
+            border-right:1px solid #ddd;
+            padding-right:10px;
+            margin-right:20px;
+        }
+        dd {
+            font-weight:700;
+            color:#333333;
+            margin-right:10px;
+        }
+        &+dl {
+            margin-top:10px;
+        }
+        &:last-child {
+            dt {
+                &+dd {
+                    &:nth-child(2) {
+                        margin-right:40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 ///////////////////////////////////////////////////// 카드타입 02
 .card02{
@@ -965,37 +1058,7 @@
     }
 }
 
-///////////////////////////////////////////////////// curriculum
-.curriculum{
-    .curriculum_list{
-        padding: 20px;
-        &:not(:last-child){
-            margin-bottom: 10px;
-        }
-        &:nth-child(2){
-            background: #fafafa;
-        }
-        span{
-            margin-right: 20px;
-            color: #bbbbbb;
-            font-size: 14px;
-        }
-        > p{
-            display: inline-block;
-            color: #333333;
-            font-size: 18px;
-        }
-        > button{
-            padding: 5px 10px;
-            border-radius: 14px;
-            float: right;
-            img{
-                margin-bottom: 5px;
-                margin-right: 5px
-            }
-        }
-    }
-}
+
 
 ///////////////////////////////////////////////////// usage_main
 .usage_main {
@@ -1119,6 +1182,7 @@
                 font-weight:500;
                 color:#0d52a7;
             }
+
         }
     }
     .card_text_right {

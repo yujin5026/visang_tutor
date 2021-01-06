@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import 'card.scss';
+@import 'card2.scss';
 @import 'table.scss';
 @import 'popup.scss';
 body {font-family: 'Noto Sans KR', sans-serif;}
@@ -74,6 +75,7 @@ $deep-gray-color:#444444;
 .bg_orange {color:#dca010;background:#faf1db;border:1px solid #faf1db;}
 
 
+.text-right {text-align:right;}
 
 // 평점 
 .star {position: relative;padding-left:26px;}

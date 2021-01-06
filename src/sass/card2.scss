@@ -1,0 +1,51 @@
+
+$primary-color : #de9d22;
+$blue-color : #0d52a7;
+$green-color : #208b73;
+$red-color : #d1452e;
+$gray-color : #dbdbdb;
+$gray02-color:#333333;
+$gray03-color:#444444;
+
+
+
+///////////////////////////////////////////////////// curriculum
+.curriculum_list{
+    padding: 20px;
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+    &:nth-child(2){
+        background: #fafafa;
+    }
+    span{
+        margin-right: 20px;
+        color: #bbbbbb;
+        font-size: 14px;
+    }
+    > p{
+        display: inline-block;
+        color: #333333;
+        font-size: 18px;
+        > strong {
+            font-weight:500;
+            &::before {
+                content:'-';
+                display:inline-block;
+                margin: 0 10px;
+            }
+        }
+    }
+    > button{
+        &.preview {
+            padding: 5px 10px;
+            border-radius: 14px;
+            float: right;
+            img{
+                margin-bottom: 5px;
+                margin-right: 5px
+            }
+        }
+        
+    }
+}
