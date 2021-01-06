@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import 'card.scss';
+@import 'card2.scss';
 @import 'table.scss';
 @import 'popup.scss';
 body {font-family: 'Noto Sans KR', sans-serif;}
@@ -59,18 +60,22 @@ $deep-gray-color:#444444;
 
 .line_white {color:#fff;border:1px solid #fff;}
 .line_blue {color:#0d52a7;border:1px solid #0d52a7;}
+.line_blue02 {color:#33c4e8;border:1px solid #33c4e8;}
 .bg_red {background:#b94a38;color:#fff;border:1px solid #b94a38;}
 .bg_gray {background:#444444;color:#fff;border:1px solid #444444;}
 .bg_gray02 {background:#bbbbbb;color:#fff;border:1px solid #bbbbbb;}
 .bg_gray03 {background:#aaaaaa;color:#fff;border:1px solid #aaaaaa;}
 .bg_gray04 {color:#333333;border:none;}
+.bg_gray04 {background:#dbdbdb;;color:#fff;border:1px solid #dbdbdb;}
 .bg_light_gray {background:#bbbbbb;color:#fff;border:1px solid #bbbbbb;}
 .bg_blue {background:#1b4c88;color:#fff;border:1px solid #1b4c88;}
+.bg_blue02 {background:#33c4e8;color:#fff;border:1px solid #33c4e8;}
 .bg_white {background:#fff;border:1px solid #fff;border:1px solid #fff;}
 .bg_green {color:#2f7e69;background:#e0f1ec;border:1px solid #e0f1ec;}
 .bg_orange {color:#dca010;background:#faf1db;border:1px solid #faf1db;}
 
 
+.text-right {text-align:right;}
 
 // 평점 
 .star {position: relative;padding-left:26px;}
@@ -123,6 +128,9 @@ input[type="checkbox"] {
 
 ///////////////////////////////////////////////////////////////////////// 기본 틀
 body.teacher {
+    background:#f6f6f6;
+}
+body.login {
     background:#f6f6f6;
 }
 .wrap {
