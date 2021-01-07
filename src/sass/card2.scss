@@ -6,46 +6,86 @@ $red-color : #d1452e;
 $gray-color : #dbdbdb;
 $gray02-color:#333333;
 $gray03-color:#444444;
+$gray04-color:#777777;
 
 
 
 ///////////////////////////////////////////////////// curriculum
-.curriculum_list{
-    padding: 20px;
-    &:not(:last-child){
-        margin-bottom: 10px;
-    }
-    &:nth-child(2){
-        background: #fafafa;
-    }
-    span{
-        margin-right: 20px;
-        color: #bbbbbb;
-        font-size: 14px;
-    }
-    > p{
-        display: inline-block;
-        color: #333333;
-        font-size: 18px;
-        > strong {
-            font-weight:500;
-            &::before {
-                content:'-';
-                display:inline-block;
-                margin: 0 10px;
+.curriculum {
+    .curriculum_list{
+        padding: 20px;
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+        &:nth-child(odd){
+            background: #fafafa;
+        }
+        > span{
+            margin-right: 20px;
+            color: #bbbbbb;
+            font-size: 14px;
+        }
+        > p{
+            display: inline-block;
+            color: #333333;
+            font-size: 18px;
+            > strong {
+                font-weight:500;
+                &::before {
+                    content:'-';
+                    display:inline-block;
+                    margin: 0 10px;
+                }
             }
         }
     }
-    > button{
+}
+
+.curriculum_right {
+    float:right;
+    button{
         &.preview {
             padding: 5px 10px;
             border-radius: 14px;
-            float: right;
             img{
                 margin-bottom: 5px;
                 margin-right: 5px
             }
+            &+.preview {
+                margin-left:10px;
+            }
         }
-        
+        &.enter {
+            font-size:14px;
+            padding:5px 10px;
+            border-radius: 5px;
+        }
+    }
+    
+}
+
+
+.time_red {
+    display:inline-block;
+    font-size:18px;
+    font-weight:700;
+    color:$red-color;
+    > img {
+        margin-right:5px;
+    }
+    &.margin {
+        margin:5px 20px 0 0 ;
+    }
+}
+.time_gray {
+    display:inline-block;
+    font-size:14px;
+    font-weight:500;
+    color:$gray04-color;
+    margin:0 10px;
+    > img {
+        margin-right:2px;
+        margin-top:3px;
+        vertical-align: top;
     }
 }

@@ -26,9 +26,15 @@ $deep-gray-color:#444444;
 
 .mt20 {margin-top:20px !important;}
 .mt55 {margin-top:55px !important;}
+.ml30 {margin-left:30px !important;}
 .mb35 {margin-bottom:35px !important;}
 .mb20 {margin-bottom:20px !important;}
 .mb30 {margin-bottom:30px !important;}
+
+
+
+.flex {display:flex;}
+.float_right {float:right;}
 
 
 
@@ -55,11 +61,11 @@ $deep-gray-color:#444444;
 .line_gray01 {color:#bababa;border:1px solid #bababa;}
 .line_gray02 {color:#666666;border:1px solid #eaeaea;background:#f8f8f8;}
 .line_gray03 {color:#666666;border:1px solid #cccccc;}
-.line_gray04 {color:#333333;border:1px solid #bfbfbf;}
+.line_gray04 {color:#333333;border:1px solid #bfbfbf;background:#fff;}
 
-
+.btn_none {border:none;background:none;}
 .line_white {color:#fff;border:1px solid #fff;}
-.line_blue {color:#0d52a7;border:1px solid #0d52a7;}
+.line_blue {color:#0d52a7;border:1px solid #0d52a7;background:#fff;}
 .line_blue02 {color:#33c4e8;border:1px solid #33c4e8;}
 .bg_red {background:#b94a38;color:#fff;border:1px solid #b94a38;}
 .bg_gray {background:#444444;color:#fff;border:1px solid #444444;}
@@ -76,6 +82,7 @@ $deep-gray-color:#444444;
 
 
 .text-right {text-align:right;}
+.middle {vertical-align: middle;}
 
 // 평점 
 .star {position: relative;padding-left:26px;}

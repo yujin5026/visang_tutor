@@ -7,7 +7,8 @@
     <link type="text/css" rel="stylesheet" href="../../css/common.css">
     <link type="text/css" rel="stylesheet" href="../../css/page/my_students.css">
     <!-- Slick -->
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>KETA_S_MY_CL_001</title>
 </head>
@@ -34,7 +35,7 @@
         </a>
     </div>
     <!-- // 카테고리 -->
-    
+
     <div class="wrap padding10">
         <div class="flex">
             <!-- LNB -->
@@ -141,103 +142,143 @@
                         <div class="panel" id="one-panel">
                             <!-- 카드 01 -->
                             <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants card01">
-                                        <div class="card_img01">
-                                            <img src="../../images/bts.png" alt="bts">
+                                <div class="card_container normal flex">
+                                    <div class="card_img01">
+                                        <img src="../../images/bts.png" alt="bts">
+                                    </div>
+                                    <div class="card_text ml30">
+                                        <div class="card_tt">
+                                            <h1>Want to know useful expression?</h1>
                                         </div>
-                                        <div class="card_text">
-                                            <div class="card_text_left">
-                                                <div class="card_tt">
-                                                    <h1>Want to know useful expression?</h1>
-                                                </div>
-                                                <div class="card_bt">
-                                                    <dl>
-                                                        <dt>Course period</dt>
-                                                        <dd>20.10.01~20.10.30<span>(30 week)</span></dd>
-                                                    </dl>
-                                                    <dl>
-                                                        <dt>Tutor in charge</dt>
-                                                        <dd>Mr hong and 00 others</dd>
-                                                    </dl>
-                                                    <dl>
-                                                        <dt>Number ofclass</dt>
-                                                        <dd>30</dd>
-                                                        <dt>Number of students</dt>
-                                                        <dd>30</dd>
-                                                    </dl>
-                                                </div>
-                                                <div class="card_badge">
-                                                    <span>
-                                                        <img src="../../images/icon_textbook_on.png" alt="textbook" />
-                                                        References
-                                                    </span>
-                                                    <span>
-                                                        <img src="../../images/icon_schedule.png" alt="schedule" />
-                                                        Schedule
-                                                    </span>
-                                                    <span>
-                                                        <img src="../../images/icon_curriculum.png" alt="curriculum" />
-                                                        Curriculum
-                                                    </span>
-                                                </div>
-                                            </div>
+                                        <div class="card_bt">
+                                            <dl>
+                                                <dt>Course period</dt>
+                                                <dd>20.10.01~20.10.30<span>(30 week)</span></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Tutor in charge</dt>
+                                                <dd>Mr hong and 00 others</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Number ofclass</dt>
+                                                <dd>30</dd>
+                                                <dt>Number of students</dt>
+                                                <dd>30</dd>
+                                            </dl>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card_sub gray text-right">
-                                    <span class="time_red">
-                                        <img src="../../images/icon_time_red.png" alt="time" /> 
-                                        00:15:00
-                                    </span>
-                                    <button type="button" class="bg_blue">Enter Lesson</button>
+
+                                <div class="card_sub">
+                                    <div class="between">
+                                        <div class="card_badge">
+                                            <span>
+                                                <img src="../../images/icon_textbook_on.png" alt="textbook" />
+                                                References
+                                            </span>
+                                            <span>
+                                                <img src="../../images/icon_schedule.png" alt="schedule" />
+                                                Schedule
+                                            </span>
+                                            <span>
+                                                <img src="../../images/icon_curriculum.png" alt="curriculum" />
+                                                Curriculum
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="time_red margin">
+                                                <img src="../../images/icon_time_red.png" alt="time" />
+                                                00:15:00
+                                            </span>
+                                            <button type="button" class="bg_blue">ENTER LESSON</button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- // 카드 01 -->
-                            <!-- 카드 02 -->
-                            <div class="my_lesson_title">
-                                <h3>Upcoming Lesson </h3>
-                                <span>(20.12.16)</span>
-                            </div>
-                            <div class="card_wrap01">
-                                <div class="card_container padding30">
+
+                                <div class="card_container margin30 borderTop">
+                                    <div class="my_lesson_title mt30">
+                                        <h3>Upcoming Lesson </h3>
+                                        <span>(20.12.16)</span>
+                                    </div>
+                                    <div class="curriculum">
                                         <div class="curriculum_list">
                                             <span>Chapter 01.</span>
                                             <p>Speaking<strong>Unit 02</strong></p>
-                                            <button class="bg_green preview"><img src="../../images/icon_report_on.png"
-                                                    alt="">Preview</button>
+                                            <div class="curriculum_right">
+                                                <button class="bg_green preview"><img src="../../images/icon_report_on.png" alt="">Preview</button>
+                                                <span class="time_gray margin">
+                                                    <img src="../../images/clock_blue_icon.png" alt="time" />
+                                                    00:15:00
+                                                </span>
+                                                <button class="bg_blue enter">Enter Lesson</button>
+                                                <button type="button" class="btn_none middle">
+                                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                                </button>
+                                            </div>
                                         </div>
                                         <div class="curriculum_list">
                                             <span>Chapter 02.</span>
                                             <p>Listening<strong>Unit 02</strong></p>
-                                            <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png"
-                                                    alt="">Preview</button>
+                                            <div class="curriculum_right">
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Preview</button>
+                                                <span class="time_gray margin">
+                                                    <img src="../../images/clock_blue_icon.png" alt="time" />
+                                                    00:15:00
+                                                </span>
+                                                <button class="bg_gray02 enter">Enter Lesson</button>
+                                                <button type="button" class="btn_none middle">
+                                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                                </button>
+                                            </div>
                                         </div>
                                         <div class="curriculum_list">
                                             <span>Chapter 03.</span>
                                             <p>Listening<strong>Unit 02</strong></p>
-                                            <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png"
-                                                    alt="">Preview</button>
+                                            <div class="curriculum_right">
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Preview</button>
+                                                <span class="time_gray margin">
+                                                    <img src="../../images/clock_blue_icon.png" alt="time" />
+                                                    00:15:00
+                                                </span>
+                                                <button class="bg_gray02 enter">Enter Lesson</button>
+                                                <button type="button" class="btn_none middle">
+                                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                                </button>
+                                            </div>
                                         </div>
                                         <div class="curriculum_list">
                                             <span>Chapter 04.</span>
                                             <p>Listening<strong>Unit 02</strong></p>
-                                            <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png"
-                                                    alt="">Preview</button>
+                                            <div class="curriculum_right">
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Preview</button>
+                                                <span class="time_gray margin">
+                                                    <img src="../../images/clock_blue_icon.png" alt="time" />
+                                                    00:15:00
+                                                </span>
+                                                <button class="bg_gray02 enter">Enter Lesson</button>
+                                                <button type="button" class="btn_none middle">
+                                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                                </button>
+                                            </div>
                                         </div>
-                                        <a href="" class="showMore">
-                                            Show more
-                                            <img src="../../images/showMore.png" alt="showMore">
-                                        </a>
+                                    </div>
+                                    
                                 </div>
-                            </div>
-                            <!-- // 카드 02 -->
 
+                                <div class="card_sub gray">
+                                    <div class="between">
+                                        <div>
+                                            <button type="button" class="line_gray04 white">Manage My classes</button>
+                                            <button type="button" class="line_gray04 white">Manage My grades</button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="line_blue white">Course Evaluation</button>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="card_bottom">
-                                <button class="line_gray03">Inquire</button>
-                                <button class="line_blue">Purchase more</button>
                             </div>
+                            <!-- // 카드 01 -->
                         </div>
                     </div>
                     <!-- // Proceeding-->
@@ -247,701 +288,140 @@
                         <div class="panel" id="two-panel">
                             <!-- 카드 01 -->
                             <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants card01">
-                                        <div class="card_img01">
-                                            <img src="../../images/bts.png" alt="bts">
+                                <div class="card_container normal flex">
+                                    <div class="card_img01">
+                                        <img src="../../images/bts.png" alt="bts">
+                                    </div>
+                                    <div class="card_text ml30">
+                                        <div class="card_tt">
+                                            <h1>Want to know useful expression?</h1>
                                         </div>
-                                        <div class="card_text">
-                                            <div class="card_text_left">
-                                                <div class="card_text_title">
-                                                    <h1>Want to sing a song with BTS</h1>
-                                                    <a href="#">+ detail view</a>
-                                                </div>
-                                                <div class="card_text_bottom">
-                                                    <div class="profile_bottom_middle off">
-                                                        <img src="../../images/icon_textbook_on.png" alt="textbook"
-                                                            class="on">
-                                                        <img src="../../images/icon_textbook_off.png" alt="textbook"
-                                                            class="off">
-                                                        <p>Textbook</p>
-                                                    </div>
-                                                    <div class="profile_bottom_right on">
-                                                        <img src="../../images/icon_learningstyle_on.png"
-                                                            alt="learningstyle" class="on">
-                                                        <img src="../../images/icon_learningstyle_off.png"
-                                                            alt="learningstyle" class="off">
-                                                        <p>Learning style</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="card_bt">
+                                            <dl>
+                                                <dt>Course period</dt>
+                                                <dd>20.10.01~20.10.30<span>(30 week)</span></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Tutor in charge</dt>
+                                                <dd>Mr hong and 00 others</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Number ofclass</dt>
+                                                <dd>30</dd>
+                                                <dt>Number of students</dt>
+                                                <dd>30</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                            <div class="card_text_right">
-                                                <!-- heart on / off 클래스 추가 -->
-                                                <div class="card_right_img">
-                                                    <button type="button" class="heart off">
-                                                        <img src="../../images/icon_heart_on.png" alt="icon_heart_off"
-                                                            class="on">
-                                                        <img src="../../images/icon_heart_off.png" alt="icon_heart_off"
-                                                            class="off">
-                                                    </button>
-                                                    <button type="button">
-                                                        <img src="../../images/btn_more.png" alt="btn_more">
-                                                    </button>
-                                                </div>
-                                            </div>
+                                <div class="card_sub">
+                                    <div class="between">
+                                        <div class="card_badge">
+                                            <span>
+                                                <img src="../../images/icon_textbook_on.png" alt="textbook" />
+                                                References
+                                            </span>
+                                            <span>
+                                                <img src="../../images/icon_schedule.png" alt="schedule" />
+                                                Schedule
+                                            </span>
+                                            <span>
+                                                <img src="../../images/icon_curriculum.png" alt="curriculum" />
+                                                Curriculum
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="time_red margin">
+                                                <img src="../../images/icon_time_red.png" alt="time" />
+                                                00:15:00
+                                            </span>
+                                            <button type="button" class="bg_blue">ENTER LESSON</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card_container_sub profile">
-                                    <div class="card_sub_img">
-                                        <span></span>
+
+                                <div class="card_container margin30 borderTop">
+                                    <div class="my_lesson_title mt30">
+                                        <h3>Upcoming Lesson </h3>
+                                        <span>(20.12.16)</span>
                                     </div>
-                                    <div class="card_sub_description">
-                                        <div class="sub_des_left">
-                                            <p>Pablo Ruiz Picasson de Kicaboo</p>
-                                            <span><img src="../../images/international_mark.png"
-                                                    alt="international_mark"><em>Professional
-                                                    tutor</em><img src="../../images/star.png"
-                                                    alt="star"><strong>5.0</strong></span>
+                                    <div class="curriculum">
+                                        <div class="curriculum_list">
+                                            <span>Chapter 01.</span>
+                                            <p>Speaking<strong>Unit 02</strong></p>
+                                            <div class="curriculum_right">
+                                                <button class="bg_green preview"><img src="../../images/icon_report_on.png" alt="">Preview</button>
+                                                <button class="bg_green preview"><img src="../../images/icon_report_on.png" alt="">Assignment</button>
+                                                <button class="bg_green preview"><img src="../../images/icon_report_on.png" alt="">Exam</button>
+                                                <button class="bg_green preview"><img src="../../images/icon_report_on.png" alt="">Feedback</button>
+                                                <button type="button" class="btn_none middle">
+                                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                                </button>
+                                            </div>
+                                           
                                         </div>
-                                        <div class="sub_des_right">
-                                            <div class="des_right">
-                                                <span>Language</span>
-                                                <p>English</p>
+                                        <div class="curriculum_list">
+                                            <span>Chapter 02.</span>
+                                            <p>Listening<strong>Unit 02</strong></p>
+                                            <div class="curriculum_right">
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Preview</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Assignment</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Exam</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Feedback</button>
+                                                <button type="button" class="btn_none middle">
+                                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                                </button>
                                             </div>
-                                            <div class="des_right">
-                                                <span>Level</span>
-                                                <p>Upper-Intermediate</p>
+                                        </div>
+                                        <div class="curriculum_list">
+                                            <span>Chapter 03.</span>
+                                            <p>Listening<strong>Unit 02</strong></p>
+                                            <div class="curriculum_right">
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Preview</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Assignment</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Exam</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Feedback</button>
+                                                <button type="button" class="btn_none middle">
+                                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                                </button>
                                             </div>
-                                            <div class="des_right">
-                                                <span>Message</span>
-                                                <a href="#">
-                                                    <p><u>Answer&#183;1</u></p>
-                                                </a>
+                                        </div>
+                                        <div class="curriculum_list">
+                                            <span>Chapter 04.</span>
+                                            <p>Listening<strong>Unit 02</strong></p>
+                                            <div class="curriculum_right">
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Preview</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Assignment</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Exam</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Feedback</button>
+                                                <button type="button" class="btn_none middle">
+                                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                                </button>
                                             </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="card_sub gray">
+                                    <div class="between">
+                                        <div>
+                                            <button type="button" class="line_gray04 white">Manage My classes</button>
+                                            <button type="button" class="line_gray04 white">Manage My grades</button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="line_blue white">Course Evaluation</button>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                             <!-- // 카드 01 -->
-                            <!-- 카드 02 -->
-                            <div class="my_lesson_title">
-                                <h3>Usage history</h3>
-                            </div>
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants usage_main">
-                                        <div class="history_main_left">
-                                            <h1>40 minutes, 5 pieces</h1>
-                                            <h4>20.10.30</h4>
-                                            <a href="" class="showMore">
-                                                Show more
-                                                <img src="../../images/showMore.png" alt="showMore" />
-                                            </a>
-                                        </div>
-                                        <div class="history_main_right">
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/complete_btn.png" alt=""></button>
-                                                <p>Complete <strong>10</strong></p>
-                                            </div>
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/reservation_btn.png" alt=""></button>
-                                                <p>Reservation <strong>2</strong></p>
-                                            </div>
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/unused_btn.png" alt=""></button>
-                                                <p>Unused <strong>9</strong></p>
-                                            </div>
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/other_btn.png" alt=""></button>
-                                                <p>Other <strong>15</strong></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 카드 02 -->
-
-                            <div class="my_lesson_title">
-                                <h3>Reserved lessons</h3>
-                            </div>
-                            <!-- 카드 04 -->
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants usage_history01">
-                                        <div class="card_text">
-                                            <div class="card_text_left">
-                                                <div class="card_text_title">
-                                                    <h1>
-                                                        <img src="../../images/usage_complete.png" alt="reserved" />
-                                                        Order an Americano at Stopbucks-3
-                                                    </h1>
-                                                </div>
-                                                <div class="card_text_bottom">
-                                                    <div class="off">
-                                                        <strong>11:00</strong>
-                                                        <span>20.11.19(Thu) 11:00~11:40</span>
-                                                    </div>
-                                                    <em class="bg_orange">
-                                                        <img src="../../images/icon_revise.png" />
-                                                        Revlse
-                                                    </em>
-                                                    <p>Reserved lessons</p>
-                                                </div>
-                                            </div>
-                                            <div class="card_text_right">
-                                                <!-- heart on / off 클래스 추가 -->
-                                                <div class="card_right_img sub">
-                                                    <button type="button">
-                                                        <img src="../../images/btn_more.png" alt="btn_more">
-                                                    </button>
-                                                </div>
-                                                <div class="card_star">
-                                                    <img src="../../images/star.png">
-                                                    <img src="../../images/star.png">
-                                                    <img src="../../images/star.png">
-                                                    <img src="../../images/star.png">
-                                                    <img src="../../images/star.png">
-                                                    <span>20.11.30</span>
-                                                </div>
-                                                <button type="button" class="review line_gray04">View Reviews</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card_container_sub comment">
-                                    <div class="comment_text">
-                                        <p>
-                                            Hi, my name is Itay and I'm a professional English tutor with my own
-                                            business. My native
-                                            language is
-                                            German
-                                            but I'm also fluent in English, French, Hebrew, Portuguese and Spanish. I'm
-                                            learning Greek
-                                        </p>
-                                    </div>
-                                    <div class="comment_btn">
-                                        <button class="bg_gray04">Close</button>
-                                        <button class="line_gray04">Modify</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 카드 04 -->
-
-                            <!-- 카드 05 -->
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants usage_history01">
-                                        <div class="card_text">
-                                            <div class="card_text_left">
-                                                <div class="card_text_title">
-                                                    <h1>
-                                                        <img src="../../images/usage_complete.png" alt="reserved" />
-                                                        Order an Americano at Stopbucks-3
-                                                    </h1>
-                                                </div>
-                                                <div class="card_text_bottom">
-                                                    <div class="off">
-                                                        <strong>11:00</strong>
-                                                        <span>20.11.19(Thu) 11:00~11:40</span>
-                                                    </div>
-                                                    <em class="bg_gray02">
-                                                        <img src="../../images/icon_report_off.png" />
-                                                        Revlse
-                                                    </em>
-                                                    <p>Reserved lessons</p>
-                                                </div>
-                                            </div>
-                                            <div class="card_text_right">
-                                                <!-- heart on / off 클래스 추가 -->
-                                                <div class="card_right_img sub">
-                                                    <button type="button">
-                                                        <img src="../../images/btn_more.png" alt="btn_more">
-                                                    </button>
-                                                </div>
-                                                <button type="button" class="review bg_gray">Save</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card_container_sub comment">
-                                    <div class="card_star">
-                                        <img src="../../images/star.png">
-                                        <img src="../../images/star.png">
-                                        <img src="../../images/star.png">
-                                        <img src="../../images/star.png">
-                                        <img src="../../images/star.png">
-                                    </div>
-                                    <form class="comment_textarea">
-                                        <textarea name="textarea" cols="50" rows=30
-                                            placeholder="Please leave an inquiry (0/200)"></textarea>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- // 카드 05 -->
-
-                            <!-- 
-                            <div class="card_bottom">
-                                <button class="line_gray03 one">View All Reviews & Questions</button>
-                            </div> -->
                         </div>
                     </div>
                     <!-- // Complete -->
 
-
-                    <!-- Unused -->
-                    <div class="panels">
-                        <div class="panel" id="three-panel">
-                            <!-- 카드 01 -->
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants card01">
-                                        <div class="card_img01">
-                                            <img src="../../images/bts.png" alt="bts">
-                                        </div>
-                                        <div class="card_text">
-                                            <div class="card_text_left">
-                                                <div class="card_text_title">
-                                                    <h1>Want to sing a song with BTS</h1>
-                                                    <a href="#">+ detail view</a>
-                                                </div>
-                                                <div class="card_text_bottom">
-                                                    <div class="profile_bottom_middle off">
-                                                        <img src="../../images/icon_textbook_on.png" alt="textbook"
-                                                            class="on">
-                                                        <img src="../../images/icon_textbook_off.png" alt="textbook"
-                                                            class="off">
-                                                        <p>Textbook</p>
-                                                    </div>
-                                                    <div class="profile_bottom_right on">
-                                                        <img src="../../images/icon_learningstyle_on.png"
-                                                            alt="learningstyle" class="on">
-                                                        <img src="../../images/icon_learningstyle_off.png"
-                                                            alt="learningstyle" class="off">
-                                                        <p>Learning style</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="card_text_right">
-                                                <!-- heart on / off 클래스 추가 -->
-                                                <div class="card_right_img">
-                                                    <button type="button" class="heart off">
-                                                        <img src="../../images/icon_heart_on.png" alt="icon_heart_off"
-                                                            class="on">
-                                                        <img src="../../images/icon_heart_off.png" alt="icon_heart_off"
-                                                            class="off">
-                                                    </button>
-                                                    <button type="button">
-                                                        <img src="../../images/btn_more.png" alt="btn_more">
-                                                    </button>
-                                                </div>
-                                                <button type="button" class="bg_red">RESERVATION</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card_container_sub profile">
-                                    <div class="card_sub_img">
-                                        <span></span>
-                                    </div>
-                                    <div class="card_sub_description">
-                                        <div class="sub_des_left">
-                                            <p>Pablo Ruiz Picasson de Kicaboo</p>
-                                            <span><img src="../../images/international_mark.png"
-                                                    alt="international_mark"><em>Professional
-                                                    tutor</em><img src="../../images/star.png"
-                                                    alt="star"><strong>5.0</strong></span>
-                                        </div>
-                                        <div class="sub_des_right">
-                                            <div class="des_right">
-                                                <span>Language</span>
-                                                <p>English</p>
-                                            </div>
-                                            <div class="des_right">
-                                                <span>Level</span>
-                                                <p>Upper-Intermediate</p>
-                                            </div>
-                                            <div class="des_right">
-                                                <span>Message</span>
-                                                <a href="#">
-                                                    <p><u>Answer&#183;1</u></p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 카드 01 -->
-                            <!-- 카드 02 -->
-                            <div class="my_lesson_title">
-                                <h3>Usage history</h3>
-                            </div>
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants usage_main">
-                                        <div class="history_main_left">
-                                            <h1>40 minutes, 5 pieces</h1>
-                                            <h4>20.10.30</h4>
-                                            <a href="" class="showMore">
-                                                Show more
-                                                <img src="../../images/showMore.png" alt="showMore" />
-                                            </a>
-                                        </div>
-                                        <div class="history_main_right">
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/complete_btn.png" alt=""></button>
-                                                <p>Complete <strong>10</strong></p>
-                                            </div>
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/reservation_btn.png" alt=""></button>
-                                                <p>Reservation <strong>2</strong></p>
-                                            </div>
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/unused_btn.png" alt=""></button>
-                                                <p>Unused <strong>9</strong></p>
-                                            </div>
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/other_btn.png" alt=""></button>
-                                                <p>Other <strong>15</strong></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 카드 02 -->
-
-                            <!-- 카드 03 -->
-                            <div class="my_lesson_title">
-                                <h3>Lesson curriculum</h3>
-                            </div>
-                            <div class="card_wrap01">
-                                <div class="card_container padding30">
-                                    <div class="curriculum">
-                                        <div class="curriculum_list">
-                                            <span>1</span>
-                                            <p><strong>Order an Americano at Stopbucks.</strong></p>
-                                            <button class="bg_green preview"><img src="../../images/icon_report_on.png"
-                                                    alt="">Preview</button>
-                                        </div>
-                                        <div class="curriculum_list">
-                                            <span>2</span>
-                                            <p><strong>Let’s sing along with BTS’ Life goes on.</strong></p>
-                                            <button class="bg_gray02"><img src="../../images/icon_report_off.png"
-                                                    alt="">Preview</button>
-                                        </div>
-                                        <div class="curriculum_list">
-                                            <span>3</span>
-                                            <p><strong>It is not difficult to take the airport train from Incheon
-                                                    Airport.</strong></p>
-                                            <button class="bg_gray02"><img src="../../images/icon_report_off.png"
-                                                    alt="">Preview</button>
-                                        </div>
-                                        <a href="" class="showMore">
-                                            Show more
-                                            <img src="../../images/showMore.png" alt="showMore">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 카드 03 -->
-
-
-                            <div class="my_lesson_title">
-                                <h3>Reserved lessons</h3>
-                            </div>
-                            <!-- 카드 04 -->
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants usage_history01">
-                                        <div class="card_text">
-                                            <div class="card_text_left">
-                                                <div class="card_text_title">
-                                                    <h1>
-                                                        <img src="../../images/usage_unused.png" alt="reserved" />
-                                                        Order an Americano at Stopbucks-3
-                                                    </h1>
-                                                </div>
-                                                <div class="card_text_bottom">
-                                                    <h1 class="unused">
-                                                        <em>2</em>
-                                                        unused lessons
-                                                    </h1>
-                                                    <span class="unused">Book a lesson!</span>
-                                                </div>
-                                            </div>
-                                            <div class="card_text_right">
-                                                <!-- heart on / off 클래스 추가 -->
-                                                <div class="card_right_img sub">
-                                                    <button type="button">
-                                                        <img src="../../images/btn_more.png" alt="btn_more">
-                                                    </button>
-                                                </div>
-                                                <button type="button" class="bg_red">RESERVATION</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 카드 04 -->
-                        </div>
-                    </div>
-                    <!-- // Unused -->
-
-                    <!-- Other -->
-                    <div class="panels">
-                        <div class="panel" id="four-panel">
-                            <!-- 카드 01 -->
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants card01">
-                                        <div class="card_img01">
-                                            <img src="../../images/bts.png" alt="bts">
-                                        </div>
-                                        <div class="card_text">
-                                            <div class="card_text_left">
-                                                <div class="card_text_title">
-                                                    <h1>Want to sing a song with BTS</h1>
-                                                    <a href="#">+ Detail view</a>
-                                                </div>
-                                                <div class="card_text_bottom">
-                                                    <div class="profile_bottom_middle off">
-                                                        <img src="../../images/icon_textbook_on.png" alt="textbook"
-                                                            class="on">
-                                                        <img src="../../images/icon_textbook_off.png" alt="textbook"
-                                                            class="off">
-                                                        <p>Textbook</p>
-                                                    </div>
-                                                    <div class="profile_bottom_right on">
-                                                        <img src="../../images/icon_learningstyle_on.png"
-                                                            alt="learningstyle" class="on">
-                                                        <img src="../../images/icon_learningstyle_off.png"
-                                                            alt="learningstyle" class="off">
-                                                        <p>Learning style</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="card_text_right">
-                                                <!-- heart on / off 클래스 추가 -->
-                                                <div class="card_right_img">
-                                                    <button type="button" class="heart off">
-                                                        <img src="../../images/icon_heart_on.png" alt="icon_heart_off"
-                                                            class="on">
-                                                        <img src="../../images/icon_heart_off.png" alt="icon_heart_off"
-                                                            class="off">
-                                                    </button>
-                                                    <button type="button">
-                                                        <img src="../../images/btn_more.png" alt="btn_more">
-                                                    </button>
-                                                </div>
-                                                <p class="on sub">
-                                                    <img src="../../images/icon_timer_on.png" alt="icon_timer"
-                                                        class="on">
-                                                    <img src="../../images/icon_timer_off.png" alt="icon_timer"
-                                                        class="off">
-                                                    00:15:00
-                                                </p>
-                                                <button type="button" class="bg_blue">ENTER LESSON</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card_container_sub profile">
-                                    <div class="card_sub_img">
-                                        <span></span>
-                                    </div>
-                                    <div class="card_sub_description">
-                                        <div class="sub_des_left">
-                                            <p>Pablo Ruiz Picasson de Kicaboo</p>
-                                            <span><img src="../../images/international_mark.png"
-                                                    alt="international_mark"><em>Professional
-                                                    tutor</em><img src="../../images/star.png"
-                                                    alt="star"><strong>5.0</strong></span>
-                                        </div>
-                                        <div class="sub_des_right">
-                                            <div class="des_right">
-                                                <span>Language</span>
-                                                <p>English</p>
-                                            </div>
-                                            <div class="des_right">
-                                                <span>Level</span>
-                                                <p>Upper-Intermediate</p>
-                                            </div>
-                                            <div class="des_right">
-                                                <span>Message</span>
-                                                <a href="#">
-                                                    <p><u>Answer&#183;1</u></p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 카드 01 -->
-                            <!-- 카드 02 -->
-                            <div class="my_lesson_title">
-                                <h3>Usage history</h3>
-                            </div>
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants usage_main">
-                                        <div class="history_main_left">
-                                            <h1>40 minutes, 5 pieces</h1>
-                                            <h4>20.10.30</h4>
-                                            <a href="" class="showMore">
-                                                Show more
-                                                <img src="../../images/showMore.png" alt="showMore" />
-                                            </a>
-                                        </div>
-                                        <div class="history_main_right">
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/complete_btn.png" alt=""></button>
-                                                <p>Complete <strong>10</strong></p>
-                                            </div>
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/reservation_btn.png" alt=""></button>
-                                                <p>Reservation <strong>2</strong></p>
-                                            </div>
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/unused_btn.png" alt=""></button>
-                                                <p>Unused <strong>9</strong></p>
-                                            </div>
-                                            <div class="main_right_btn">
-                                                <button><img src="../../images/other_btn.png" alt=""></button>
-                                                <p>Other <strong>15</strong></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 카드 02 -->
-
-                            <!-- 카드 03 -->
-                            <div class="my_lesson_title">
-                                <h3>Lesson curriculum</h3>
-                            </div>
-                            <div class="card_wrap01">
-                                <div class="card_container padding30">
-                                    <div class="curriculum">
-                                        <div class="curriculum_list">
-                                            <span>1</span>
-                                            <p><strong>Order an Americano at Stopbucks.</strong></p>
-                                            <button class="bg_green preview"><img src="../../images/icon_report_on.png"
-                                                    alt="">Preview</button>
-                                        </div>
-                                        <div class="curriculum_list">
-                                            <span>2</span>
-                                            <p><strong>Let’s sing along with BTS’ Life goes on.</strong></p>
-                                            <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png"
-                                                    alt="">Preview</button>
-                                        </div>
-                                        <div class="curriculum_list">
-                                            <span>3</span>
-                                            <p><strong>It is not difficult to take the airport train from Incheon
-                                                    Airport.</strong></p>
-                                            <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png"
-                                                    alt="">Preview</button>
-                                        </div>
-                                        <a href="" class="showMore">
-                                            Show more
-                                            <img src="../../images/showMore.png" alt="showMore">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 카드 03 -->
-
-
-                            <!-- 카드 05 -->
-                            <div class="my_lesson_title">
-                                <h3>Reserved lessons</h3>
-                            </div>
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants usage_history01">
-                                        <div class="card_text">
-                                            <div class="card_text_left">
-                                                <div class="card_text_title">
-                                                    <h1>
-                                                        <img src="../../images/usage_other.png" alt="reserved" />
-                                                        Order an Americano at Stopbucks-4
-                                                    </h1>
-                                                </div>
-                                                <div class="card_text_bottom">
-                                                    <div>
-                                                        <strong>11:00</strong>
-                                                        <span>20.11.19(Thu) 11:00~11:40</span>
-                                                    </div>
-                                                    <p>Reserved lessons</p>
-                                                </div>
-                                            </div>
-                                            <div class="card_text_right">
-                                                <!-- heart on / off 클래스 추가 -->
-                                                <div class="card_right_img sub">
-                                                    <button type="button">
-                                                        <img src="../../images/btn_more.png" alt="btn_more">
-                                                    </button>
-                                                </div>
-                                                <strong>Tutor Cancle</strong>
-                                                <button type="button" class="line_red cancle">Cancle</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 카드 05 -->
-                            <div class="card_wrap01">
-                                <div class="card_container normal">
-                                    <div class="card_contants usage_history01">
-                                        <div class="card_text">
-                                            <div class="card_text_left">
-                                                <div class="card_text_title">
-                                                    <h1 class="new">
-                                                        <img src="../../images/usage_other.png" alt="reserved" />
-                                                        Order an Americano at Stopbucks-4
-                                                    </h1>
-                                                </div>
-                                                <div class="card_text_bottom">
-                                                    <div>
-                                                        <strong>11:00</strong>
-                                                        <span>20.11.19(Thu) 11:00~11:40</span>
-                                                    </div>
-                                                    <p>Reserved lessons</p>
-                                                </div>
-                                            </div>
-                                            <div class="card_text_right">
-                                                <!-- heart on / off 클래스 추가 -->
-                                                <div class="card_right_img sub">
-                                                    <button type="button">
-                                                        <img src="../../images/btn_more.png" alt="btn_more">
-                                                    </button>
-                                                </div>
-                                                <strong>Tutor is late</strong>
-                                                <button type="button" class="line_red cancle">No show</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card_container_sub comment">
-                                    <div class="comment_text">
-                                        <p>
-                                            The student didn't come in without a call.
-                                        </p>
-                                        <span>20.11.19(Thu) 11:00:00</span>
-                                    </div>
-                                    <div class="comment_btn">
-                                        <button class="line_gray04">agree</button>
-                                        <button class="line_red">disagree</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- // 카드 05 -->
-
-                        </div>
-                    </div>
-                    <!-- //Other -->
 
                 </div>
             </div>
