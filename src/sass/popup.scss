@@ -1,108 +1,101 @@
+$primary-color : #de9d22;
+$blue-color : #0d52a7;
+$green-color : #208b73;
+$red-color : #d1452e;
+$gray-color : #dbdbdb;
+$gray02-color:#333333;
+$gray03-color:#444444;
+$gray04-color:#222222;
 
-///////////////////////////////////////////////////////////////////////// 모달 창
-.modalpop {
-    display:none;
-    .popupwrap {
-        position:fixed;
-        left:-99999px; top:-99999px;
-        z-index:101;
-        overflow:hidden;
-        background:#fff;
-        opacity:0;
-        &.sm_popup {
-            width:500px;
-        }
-        &.md_popup {
-            width:1000px;
-        }
-        &.lg_popup {
-            width:1200px;
-        }
-        .popcontents {
-            clear:both;
-            overflow:hidden;
-            border-top:10px solid #aa3238;
-            .popup_contents{
-                padding: 20px;
-            }
-        }
-    }
+.cd-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index:90;
+  background-color:#222222a3;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.cd-popup.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
 }
 
-///////////////////////////////////////////////////////////////////////// 모달 타이틀
+.cd-popup-container {
+  position: relative;
+  width: 90%;
+  margin: 6em auto;
+  background: #FFF;
+  border-radius: .25em .25em .4em .4em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+  transform: translateY(-40px);
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+
+.cd-popup-container.sm {
+    max-width:400px;
+}
+
+.cd-popup-container.md {
+    max-width:800px;
+}
+.cd-popup-container.lg {
+    max-width:1000px;
+}
+
+
+.popup_contents {
+  padding:50px;
+}
+
 .popup_title {
-    padding:50px 0 30px 0;
+    font-size:28px;
+    font-weight:700;
+    color:$gray04-color;
     text-align:center;
-    > p {
-        font-size:28px;
-        font-weight:700;
-        color:#222222;
-    }
+    margin-bottom:50px;
+}
+.popup_title_sub {
+    font-size:18px;
+    font-weight:700;
+    color:$gray02-color;
+    margin-bottom:20px;
+}
+.popup_body {
+    max-height:550px;
+    overflow-y: scroll;
+    overflow-x:hidden;
 }
 
-
-///////////////////////////////////////////////////////////////////////// 모달창 백그라운드
-.transparents-layer {
-    position:fixed;
-    left:0;
-    top:0;
-    z-index:100;
-    width:100%;
-    height:100%;
-    background:#000;
-    opacity:0.5;
-    filter:alpha(opacity="50");
-}
-
-///////////////////////////////////////////////////////////////////////// 스크롤 박스
-.scroll_box {
-    height:520px;
-    overflow-x: hidden;
-    padding:0 50px 50px 50px;
-    > p {
+.popup_bottom {
+    text-align:center;
+    margin-top:30px;
+    > a {
         display: inline-block;
-        color: #333333;
         font-size: 18px;
-        margin-bottom:10px;
-    }
-}
-
-/////////////////////////////////////////////////////////////////////////  modal에 ribbon class를 추가하면 창 끝에 리본이 생깁니다.
-.modalpop{
-    &.ribbon{
-        .popupwrap{
-            overflow: initial;
-            .popcontents {
-                &::before{
-                    position: absolute;
-                    content: '';
-                    width: 166px;
-                    height: 166px;
-                    top: -9px;
-                    left: -9px;
-                    background: url(../images/ribbon_icon_1.png);
-                }
-                &::after{
-                    position: absolute;
-                    content: '';
-                    width: 166px;
-                    height: 166px;
-                    bottom: -8px;
-                    right: -8px;
-                    background: url(../images/ribbon_icon_2.png);
-                }
-            }
-        }
-    }
-}
-
-.modal_bottom_btn {
-    margin:30px 0;
-    text-align:center;
-    > button {
-        width:140px;
-        font-size:18px;
-        color:#666666;
-        padding:10px 0;
+        font-weight: 700;
+        width: 130px;
+        padding: 10px 0;
+        text-align: center;
     }
 }

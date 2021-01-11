@@ -57,13 +57,19 @@ $gray04-color:#777777;
         }
         &.enter {
             font-size:14px;
-            padding:5px 10px;
+            padding:10px 20px;
+            border-radius: 5px;
+        }
+    }
+    a {
+        &.enter {
+            font-size:14px;
+            padding:10px 20px;
             border-radius: 5px;
         }
     }
     
 }
-
 
 .time_red {
     display:inline-block;
