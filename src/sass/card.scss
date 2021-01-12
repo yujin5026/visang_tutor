@@ -28,6 +28,24 @@ $gray04-color:#222222;
         }
     }
 }
+.card_wrap01  + .card_wrap01  {margin-top: 30px;}
+
+
+.ongoing_badge {
+    position: absolute;
+    top: -5px;
+    left: 19px;
+    background:url(../images/ongoing.png);
+    width: 93px;
+    height: 34px;
+    span {
+        font-size:13px;
+        color:#fff;
+        font-weight: 700;
+        display: inline-block;
+        margin: 6px 13px;
+    }
+}
 
 .card_container {
     &.normal {
@@ -378,57 +396,7 @@ $gray04-color:#222222;
             span:not(:nth-child(2)){
                 margin-left: 40px;
             }
-            .language_skill_statue{
-                display: inline-block;
-                div{
-                    display: inline-block;
-                    width: 7px;
-                    height: 13px;
-                    background: #eaeaea;
-                }
-                &.skill01 {
-                    div {
-                        &:first-child {
-                            background:#75afcd;
-                        }
-                    }
-                }
-                &.skill02 {
-                    div {
-                        &:nth-child(n+1):nth-child(-n+2) {
-                            background:#75afcd;
-                        }
-                    }
-                }
-                &.skill03 {
-                    div {
-                        &:nth-child(n+1):nth-child(-n+3) {
-                            background:#75afcd;
-                        }
-                    }
-                }
-                &.skill04 {
-                    div {
-                        &:nth-child(n+1):nth-child(-n+4) {
-                            background:#75afcd;
-                        }
-                    }
-                }
-                &.skill05 {
-                    div {
-                        &:nth-child(n+1):nth-child(-n+5) {
-                            background:#75afcd;
-                        }
-                    }
-                }
-                &.skill06 {
-                    div {
-                        &:nth-child(n+1):nth-child(-n+6) {
-                            background:#75afcd;
-                        }
-                    }
-                }
-            }
+            
         }
         // contants_bottom[e]
     }
@@ -703,6 +671,28 @@ $gray04-color:#222222;
     h1 {
         font-size: 30px;
         margin-bottom:20px;
+        &.margin_none {
+            margin:0;
+        }
+    }
+}
+.card_tt_sub {
+    margin-bottom:30px;
+    strong {
+        font-size:16px;
+        color:$red-color;
+    }
+    span {
+        font-size:16px;
+        color:#666666;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            margin: 0 7px;
+            background: #ddd;
+        }
     }
 }
 .card_bt {

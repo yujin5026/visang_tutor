@@ -31,6 +31,7 @@ $gray04-color:#222222;
 .mb35 {margin-bottom:35px !important;}
 .mb20 {margin-bottom:20px !important;}
 .mb30 {margin-bottom:30px !important;}
+.padding50 {padding:50px;}
 
 
 
@@ -321,10 +322,62 @@ body.login {
         }
 }
 
-#popup-button-3 {
-    &+.popup-box {
+
+
+
+.lang_skill{
+    display: inline-block;
+    div{
+        display: inline-block;
+        width: 7px;
+        height: 13px;
+        background: #eaeaea;
+    }
+    &.skill01 {
+        div {
+            &:first-child {
+                background:#75afcd;
+            }
+        }
+    }
+    &.skill02 {
+        div {
+            &:nth-child(n+1):nth-child(-n+2) {
+                background:#75afcd;
+            }
+        }
+    }
+    &.skill03 {
+        div {
+            &:nth-child(n+1):nth-child(-n+3) {
+                background:#75afcd;
+            }
+        }
+    }
+    &.skill04 {
+        div {
+            &:nth-child(n+1):nth-child(-n+4) {
+                background:#75afcd;
+            }
+        }
+    }
+    &.skill05 {
+        div {
+            &:nth-child(n+1):nth-child(-n+5) {
+                background:#75afcd;
+            }
+        }
+    }
+    &.skill06 {
+        div {
+            &:nth-child(n+1):nth-child(-n+6) {
+                background:#75afcd;
+            }
+        }
     }
 }
+
+
 
 ///////////////////////////////////////////////////////////////////////// timetable
 .timetable{
