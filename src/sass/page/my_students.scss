@@ -45,6 +45,10 @@ $gray04-color:#222222;
                 display: block;
                 padding: 20px 0;
 
+                &:hover {
+                    color: #b14248;
+                }
+
                 &.active {
                     color: #b14248;
                 }
@@ -77,7 +81,7 @@ $gray04-color:#222222;
                     color: #b14248;
                     font-weight: bold;
                     border: none;
-                    background: url("../images/lnb_plus.png") no-repeat right center;
+                    background: url("../../images/lnb_plus.png") no-repeat right center;
                 }
             }
             &.sub {
@@ -185,6 +189,9 @@ $gray04-color:#222222;
         a {
             font-size: 14px;
             color: #777777;
+            &:hover{
+                text-decoration:underline;
+            }
         }
     }
 }
