@@ -548,7 +548,7 @@ input[type="radio"] {
         padding: 15px 0;
         // 로고
         h1 {
-            display: inline-block;
+            float:left;
             margin-right: 30px;
             a {
                 img {
@@ -559,8 +559,8 @@ input[type="radio"] {
             }
         }
         ul {
+            float:left;
             padding-top:2px;
-            display: inline-block;
             margin-left: auto;
             li {
                 display: inline-block;
