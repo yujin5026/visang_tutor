@@ -63,9 +63,12 @@ $gray04-color:#777777;
     }
     a {
         &.enter {
-            font-size:14px;
-            padding:10px 20px;
+            width: 120px;
+            display: inline-block;
+            font-size: 14px;
+            padding: 10px 0;
             border-radius: 5px;
+            text-align: center;
         }
     }
     
