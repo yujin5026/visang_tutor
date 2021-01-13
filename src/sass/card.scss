@@ -28,24 +28,6 @@ $gray04-color:#222222;
         }
     }
 }
-.card_wrap01  + .card_wrap01  {margin-top: 30px;}
-
-
-.ongoing_badge {
-    position: absolute;
-    top: -5px;
-    left: 19px;
-    background:url(../images/ongoing.png);
-    width: 93px;
-    height: 34px;
-    span {
-        font-size:13px;
-        color:#fff;
-        font-weight: 700;
-        display: inline-block;
-        margin: 6px 13px;
-    }
-}
 
 
 

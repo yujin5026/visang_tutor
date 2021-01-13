@@ -62,6 +62,37 @@ $gray04-color:#777777;
     }
 }
 
+.ongoing_badge {
+    position: absolute;
+    top: -5px;
+    left: 19px;
+    background:url(../images/ongoing.png);
+    width: 93px;
+    height: 34px;
+    span {
+        font-size:13px;
+        color:#fff;
+        font-weight: 700;
+        display: inline-block;
+        margin: 6px 13px;
+    }
+}
+.finished_badge {
+    position: absolute;
+    top: -5px;
+    left: 19px;
+    background:url(../images/finished.png);
+    width: 93px;
+    height: 34px;
+    span {
+        font-size:13px;
+        color:#fff;
+        font-weight: 700;
+        display: inline-block;
+        margin: 6px 13px;
+    }
+}
+
 ///////////////////////////////////////// 카드 틀
 .card_wrap {
     border: 1px solid #eaeaea;
@@ -82,7 +113,7 @@ $gray04-color:#777777;
         }
     }
 }
-.card_wrap01  + .card_wrap01  {margin-top: 30px;}
+.card_wrap  + .card_wrap  {margin-top: 30px;}
 
 .card_container {
     padding:50px;
@@ -116,6 +147,9 @@ $gray04-color:#777777;
         font-weight:700;
         width:210px;
         padding:10px 0;
+        &+button {
+            margin-left:10px;
+        }
     }
 }
 .card_badge {
