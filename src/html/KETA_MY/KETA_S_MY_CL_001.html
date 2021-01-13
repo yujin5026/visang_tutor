@@ -130,7 +130,7 @@
                     <div class="mypage_tab"></div>
                     <input class="radio" id="one" name="group" type="radio" checked>
                     <input class="radio" id="two" name="group" type="radio">
-                    <div class="tabs">
+                    <div class="tabs sub">
                         <label class="tab" id="one-tab" for="one">
                             Upcoming <span>4</span>
                         </label>
@@ -141,15 +141,20 @@
                     <!-- Proceeding -->
                     <div class="panels">
                         <div class="panel" id="one-panel">
-                            <!-- 카드 01 -->
-                            <div class="card_wrap01">
-                                <div class="card_container normal flex">
-                                    <div class="card_img01">
+                            <!-- 카드 -->
+                            <div class="card_wrap">
+                                <div class="card_container flex">
+                                    <div class="card_img">
                                         <img src="../../images/bts.png" alt="bts">
                                     </div>
-                                    <div class="card_text ml30">
+                                    <div class="card_text">
                                         <div class="card_tt">
                                             <h1>Want to know useful expression?</h1>
+                                            <p class="card_tt_sub">
+                                                <strong>
+                                                    Class 01
+                                                </strong>
+                                            </p>
                                         </div>
                                         <div class="card_bt">
                                             <dl>
@@ -174,25 +179,25 @@
                                     <div class="between">
                                         <div class="card_badge">
                                             <span>
-                                                <img src="../../images/icon_textbook_on.png" alt="textbook" />
+                                                <img src="../../images/icon_textbook_on.png" alt="textbook">
                                                 References
                                             </span>
                                             <span>
-                                                <img src="../../images/icon_schedule.png" alt="schedule" />
+                                                <img src="../../images/icon_schedule.png" alt="schedule">
                                                 Schedule
                                             </span>
                                             <span>
-                                                <img src="../../images/icon_curriculum.png" alt="curriculum" />
+                                                <img src="../../images/icon_curriculum.png" alt="curriculum">
                                                 Curriculum
                                             </span>
                                         </div>
                                         <div>
                                             <span class="time_red margin">
-                                                <img src="../../images/icon_time_red.png" alt="time" />
+                                                <img src="../../images/icon_time_red.png" alt="time">
                                                 00:15:00
                                             </span>
                                             <!-- KETA_S_MY_CL_006 팝업 -->
-                                            <a href="#0" class="cd-popup-trigger bg_blue">ENTER LESSON</a>
+                                            <a href="#0" class="cd-popup-trigger bg_blue enter">ENTER LESSON</a>
                                             <div class="cd-popup" role="alert">
                                                 <div class="cd-popup-container lg">
                                                     <div class="popup_contents">
@@ -208,12 +213,12 @@
                                                                 <div class="chapter_table">
                                                                     <table class="table">
                                                                         <colgroup>
-                                                                            <col width="20px" />
-                                                                            <col width="400px" />
-                                                                            <col />
-                                                                            <col />
-                                                                            <col />
-                                                                            <col />
+                                                                            <col width="20px">
+                                                                            <col width="400px">
+                                                                            <col>
+                                                                            <col>
+                                                                            <col>
+                                                                            <col>
                                                                         </colgroup>
                                                                         <thead>
                                                                             <tr>
@@ -340,24 +345,26 @@
                                     </div>
                                 </div>
 
-                                <div class="card_container margin30 borderTop">
-                                    <div class="my_lesson_title mt30">
+                                <div class="card_container_sub">
+                                    <div class="card_container_tit">
                                         <h3>Upcoming Lesson </h3>
                                         <span>(20.12.16)</span>
                                     </div>
                                     <div class="curriculum">
-                                        <div class="curriculum_list">
-                                            <span>Chapter 01.</span>
-                                            <p>Speaking<strong>Unit 02</strong></p>
-                                            <div class="curriculum_right">
+                                        <div class="curriculum_list between">
+                                            <div>
+                                                <span>Chapter 01.</span>
+                                                <p>Speaking<strong>Unit 02</strong></p>
+                                            </div>
+                                            <div>
                                                 <button class="bg_green preview"><img
                                                         src="../../images/icon_report_on.png" alt="">Preview</button>
                                                 <span class="time_gray margin">
-                                                    <img src="../../images/clock_blue_icon.png" alt="time" />
+                                                    <img src="../../images/clock_blue_icon.png" alt="time">
                                                     00:15:00
                                                 </span>
                                                 <!-- KETA_S_MY_CL_006 팝업 -->
-                                                <a href="#0" class="cd-popup-trigger bg_blue enter">Enter Lesson</a>
+                                                <a href="#0" class="cd-popup-trigger bg_blue enter_sub">Enter Lesson</a>
                                                 <div class="cd-popup" role="alert">
                                                     <div class="cd-popup-container lg">
                                                         <div class="popup_contents">
@@ -410,7 +417,7 @@
                                                                             <td>09:00</td>
                                                                             <td class="text_part">Want to talk with BTS
                                                                             </td>
-                                                                            <td class="backgorund_blue">R1 <br />Pablo
+                                                                            <td class="backgorund_blue">R1 <br>Pablo
                                                                             </td>
                                                                             <td class="backgorund_blue">R1. T01</td>
                                                                             <td class="backgorund_blue">R1. T01</td>
@@ -553,344 +560,55 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div class="curriculum_list">
-                                            <span>Chapter 02.</span>
-                                            <p>Listening<strong>Unit 02</strong></p>
-                                            <div class="curriculum_right">
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png" alt="">Preview</button>
+                                        <div class="curriculum_list between">
+                                            <div>
+                                                <span>Chapter 02.</span>
+                                                <p>Listening<strong>Unit 02</strong></p>
+                                            </div>
+                                            <div>
+                                                <button class="bg_green preview"><img
+                                                        src="../../images/icon_report_on.png" alt="">Preview</button>
                                                 <span class="time_gray margin">
-                                                    <img src="../../images/clock_blue_icon.png" alt="time" />
+                                                    <img src="../../images/clock_blue_icon.png" alt="time">
                                                     00:15:00
                                                 </span>
-                                                <!-- KETA_S_MY_CL_006 팝업 -->
-                                                <a href="#0" class="cd-popup-trigger bg_blue enter">Enter Lesson</a>
-                                                <div class="cd-popup" role="alert">
-                                                    <div class="cd-popup-container lg">
-                                                        <div class="popup_contents">
-                                                            <div class="popup_title">
-                                                                Manage My classes
-                                                            </div>
-                                                            <div class="table_tit between">
-                                                                <div>
-                                                                    <img src="../../images/left_controler.png" left="left_controler">
-                                                                    <img src="../../images/right_controler.png" right="right_controler">
-                                                                    <span>20.11.25~20.11.31</span>
-                                                                </div>
-                                                                <div>
-                                                                    <p>
-                                                                        <strong>
-                                                                            Want to sing a song with BTS,
-                                                                        </strong>
-                                                                        20.11.26~21.03.12
-                                                                </div>
-                                                            </div>
-                                                            <div class="popup_body">
-                                                                <table class="table primary_table manager_table">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th colspan="4">
-                                                                                <h4>25</h4>
-                                                                                <h5>Sun</h5>
-                                                                            </th>
-                                                                            <th colspan="4">
-                                                                                <h4>26</h4>
-                                                                                <h5>Mon</h5>
-                                                                            </th>
-                                                                            <th colspan="4">
-                                                                                <h4>27</h4>
-                                                                                <h5>Tue</h5>
-                                                                            </th>
-                                                                            <th colspan="4">
-                                                                                <h4>28</h4>
-                                                                                <h5>Wed</h5>
-                                                                            </th>
-                                                                            <th colspan="4">
-                                                                                <h4>29</h4>
-                                                                                <h5>Thu</h5>
-                                                                            </th>
-                                                                            <th colspan="4">
-                                                                                <h4>30</h4>
-                                                                                <h5>Fri</h5>
-                                                                            </th>
-                                                                            <th colspan="4">
-                                                                                <h4>31</h4>
-                                                                                <h5>Sat</h5>
-                                                                            </th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <!-- sun -->
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <!--// sun -->
-                                                                            <!-- Mon -->
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="blue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <!--// Mon -->
-                                                                            <!-- tue -->
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <!--// tue -->
-                                                                            <!-- wed -->
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <!--// wed -->
-                                                                            <!-- thu -->
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <td></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <!--// thu -->
-                                                                            <!-- fri -->
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <td class="skyblue"></td>
-                                                                            <!--// fri -->
-                                                                            <!-- sat -->
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <td></td>
-                                                                            <!--// sat -->
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                                <p class="table01_tit">11.26 3rd period (Speaking)</p>
-                                                                <table class="table primary_table score_table">
-                                                                    <colgroup>
-                                                                        <col width="150px" />
-                                                                        <col />
-                                                                        <col width="150px" />
-                                                                    </colgroup>
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th colspan="2">Contents</th>
-                                                                            <th>Total score</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="line_none">
-                                                                            <th rowspan="2">Preview</th>
-                                                                            <td>
-                                                                                <span
-                                                                                    class="badge event">Schoolbook</span>
-                                                                                <a href="" download>
-                                                                                    Display file name.pptx
-                                                                                </a>
-                                                                            </td>
-                                                                            <td>
-                                                                                <img
-                                                                                    src="../../images/icon_check03.png" />
-                                                                                <input type="text" />
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <span class="badge hot">Quiz</span>
-                                                                                <a href="" download>
-                                                                                    Display survey Url
-                                                                                </a>
-                                                                            </td>
-                                                                            <td>
-                                                                                <img
-                                                                                    src="../../images/icon_check04.png" />
-                                                                                <input type="text" />
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="line_none">
-                                                                            <th rowspan="2">Class</th>
-                                                                            <td>
-                                                                                <span
-                                                                                    class="badge best">Assignment</span>
-                                                                                <a href="" download>
-                                                                                    Exam, Quiz. Survey name
-                                                                                </a>
-                                                                            </td>
-                                                                            <td>
-                                                                                <span>5/10</span>
-                                                                                <input type="text" />
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <span
-                                                                                    class="badge event">Schoolbook</span>
-                                                                                <a href="" download>
-                                                                                    Display file name.pptx
-                                                                                </a>
-                                                                            </td>
-                                                                            <td>
-                                                                                <span>9/10</span>
-                                                                                <input type="text" />
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="line_none">
-                                                                            <th rowspan="2">Homework</th>
-                                                                            <td>
-                                                                                <span
-                                                                                    class="badge best">Assignment</span>
-                                                                                <a href="" download>
-                                                                                    Exam, Quiz. Survey name
-                                                                                </a>
-                                                                            </td>
-                                                                            <td>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <span
-                                                                                    class="badge event">Schoolbook</span>
-                                                                                <a href="" download>
-                                                                                    Display file name.pptx
-                                                                                </a>
-                                                                            </td>
-                                                                            <td>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th>Exam(Test)</th>
-                                                                            <td>
-                                                                                <span
-                                                                                    class="badge best">Assignment</span>
-                                                                                <a href="" download>
-                                                                                    Exam, Quiz. Survey name
-                                                                                </a>
-                                                                            </td>
-                                                                            <td>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th>Exam(Test)</th>
-                                                                            <td colspan="2" class="text-left">
-                                                                                The teacher wrote a compliment here. try
-                                                                                reading this please. <br />
-                                                                                Good job good job good job
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                            <div class="popup_bottom">
-                                                                <a href="#0"
-                                                                    class="cd-popup-close line_gray03">Close</a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <!-- // KETA_S_MY_CL_006 팝업 -->
+                                                <button class="bg_gray02 enter_sub">Enter Lesson</button>
                                                 <button type="button" class="btn_none middle">
                                                     <img src="../../images/btn_more.png" alt="btn_more">
                                                 </button>
                                             </div>
                                         </div>
-                                        <div class="curriculum_list">
-                                            <span>Chapter 03.</span>
-                                            <p>Listening<strong>Unit 02</strong></p>
-                                            <div class="curriculum_right">
+                                        <div class="curriculum_list between">
+                                            <div>
+                                                <span>Chapter 03.</span>
+                                                <p>Listening<strong>Unit 02</strong></p>
+                                            </div>
+                                            <div>
                                                 <button class="bg_gray02 preview"><img
                                                         src="../../images/icon_report_off.png" alt="">Preview</button>
                                                 <span class="time_gray margin">
-                                                    <img src="../../images/clock_blue_icon.png" alt="time" />
+                                                    <img src="../../images/clock_blue_icon.png" alt="time">
                                                     00:15:00
                                                 </span>
-                                                <!-- KETA_S_MY_CL_006 팝업 -->
-                                                <a href="#0" class="cd-popup-trigger bg_blue enter">Enter Lesson</a>
-                                                <div class="cd-popup" role="alert">
-                                                    <div class="cd-popup-container lg">
-                                                        <div class="popup_contents">
-                                                            <div class="popup_title">
-                                                                Course Evaluation
-                                                            </div>
-                                                            <div class="popup_body">
-                                                                <p class="table01_tit">Please rate your satisfaction with the teacher in the class.</p>
-                                                                <div class="card_wrap01">
-                                                                    <div class="card_container normal">
-                                                                        <div class="card_contants usage_main card01">
-                                                                            <div class="card_img none">
-                                                                                <span>
-                                    
-                                                                                </span>
-                                                                            </div>
-                                                                            <div class="history_main_left">
-                                                                                <h1>40 minutes, 5 pieces</h1>
-                                                                                <h4>20.10.30</h4>
-                                                                            </div>
-                                                                            <div class="history_main_right">
-                                                                                <div class="main_right_btn">
-                                                                                    <button><img src="../../images/complete_btn.png" alt=""></button>
-                                                                                    <p>Complete <strong>10</strong></p>
-                                                                                </div>
-                                                                                <div class="main_right_btn">
-                                                                                    <button><img src="../../images/reservation_btn.png" alt=""></button>
-                                                                                    <p>Reservation <strong>2</strong></p>
-                                                                                </div>
-                                                                                <div class="main_right_btn">
-                                                                                    <button><img src="../../images/unused_btn.png" alt=""></button>
-                                                                                    <p>Unused <strong>9</strong></p>
-                                                                                </div>
-                                                                                <div class="main_right_btn">
-                                                                                    <button><img src="../../images/other_btn.png" alt=""></button>
-                                                                                    <p>Other <strong>15</strong></p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <p class="table01_tit">Please rate your satisfaction with the course curriculum.</p>
-                                                                <div class="checkBox">
-                                                                    <input type="checkbox" id="option01" name="option" />
-                                                                    <label for="option01">very satisfied</label>
-                                                                    <input type="checkbox" id="option01" name="option" />
-                                                                    <label for="option01">a little satisfied</label>
-                                                                    <input type="checkbox" id="option01" name="option" />
-                                                                    <label for="option01">usually</label>
-                                                                    <input type="checkbox" id="option01" name="option" />
-                                                                    <label for="option01">a little dissatisfied</label>
-                                                                    <input type="checkbox" id="option01" name="option" />
-                                                                    <label for="option01">very dissatisfied</label>
-                                                                </div>
-                                                                <p class="table01_tit">If you have any other comments or improvements, please let us know.</p>
-                                                                <div class="textBox">
-                                                                    <textarea></textarea>
-                                                                </div>
-                                                            </div>
-                                                            <div class="popup_bottom">
-                                                                <a href="#0" class="cd-popup-close line_gray03">Close</a>
-                                                                <a href="#0" class="cd-popup-close line_blue">Save</a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <!-- // KETA_S_MY_CL_006 팝업 -->
+                                                <button class="bg_gray02 enter_sub">Enter Lesson</button>
                                                 <button type="button" class="btn_none middle">
                                                     <img src="../../images/btn_more.png" alt="btn_more">
                                                 </button>
                                             </div>
                                         </div>
-                                        <div class="curriculum_list">
-                                            <span>Chapter 04.</span>
-                                            <p>Listening<strong>Unit 02</strong></p>
-                                            <div class="curriculum_right">
+                                        <div class="curriculum_list between">
+                                            <div>
+                                                <span>Chapter 04.</span>
+                                                <p>Listening<strong>Unit 02</strong></p>
+                                            </div>
+                                            <div>
                                                 <button class="bg_gray02 preview"><img
                                                         src="../../images/icon_report_off.png" alt="">Preview</button>
                                                 <span class="time_gray margin">
-                                                    <img src="../../images/clock_blue_icon.png" alt="time" />
+                                                    <img src="../../images/clock_blue_icon.png" alt="time">
                                                     00:15:00
                                                 </span>
-                                                <button class="bg_gray02 enter">Enter Lesson</button>
+                                                <button class="bg_gray02 enter_sub">Enter Lesson</button>
                                                 <button type="button" class="btn_none middle">
                                                     <img src="../../images/btn_more.png" alt="btn_more">
                                                 </button>
@@ -911,11 +629,12 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="ongoing_badge">
                                     <span>ONGOING</span>
                                 </div>
                             </div>
-                            <!-- // 카드 01 -->
+                            <!-- // 카드 -->
                         </div>
                     </div>
                     <!-- // Proceeding-->
@@ -923,15 +642,20 @@
                     <!-- Complete -->
                     <div class="panels">
                         <div class="panel" id="two-panel">
-                            <!-- 카드 01 -->
-                            <div class="card_wrap01">
-                                <div class="card_container normal flex">
-                                    <div class="card_img01">
+                            <!-- 카드 -->
+                            <div class="card_wrap">
+                                <div class="card_container flex">
+                                    <div class="card_img">
                                         <img src="../../images/bts.png" alt="bts">
                                     </div>
-                                    <div class="card_text ml30">
+                                    <div class="card_text">
                                         <div class="card_tt">
                                             <h1>Want to know useful expression?</h1>
+                                            <p class="card_tt_sub">
+                                                <strong>
+                                                    Class 01
+                                                </strong>
+                                            </p>
                                         </div>
                                         <div class="card_bt">
                                             <dl>
@@ -956,101 +680,233 @@
                                     <div class="between">
                                         <div class="card_badge">
                                             <span>
-                                                <img src="../../images/icon_textbook_on.png" alt="textbook" />
+                                                <img src="../../images/icon_textbook_on.png" alt="textbook">
                                                 References
                                             </span>
                                             <span>
-                                                <img src="../../images/icon_schedule.png" alt="schedule" />
+                                                <img src="../../images/icon_schedule.png" alt="schedule">
                                                 Schedule
                                             </span>
                                             <span>
-                                                <img src="../../images/icon_curriculum.png" alt="curriculum" />
+                                                <img src="../../images/icon_curriculum.png" alt="curriculum">
                                                 Curriculum
                                             </span>
                                         </div>
                                         <div>
                                             <span class="time_red margin">
-                                                <img src="../../images/icon_time_red.png" alt="time" />
+                                                <img src="../../images/icon_time_red.png" alt="time">
                                                 00:15:00
                                             </span>
-                                            <button type="button" class="bg_blue">ENTER LESSON</button>
+                                            <!-- KETA_S_MY_CL_006 팝업 -->
+                                            <a href="#0" class="cd-popup-trigger bg_blue enter">ENTER LESSON</a>
+                                            <div class="cd-popup" role="alert">
+                                                <div class="cd-popup-container lg">
+                                                    <div class="popup_contents">
+                                                        <div class="popup_title">
+                                                            Curriculum
+                                                        </div>
+                                                        <div class="popup_body">
+                                                            <div class="popup_title_sub">
+                                                                Lesson curriculum
+                                                            </div>
+                                                            <div class="chapter">
+                                                                <h3>CHAPTER 01</h3>
+                                                                <div class="chapter_table">
+                                                                    <table class="table">
+                                                                        <colgroup>
+                                                                            <col width="20px">
+                                                                            <col width="400px">
+                                                                            <col>
+                                                                            <col>
+                                                                            <col>
+                                                                            <col>
+                                                                        </colgroup>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th colspan="2">Course name</th>
+                                                                                <th>Preview</th>
+                                                                                <th>Class</th>
+                                                                                <th>Assignment</th>
+                                                                                <th>Exam</th>
+                                                                                <th>Feedback</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>Order an Americano at Stopbucks.
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check02.png">
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>2</td>
+                                                                                <td>Let’s sing along with BTS’ Life goes
+                                                                                    on.</td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>3</td>
+                                                                                <td>It is not difficult to take the
+                                                                                    airport train from Incheon
+                                                                                    Airport.</td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>4</td>
+                                                                                <td>Hand holding Flyer Mockup Bundle.
+                                                                                </td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>5</td>
+                                                                                <td>Set of Logo Showcase Mockups.</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>6</td>
+                                                                                <td>Midterm exam</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                                <td><img
+                                                                                        src="../../images/icon_check01.png">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="chapter_bar">
+                                                                <span>CHAPTER 02</span>
+                                                                <span>+</span>
+                                                            </div>
+                                                            <div class="chapter_bar">
+                                                                <span>CHAPTER 03</span>
+                                                                <span>+</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="popup_bottom">
+                                                            <a href="#0" class="cd-popup-close line_gray03">Close</a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- // KETA_S_MY_CL_006 팝업 -->
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="card_container margin30 borderTop">
-                                    <div class="my_lesson_title mt30">
-                                        <h3>Upcoming Lesson </h3>
+                                <div class="card_container_sub">
+                                    <div class="card_container_tit">
+                                        <h3>Completed Lesson</h3>
                                         <span>(20.12.16)</span>
                                     </div>
                                     <div class="curriculum">
-                                        <div class="curriculum_list">
-                                            <span>Chapter 01.</span>
-                                            <p>Speaking<strong>Unit 02</strong></p>
-                                            <div class="curriculum_right">
-                                                <button class="bg_green preview"><img
-                                                        src="../../images/icon_report_on.png" alt="">Preview</button>
-                                                <button class="bg_green preview"><img
-                                                        src="../../images/icon_report_on.png" alt="">Assignment</button>
-                                                <button class="bg_green preview"><img
-                                                        src="../../images/icon_report_on.png" alt="">Exam</button>
-                                                <button class="bg_green preview"><img
-                                                        src="../../images/icon_report_on.png" alt="">Feedback</button>
-                                                <button type="button" class="btn_none middle">
-                                                    <img src="../../images/btn_more.png" alt="btn_more">
-                                                </button>
+                                        <div class="curriculum_list between">
+                                            <div>
+                                                <span>Chapter 01.</span>
+                                                <p>Speaking<strong>Unit 02</strong></p>
                                             </div>
-
-                                        </div>
-                                        <div class="curriculum_list">
-                                            <span>Chapter 02.</span>
-                                            <p>Listening<strong>Unit 02</strong></p>
-                                            <div class="curriculum_right">
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png" alt="">Preview</button>
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png"
-                                                        alt="">Assignment</button>
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png" alt="">Exam</button>
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png" alt="">Feedback</button>
+                                            <div>
+                                                <button class="bg_green preview"><img src="../../images/icon_report_on.png" alt="">Preview</button>
+                                                <button class="bg_green preview"><img src="../../images/icon_report_on.png" alt="">Assignment</button>
+                                                <button class="bg_green preview"><img src="../../images/icon_report_on.png" alt="">Exam</button>
+                                                <button class="bg_green preview"><img src="../../images/icon_report_on.png" alt="">Feedback</button>
                                                 <button type="button" class="btn_none middle">
                                                     <img src="../../images/btn_more.png" alt="btn_more">
                                                 </button>
                                             </div>
                                         </div>
-                                        <div class="curriculum_list">
-                                            <span>Chapter 03.</span>
-                                            <p>Listening<strong>Unit 02</strong></p>
-                                            <div class="curriculum_right">
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png" alt="">Preview</button>
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png"
-                                                        alt="">Assignment</button>
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png" alt="">Exam</button>
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png" alt="">Feedback</button>
+                                        <div class="curriculum_list between">
+                                            <div>
+                                                <span>Chapter 02.</span>
+                                                <p>Listening<strong>Unit 01</strong></p>
+                                            </div>
+                                            <div>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Preview</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Assignment</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Exam</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Feedback</button>
                                                 <button type="button" class="btn_none middle">
                                                     <img src="../../images/btn_more.png" alt="btn_more">
                                                 </button>
                                             </div>
                                         </div>
-                                        <div class="curriculum_list">
-                                            <span>Chapter 04.</span>
-                                            <p>Listening<strong>Unit 02</strong></p>
-                                            <div class="curriculum_right">
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png" alt="">Preview</button>
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png"
-                                                        alt="">Assignment</button>
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png" alt="">Exam</button>
-                                                <button class="bg_gray02 preview"><img
-                                                        src="../../images/icon_report_off.png" alt="">Feedback</button>
+                                        <div class="curriculum_list between">
+                                            <div>
+                                                <span>Chapter 03.</span>
+                                                <p>Listening<strong>Unit 02</strong></p>
+                                            </div>
+                                            <div>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Preview</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Assignment</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Exam</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Feedback</button>
+                                                <button type="button" class="btn_none middle">
+                                                    <img src="../../images/btn_more.png" alt="btn_more">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="curriculum_list between">
+                                            <div>
+                                                <span>Chapter 04.</span>
+                                                <p>Listening<strong>Unit 03</strong></p>
+                                            </div>
+                                            <div>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Preview</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Assignment</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Exam</button>
+                                                <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Feedback</button>
                                                 <button type="button" class="btn_none middle">
                                                     <img src="../../images/btn_more.png" alt="btn_more">
                                                 </button>
@@ -1071,11 +927,12 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="ongoing_badge">
                                     <span>ONGOING</span>
                                 </div>
                             </div>
-                            <!-- // 카드 01 -->
+                            <!-- // 카드 -->
                         </div>
                     </div>
                     <!-- // Complete -->
