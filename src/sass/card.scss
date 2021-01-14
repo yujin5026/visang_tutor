@@ -32,7 +32,7 @@ $gray04-color:#222222;
 
 
 .borderTop {border-top:1px solid #ddd;}
-.padding30 {padding:30px;}
+.padding30 {padding:30px !important;}
 .margin30 {margin:30px;}
 
 .card_text_title {
@@ -200,7 +200,7 @@ $gray04-color:#222222;
     }
 }
 ///////////////////////////////////////////////////// 카드타입 01
-.card01 {
+
     .card_img {
         display: block;
         background: url(../images/user_icon.png) no-repeat left top;
@@ -219,11 +219,6 @@ $gray04-color:#222222;
             left: 0;
             overflow: hidden;
             
-        }
-        &.none {
-            &::after {
-                content: none;
-            }
         }
         &::after {
             content: '';
@@ -425,7 +420,7 @@ $gray04-color:#222222;
             }
         }
     }
-}
+
 
 
 
