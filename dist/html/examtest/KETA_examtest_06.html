@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="../../css/common.css">
     <link type="text/css" rel="stylesheet" href="../../css/style.css">
-    <link type="text/css" rel="stylesheet" href="../../css/audio.css">
     <!-- Slick -->
-    <link type="text/css" rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <title>KETA_examtest_03</title>
+    <title>KETA_examtest_06</title>
 </head>
 
 <body>
@@ -32,42 +30,37 @@
                         </a>
                     </div>
                 </div>
-
+                
                 <div class="exam_pop_con">
                     <div class="pop_con">
                         <div class="pop_con_top">
-                            <div class="que_num">
-                                <span>Q1</span>
+                           <div class="que_num">
+                                <span>Q4</span>
                             </div>
                             <div class="que_tit">
-                                <h3>Listen and choose the correct picture.</h3>
-                                <p>Listening question</p>
-                                <audio preload="auto" controls>
-                                    <source src="../../images/audio-test-01.mp3">
-                                </audio>
+                                <h3>Fill in the blanks by choosing the correct answer.</h3>
+                                <p>Multiple choice question</p>
+                                <div class="ex_box">
+                                    <p>
+                                        Here you go. Pear <strong>[ 2 ]</strong>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="pop_con_btm">
-                            <p>What did the man buy?</p>
-                            <div class="que_con space">
-                                <div class="que_con01">
-                                    <input type="radio" id="option01" name="option" class="radioBox" />
-                                    <label for="option01">
-                                        <p class="mb20">1. Select answer</p>
-                                        <img src="../../images/test_01.png" alt="text" />
-                                    </label>
-                                </div>
-                                <div class="que_con01">
-                                    <input type="radio" id="option02" name="option" class="radioBox" />
-                                    <label for="option02">
-                                        <p class="mb20">2. Select answer</p>
-                                        <img src="../../images/test_02.png" alt="text" />
-                                    </label>
-                                </div>
+                            <div class="que_con list">
+                                <input type="checkbox" id="option01" name="option" class="checkBox"/>
+                                <label for="option01">
+                                    <p>1. Twos please</p>
+                                </label>
+                                <input type="checkbox" id="option02" name="option" class="checkBox"/>
+                                <label for="option02">
+                                    <p>2. Two please</p>
+                                </label>
                             </div>
                         </div>
                     </div>
-
+                   
                 </div>
                 <div class="exam_pop_btm between">
                     <button type="button" class="line_white"><img src="../../images/icon_prev.png" alt="prev" />Prev</button>
@@ -80,14 +73,9 @@
 
     <img src="../../images/examtest.jpg" alt="text" />
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
     <script src="../../js/index.js"></script>
-    <script src="../../js/audioplayer.js"></script>
-    <script>
-        $(function () {
-            $('audio').audioPlayer();
-        });
-    </script>
 
     <!-- 푸터 영역 -->
     <footer id="footer">

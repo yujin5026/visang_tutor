@@ -1,4 +1,5 @@
 $primary-color : #6071cd;
+$sub-color : #ff3a96;
 $green-color : #208b73;
 $red-color : #d1452e;
 $gray-color : #111111;
@@ -160,6 +161,7 @@ $gray09-color:#999999;
         .pop_con_top {
             display:flex;
             padding:40px 50px;
+            border-radius: 10px 10px 0 0;
             background:#f9fafe;
             .que_num {
                 display: inline-table;
@@ -178,19 +180,34 @@ $gray09-color:#999999;
                 }
             }
             .que_tit {
-                h3 {
+                > h3 {
                     font-size:18px;
                     color:$gray-color;
                 }
-                p {
+                > p {
                     font-size:14px;
                     color:$primary-color;
                 }
-                span {
+                > span {
                     display:inline-block;
                     margin-top:25px;
                     font-size:14px;
                     color:$gray06-color;
+                }
+                > .ex_box {
+                    width:550px;
+                    margin-top:30px;
+                    padding:15px 0;
+                    text-align:center;
+                    background:#eaecf4;
+                    > p {
+                        font-size:14px;
+                        color:$gray03-color;
+                        strong {
+                            font-weight:700;
+                            color:$sub-color;
+                        }
+                    }
                 }
             }
         }
@@ -205,10 +222,15 @@ $gray09-color:#999999;
                     font-size:15px;
                     color:$primary-color;
                 }
+                > b {
+                    display:inline-block;
+                    min-width:100px;
+                    margin:0 10px;
+                    border-bottom:1px solid #000;
+                }
             }
             .que_con {
                 p {
-                    display:inline-block;
                     margin-left:10px;
                     font-size:15px;
                     vertical-align: middle;
@@ -250,14 +272,15 @@ $gray09-color:#999999;
         border-radius: 5px;
         box-shadow: 0px 4px 5px -1px #6f6f6f33;
         &:first-child {
-            span {
+            img {
                 margin-right:15px;
             }
         }
         &:last-child {
-            span {
+            img {
                 margin-left:15px;
             }
         }
     }
 }
+
