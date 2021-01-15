@@ -1,0 +1,128 @@
+$primary-color : #de9d22;
+$blue-color : #0d52a7;
+$green-color : #208b73;
+$red-color : #d1452e;
+$gray-color : #dbdbdb;
+$gray02-color:#333333;
+$gray03-color:#444444;
+$gray04-color:#222222;
+
+
+/////////////////////////////////////////////////////////////////////////  LNB
+.lnb {
+    width: 220px;
+    display: inline-block;
+
+    h3 {
+        position: relative;
+        font-size: 26px;
+        font-weight: bold;
+        color: #b14248;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 5px solid;
+        border-image: linear-gradient(to right, #b14248 0%, #bd6d33 100%);
+        border-image-slice: 1;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            right: 0;
+            width: 10px;
+            border-radius: 50%;
+            height: 10px;
+            background: #bd6d33;
+        }
+    }
+    .lnb-menu {
+        >li {
+            width: 100%;
+            border-bottom: 1px solid #eaebec;
+            >a {
+                font-size: 15px;
+                color: #333333;
+                display: block;
+                padding: 15px 0 15px 5px;
+
+                &.active {
+                    color: #b14248;
+                }
+            }
+
+            .lnb-depth03 {
+                display: none;
+                padding: 0 10px;
+
+                li {
+                    margin-bottom: 15px;
+
+                    a {
+                        display: block;
+                        position: relative;
+                        padding: 0 5px;
+                        font-size: 13px;
+                        color: #666666;
+
+                        &.active,
+                        &:hover {
+                            color: #b14248;
+                            font-weight:700;
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                >a {
+                    color: #b14248;
+                    font-weight: bold;
+                    border: none;
+                    background: url("../images/lnb_plus.png") no-repeat right center;
+                }
+            }
+            &.sub {
+                border:none;
+                &.mt50 {
+                    margin-top:30px;
+                }
+                a {
+                    display:table;
+                    width:100%;
+                    margin:10px 0;
+                    padding:10px 20px;
+                    font-size:14px;
+                    color:#505985;
+                    border:1px solid #eaeaea;
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    div {
+                        &:first-child {
+                            display:table-cell;
+                            width:30px;
+                            vertical-align: middle;
+                        }
+                        img {
+                            width:16px;
+                            height:16px;
+                            vertical-align: top;
+                            margin-top: 3px;
+                        }
+                    }
+                }
+            }
+            > img {
+                margin-top:40px;
+            }
+        }
+    }
+}
+
+
+
+///////////////////////////////////////////////////////////////////////// 마이페이지 레이아웃
+.mypage {
+    width: calc(100% - 290px);
+    margin-left: 70px;
+
+}

@@ -1,8 +1,4 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import 'card.scss';
-@import 'card2.scss';
-@import 'table.scss';
-@import 'popup.scss';
 body {font-family: 'Noto Sans KR', sans-serif;}
 
 $primary-color : #de9d22;
@@ -13,6 +9,7 @@ $gray-color : #dbdbdb;
 $gray02-color:#333333;
 $gray03-color:#444444;
 $gray04-color:#222222;
+
 @mixin footer_select {
     width: 130px;
     padding: 8px;
@@ -22,6 +19,13 @@ $gray04-color:#222222;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+}
+
+.wrap {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    min-height: 700px;
 }
 
 
@@ -94,11 +98,6 @@ $gray04-color:#222222;
 // 더보기
 .showMore {display:inline-block;font-size:14px;color:#0d52a7;font-weight:500;}
 
-
-.reserved_star {
-    position:absolute;
-}
-
 // input 스타일
 input[type="checkbox"].checkBox {
     display:none;
@@ -157,382 +156,6 @@ input[type="radio"].radioBox {
     }
 }
 
-// slick 슬라이드
-.slick-initialized .slick-slide {outline:none;}
-
-
-
-
-
-///////////////////////////////////////////////////////////////////////// 기본 틀
-body.teacher {
-    background:#f6f6f6;
-}
-body.login {
-    background:#f6f6f6;
-}
-.wrap {
-    width: 1280px;
-    margin: 0 auto;
-    padding: 6rem 0;
-    min-height: 700px;
-    &.padding10 {
-        padding-top:1.5rem;
-    }
-    &.padding0 {
-        padding:0;
-        min-height:auto;
-    }
-}
-
-
-///////////////////////////////////////////////////////////////////////// 목차
-.cate {
-    text-align:right;
-    color:#999999;
-    font-size:12px;
-     width: 1280px;
-    margin: 0 auto;
-    padding-top:20px;
-    a {
-        margin:0 5px;
-        color:#999999;
-        &:last-child {
-            color:#000;
-        }
-    }
-    span {
-        margin:0 5px;
-    }
-}
-
-
-
-///////////////////////////////////////////////////////////////////////// 필터 옵션
-.box_component_wrap {
-    border-bottom: 1px solid #eaeaea;
-    z-index: 3;
-    background:#315f97;
-    .box_component {
-        width:1280px;
-        margin:0 auto;
-        padding:18px 0;
-        ul {
-            display:inline-block;
-            li {
-                display:inline-block;
-                &:first-child {
-                    .popup-wrap {
-                        .popup-box {
-                            width:724px;
-                        }
-                    }
-                }
-                &:last-child {
-                    margin-right:0;
-                }
-                .popup-wrap {
-                    &.popup-closed {
-                        button {
-                            color:#b4b4b4;
-                        }
-                    }
-                }
-                button {
-                    padding:10px 0;
-                    font-size:14px;
-                    color:#fff;
-                    border:none;
-                    img {
-                        margin-right:5px;
-                    }
-                    &::after {
-                        content:"";
-                        display:inline-block;
-                        width:2px;
-                        height:20px;
-                        margin:0 15px;
-                        background:#466fa1;
-                        vertical-align: middle;
-                    }
-                }
-            }
-        }
-    }  
-}
-
-///////////////////////////////////////////////////////////////////////// 필터 옵션 레이어팝업
- .popup-wrap {
-    position: relative;
-    .popup-box-styles {
-        position: absolute;
-        left: 0;
-        top: 3em;
-        z-index: 999999;
-        padding: 1em;
-        text-align: left;
-        background-color: #fff;
-        color: #000;
-        box-shadow: 0px 4px 8px 2px #6f6f6f33;
-    }
-    .filter {
-         display:flex;
-        overflow:hidden;
-    }
-    [aria-hidden=true] {
-        display: none;
-    }
-}
-
-
-.popup-box-styles {
-    .filter_title {
-        margin:20px 0 10px 0;
-        &.sub {
-            margin:0;
-        }
-        h3 {
-            display:inline-block;
-            font-size:16px;
-        }
-        p {
-            float:right;
-            font-size:13px;
-            color:#bbbbbb;
-            margin-top:6px;
-            span {
-                color:#999999;
-            }
-        }
-        img {
-            margin-left:5px;
-            cursor: pointer;
-            vertical-align: top;
-        }
-    }
-        .filter_box {
-            display: inline-block;
-            text-align: center;
-            padding: 20px 0;
-            width:120px;
-            margin:10px;
-            border: 1px solid #999999;
-            cursor: pointer;
-            img {
-                margin-bottom:10px;
-            }
-            p {
-                font-size:14px;
-            }
-            &.selected {
-                font-weight:bold;
-                color:$blue-color;
-                border:1px solid $blue-color;
-            }
-        }
-        .days {
-            width:100%;
-            ul {
-                li {
-                    width:9%;
-                    text-align:center;
-                    padding:10px 20px;
-                    border:1px solid #ddd;
-                    float:left;
-                }
-            }
-        }
-}
-
-
-
-
-.lang_skill{
-    display: inline-block;
-    div{
-        display: inline-block;
-        width: 7px;
-        height: 13px;
-        background: #eaeaea;
-    }
-    &.skill01 {
-        div {
-            &:first-child {
-                background:#75afcd;
-            }
-        }
-    }
-    &.skill02 {
-        div {
-            &:nth-child(n+1):nth-child(-n+2) {
-                background:#75afcd;
-            }
-        }
-    }
-    &.skill03 {
-        div {
-            &:nth-child(n+1):nth-child(-n+3) {
-                background:#75afcd;
-            }
-        }
-    }
-    &.skill04 {
-        div {
-            &:nth-child(n+1):nth-child(-n+4) {
-                background:#75afcd;
-            }
-        }
-    }
-    &.skill05 {
-        div {
-            &:nth-child(n+1):nth-child(-n+5) {
-                background:#75afcd;
-            }
-        }
-    }
-    &.skill06 {
-        div {
-            &:nth-child(n+1):nth-child(-n+6) {
-                background:#75afcd;
-            }
-        }
-    }
-}
-
-
-
-///////////////////////////////////////////////////////////////////////// timetable
-.timetable{
-    table{
-        width: 100%;
-        border-top: 1px solid #dddddd;
-        border-bottom: 1px solid #dddddd;
-        border-collapse: collapse;
-        thead{
-            th{
-                color: #666666;
-                font-size: 13px;
-                font-weight: 300;
-                padding:5px;
-                border-bottom:1px solid #dddddd;
-            }
-        }
-            tbody{
-                tr{
-                    td {
-                            vertical-align: middle;
-                        div{
-                            background: #f2f2f2;
-                            margin:5px;
-                            padding: 15px 40px;
-                            border-radius: 3px;
-                            &.blue {
-                                background: #75afcd;
-                            }
-                        }
-                        &:first-child{
-                            color: #666666;
-                            font-size: 15px;
-                        }
-                    }
-                }
-            }
-        }
-}
-
-///////////////////////////////////////////////////////////////////////// 마이페이지 탭
-input[type="radio"] {
-    display: none;
-}
-
-.tabs {
-    display: flex;
-    overflow: hidden;
-    &.sub {
-        margin-bottom:20px;
-    }
-    .tab {
-        position:relative;
-        width: 25%;
-        padding: 20px;
-        display: inline-block;
-        font-size: 16px;
-        color: #666666;
-        text-align: center;
-        border: 1px solid #eaebec;
-        cursor: pointer;
-
-        span {
-            font-size: 20px;
-            font-weight: bold;
-            color: #b94a38;
-            margin-left: 10px;
-            &.none {
-                color:#999999;
-            }
-        }
-        &.label_check {
-            &::after {
-                content: '';
-                position: absolute;
-                width: 8px;
-                height: 8px;
-                background: #b94a38;
-                top: 13px;
-                border-radius: 50%;
-                right: 15px;
-            }
-        }
-    }
-}
-
-.panel {
-    display: none;
-    padding-top: 20px;
-    animation: fadein .8s;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-#one:checked~.panels #one-panel,
-#two:checked~.panels #two-panel,
-#three:checked~.panels #three-panel,
-#four:checked~.panels #four-panel {
-    display: block
-}
-
-#one:checked~.tabs #one-tab,
-#two:checked~.tabs #two-tab,
-#three:checked~.tabs #three-tab,
-#four:checked~.tabs #four-tab {
-    background: #b94a38;
-    color: #fff;
-    border: 1px solid #b94a38;
-}
-
-#one:checked~.tabs #one-tab,
-#two:checked~.tabs #two-tab,
-#three:checked~.tabs #three-tab,
-#four:checked~.tabs #four-tab {
-    &::after {
-        background: #fff;
-    }
-}
-
-#one:checked~.tabs #one-tab span,
-#two:checked~.tabs #two-tab span,
-#three:checked~.tabs #three-tab span,
-#four:checked~.tabs #four-tab span {
-    color: #fff;
-}
 
 ///////////////////////////////////////////////////////////////////////// 헤더
 #header {
@@ -815,6 +438,105 @@ input {outline: none;}
 img {vertical-align:middle;}
 
 
-.user_name {
-    color:$blue-color !important; 
+
+
+
+///////////////////////////////////////////////////////////////////////// POPUP
+.cd-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index:90;
+  background-color:#222222a3;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.cd-popup.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.cd-popup-container {
+  position: relative;
+  width: 90%;
+  margin: 6em auto;
+  background: #FFF;
+  border-radius: .25em .25em .4em .4em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+  transform: translateY(-40px);
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+
+.cd-popup-container.sm {
+    max-width:400px;
+}
+
+.cd-popup-container.md {
+    max-width:800px;
+}
+.cd-popup-container.lg {
+    max-width:1000px;
+}
+.cd-popup-container.xlg {
+  max-width:1100px;
+}
+
+
+.popup_contents {
+  padding:50px;
+}
+
+.popup_title {
+    font-size:28px;
+    font-weight:700;
+    color:$gray04-color;
+    text-align:center;
+    margin-bottom:50px;
+}
+.popup_title_sub {
+    font-size:18px;
+    font-weight:700;
+    color:$gray02-color;
+    margin-bottom:20px;
+}
+.popup_body {
+    max-height:550px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+.popup_bottom {
+    text-align:center;
+    margin-top:30px;
+    > a {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        width: 130px;
+        padding: 10px 0;
+        text-align: center;
+        &+a {
+          margin-left:10px;
+        }
+    }
 }
