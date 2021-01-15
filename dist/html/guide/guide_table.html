@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../../css/common.css">
+    <title>guide_table</title>
+    <style>
+        .guide {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        .guide>h1 {
+            margin: 30px 0 10px 0;
+            font-size: 30px;
+        }
+
+        .guide>h5 {
+            margin: 30px 0 15px 0;
+            background: #ccc;
+            padding: 10px;
+        }
+
+        .guide>h5>span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="guide">
+        <h1>Table</h1>
+        <h5>
+            .table.primary_table
+        </h5>
+        <table class="table primary_table">
+            <thead>
+                <th>Name of class (Time)</th>
+                <th>Name</th>
+                <th>sales day</th>
+                <th>Use/Purchase</th>
+                <th>sales money</th>
+                <th>real profit</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>course breaking (15:00)</td>
+                    <td>Gildong hong</td>
+                    <td>YY.MM.DD</td>
+                    <td>10/10</td>
+                    <td>$50.00</td>
+                    <td>-$2.5</td>
+                </tr>
+                <tr>
+                    <td>Processing Fee (15:00)</td>
+                    <td>master K</td>
+                    <td>YY.MM.DD</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-$2.5</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h5>
+            .table.curri_table
+        </h5>
+        <table class="table curri_table">
+            <colgroup>
+                <col width="25px;" />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+            </colgroup>
+            <thead>
+                <th colspan="2">CHAPTER 01</th>
+                <th>Preview</th>
+                <th>Class</th>
+                <th>Assignment</th>
+                <th>Exam</th>
+                <th>Feedback</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Order an Americano at Stopbucks.</td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check02.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Let’s sing along with BTS’ Life goes on.</td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>It is not difficult to take the airport train from Incheon
+                        Airport.</td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Hand holding Flyer Mockup Bundle.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Set of Logo Showcase Mockups.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Midterm exam</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <img src="../../images/icon_check01.png" />
+                    </td>
+                    <td>
+                        <img src="../../images/icon_check02.png" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5>
+            .table.primary_table.sche_table
+        </h5>
+        <table class="table primary_table sche_table">
+            <colgroup>
+                <col width="60px;">
+                <col width="60px;">
+                <col width="250px;">
+                <col width="60px;">
+                <col width="60px;">
+                <col width="60px;">
+                <col width="60px;">
+                <col width="60px;">
+                <col width="60px;">
+                <col width="60px;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>class1</th>
+                    <th>Time</th>
+                    <th>Name</th>
+                    <th>Mon</th>
+                    <th>The</th>
+                    <th>Wed</th>
+                    <th>Tue</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3">Chapter name display</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="5"><em>Chapter<br>01</em></td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td class="text_part">Want to talk with BTS</td>
+                    <td class="backgorund_blue">R1 <br />Pablo</td>
+                    <td class="backgorund_blue">R1. T01</td>
+                    <td class="backgorund_blue">R1. T01</td>
+                    <td class="backgorund_blue">R1. T01</td>
+                    <td class="backgorund_blue">R1. T01</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td class="text_part">
+                        It is not difficult to take the airport<br>
+                        train from Incheon airport.
+                    </td>
+                    <td class="backgorund_blue">S1. T02</td>
+                    <td class="backgorund_blue">S1. T02</td>
+                    <td class="backgorund_blue">S1. T02</td>
+                    <td class="backgorund_blue">S1. T02</td>
+                    <td class="backgorund_blue">S1. T02</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td class="text_part">
+                        Let’s sing along with BTS’ Life goes on.
+                    </td>
+                    <td class="backgorund_blue">W1. T03</td>
+                    <td class="backgorund_blue">W1. T03</td>
+                    <td class="backgorund_blue">W1. T03</td>
+                    <td class="backgorund_blue">W1. T03</td>
+                    <td class="backgorund_blue">W1. T03</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td class="text_part">
+                        Want to talk about korean food
+                    </td>
+                    <td class="backgorund_blue">L1. T04</td>
+                    <td class="backgorund_blue">L1. T04</td>
+                    <td class="backgorund_blue">L1. T04</td>
+                    <td class="backgorund_blue">L1. T04</td>
+                    <td class="backgorund_blue">L1. T04</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Chapter name display</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td rowspan="5"><em>Chapter<br>10</em></td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td class="text_part">Want to talk with BTS</td>
+                    <td class="backgorund_blue">R1. T01</td>
+                    <td class="backgorund_blue">R1. T01</td>
+                    <td class="backgorund_blue">R1. T01</td>
+                    <td class="backgorund_blue">R1. T01</td>
+                    <td class="backgorund_blue">R1. T01</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td class="text_part">
+                        It is not difficult to take the airport<br>
+                        train from Incheon airport.
+                    </td>
+                    <td class="backgorund_blue">S1. T02</td>
+                    <td class="backgorund_blue">S1. T02</td>
+                    <td class="backgorund_blue">S1. T02</td>
+                    <td class="backgorund_blue">S1. T02</td>
+                    <td class="backgorund_blue">S1. T02</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td class="text_part">
+                        Let’s sing along with BTS’ Life goes on.
+                    </td>
+                    <td class="backgorund_blue">W1. T03</td>
+                    <td class="backgorund_blue">W1. T03</td>
+                    <td class="backgorund_blue">W1. T03</td>
+                    <td class="backgorund_blue">W1. T03</td>
+                    <td class="backgorund_blue">W1. T03</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td class="text_part">
+                        Want to talk about korean food
+                    </td>
+                    <td class="backgorund_blue">L1. T04</td>
+                    <td class="backgorund_blue">L1. T04</td>
+                    <td class="backgorund_blue">L1. T04</td>
+                    <td class="backgorund_blue">L1. T04</td>
+                    <td class="backgorund_blue">L1. T04</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Chapter name display</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h5>
+            .table.primary_table.manager_table
+        </h5>
+        <table class="table primary_table manager_table">
+            <thead>
+                <tr>
+                    <th colspan="4">
+                        <h4>25</h4>
+                        <h5>Sun</h5>
+                    </th>
+                    <th colspan="4">
+                        <h4>26</h4>
+                        <h5>Mon</h5>
+                    </th>
+                    <th colspan="4">
+                        <h4>27</h4>
+                        <h5>Tue</h5>
+                    </th>
+                    <th colspan="4">
+                        <h4>28</h4>
+                        <h5>Wed</h5>
+                    </th>
+                    <th colspan="4">
+                        <h4>29</h4>
+                        <h5>Thu</h5>
+                    </th>
+                    <th colspan="4">
+                        <h4>30</h4>
+                        <h5>Fri</h5>
+                    </th>
+                    <th colspan="4">
+                        <h4>31</h4>
+                        <h5>Sat</h5>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- sun -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!--// sun -->
+                    <!-- Mon -->
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <!--// Mon -->
+                    <!-- tue -->
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <!--// tue -->
+                    <!-- wed -->
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <!--// wed -->
+                    <!-- thu -->
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <td></td>
+                    <td class="background_skyblue"></td>
+                    <!--// thu -->
+                    <!-- fri -->
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <td class="background_skyblue"></td>
+                    <!--// fri -->
+                    <!-- sat -->
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!--// sat -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
