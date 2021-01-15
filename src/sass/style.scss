@@ -1,11 +1,12 @@
-$primary-color : #de9d22;
-$blue-color : #0d52a7;
+$primary-color : #6071cd;
 $green-color : #208b73;
 $red-color : #d1452e;
-$gray-color : #dbdbdb;
-$gray02-color:#333333;
-$gray03-color:#444444;
-$gray04-color:#222222;
+$gray-color : #111111;
+$gray02-color:#222222;
+$gray03-color:#333333;
+$gray04-color:#444444;
+$gray06-color:#666666;
+$gray09-color:#999999;
 
 
 /////////////////////////////////////////////////////////////////////////  LNB
@@ -118,11 +119,145 @@ $gray04-color:#222222;
     }
 }
 
-
-
 ///////////////////////////////////////////////////////////////////////// 마이페이지 레이아웃
 .mypage {
     width: calc(100% - 290px);
     margin-left: 70px;
 
+}
+
+
+///////////////////////////////////////////////////////////////////////// 시험 팝업
+.exam_wrap {
+    padding:30px 35px;
+    border-radius: 10px;
+    background:#f3f3f3;
+}
+
+.exam_pop_top {
+    margin-bottom:30px;
+    > .pop_tit {
+        font-size:26px;
+        font-weight:700;
+        color:$gray04-color;
+        margin-top:8px;
+        img {
+            margin-right:10px;
+            vertical-align: inherit;
+        }
+    }
+}
+
+.exam_pop_con {
+    max-height:540px;
+    overflow-y: scroll;
+    padding:40px;
+    border-radius: 10px;
+    background:#fff;
+    > .pop_con {
+        border:1px solid #eaeaea;
+        border-radius: 10px;
+        .pop_con_top {
+            display:flex;
+            padding:40px 50px;
+            background:#f9fafe;
+            .que_num {
+                display: inline-table;
+                width: 40px;
+                height: 40px;
+                margin-right: 15px;
+                font-size: 15px;
+                color: #fff;
+                text-align: center;
+                border-radius: 30px;
+                background: $primary-color;
+                span {
+                    font-size: 15px;
+                    display: inline-block;
+                    padding-top: 8px;
+                }
+            }
+            .que_tit {
+                h3 {
+                    font-size:18px;
+                    color:$gray-color;
+                }
+                p {
+                    font-size:14px;
+                    color:$primary-color;
+                }
+                span {
+                    display:inline-block;
+                    margin-top:25px;
+                    font-size:14px;
+                    color:$gray06-color;
+                }
+            }
+        }
+        .pop_con_btm{
+            padding:40px 100px;
+            background:#fff;
+            > p {
+                font-size:20px;
+                color:$gray03-color;
+                margin-bottom:20px;
+                > span {
+                    font-size:15px;
+                    color:$primary-color;
+                }
+            }
+            .que_con {
+                p {
+                    display:inline-block;
+                    margin-left:10px;
+                    font-size:15px;
+                    vertical-align: middle;
+                }
+                textarea {
+                    width:100%;
+                    padding:30px;
+                    font-size:14px;
+                    color:$gray09-color;
+                    border:1px solid #eaeaea;
+                    resize: none;
+                    box-sizing: border-box;
+                }
+                &.list {
+                    label {
+                        display:block;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .que_con_btm {
+                margin-top:10px;
+                button {
+                    width:100px;
+                    padding:5px 0;
+                    font-size:16px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.exam_pop_btm  {
+    margin-top:30px;
+    > button {
+        font-size:16px;
+        padding:10px 30px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 5px -1px #6f6f6f33;
+        &:first-child {
+            span {
+                margin-right:15px;
+            }
+        }
+        &:last-child {
+            span {
+                margin-left:15px;
+            }
+        }
+    }
 }

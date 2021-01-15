@@ -1,14 +1,14 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {font-family: 'Noto Sans KR', sans-serif;}
 
-$primary-color : #de9d22;
-$blue-color : #0d52a7;
+$primary-color : #6071cd;
 $green-color : #208b73;
 $red-color : #d1452e;
-$gray-color : #dbdbdb;
-$gray02-color:#333333;
-$gray03-color:#444444;
-$gray04-color:#222222;
+$gray-color : #111111;
+$gray02-color:#222222;
+$gray03-color:#333333;
+$gray04-color:#444444;
+$gray06-color:#666666;
 
 @mixin footer_select {
     width: 130px;
@@ -21,14 +21,11 @@ $gray04-color:#222222;
     -moz-box-sizing: border-box;
 }
 
-.wrap {
-    width: 1280px;
-    margin: 0 auto;
-    padding: 3rem 0;
-    min-height: 700px;
-}
+body {overflow-x: hidden;}
+.wrap {width: 1280px;margin: 0 auto;padding: 3rem 0;min-height: 700px;}
 
 
+// 여백 스타일
 .mt20 {margin-top:20px !important;}
 .mt40 {margin-top:40px !important;}
 .mt55 {margin-top:55px !important;}
@@ -38,25 +35,19 @@ $gray04-color:#222222;
 .mb30 {margin-bottom:30px !important;}
 .padding50 {padding:50px;}
 
-
-
+// 스타일
 .flex {display:flex;}
+.space {display:flex;justify-content: space-around;width:100%;box-sizing: border-box;}
+.between {display:flex;justify-content: space-between;width:100%;box-sizing: border-box;}
 .float_right {float:right;}
-
-
+.middle {vertical-align: middle;}
 
 // 뱃지 스타일
 .badge {display:inline-block;padding:4px 15px;font-size:14px;font-weight:700;border-radius:14px;margin-right:5px;}
-.badge.best {color:#fe8144;border:1px solid #fe8144;}
+.badge.yellow {color:#ff9d12;border:1px solid #ff9d12;}
 .badge.new {color:#269d7d;border:1px solid #269d7d;}
 .badge.hot {color:#d1452e;border:1px solid #d1452e;}
 .badge.event {color:#1b4c88;border:1px solid #1b4c88;}
-
-// 버튼 사이즈
-.lg_btn {display:inline-block;padding: 10px 50px;border:none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
-.md_btn {display:inline-block;padding:10px 25px;border:none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
-.sm_btn {display:inline-block;padding: 5px 10px;border:none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
-.xsm_btn {display:inline-block;padding: 10px 20px;border:none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
 
 // 라운드 버튼
 .round5 {border-radius:5px;}
@@ -64,28 +55,13 @@ $gray04-color:#222222;
 .round30 {border-radius: 30px;}
 
 // 버튼 스타일
-.line_red {color:#b94a38;border:1px solid #b94a38;}
-.line_gray01 {color:#bababa;border:1px solid #bababa;}
-.line_gray02 {color:#666666;border:1px solid #eaeaea;background:#f8f8f8;}
-.line_gray03 {color:#666666;border:1px solid #cccccc;}
-.line_gray04 {color:#333333;border:1px solid #bfbfbf;background:#fff;}
-
 .btn_none {border:none;background:none;}
-.line_white {color:#fff;border:1px solid #fff;}
-.line_blue {color:#0d52a7;border:1px solid #0d52a7;background:#fff;}
-.line_blue02 {color:#33c4e8;border:1px solid #33c4e8;}
-.bg_red {background:#b94a38;color:#fff;border:1px solid #b94a38;}
-.bg_gray {background:#444444;color:#fff;border:1px solid #444444;}
-.bg_gray02 {background:#bbbbbb;color:#fff;border:1px solid #bbbbbb;}
-.bg_gray03 {background:#aaaaaa;color:#fff;border:1px solid #aaaaaa;}
-.bg_gray04 {color:#333333;border:none;}
-.bg_gray04 {background:#dbdbdb;;color:#fff;border:1px solid #dbdbdb;}
-.bg_light_gray {background:#bbbbbb;color:#fff;border:1px solid #bbbbbb;}
-.bg_blue {background:#1b4c88;color:#fff;border:1px solid #1b4c88;}
-.bg_blue02 {background:#33c4e8;color:#fff;border:1px solid #33c4e8;}
-.bg_white {background:#fff;border:1px solid #fff;border:1px solid #fff;}
-.bg_green {color:#2f7e69;background:#e0f1ec;border:1px solid #e0f1ec;}
-.bg_orange {color:#dca010;background:#faf1db;border:1px solid #faf1db;}
+.bg_primary {color:#fff;border:1px solid $primary-color;background:$primary-color;}
+
+.line_white {color:$gray02-color;border:1px solid #fff;background:#fff;}
+.line_primary {color:$primary-color;border:1px solid $primary-color;background:#fff;}
+.line_gray {color:$gray06-color;border:1px solid #cccccc;background:#fff;}
+
 
 .text-left {text-align:left !important;}
 .text-right {text-align:right;}
@@ -106,7 +82,7 @@ input[type="checkbox"].checkBox {
         display:inline-block;
         margin-right:15px;
         padding-left: 25px;
-        color:#333333;
+        color:$gray06-color;
         cursor: pointer;
         vertical-align: middle;
         &:after {
@@ -114,19 +90,20 @@ input[type="checkbox"].checkBox {
             top:3px;
             left: 0;
             display: inline-block;
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
             content: '';
-            background:url("../images/checkbox_off.png") top no-repeat;
+            background:url("../images/icon_radio_off.png") top no-repeat;
         }
     }
     &:checked+label {
-        color:#0d52a7;
+        color:$primary-color;
         &:after {
-            background:url("../images/checkbox_on.png") top no-repeat;
+            background:url("../images/icon_radio_on.png") top no-repeat;
         }
     }
 }
+
 input[type="radio"].radioBox {
     display:none;
     &+label {
@@ -145,13 +122,13 @@ input[type="radio"].radioBox {
             width: 25px;
             height: 25px;
             content: '';
-            background:url("../images/radio_off.png") top no-repeat;
+            background:url("../images/icon_radio_off.png") top no-repeat;
         }
     }
     &:checked+label {
-        color:#0d52a7;
+        color:$primary-color;
         &:after {
-            background:url("../images/radio_on.png") top no-repeat;
+            background:url("../images/icon_radio_on.png") top no-repeat;
         }
     }
 }
@@ -438,9 +415,6 @@ input {outline: none;}
 img {vertical-align:middle;}
 
 
-
-
-
 ///////////////////////////////////////////////////////////////////////// POPUP
 .cd-popup {
   position: fixed;
@@ -469,7 +443,7 @@ img {vertical-align:middle;}
   width: 90%;
   margin: 6em auto;
   background: #FFF;
-  border-radius: .25em .25em .4em .4em;
+  border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-40px);
   -moz-transform: translateY(-40px);
