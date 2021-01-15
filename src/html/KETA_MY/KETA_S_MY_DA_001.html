@@ -4,116 +4,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../../images/favicon.png">
     <link type="text/css" rel="stylesheet" href="../../css/common.css">
     <link type="text/css" rel="stylesheet" href="../../css/page/my_students.css">
-    
     <!-- Slick -->
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <title>KETA_BC_101</title>
+    <title>KETA_S_MY_DA_001</title>
 </head>
 
 <body>
-    <include src="../include/header01.html"></include>
+    <include src="../include/header03.html"></include>
 
-    <!-- 카테고리-->
+    <!-- 카테고리 -->
     <div class="cate">
-        <a href="">Home</a>
-        <a href="">My page</a>
-        <a href="">My DashBoard</a>
+        <a href="">
+            Home
+        </a>
+        >
+        <a href="">
+            My Class
+        </a>
+        >
+        <a href="">
+            Ongoing
+        </a>
     </div>
     <!-- // 카테고리 -->
     
     <!-- 컨텐츠 영역 -->
     <div class="wrap padding10">
         <div class="flex">
-             <!-- LNB -->
-             <div class="lnb">
+            <!-- LNB -->
+            <div class="lnb">
                 <h3>My Page</h3>
+                <div class="toggleWrapper">
+                    <span> Management mode</span>
+                    <input type="checkbox" name="toggle1" class="mobileToggle" id="toggle1">
+                    <label for="toggle1"></label>
+                </div>
                 <ul class="lnb-menu">
                     <li>
                         <a href="#none">My Dashboard</a>
-                        <ul class="lnb-depth03">
-                            <li>
-                                <a href="#" class="active">ㆍ My Lesson</a>
-                            </li>
-                            <li>
-                                <a href="#">ㆍ Lesson Schedule</a>
-                            </li>
-                            <li>
-                                <a href="#">ㆍ Certificates</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="active">
-                        <a href="#none">Lesson Performance</a>
+                        <a href="#none">My Class</a>
                         <ul class="lnb-depth03">
                             <li>
-                                <a href="#" class="active">ㆍ My Lesson</a>
+                                <a href="KETA_S_MY_CL_001.html" class="active">ㆍ Ongoing</a>
                             </li>
                             <li>
-                                <a href="#">ㆍ Lesson Schedule</a>
-                            </li>
-                            <li>
-                                <a href="#">ㆍ Certificates</a>
+                                <a href="UI-API-LHB-PO-0007.html">ㆍ Finished</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#none">Purchase history</a>
+                        <a href="#none">My Grades</a>
                     </li>
                     <li>
-                        <a href="#none">My point</a>
+                        <a href="#none">My schedule</a>
                     </li>
                     <li>
-                        <a href="#none">Coupon</a>
+                        <a href="#none">Message</a>
                     </li>
                     <li>
-                        <a href="#none">Wish list</a>
-                    </li>
-                    <li>
-                        <a href="#none">Review & Question list</a>
-                    </li>
-                    <li>
-                        <a href="#none">Notification</a>
+                        <a href="#none">Notice</a>
                     </li>
                     <li>
                         <a href="#none">My Information</a>
                     </li>
-                    <li>
-                        <a href="#none">Switch User</a>
-                    </li>
-                    <li class="sub">
+                    <li class="sub mt50">
                         <a href="#none">
-                            <img src="../../images/lnb_01.png" />
-                            Level Test
+                            <div>
+                                <img src="../../images/icon_lnb01.png" />
+                            </div>
+                            <div>
+                                <span>Network & Equipment Check</span>
+                            </div>
                         </a>
                     </li>
                     <li class="sub">
                         <a href="#none">
-                            <img src="../../images/lnb_02.png" />
-                            Lesson Guide
+                            <div>
+                                <img src="../../images/icon_lnb02.png" />
+                            </div>
+                            <div>
+                                <span>Support</span>
+                            </div>
                         </a>
                     </li>
                     <li class="sub">
                         <a href="#none">
-                            <img src="../../images/lnb_03.png" />
-                            System Check
+                            <div>
+                                <img src="../../images/icon_lnb03.png" />
+                            </div>
+                            <div>
+                                <span>Check Environment for Visual Education</span>
+                            </div>
                         </a>
-                    </li>
-                    <li>
-                        <img src="../../images/lnb_banner.png" />
                     </li>
                 </ul>
             </div>
             <!-- // LNB -->
+
+            
 
             <!-- contents -->
             <div class="mypage">
                 <div class="mypage_title">
                     <h3>My page</h3>
                 </div>
+
+                <!-- t_my_title -->
+                <div class="t_my_title between">
+                    <div>
+                        <h3>KIM BISANG</h3> /
+                        <h5>student</h5>
+                        <button tyle="button" class="line_white">
+                            <img src="../../images/icon_change.png" alt="change" />
+                        </button>
+                        
+                    </div>
+                    <div>
+                        <img src="../../images/left_controler.png" left="left_controler" />
+                        <img src="../../images/right_controler.png" right="right_controler" />
+                    </div>
+                </div>
+                <!-- // t_my_title -->
+
+                <!-- t_my_banner -->
+                <div class="t_my_banner">
+                    <h1>Uncovering youth records</h1>
+                    <span>Middle Class</span>
+                    <div class="lang_skill skill04">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <!-- // t_my_banner -->
+
+                <div class="s_my_timeline flex">
+                    <div class="all_timeline flex">
+                        <div class="timeline_box">
+                            <h3>Attendance +</h3>
+                            <h5>
+                                <strong>60</strong>
+                                /100
+                            </h5>
+                            <p>
+                                <strong>97</strong>
+                                <span>%</span>
+                                Average
+                            </p>
+                        </div>
+                        <div class="timeline_box">
+                            <h3>Preview</h3>
+                            <h5>
+                                <strong>30</strong>
+                                /100
+                            </h5>
+                            <p>
+                                <strong>60</strong>
+                                <span>P</span>
+                                Average
+                            </p>
+                        </div>
+                        <div class="timeline_box">
+                            <h3>Review·Assn +</h3>
+                            <h5>
+                                <strong>45</strong>
+                                /100
+                            </h5>
+                            <p>
+                                <strong>120</strong>
+                                <span>P</span>
+                                Average
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d_day">
+                        <div class="day_s">
+                            <span>D-Day</span>
+                            <h3>D-20</h3>
+                            <p>Middle Exam</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="mypage_contents">
 
                     <div class="lesson_box_two">
@@ -128,7 +208,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="card_wrap01">
+                            <div class="card_wrap01 t_my_card">
                                 <div class="card_container padding30 qanda">
                                     <div class="qanda_top">
                                         <div class="waiting">
@@ -162,96 +242,40 @@
 
                         <div class="my_lesson_box">
                             <div class="my_lesson_title sub">
-                                <h3>My fees</h3>
-                            </div>
-                            <div class="card_contants">
-                                <div class="card_wrap01 myfees sub01">
-                                    <img src="../../images/icon_fees01.png" />
-                                    <p>10,000$</p>
-                                    <span>Withdrawable amount</span>
-                                    <button class="line_white">Withdrawal</button>
-                                </div>
-                                <div class="card_wrap01 myfees sub02">
-                                    <img src="../../images/icon_fees02.png" />
-                                    <p>10,000$</p>
-                                    <span>The total amount</span>
+                                <h3>Notice</h3>
+                                <div class="see_all">
+                                    <a href="">
+                                        see all
+                                        <img src="../../images/seeall.png" alt="">
+                                    </a>
                                 </div>
                             </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- lesson_box 01 -->
-
-                    <div class="my_lesson_box">
-                        <div class="my_lesson_title">
-                            <h3>Today lesson</h3>
-                        </div>
-                        <div class="card_wrap01">
-                            <div class="card_container padding30">
-                                <div class="todyLesson">
-                                    <div class="today_content">
-                                        <h1>
-                                            Order an Americano at Stopbucks.
-                                        </h1>
-                                        <dl>
-                                            <dt>
-                                                Period
-                                            </dt>
-                                            <dd>
-                                                20.10.01~20.10.30
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>
-                                                Students
-                                            </dt>
-                                            <dd>
-                                                30
-                                            </dd>
-                                        </dl>
-                                        <h4 class="on">
-                                            <img src="../../images/icon_timer_on01.png" alt="icon_timer" class="on">
-                                            <img src="../../images/icon_timer_off.png" alt="icon_timer" class="off">
-                                            1 hour before
-                                        </h4>
-                                        <button type="button" class="bg_blue">CREATING A CLASSROOM</button>
-                                    </div>
-                                    <div class="today_content">
-                                        <h1>
-                                            Let’s sing along with BTS’ Life goes on.
-                                        </h1>
-                                        <dl>
-                                            <dt>
-                                                Period
-                                            </dt>
-                                            <dd>
-                                                20.10.01~20.10.30
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>
-                                                Students
-                                            </dt>
-                                            <dd>
-                                                30
-                                            </dd>
-                                        </dl>
-                                        <h4>
-                                            <img src="../../images/icon_timer_on01.png" alt="icon_timer" class="on">
-                                            <img src="../../images/icon_timer_off.png" alt="icon_timer" class="off">
-                                            1 hour before
-                                        </h4>
-                                        <button type="button" class="bg_gray03">CREATING A CLASSROOM</button>
-                                    </div>
-                                    <div class="today_content">
-                                        <img src="../../images/nolesson_img.png" alt="nolesson_img">
-                                        <h2>
-                                            There are no<br />
-                                            registered lesson.
-                                        </h2>
-                                    </div>
+                            <div class="card_wrap01 t_my_card">
+                                <div class="card_container padding30">
+                                    <ul class="t_my_notice">
+                                        <li class="on">
+                                            <span>2020.10.30</span>
+                                            <p>Team Leader World Bank</p>
+                                        </li>
+                                        <li>
+                                            <span>2020.10.29</span>
+                                            <p>Portfolio Manager Charles 
+                                                Schwab Corporation</p>
+                                        </li>
+                                        <li>
+                                            <span>2020.10.26</span>
+                                            <p>Portfolio Manager Charles Schwab</p>
+                                        </li>
+                                        <li>
+                                            <span>2020.10.24</span>
+                                            <p>Manager Charles Schwab</p>
+                                        </li>
+                                        <li>
+                                            <span>2020.10.24</span>
+                                            <p>Manager Charles Schwab</p>
+                                        </li>
+                                    </ul>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -259,159 +283,108 @@
 
 
                     <div class="my_lesson_box">
-                        <div class="my_lesson_title">
+                        <div class="my_lesson_title mb30">
                             <h3>My Class</h3>
-                        </div>
-
-                        <input class="radio" id="one" name="group" type="radio" checked>
-                        <input class="radio" id="two" name="group" type="radio">
-                        <input class="radio" id="three" name="group" type="radio">
-                        <input class="radio" id="four" name="group" type="radio">
-                        <div class="tabs sub">
-                            <label class="tab" id="one-tab" for="one">
-                                Proceeding <span>10</span>
-                            </label>
-                            <label class="tab" id="two-tab" for="two">
-                                Complete <span>10</span>
-                            </label>
-                            <label class="tab" id="three-tab" for="three">
-                                Unused <span>10</span>
-                            </label>
-                            <label class="tab label_check" id="four-tab" for="four">
-                                Other <span class="none">0</span>
-                            </label>
-                        </div>
-
-                        <div class="panels">
-                            <!-- Proceeding -->
-                            <div class="panel" id="one-panel">
-                                <!-- 카드 01 -->
-                                <div class="card_wrap01">
-                                    <div class="card_container normal">
-                                        <div class="card_contants usage_history01">
-                                            <div class="card_text">
-                                                <div class="card_text_left">
-                                                    <div class="card_text_title">
-                                                        <h1>
-                                                            <img src="../../images/reserved01_on.png" alt="reserved" />
-                                                            Order an Americano at Stopbucks.
-                                                        </h1>
-                                                    </div>
-                                                    <div class="card_text_bottom">
-                                                        <div>
-                                                            <strong>08:00</strong>
-                                                            <span>20.10.29 (Wed)</span>
-                                                            <p>Reserved lessons</p>
-                                                        </div>
-                                                        <div>
-                                                            <span>Julienne Anne Marie</span>
-                                                            <img src="../../images/icon_learningstyle_on.png" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card_text_right">
-                                                    <p class="on">
-                                                        <img src="../../images/icon_timer_on.png" alt="icon_timer"
-                                                            class="on">
-                                                        <img src="../../images/icon_timer_off.png" alt="icon_timer"
-                                                            class="off">
-                                                        00:15:00
-                                                    </p>
-                                                    <button type="button" class="bg_blue">ENTER LESSON</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- // 카드 01 -->
-
-                                <!-- 카드 02 -->
-                                <div class="card_wrap01">
-                                    <div class="card_container normal">
-                                        <div class="card_contants usage_history01">
-                                            <div class="card_text">
-                                                <div class="card_text_left">
-                                                    <div class="card_text_title">
-                                                        <h1>
-                                                            <img src="../../images/reserved01_on.png" alt="reserved" />
-                                                            Let’s sing along with BTS’ Life goes on.
-                                                        </h1>
-                                                    </div>
-                                                    <div class="card_text_bottom">
-                                                        <div>
-                                                            <strong>04:00</strong>
-                                                            <span>20.10.30 (Thu))</span>
-                                                            <p>Reserved lessons</p>
-                                                        </div>
-                                                        <div>
-                                                            <span>Julienne Anne Marie</span>
-                                                            <img src="../../images/icon_learningstyle_on.png" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card_text_right">
-                                                    <p class="off">
-                                                        <img src="../../images/icon_timer_on.png" alt="icon_timer"
-                                                            class="on">
-                                                        <img src="../../images/icon_timer_off.png" alt="icon_timer"
-                                                            class="off">
-                                                        21:00:00
-                                                    </p>
-                                                    <button type="button" class="bg_gray03">ENTER LESSON</button>
-                                                    <span class="off">
-                                                        <img src="../../images/icon_report_off.png" />
-                                                        Issue report
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- // 카드 02 -->
-
-                                <!-- 카드 03 -->
-                                <div class="card_wrap01">
-                                    <div class="card_container normal">
-                                        <div class="card_contants usage_history01">
-                                            <div class="card_text">
-                                                <div class="card_text_left">
-                                                    <div class="card_text_title">
-                                                        <h1>
-                                                            <img src="../../images/reserved01_on.png" alt="reserved" />
-                                                            Let’s sing along with BTS’ Life goes on.
-                                                        </h1>
-                                                    </div>
-                                                    <div class="card_text_bottom">
-                                                        <div>
-                                                            <strong>08:00</strong>
-                                                            <span>20.10.30 (Thu))</span>
-                                                            <p>Reserved lessons</p>
-                                                        </div>
-                                                        <div>
-                                                            <span>Julienne Anne Marie</span>
-                                                            <img src="../../images/icon_learningstyle_on.png" alt="" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card_text_right">
-                                                    <button type="button" class="bg_gray03">ENTER LESSON</button>
-                                                    <span class="on">
-                                                        <img src="../../images/icon_report_on.png" />
-                                                        Issue report
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- // 카드 03 -->
-                            </div>
-                            <!-- // Proceeding -->
-
-                            <div class="panel" id="two-panel">
-                                2
+                            <div class="see_all">
+                                <a href="">
+                                    see all
+                                    <img src="../../images/seeall.png" alt="">
+                                </a>
                             </div>
                         </div>
+
+                        <!-- 카드 01 -->
+                        <div class="card_wrap01 ongoing">
+                            <div class="card_container padding50 flex">
+                                <div>
+                                    <img src="../../images/bts.png" alt="bts">
+                                </div>
+                                <div class="card_text ml30">
+                                    <div class="card_tt">
+                                        <h1 class="margin_none">Want to know useful expression?</h1>
+                                        <p class="card_tt_sub">
+                                            <span class="none">
+                                                Chapter 01 - Speaking - Unit2
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="card_bt">
+                                        <dl>
+                                            <dt>Course period</dt>
+                                            <dd>20.10.01~20.10.30<span>(30 week)</span></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Tutor in charge</dt>
+                                            <dd>Mr hong and 00 others</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Class name</dt>
+                                            <dd>Class02</dd>
+                                            <dt class="sub">Level</dt>
+                                            <dd>Advanced</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card_sub gray text-right">
+                                <input type="text">
+                                <span class="time_gray margin">
+                                    <img src="../../images/icon_time_gray.png" alt="time" />
+                                    00:15:00
+                                </span>
+                                <a href="#0" class="bg_blue enter">ENTER LESSON</a>
+                            </div>
+                            <div class="ongoing_badge">
+                                <span>ONGOING</span>
+                            </div>
+
+                        </div>
+                        <!-- // 카드 01 -->
+
+                        <!-- 카드 02 -->
+                        <div class="card_wrap01 ongoing">
+                            <div class="card_container padding50 flex">
+                                <div>
+                                    <img src="../../images/blackpink.png" alt="blackpink.png">
+                                </div>
+                                <div class="card_text ml30">
+                                    <div class="card_tt">
+                                        <h1 class="margin_none">Want to talk with BLACK PINK</h1>
+                                        <p class="card_tt_sub">
+                                            <span class="none">
+                                                Chapter 01 - Speaking - Unit2
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="card_bt">
+                                        <dl>
+                                            <dt>Course period</dt>
+                                            <dd>20.10.01~20.10.30<span>(30 week)</span></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Tutor in charge</dt>
+                                            <dd>Mr hong and 00 others</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Number ofclass</dt>
+                                            <dd>30</dd>
+                                            <dt>Number of students</dt>
+                                            <dd>30</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="card_bt mt40">
+                                        <button class="bg_green preview"><img src="../../images/icon_report_on.png" alt="">Preview</button>
+                                        <button class="bg_gray02 preview"><img src="../../images/icon_report_off.png" alt="">Feedback</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="finished_badge">
+                                <span>FINISHED</span>
+                            </div>
+
+                        </div>
+                        <!-- // 카드 02 -->
 
                     </div>
 

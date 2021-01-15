@@ -28,33 +28,11 @@ $gray04-color:#222222;
         }
     }
 }
-.card_wrap01  + .card_wrap01  {margin-top: 30px;}
 
 
-.ongoing_badge {
-    position: absolute;
-    top: -5px;
-    left: 19px;
-    background:url(../images/ongoing.png);
-    width: 93px;
-    height: 34px;
-    span {
-        font-size:13px;
-        color:#fff;
-        font-weight: 700;
-        display: inline-block;
-        margin: 6px 13px;
-    }
-}
-
-.card_container {
-    &.normal {
-        padding:35px 50px;
-    }
-}
 
 .borderTop {border-top:1px solid #ddd;}
-.padding30 {padding:30px;}
+.padding30 {padding:30px !important;}
 .margin30 {margin:30px;}
 
 .card_text_title {
@@ -97,247 +75,23 @@ $gray04-color:#222222;
 }
 
 ///////////////////////////////////////////////////// .card_container_sub
-.card_container_sub{
-    padding: 20px 50px;
-    display: flex;
-    &.profile {
-        background:#f9fafe;
-    }
-    &.comment {
-        background:#fafafa;
-    }
-    .card_sub_description{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-}
 
-.card_sub {
-    padding: 20px 50px;
-    display: block;
-    &.gray {
-        background:#fafafa;
-    }
+.btm_btn {
+    margin-top:50px;
     button {
-        font-size:16px;
-        font-weight:700;
-        width:180px;
+        width:140px;
         padding:10px 0;
-    }
-    a {
-        display:inline-block;
-        font-size:16px;
-        font-weight:700;
-        width:180px;
-        padding:10px 0;
-        text-align:center;
     }
 }
 
-.card_badge {
-    span {
-        display:inline-block;
-        background:#f6f8fc;
-        padding:10px 20px;
-        font-size:13px;
-        font-weight:700;
-        color:$gray02-color;
-        border-radius: 30px;
-        vertical-align: sub;
-        &:not(:last-child) {
-            margin-right:10px;
-        }
-        img {
-            margin-right:5px;
-        }
-    }
-}
+
 
 .between {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    box-sizing: border-box;
 }
-
-///////////////////////////////////////////////////// .card_container_sub - profile
-.card_container_sub{
-    &.profile {
-        background:#f9fafe;
-        display:flex;
-        .card_sub_img {
-            display: block;
-            background: url(../images/user_icon.png) no-repeat left top;
-            background-size: cover;
-            width: 70px;
-            height: 70px;
-            text-decoration: none;
-            position: relative;
-            border: 0;
-            margin-right: 35px;
-            span {
-                width: 70px;
-                height: 70px;
-                border-radius: 50%;
-                position: absolute;
-                background: url(../images/tutor01.png) center center / cover no-repeat;
-                left: 0;
-                overflow: hidden;
-            }
-            &::after {
-                content: '';
-                background: url(../images/america.png) no-repeat;
-                background-size: 100%;
-                width: 25px;
-                height: 25px;
-                position: absolute;
-                right: -15px;
-                bottom: 1px;
-            }
-            &.sub01 {
-                span {
-                    background: url(../images/teacher02.png) center center / cover no-repeat;
-                }
-            }
-            &.sub02 {
-                span {
-                    background: url(../images/teacher03.png) center center / cover no-repeat;
-                }
-            }
-            &.sub03 {
-                span {
-                    background: url(../images/teacher04.png) center center / cover no-repeat;
-                }
-            }
-        }
-        .card_sub_description{
-            .sub_des_left{
-                p{
-                    color: #222222;
-                    font-size: 18px;
-                    font-weight: 700;
-                    margin: 5px 0;
-                }
-                span{
-                    img{
-                        width: 14px;
-                        height: 14px;
-                    }
-                    em{
-                        margin: 0 10px;
-                        color: #666666;
-                        font-size: 14px;
-                    }
-                    strong{
-                        margin-left: 10px;
-                        font-size: 14px;
-                    }
-                }
-            }
-            .sub_des_right{
-                display: flex;
-                .des_right{
-                    span{
-                        display: inline-block;
-                        margin-bottom: 10px;
-                        color: #999999;
-                        font-size: 13px;
-                    }
-                    p{
-                        color: #333333;
-                        font-size: 14px;
-                        font-weight: 700;
-                    }
-                    &:nth-child(2){
-                        margin: 0 50px;
-                    }
-                    &:nth-child(3){
-                        a{
-                            p{
-                                color: #0d52a7;
-                            }
-                        }
-                    }
-                    &:last-child {
-                        margin-right:0;
-                    }
-                }
-            }
-        }
-    }
-}
-
-///////////////////////////////////////////////////// .card_container_sub - couseList
-.card_container_sub{
-    &.couseList {
-        button {
-            width:140px;
-            font-size:16px;
-            padding:10px 0;
-            text-align:center;
-        }
-    }
-}
-
-///////////////////////////////////////////////////// .card_container_sub - comment
-.card_container_sub{
-    display:block;
-    &.comment {
-        .comment_text {
-            position: relative;
-            &::after {
-                content:'';
-                position: absolute;
-                top:5px;
-                left:0;
-                width:12px;
-                height:13px;
-                background:url('../images/comment_text.png') no-repeat;
-            }
-            p {
-                width:80%;
-                padding-left:20px;
-            }
-            span {
-                font-size:13px;
-                color:#999999;
-                padding-left: 20px;
-            }
-        }
-        .comment_btn {
-            text-align:right;
-            button {
-                font-size:14px;
-                width:85px;
-                padding:10px 0;
-            }
-        }
-        .comment_textarea {
-            textarea {
-                margin-top:20px;
-                width: 100%;
-                height: 100px;
-                padding: 10px;
-                box-sizing: border-box;
-                border: solid 1px #eaeaea;
-                font-size: 16px;
-                resize: none;
-            }
-        }
-    }
-}
-
-///////////////////////////////////////////////////// .card_container_sub - comment_write
-.card_container_sub{
-    background:#f9fafe;
-    display:block;
-    &.comment_write {
-        textarea {
-            width:100%;
-        }
-    }
-}
-
 
 ///////////////////////////////////////////////////// 카드타입 00
 
@@ -446,7 +200,7 @@ $gray04-color:#222222;
     }
 }
 ///////////////////////////////////////////////////// 카드타입 01
-.card01 {
+
     .card_img {
         display: block;
         background: url(../images/user_icon.png) no-repeat left top;
@@ -464,6 +218,7 @@ $gray04-color:#222222;
             background: url(../images/teacher01.png) center center / cover no-repeat;
             left: 0;
             overflow: hidden;
+            
         }
         &::after {
             content: '';
@@ -665,66 +420,10 @@ $gray04-color:#222222;
             }
         }
     }
-}
 
-.card_tt {
-    h1 {
-        font-size: 30px;
-        margin-bottom:20px;
-        &.margin_none {
-            margin:0;
-        }
-    }
-}
-.card_tt_sub {
-    margin-bottom:30px;
-    strong {
-        font-size:16px;
-        color:$red-color;
-    }
-    span {
-        font-size:16px;
-        color:#666666;
-        &::before {
-            content: '';
-            display: inline-block;
-            width: 1px;
-            height: 12px;
-            margin: 0 7px;
-            background: #ddd;
-        }
-    }
-}
-.card_bt {
-    dl {
-        display:flex;
-        font-size:14px;
-        dt {
-            min-width: 100px;
-            color:#666666;
-            border-right:1px solid #ddd;
-            padding-right:10px;
-            margin-right:20px;
-        }
-        dd {
-            font-weight:700;
-            color:#333333;
-            margin-right:10px;
-        }
-        &+dl {
-            margin-top:10px;
-        }
-        &:last-child {
-            dt {
-                &+dd {
-                    &:nth-child(2) {
-                        margin-right:40px;
-                    }
-                }
-            }
-        }
-    }
-}
+
+
+
 
 
 ///////////////////////////////////////////////////// 카드타입 02

@@ -62,6 +62,9 @@ $gray04-color:#222222;
 .cd-popup-container.lg {
     max-width:1000px;
 }
+.cd-popup-container.xlg {
+  max-width:1100px;
+}
 
 
 .popup_contents {
@@ -97,5 +100,8 @@ $gray04-color:#222222;
         width: 130px;
         padding: 10px 0;
         text-align: center;
+        &+a {
+          margin-left:10px;
+        }
     }
 }

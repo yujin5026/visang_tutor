@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../../css/page/login.css">
+    <title>KETA_JM_009</title>
+</head>
+
+<body class="login">
+    <include src="../include/header01.html"></include>
+
+    <!-- 컨텐츠 영역 -->
+    <div class="wrap">
+        <div class="account">
+            <h3>회원가입</h3>
+            <form>
+                <input type="text" name="username" placeholder="이름">
+                <input type="email" name="email" placeholder="이메일(email@address.com)">
+                <input type="password" name="password" placeholder="비밀번호" id="join_password" />
+            </form>
+            <h5>
+                <em>동의하고 가입하기</em>를 선택하면<br />
+                <a href="#">서비스 약관</a>및 <a href="#">개인정보 보호정책</a>에 동의하게 됩니다.
+            </h5>
+            <button class="login_btn bg_blue02">
+                동의하고 가입하기
+            </button>
+            <span class="tooltip">
+                <img src="../../images/check_blue01.png" alt="블루 체크박스 표시" />
+                회원가입이 완료 되었습니다.
+            </span>
+            <h4 class="join_h4">이미 계정이 있으신가요?
+                <em>
+                    <a href="login.html">로그인</a>
+                </em>
+            </h4>
+
+        </div>
+    </div>
+
+    <!-- // 컨텐츠 영역 -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <script src="../../js/index.js"></script>
+
+    <include src="../include/footer2.html"></include>
+
+</body>
+
+</html>

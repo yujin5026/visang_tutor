@@ -115,6 +115,10 @@ $gray04-color:#222222;
     thead {
         th {
             padding: 10px 0;
+            border-right:1px solid #ddd;
+            &:last-child {
+                border-right:0;
+            }
         }
     }
     tbody {
@@ -125,8 +129,11 @@ $gray04-color:#222222;
             &:first-child {
                 border-left: none;
             }
-            &.background_skyblue {
+            &.skyblue {
                 background: #75afcd;
+            }
+            &.blue {
+                background:#1b4c88;
             }
         }
     }
@@ -147,9 +154,6 @@ $gray04-color:#222222;
         tr {
             td {
                 font-size:14px;
-                color:#666666;
-                padding:5px 10px;
-                text-align:center;
                 border-bottom:1px solid #eaeaea;
             }
             &:nth-child(odd) {
@@ -230,4 +234,89 @@ $gray04-color:#222222;
         font-weight:700;
         color:$blue-color;
     }
+}
+
+
+.score_table {
+    tbody {
+        tr {
+            &.line_none {
+                td {
+                    border-bottom:none;
+                }
+            }
+            &:nth-child(1),&:nth-child(2),&:nth-child(5),&:nth-child(6),&:nth-child(8) {
+                background:#fbfbfb;
+            }
+            &:last-child {
+                border-bottom:1px solid #ddd;
+            }
+            th {
+                font-size:15px;
+                color:#222222;
+                padding:10px;
+                vertical-align: middle;
+                border-right:1px solid #ddd;
+                border-bottom:1px solid #ddd;
+                background:#fff;
+            }
+            td {
+                color: #333333;
+                text-align:left;
+                padding:10px;
+                &:last-child {
+                    text-align:center;
+                    border-left:1px solid #ddd;
+                }
+                a {
+                    text-decoration: underline;
+                }
+                span {
+                    &.badge {
+                        font-size:12px;
+                        padding:0 10px;
+                    }
+                }
+                input {
+                    width:50px;
+                    border:1px solid #eaeaea;
+                    margin-left: 10px;
+                    padding:5px;
+                    text-align:center;
+                }
+            }
+        }
+       
+    }
+}
+
+.table_tit {
+    div {
+        > span {
+            font-size:20px;
+            font-weight:700;
+            color:#333333;
+            margin-left:10px;
+            vertical-align: sub;
+        }
+        > p {
+            display:inline-block;
+            font-size:14px;
+            color:#999999;
+            vertical-align: sub;
+        }
+    }
+}
+
+.table01_tit {
+    font-size:20px;
+    color:#333333;
+    margin:50px 0 20px 0;
+    &.sub {
+        margin-top:0;
+    }
+}
+
+.score_span {
+    text-decoration: underline;
 }
