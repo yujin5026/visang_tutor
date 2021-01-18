@@ -2,6 +2,8 @@
 body {font-family: 'Noto Sans KR', sans-serif;}
 
 $primary-color : #6071cd;
+$sub-color : #ff3a96;
+$blue-color : #5267d5;
 $green-color : #208b73;
 $red-color : #d1452e;
 $gray-color : #111111;
@@ -9,6 +11,7 @@ $gray02-color:#222222;
 $gray03-color:#333333;
 $gray04-color:#444444;
 $gray06-color:#666666;
+$gray09-color:#999999;
 
 @mixin footer_select {
     width: 130px;
@@ -27,7 +30,7 @@ body {
         background:#f6f6f6;
     }
 }
-.wrap {width: 1280px;margin: 0 auto;padding: 3rem 0;min-height: 700px;}
+.wrap {width: 1280px;margin: 0 auto;padding: 3rem 0 10rem 0;min-height: 700px;}
 
 
 // 여백 스타일
@@ -42,6 +45,7 @@ body {
 
 // 스타일
 .flex {display:flex;}
+.flex_bottom {align-self: flex-end;}
 .space {display:flex;justify-content: space-around;width:100%;box-sizing: border-box;}
 .between {display:flex;justify-content: space-between;width:100%;box-sizing: border-box;}
 .float_right {float:right;}
@@ -65,7 +69,9 @@ body {
 
 .line_white {color:$gray02-color;border:1px solid #fff;background:#fff;}
 .line_primary {color:$primary-color;border:1px solid $primary-color;background:#fff;}
+.line_sub {color:$sub-color;border:1px solid $sub-color;background:#fff;}
 .line_gray {color:$gray06-color;border:1px solid #cccccc;background:#fff;}
+.line_gray02 {color:$gray03-color;border:1px solid #aaaaaa;background:#fff;}
 
 
 .text-left {text-align:left !important;}
@@ -74,11 +80,11 @@ body {
 .middle {vertical-align: middle;}
 
 // 평점 
-.star {position: relative;padding-left:26px;}
-.star::before {content:'';position: absolute;top:3px;left:0;background:url('../images/star.png');width:20px;height:19px;}
+.star {position: relative;padding-left:20px;}
+.star::before {content:'';position: absolute;top:3px;left:0;background:url('../images/icon_star.png');width:15px;height:15px;}
 
 // 더보기
-.showMore {display:inline-block;font-size:14px;color:#0d52a7;font-weight:500;}
+.showMore {display:inline-block;font-size:14px;color:$blue-color;font-weight:500;}
 
 // input 스타일
 input[type="checkbox"].checkBox {
