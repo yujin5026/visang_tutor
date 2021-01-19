@@ -7,6 +7,7 @@ $blue-color : #5267d5;
 $blue02-color:#485cc7;
 $green-color : #208b73;
 $red-color : #d1452e;
+$orange-color : #ffa813;
 $gray-color : #111111;
 $gray02-color:#222222;
 $gray03-color:#333333;
@@ -67,12 +68,14 @@ body {
 // 버튼 스타일
 .btn_none {border:none;background:none;}
 .bg_primary {color:#fff;border:1px solid $primary-color;background:$primary-color;}
+.bg_black {color:#fff;border:1px solid $gray03-color;background:$gray03-color;}
 
 .line_white {color:$gray02-color;border:1px solid #fff;background:#fff;}
 .line_primary {color:$primary-color;border:1px solid $primary-color;background:#fff;}
 .line_sub {color:$sub-color;border:1px solid $sub-color;background:#fff;}
 .line_gray {color:$gray06-color;border:1px solid #cccccc;background:#fff;}
 .line_gray02 {color:$gray03-color;border:1px solid #aaaaaa;background:#fff;}
+.line_gray03 {color:$gray02-color;border:1px solid #aaaaaa;background:#fff;}
 .line_blue02 {color:$blue02-color;border:1px solid $blue02-color;background:#fff;}
 
 
@@ -143,6 +146,54 @@ input[type="radio"].radioBox {
         color:$primary-color;
         &:after {
             background:url("../images/icon_radio_on.png") top no-repeat;
+        }
+    }
+}
+
+input[type="checkbox"].checkBox02 {
+    display:none;
+    &+label {
+        position: relative;
+        display:inline-block;
+        color:#333333;
+        cursor: pointer;
+        vertical-align: middle;
+        &:after {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            content: '';
+            background:url("../images/icon_radio_off.png") top no-repeat;
+        }
+    }
+    &:checked+label {
+        color:$primary-color;
+        &:after {
+            background:url("../images/icon_radio_on.png") top no-repeat;
+        }
+    }
+}
+
+input[type="checkbox"].checkBox03 {
+    display:none;
+    &+label {
+        position: relative;
+        display:inline-block;
+        color:#333333;
+        cursor: pointer;
+        vertical-align: middle;
+        &:after {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            content: '';
+            background:url("../images/icon_checkbox_off.png") top no-repeat;
+        }
+    }
+    &:checked+label {
+        color:$primary-color;
+        &:after {
+            background:url("../images/icon_checkbox_on.png") top no-repeat;
         }
     }
 }

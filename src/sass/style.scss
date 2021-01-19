@@ -1,6 +1,7 @@
 $primary-color : #6071cd;
 $sub-color : #ff3a96;
 $blue-color : #5267d5;
+$blue02-color:#485cc7;
 $green-color : #208b73;
 $red-color : #d1452e;
 $orange-color : #ffa813;
@@ -11,6 +12,27 @@ $gray04-color:#444444;
 $gray06-color:#666666;
 $gray09-color:#999999;
 
+@mixin select {
+    padding:10px;
+    font-size:14px;
+    color:$gray06-color;
+    border:1px solid #e9e9e9;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+@mixin inputText {
+    padding:10px;
+    font-size:14px;
+    color:$gray06-color;
+    border:1px solid #e9e9e9;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.w100 {width:100%;}
 
 /////////////////////////////////////////////////////////////////////////  LNB
 .lnb {
@@ -311,6 +333,134 @@ $gray09-color:#999999;
     }
 }
 
+.pop_wrap {
+    .pop_top {
+        background: $blue02-color;
+        padding: 30px 50px;
+        span {
+            font-size: 28px;
+            font-weight:700;
+            color: #fff;
+        }
+        > a {
+            margin-top:5px;
+        }
+    }
+    .pop_box {
+        max-height:550px;
+        overflow-y: scroll;
+        .pop_con {
+            padding: 30px 50px;
+            p {
+                font-size:18px;
+                font-weight:700;
+                color:$gray-color;
+                em {
+                    font-size:24px;
+                    color:$blue02-color;
+                }
+                & + select {
+                    margin-top:15px;
+                }
+                & + input[type="text"] {
+                    margin-top:15px;
+                }
+            }
+            select {
+                @include select;
+                & + .w100 {
+                    margin-top:10px;
+                }
+            }
+            input[type="text"] {
+                @include inputText;
+                & + .w100 {
+                    margin-top:10px;
+                }
+            }
+            .pop_sub {
+                &:first-child{
+                    flex: 6;
+                    margin-right:50px;
+                }
+                &:last-child {
+                    flex:4;
+                }
+            }
+            .pop_sub_ta {
+                &:first-child{
+                    flex: 5;
+                }
+                &:nth-child(2) {
+                    margin: 0 20px;
+                    align-self: center;
+                    button {
+                        display:block;
+                        margin:10px 0;
+                    }
+                }
+                &:last-child {
+                    flex:5;
+                }
+                > h5 {
+                    margin-bottom:15px;
+                    font-size:16px;
+                    font-weight:500;
+                    color:$gray03-color;
+                }
+                > table {
+                    > tbody {
+                        > td {
+                            padding:20px 0;
+                        }
+                    }
+                }
+            }
+            .pop_search {
+                background:#f8f9ff;
+                margin-top:15px;
+                padding:30px;
+                text-align:center;
+                border:1px solid #eaeaea;
+                > select {
+                    min-width:150px;
+                    & + select {
+                        margin-left:5px;
+                    }
+                }
+                > input[type="text"] {
+                    width:220px;
+                    margin-left:5px;
+                }
+                > button {
+                    padding:5px 15px;
+                    margin-left:10px;
+                    font-size:14px;
+                    > img {
+                        vertical-align: top;
+                        margin:2px 5px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    .pop_btm {
+        padding:30px 0;
+        margin:30px 50px;
+        text-align:center;
+        border-top:1px solid #dddddd;
+        > button {
+            width:200px;
+            padding:10px;
+            font-size:18px;
+            text-align:center;
+            & + button {
+                margin-left:10px;
+            }
+        }
+    }
+}
+
 ///////////////////////////////////////////////////////////////////////// 시험 팝업
 .exam_wrap {
     padding:30px 35px;
@@ -472,18 +622,23 @@ $gray09-color:#999999;
     width: 65px;
     height: 34px;
     span {
-        font-size:15px;
+        font-size:13px;
         color:#fff;
-        font-weight: 700;
+        font-weight: 500;
         display: inline-block;
-        margin: 6px 18px;
     }
     &.use {
         background:url(../images/badge_use.png) no-repeat;
-        
+        > span {
+            margin: 6px 20px;
+        }
     }
-    &.finished {
-        background:url(../images/finished.png) no-repeat;
+    &.stand {
+        background:url(../images/badge_stand.png) no-repeat;
+        width:100px;
+        > span {
+            margin:6px 0 0 20px;
+        }
     }
 }
 
@@ -563,7 +718,6 @@ $gray09-color:#999999;
         }
         dl {
             dt {
-                width:70px;
                 padding-right:10px;
                 margin-right:10px;
                 font-size:14px;
@@ -578,6 +732,16 @@ $gray09-color:#999999;
             + dl {
                 margin-top:10px;
             }
+            &.sm {
+                dt {
+                    width:70px;
+                }
+            }
+            &.md {
+                dt {
+                    width:140px;
+                }
+            }
         }
     }
     .use_btn {
@@ -588,6 +752,79 @@ $gray09-color:#999999;
             padding:10px 20px;
             & + button {
                 margin-left:10px;
+            }
+        }
+    }
+}
+.publ_top {
+    margin-bottom:30px;
+    > div {
+        > button {
+            padding:10px 20px;
+            font-size:15px;
+            & + button {
+                margin-left:10px;
+            }
+        }
+        > a {
+            padding:10px 20px;
+            font-size:15px;
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////////////////// 테이블
+.table {
+    width:100%;
+    border-collapse: collapse;
+    &.primary {
+        thead {
+            background:$blue02-color;
+            border-radius: 10px;
+            th {
+                font-size:15px;
+                font-weight:500;
+                color:#fff;
+                padding:10px;
+                &:first-child {
+                    border-radius: 10px 0 0 10px;
+                }
+                &:last-child {
+                    border-radius: 0 10px 10px 0;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    position:relative;
+                    padding:10px;
+                    font-size:14px;
+                    color:$gray06-color;
+                    text-align:center;
+                    border-bottom:1px solid #eaeaea;
+                    > button {
+                        padding:10px 20px;
+                    }
+                }
+                &:nth-child(even) {
+                    background:#fbfbfb;
+                }
+                
+            }
+        }
+    }
+    &.publish {
+        tbody {
+            tr {
+                td {
+                    &:nth-child(4) {
+                        max-width: 200px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
             }
         }
     }
