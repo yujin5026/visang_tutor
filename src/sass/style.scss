@@ -835,16 +835,14 @@ $gray09-color:#999999;
 .controls__range {display:inline-block;}
 .controls__range input {margin-top:10px;}
 
-
-
-
+///////////////////////////////////////////////////////////////////////// 별점
 .star-input>.input,
 .star-input>.input>label:hover,
 .star-input>.input>input:focus+label,
 .star-input>.input>input:checked+label{display: inline-block;vertical-align:middle;background:url('../images/grade_img.png')no-repeat;}
 .star-input>.input{display:inline-block;width:100px;background-size:100px;height:16px;white-space:nowrap;overflow:hidden;position: relative;}
 .star-input>.input>input{position:absolute;width:1px;height:1px;opacity:0;}
-star-input>.input.focus{outline:1px dotted #ddd;}
+.star-input>.input.focus{outline:1px dotted #ddd;}
 .star-input>.input>label{width:30px;height:0;padding:16px 0 0 0;overflow: hidden;float:left;cursor: pointer;position: absolute;top: 0;left: 0;}
 .star-input>.input>label:hover,
 .star-input>.input>input:focus+label,
