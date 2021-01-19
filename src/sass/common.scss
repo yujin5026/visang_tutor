@@ -4,6 +4,7 @@ body {font-family: 'Noto Sans KR', sans-serif;}
 $primary-color : #6071cd;
 $sub-color : #ff3a96;
 $blue-color : #5267d5;
+$blue02-color:#485cc7;
 $green-color : #208b73;
 $red-color : #d1452e;
 $gray-color : #111111;
@@ -72,6 +73,7 @@ body {
 .line_sub {color:$sub-color;border:1px solid $sub-color;background:#fff;}
 .line_gray {color:$gray06-color;border:1px solid #cccccc;background:#fff;}
 .line_gray02 {color:$gray03-color;border:1px solid #aaaaaa;background:#fff;}
+.line_blue02 {color:$blue02-color;border:1px solid $blue02-color;background:#fff;}
 
 
 .text-left {text-align:left !important;}
