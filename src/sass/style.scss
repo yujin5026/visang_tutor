@@ -773,6 +773,103 @@ $gray09-color:#999999;
     }
 }
 
+.add_course {
+    .co_tit {
+        margin-bottom:15px;
+        font-size:18px;
+        font-weight:700;
+        color:$gray-color;
+        strong {
+            color:$blue02-color;
+        }
+        > button {
+            padding:5px 15px;
+            float:right;
+            vertical-align: top;
+        }
+    }
+
+    input[type="text"] {
+        @include inputText;
+        margin-bottom:50px;
+    }
+    select {
+        @include select;
+        margin-bottom:50px;
+    }
+
+    .co_sub {
+        > div {
+            min-width:300px;
+            &:first-child {
+                margin-right:50px;
+            }
+        }
+    }
+    .attach {
+        margin:15px 0 35px 0;
+        padding:25px;
+        border:1px solid #ebebeb;
+        .attach_box {
+            padding:20px 30px;
+            border:1px solid #eaeaea;
+            background:#f5f7ff;
+            &:first-child {
+                margin-right:15px;
+            }
+            > div {
+                a {
+                    display:inline-block;
+                    font-size:16px;
+                    color:$blue02-color;
+                    margin-bottom:10px;
+                }
+                p {
+                    font-size:13px;
+                    color:$gray09-color;
+                }
+                button {
+                    margin-top:5px;
+                    padding:10px 15px;
+                    background: #f5f7ff;
+                }
+            }
+        }
+    }
+    .week {
+        margin:15px 0 50px 0;
+        .week_list {
+            position:relative;
+            width: 100%;
+            text-align:center;
+            padding:30px;
+            border-radius: 5px;
+            &.off {
+                color:$gray03-color;
+                border:1px solid #eaeaea;
+                background:#fafafa;
+            }
+            &.on {
+                color:#fff;
+                border:1px solid #7acc00;
+                background:#7acc00;
+                &::after {
+                    content:'';
+                    background:url('../images/icon_week_check.png') no-repeat;
+                    position:absolute;
+                    top:10px;
+                    right:10px;
+                    width:16px;
+                    height:11px;
+                }
+            }
+            & + .week_list {
+                margin-left:10px;
+            }
+        }
+    }
+}
+
 ///////////////////////////////////////////////////////////////////////// 테이블
 .table {
     width:100%;
