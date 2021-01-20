@@ -127,32 +127,72 @@ $(".selector_tabs").on("click", "li", function (e) {
     });
 });
 
-$(".tab_content").hide();
-$(".tab_content:first").show();
-
-$("ul.selector_tabs li").click(function () {
+// tabbed content
+    // http://www.entheosweb.com/tutorials/css/tabs.asp
     $(".tab_content").hide();
-    var activeTab = $(this).attr("rel");
-    $("#" + activeTab).fadeIn();
+    $(".tab_content:first").show();
 
-    $("ul.selector_tabs li").removeClass("active");
-    $(this).addClass("active");
+  /* if in tab mode */
+    $("ul.tabs.grades li").click(function() {
+		
+      $(".tab_content").hide();
+      var activeTab = $(this).attr("rel"); 
+      $("#"+activeTab).fadeIn();		
+		
+      $("ul.tabs.grades li").removeClass("active");
+      $(this).addClass("active");
 
-    $(".tab_drawer_heading").removeClass("d_active");
-    $(".tab_drawer_heading[rel^='" + activeTab + "']").addClass("d_active");
-});
+	  $(".tab_drawer_heading").removeClass("d_active");
+	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+	  
+    });
+	/* if in drawer mode */
+	$(".tab_drawer_heading").click(function() {
+      
+      $(".tab_content").hide();
+      var d_activeTab = $(this).attr("rel"); 
+      $("#"+d_activeTab).fadeIn();
+	  
+	  $(".tab_drawer_heading").removeClass("d_active");
+      $(this).addClass("d_active");
+	  
+	  $("ul.tabs.grades li").removeClass("active");
+	  $("ul.tabs.grades li[rel^='"+d_activeTab+"']").addClass("active");
+    });
+    
+    
+    $(".tab_content_sub").hide();
+    $(".tab_content_sub:first").show();
 
-$(".tab_drawer_heading").click(function () {
-    $(".tab_content").hide();
-    var d_activeTab = $(this).attr("rel");
-    $("#" + d_activeTab).fadeIn();
-    $(".tab_drawer_heading").removeClass("d_active");
-    $(this).addClass("d_active");
-    $("ul.selector_tabs li").removeClass("active");
-    $("ul.selector_tabs li[rel^='" + d_activeTab + "']").addClass("active");
-});
+  /* if in tab mode */
+    $("ul.tabs.grades_sub li").click(function() {
+		
+      $(".tab_content_sub").hide();
+      var activeTab = $(this).attr("rel"); 
+      $("#"+activeTab).fadeIn();		
+		
+      $("ul.tabs.grades_sub li").removeClass("active");
+      $(this).addClass("active");
 
-$('ul.selector_tabs li').last().addClass("tab_last");
+	  $(".tab_drawer_heading2").removeClass("d_active");
+	  $(".tab_drawer_heading2[rel^='"+activeTab+"']").addClass("d_active");
+	  
+    });
+	/* if in drawer mode */
+	$(".tab_drawer_heading2").click(function() {
+      
+      $(".tab_content_sub").hide();
+      var d_activeTab = $(this).attr("rel"); 
+      $("#"+d_activeTab).fadeIn();
+	  
+	  $(".tab_drawer_heading2").removeClass("d_active");
+      $(this).addClass("d_active");
+	  
+	  $("ul.tabs.grades_sub li").removeClass("active");
+	  $("ul.tabs.grades_sub li[rel^='"+d_activeTab+"']").addClass("active");
+    });
+	
+	
 
 
 
