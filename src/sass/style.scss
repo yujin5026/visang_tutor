@@ -640,6 +640,13 @@ $gray09-color:#999999;
             margin:6px 0 0 20px;
         }
     }
+    &.ongoing {
+        background:url(../images/badge_ongoing.png) no-repeat;
+        width:100px;
+        > span {
+            margin:6px 0 0 20px;
+        }
+    }
 }
 
 ///////////////////////////////////////////////////////////////////////// 카드 컨테이너
@@ -704,9 +711,21 @@ $gray09-color:#999999;
         color:$primary-color;
     }
 }
+.time_btn {
+    > .time {
+        margin:0;
+        text-align:right;
+    }
+    > button {
+        margin-top:10px;
+        padding:10px 25px;
+        font-size:16px;
+        font-weight:700;
+        color:#fff;
+    }
+}
 
-
-///////////////////////////////////////////////////////////////////////// USE 박스
+///////////////////////////////////////////////////////////////////////// 카드 구조
 .use_box {
     padding:50px;
     .use_text {
@@ -756,6 +775,11 @@ $gray09-color:#999999;
         }
     }
 }
+.on_box {
+    .on_text {
+        width:100%;
+    }
+}
 .publ_top {
     margin-bottom:30px;
     > div {
@@ -772,7 +796,6 @@ $gray09-color:#999999;
         }
     }
 }
-
 .add_course {
     .co_tit {
         margin-bottom:15px;
