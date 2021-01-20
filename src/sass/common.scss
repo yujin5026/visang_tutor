@@ -52,6 +52,7 @@ body {
 .between {display:flex;justify-content: space-between;width:100%;box-sizing: border-box;}
 .float_right {float:right;}
 .middle {vertical-align: middle;}
+.center {align-self: center;}
 
 // 뱃지 스타일
 .badge {display:inline-block;padding:4px 15px;font-size:14px;font-weight:700;border-radius:14px;margin-right:5px;}
@@ -70,6 +71,7 @@ body {
 .bg_primary {color:#fff;border:1px solid $primary-color;background:$primary-color;}
 .bg_black {color:#fff;border:1px solid $gray03-color;background:$gray03-color;}
 .bg_blue {color:#fff;border:1px solid $blue02-color;background:$blue02-color;}
+.bg_gray {color:#fff;border:1px solid #bebfc4;background:#bebfc4;}
 
 .line_white {color:$gray02-color;border:1px solid #fff;background:#fff;}
 .line_primary {color:$primary-color;border:1px solid $primary-color;background:#fff;}

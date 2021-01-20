@@ -731,6 +731,9 @@ $gray09-color:#999999;
     &.on {
         color:$primary-color;
     }
+    &.off {
+        color:$gray06-color;
+    }
 }
 .time_btn {
     > .time {
@@ -1070,13 +1073,22 @@ $gray09-color:#999999;
             font-size:16px;
             color:$gray03-color;
         }
-        > span {
-            float:right;
-        }
-        > button {
-            margin-right:5px;
-            padding:5px 10px;
+        > .time {
             font-size:14px;
+            font-weight:500;
+            margin:0 15px;
+            img {
+                margin-right:3px;
+            }
+        }
+        > .bg_blue, .bg_gray {
+            margin-right:15px;
+            padding:10px 20px;
+            font-size:14px;
+        }
+        > .preview {
+            height:20px;
+            align-self: center;
         }
     }
     &:first-child {
@@ -1256,6 +1268,10 @@ $gray09-color:#999999;
     > img {
         vertical-align: top;
         margin:5px 5px 0 0;
+    }
+    &.ing {
+        color:$orange-color;
+        background:#fff9f0;
     }
 }
 
