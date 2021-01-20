@@ -647,8 +647,8 @@ $gray09-color:#999999;
             margin:6px 0 0 20px;
         }
     }
-    &.ongoing {
-        background:url(../images/badge_ongoing.png) no-repeat;
+    &.finished {
+        background:url(../images/badge_finished.png) no-repeat;
         width:100px;
         > span {
             margin:6px 0 0 20px;
@@ -1192,6 +1192,38 @@ $gray09-color:#999999;
     }
     .showMore {
         padding-bottom:40px;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////// 페이징
+.pagination {
+    margin-top:50px;
+    text-align:center;
+    a {
+        display:inline-block;
+        padding: 8px 16px;
+        font-size:16px;
+        color:$gray09-color;
+        &.active {
+            background:#fff;
+            font-weight:700;
+            color:$blue02-color;
+            border:1px solid $blue02-color;
+            border-radius: 5px;
+        }
+        & + a {
+            margin-left:10px;
+        }
+        &:nth-child(1),&:nth-child(2),
+        &:nth-last-child(1),&:nth-last-child(2) {
+            background:#fff;
+            margin:0;
+            border:1px solid #aaaaaa;
+            border-radius: 5px;
+        }
+        > img {
+            vertical-align:inherit;
+        }
     }
 }
 
