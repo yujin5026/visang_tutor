@@ -26,6 +26,26 @@ $gray09-color:#999999;
     -moz-box-sizing: border-box;
 }
 
+@mixin select {
+    padding:10px;
+    font-size:14px;
+    color:$gray06-color;
+    border:1px solid #e9e9e9;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+@mixin inputText {
+    padding:10px;
+    font-size:14px;
+    color:$gray06-color;
+    border:1px solid #e9e9e9;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
 body {overflow-x: hidden;}
 body {
     &.my {
@@ -53,6 +73,17 @@ body {
 .float_right {float:right;}
 .middle {vertical-align: middle;}
 .center {align-self: center;}
+.text-left {text-align:left !important;}
+.text-right {text-align:right;}
+.float-right {float:right;}
+.middle {vertical-align: middle;}
+
+.select {
+    @include select;
+}
+input[type="text"] {
+    @include inputText;
+}
 
 // 뱃지 스타일
 .badge {display:inline-block;padding:4px 15px;font-size:14px;font-weight:700;border-radius:14px;margin-right:5px;}
@@ -82,10 +113,7 @@ body {
 .line_blue02 {color:$blue02-color;border:1px solid $blue02-color;background:#fff;}
 
 
-.text-left {text-align:left !important;}
-.text-right {text-align:right;}
-.float-right {float:right;}
-.middle {vertical-align: middle;}
+
 
 // 평점 
 .star {position: relative;padding-left:20px;}
