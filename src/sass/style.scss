@@ -187,7 +187,7 @@ $gray09-color:#999999;
     }
 }
 .card_img_sm {
-    background: url(../images/user_icon.png) no-repeat left top;
+    background: url(../images/user_icon_sm.png) no-repeat left top;
     background-size: cover;
     width: 46px;
     height: 46px;
@@ -935,6 +935,59 @@ $gray09-color:#999999;
             }
             & + .week_list {
                 margin-left:10px;
+            }
+        }
+    }
+}
+
+.notice_box {
+    .notice_top {
+        margin-bottom:10px;
+        > div {
+            span {
+                margin-right:5px;
+                padding:0 10px;
+                font-size:13px;
+                font-weight:500;
+                vertical-align: initial;
+            }
+            p {
+                display:inline-block;
+                font-size:18px;
+                font-weight:700;
+                color:$gray03-color;
+            }
+            button {
+                padding:5px 15px;
+                font-size:14px;
+                font-weight:500;
+                color:$gray03-color;
+            }
+        }
+    }
+    .notice_con {
+        padding:30px;
+        background:#f9fafe;
+        .card_img_sm {
+            margin-right:15px;
+        }
+        > div {
+            h3 {
+                font-size:18px;
+                font-weight:500;
+                color:$gray03-color;
+            }
+            > span {
+                margin-top:5px;
+                font-size:14px;
+                font-weight:300;
+                color:$gray09-color;
+            }
+            p {
+                margin-top:10px;
+                font-size:15px;
+                font-weight:300;
+                color:$gray06-color;
             }
         }
     }
