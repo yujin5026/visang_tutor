@@ -1406,6 +1406,9 @@ $gray09-color:#999999;
         > .preview {
             height:20px;
             align-self: center;
+            & + .preview {
+                margin-left:10px;
+            }
         }
     }
     &:first-child {
