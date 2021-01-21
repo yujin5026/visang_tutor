@@ -478,7 +478,7 @@ $gray09-color:#999999;
     > .pop_tit {
         font-size:26px;
         font-weight:700;
-        color:$gray04-color;
+        color:$gray02-color;
         margin-top:8px;
         img {
             margin-right:10px;
@@ -492,6 +492,7 @@ $gray09-color:#999999;
     padding:40px;
     border-radius: 10px;
     background:#fff;
+    box-shadow: 0px 4px 5px -1px #6f6f6f33;
     > .pop_con {
         border:1px solid #eaeaea;
         border-radius: 10px;
@@ -517,6 +518,7 @@ $gray09-color:#999999;
                 }
             }
             .que_tit {
+                align-self:center;
                 > h3 {
                     font-size:18px;
                     color:$gray-color;
@@ -531,28 +533,13 @@ $gray09-color:#999999;
                     font-size:14px;
                     color:$gray06-color;
                 }
-                > .ex_box {
-                    width:550px;
-                    margin-top:30px;
-                    padding:15px 0;
-                    text-align:center;
-                    background:#eaecf4;
-                    > p {
-                        font-size:14px;
-                        color:$gray03-color;
-                        strong {
-                            font-weight:700;
-                            color:$sub-color;
-                        }
-                    }
-                }
             }
         }
         .pop_con_btm{
             padding:40px 100px;
             background:#fff;
             > p {
-                font-size:20px;
+                font-size:16px;
                 color:$gray03-color;
                 margin-bottom:20px;
                 > span {
@@ -565,6 +552,11 @@ $gray09-color:#999999;
                     margin:0 10px;
                     border-bottom:1px solid #000;
                 }
+            }
+            .audioplayer {
+                width:100%;
+                margin-top:0;
+                margin-bottom:40px;
             }
             .que_con {
                 p {
@@ -587,6 +579,14 @@ $gray09-color:#999999;
                         margin-bottom: 20px;
                     }
                 }
+                .que_con01 {
+                    flex:2;
+                    label {
+                        img {
+                            margin:20px;
+                        }
+                    }
+                }
             }
             .que_con_btm {
                 margin-top:10px;
@@ -597,6 +597,23 @@ $gray09-color:#999999;
                     border-radius: 5px;
                 }
             }
+        }
+    }
+}
+
+.ex_box {
+    width:550px;
+    margin-bottom:30px;
+    padding:15px 0;
+    text-align:center;
+    border:1px solid #bbbbbb;
+    background:#fff;
+    > p {
+        font-size:14px;
+        color:$gray03-color;
+        strong {
+            font-weight:700;
+            color:$sub-color;
         }
     }
 }
