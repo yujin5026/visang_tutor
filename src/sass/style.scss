@@ -561,6 +561,7 @@ $gray09-color:#999999;
             .que_con {
                 p {
                     margin-left:10px;
+                    padding: 3px 0;
                     font-size:15px;
                     vertical-align: middle;
                 }
@@ -575,6 +576,7 @@ $gray09-color:#999999;
                 }
                 &.list {
                     label {
+                        position:relative;
                         display:block;
                         margin-bottom: 20px;
                     }

@@ -262,6 +262,141 @@ input[type="checkbox"].checkBox03 {
     }
 }
 
+input[type="checkbox"] {
+    display:none;
+    &+label {
+        &:after {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            content: '';
+        }
+        &:checked+label {
+            color:$primary-color;
+        }
+    }
+    &.one {
+        &+label {
+            &:after {
+                background:url("../images/test_check01_off.png") top no-repeat;
+            }
+        }
+        &:checked+label {
+            &:after {
+                background:url("../images/test_check01_on.png") top no-repeat;
+            }
+        }
+    }
+    &.two {
+        &+label {
+            &:after {
+                background:url("../images/test_check02_off.png") top no-repeat;
+            }
+        }
+        &:checked+label {
+            &:after {
+                background:url("../images/test_check02_on.png") top no-repeat;
+            }
+        }
+    }
+    &.three {
+        &+label {
+            &:after {
+                background:url("../images/test_check03_off.png") top no-repeat;
+            }
+        }
+        &:checked+label {
+            &:after {
+                background:url("../images/test_check03_on.png") top no-repeat;
+            }
+        }
+    }
+    &.four {
+        &+label {
+            &:after {
+                background:url("../images/test_check04_off.png") top no-repeat;
+            }
+        }
+        &:checked+label {
+            &:after {
+                background:url("../images/test_check04_on.png") top no-repeat;
+            }
+        }
+    }
+}
+
+
+input[type="radio"] {
+    display:none;
+    &+label {
+        cursor:pointer;
+        padding-left: 25px;
+        &:after {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            content: '';
+        }
+        &:checked+label {
+            color:$primary-color;
+        }
+    }
+    &.one {
+        &+label {
+            &:after {
+                background:url("../images/test_check01_off.png") top no-repeat;
+            }
+        }
+        &:checked+label {
+            &:after {
+                background:url("../images/test_check01_on.png") top no-repeat;
+            }
+        }
+    }
+    &.two {
+        &+label {
+            &:after {
+                background:url("../images/test_check02_off.png") top no-repeat;
+            }
+        }
+        &:checked+label {
+            &:after {
+                background:url("../images/test_check02_on.png") top no-repeat;
+            }
+        }
+    }
+    &.three {
+        &+label {
+            &:after {
+                background:url("../images/test_check03_off.png") top no-repeat;
+            }
+        }
+        &:checked+label {
+            &:after {
+                background:url("../images/test_check03_on.png") top no-repeat;
+            }
+        }
+    }
+    &.four {
+        &+label {
+            &:after {
+                background:url("../images/test_check04_off.png") top no-repeat;
+            }
+        }
+        &:checked+label {
+            &:after {
+                background:url("../images/test_check04_on.png") top no-repeat;
+            }
+        }
+    }
+}
+
 .textarea {
     @include textarea;
 }
