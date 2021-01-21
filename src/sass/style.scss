@@ -771,6 +771,32 @@ $gray09-color:#999999;
         vertical-align: bottom;
     }
 }
+.input_error {
+    margin-top:10px;
+    > img {
+        height:20px;
+        margin:3px 5px 0 0;
+    }
+    > p {
+        display:inline-block;
+        font-size:14px;
+        font-weight:400;
+        color:$sub-color;
+    }
+}
+.input_complete {
+    margin-top:10px;
+    > img {
+        height:20px;
+        margin:0 5px 0 0;
+    }
+    > p {
+        display:inline-block;
+        font-size:14px;
+        font-weight:400;
+        color:$blue02-color;
+    }
+}
 
 ///////////////////////////////////////////////////////////////////////// 카드 구조
 .use_box {
@@ -939,7 +965,6 @@ $gray09-color:#999999;
         }
     }
 }
-
 .notice_box {
     .notice_top {
         margin-bottom:10px;
@@ -989,6 +1014,34 @@ $gray09-color:#999999;
                 font-weight:300;
                 color:$gray06-color;
             }
+        }
+    }
+}
+.info_pw {
+    width:65%;
+    > h4 {
+        margin-bottom:30px;
+        font-size:15px;
+        font-weight:300;
+        color:$gray03-color;
+    }
+    > .co_tit {
+        margin-bottom:15px;
+        font-size:18px;
+        font-weight:700;
+        color:$gray-color;
+        > em {
+            color:$blue02-color;
+        }
+    }
+    > input[type="text"] {
+        & + p {
+            margin-top:50px;
+        }
+    }
+    > .input_error {
+        & + p {
+            margin-top:50px;
         }
     }
 }
@@ -1121,7 +1174,6 @@ $gray09-color:#999999;
         }
     }
 }
-
 .att_box {
     background:#f8f9fe;
     margin-bottom:50px;

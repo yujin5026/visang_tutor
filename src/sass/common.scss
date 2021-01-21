@@ -83,6 +83,9 @@ body {
 }
 input[type="text"] {
     @include inputText;
+    &.error {
+        border:1px solid $sub-color;
+    }
 }
 
 // 뱃지 스타일
