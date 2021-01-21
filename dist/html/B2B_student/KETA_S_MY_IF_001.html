@@ -10,7 +10,7 @@
     <link type="text/css" rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <title>KETA_S_MY_IF_007</title>
+    <title>KETA_S_MY_IF_001</title>
 </head>
 
 <body class="my">
@@ -85,14 +85,6 @@
                             My Class
                             <img src="../../images/lnb_minus.png" alt="minus" />
                         </a>
-                        <ul class="lnb-depth03">
-                            <li>
-                                <a href="UI-API-LHB-PO-0005.html">· Ongoing</a>
-                            </li>
-                            <li>
-                                <a href="UI-API-LHB-PO-0007.html">· Finished</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
                         <a href="#none">My Grades</a>
@@ -104,10 +96,7 @@
                         <a href="#none">Notice</a>
                     </li>
                     <li class="active">
-                        <a href="#none">
-                            My Information
-                            <img src="../../images/lnb_minus.png" alt="minus" />
-                        </a>
+                        <a href="#none">My Information</a>
                         <ul class="lnb-depth03">
                             <li>
                                 <a href="UI-API-LHB-PO-0005.html" class="active">· Information</a>
@@ -138,12 +127,6 @@
                             <img src="../../images/icon_lnb03.png" alt="Lesson Guide" />
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="test between round5">
-                            <span>Visang KLASS Download</span>
-                            <img src="../../images/icon_lnb04.png" alt="Lesson Guide" />
-                        </a>
-                    </li>
                 </ul>
             </div>
             <!-- // LNB -->
@@ -153,7 +136,7 @@
                 <!-- 타이틀 -->
                 <div class="my_tit between">
                     <div class="tit">
-                        <h3>Change password</h3>
+                        <h3>Information</h3>
                     </div>
                     <div class="cate">
                         <ul>
@@ -169,7 +152,7 @@
                             </li>
                             <li>
                                 <a href="">
-                                    Change password
+                                    Information
                                 </a>
                             </li>
                         </ul>
@@ -180,34 +163,70 @@
                 <!-- 카드 -->
                 <div class="card_wrap">
                     <div class="card_container">
-                        <div class="info_box w65">
-                            <h4>For security, it is recommended to change the h4assword every 3 months.</h4>
+                        <div class="info_box w50">
                             <p class="co_tit">
-                                <strong>*</strong>
-                                Existing password
+                                email (My ID)
                             </p>
-                            <input type="text" class="text w100" />
+                            <input type="text" class="text_none w100" name="email" value="myemailid@company.com"/>
 
                             <p class="co_tit">
                                 <strong>*</strong>
-                                New password
+                                Sub strongail
                             </p>
-                            <input type="text" class="text w100 error" />
-                            <div class="input_error flex">
-                                <img src="../../images/icon_error_pink.png" alt="error" />
-                                <p>lease enter the password for 8 to 20 characters in combination of numbers, <br />
-                                    English capital letters, English lowercase letters, and special characters.</p>
-                            </div>
+                            <input type="text" class="text w100" placeholder="Visang education" />
 
                             <p class="co_tit">
                                 <strong>*</strong>
-                                Confirm password to change
+                                Real name
                             </p>
-                            <input type="text" class="text w100 complete" />
-                            <div class="input_complete flex">
-                                <img src="../../images/icon_complete_blue.png" alt="complete" />
-                                <p>You entered it correctly.</p>
+                            <input type="text" class="text_none w100" name="name" value="Matthew Williams"/>
+
+                            <p class="co_tit">
+                                <strong>*</strong>
+                                Cell Phone
+                            </p>
+                            <div class="flex">
+                                <select class="select w30 mr10">
+                                    <option>82</option>
+                                </select>
+                                <input type="text" class="text w100" name="Cell Phone" />
                             </div>
+                        
+
+                        </div>
+
+                        <div class="info_box w49 inline">
+                            <p class="co_tit">
+                                <strong>*</strong>
+                                Birthday
+                            </p>
+                            <input type="text" class="text_none w100" name="Birthday" value="1993.05.25"/>
+
+                            <p class="co_tit">
+                                <strong>*</strong>
+                                Nationality
+                            </p>
+                            <input type="text" class="text_none w100" name="Nationality" placeholder="Korea" />
+
+                            <p class="co_tit">
+                                <strong>*</strong>
+                                Entrance Date
+                            </p>
+                            <input type="text" class="text_none w100" name="Entrance Date" value="2020.12.25 (05:00:03)"/>
+                        </div>
+
+                        <div class="info_box w49 inline">
+                            <p class="co_tit">
+                                <strong>*</strong>
+                                Gender
+                            </p>
+                            <input type="text" class="text_none w100" name="Gender" value="Male"/>
+
+                            <p class="co_tit">
+                                <strong>*</strong>
+                                Level
+                            </p>
+                            <input type="text" class="text_none w100" name="Level" placeholder="Beginner" />
                         </div>
 
                     </div>
@@ -217,7 +236,7 @@
                 <!-- 하단 버튼 -->
                 <div class="card_btm_btn">
                     <button type="button" class="line_gray03 round5">
-                        Cancle
+                        Change password
                     </button>
                     <button type="button" class="line_blue02 round5">
                         Save
