@@ -489,16 +489,17 @@ $gray09-color:#999999;
 .exam_pop_con {
     max-height:540px;
     overflow-y: scroll;
-    padding:40px;
     border-radius: 10px;
     background:#fff;
     box-shadow: 0px 4px 5px -1px #6f6f6f33;
     > .pop_con {
+        position:relative;
+        margin:40px;
         border:1px solid #eaeaea;
         border-radius: 10px;
         .pop_con_top {
             display:flex;
-            padding:40px 50px;
+            padding:35px 50px;
             border-radius: 10px 10px 0 0;
             background:#f9fafe;
             .que_num {
@@ -521,6 +522,7 @@ $gray09-color:#999999;
                 align-self:center;
                 > h3 {
                     font-size:18px;
+                    font-weight:500;
                     color:$gray-color;
                 }
                 > p {
@@ -536,12 +538,14 @@ $gray09-color:#999999;
             }
         }
         .pop_con_btm{
-            padding:40px 100px;
+            padding:40px 50px 40px 100px;
             background:#fff;
+            border-radius: 0 0 10px 10px;
             > p {
                 font-size:16px;
-                color:$gray03-color;
-                margin-bottom:20px;
+                color:#555555;
+                margin-bottom:30px;
+                letter-spacing: -1px;
                 > span {
                     font-size:15px;
                     color:$primary-color;
@@ -575,10 +579,12 @@ $gray09-color:#999999;
                     box-sizing: border-box;
                 }
                 &.list {
+                    padding-top:10px;
                     label {
                         position:relative;
                         display:block;
-                        margin-bottom: 20px;
+                        margin-bottom: 15px;
+                        
                     }
                 }
                 .que_con01 {
@@ -589,20 +595,29 @@ $gray09-color:#999999;
                         }
                     }
                 }
+                .write_in {
+                    height:250px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border:1px solid #bbbbbb;
+                }
             }
             .que_con_btm {
-                margin-top:10px;
+                margin-top:15px;
                 button {
                     width:100px;
                     padding:5px 0;
                     font-size:16px;
                     border-radius: 5px;
+                    & + button {
+                        margin-left:5px;
+                    }
                 }
             }
         }
     }
 }
-
 .ex_box {
     width:550px;
     margin-bottom:30px;
@@ -617,6 +632,14 @@ $gray09-color:#999999;
             font-weight:700;
             color:$sub-color;
         }
+        span {
+            font-weight:700;
+        }
+    }
+    &.left {
+        display: flex;
+        justify-content: center;
+        text-align: left;
     }
 }
 .exam_pop_btm  {
@@ -636,6 +659,46 @@ $gray09-color:#999999;
                 margin-left:15px;
             }
         }
+    }
+}
+.exam_result_box {
+    position: fixed;
+    bottom: 104px;
+    left: 36px;
+    margin: 0 auto;
+    width: 93%;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 10px;
+    > img {
+        vertical-align: sub;
+        margin-right:15px;
+    }
+    > span {
+        font-size:30px;
+        font-weight:700;
+        color:#fff;
+    }
+    > p {
+        margin-top:15px;
+        font-size:16px;
+        color:#fff;
+        strong {
+            margin-right:10px;
+        }
+    }
+    > .close {
+        position:absolute;
+        top:20px;
+        right:20px;
+    }
+    &.answer {
+        background:#485cc7;
+        opacity: 0.5;
+    }
+    &.wrong {
+        background: #ff0000;
+        opacity: 0.5;
     }
 }
 

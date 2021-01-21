@@ -118,6 +118,7 @@ input[type="text"] {
 // 뱃지 스타일
 .badge {display:inline-block;padding:4px 15px;font-size:14px;font-weight:700;border-radius:14px;margin-right:5px;}
 .badge.yellow {color:#ff9d12;border:1px solid #ff9d12;}
+.badge.pink {color:#ff3a96;border:1px solid #ff3a96;}
 .badge.new {color:#269d7d;border:1px solid #269d7d;}
 .badge.hot {color:#d1452e;border:1px solid #d1452e;}
 .badge.event {color:#1b4c88;border:1px solid #1b4c88;}
@@ -327,13 +328,12 @@ input[type="checkbox"] {
         }
     }
 }
-
-
 input[type="radio"] {
     display:none;
     &+label {
         cursor:pointer;
         padding-left: 25px;
+        color:$gray06-color;
         &:after {
             display: inline-block;
             width: 25px;
@@ -354,6 +354,7 @@ input[type="radio"] {
             }
         }
         &:checked+label {
+            color:$primary-color;
             &:after {
                 background:url("../images/test_check01_on.png") top no-repeat;
             }
@@ -366,6 +367,7 @@ input[type="radio"] {
             }
         }
         &:checked+label {
+            color:$primary-color;
             &:after {
                 background:url("../images/test_check02_on.png") top no-repeat;
             }
@@ -378,6 +380,7 @@ input[type="radio"] {
             }
         }
         &:checked+label {
+            color:$primary-color;
             &:after {
                 background:url("../images/test_check03_on.png") top no-repeat;
             }
@@ -390,6 +393,7 @@ input[type="radio"] {
             }
         }
         &:checked+label {
+            color:$primary-color;
             &:after {
                 background:url("../images/test_check04_on.png") top no-repeat;
             }

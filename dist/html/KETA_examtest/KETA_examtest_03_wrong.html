@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="../../css/common.css">
     <link type="text/css" rel="stylesheet" href="../../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../../css/audio.css">
     <!-- Slick -->
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <title>KETA_examtest_06</title>
+    <title>KETA_examtest_03</title>
 </head>
 
 <body>
@@ -30,39 +32,53 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="exam_pop_con">
                     <div class="pop_con">
                         <div class="pop_con_top">
-                           <div class="que_num">
-                                <span>Q4</span>
+                            <div class="que_num">
+                                <span>Q1</span>
                             </div>
                             <div class="que_tit">
-                                <h3>다음 빈칸에 알맞은 답을 고르세요.</h3>
+                                <h3>다음을 듣고 맞는 그림을 고르세요.</h3>
                             </div>
                         </div>
                         <div class="pop_con_btm">
-                            <div class="ex_box round5">
-                                <p>
-                                    여기요. 배 
-                                    <strong>[</strong>
-                                    <span>2개</span>
-                                    <strong>]</strong>
-                                </p>
+                            <p>남자는 무엇을 샀어요?</p>
+                            <audio preload="auto" controls>
+                                <source src="../../images/audio-test-01.mp3">
+                            </audio>
+                            <div class="que_con flex">
+                                
+                                <div class="que_con01">
+                                    <input type="radio" id="option01" name="option" class="radioBox one" />
+                                    <label for="option01">
+                                        <img src="../../images/test_01.png" alt="text" />
+                                    </label>
+                                </div>
+                                <div class="que_con01">
+                                    <input type="radio" id="option02" name="option" class="radioBox two" />
+                                    <label for="option02">
+                                        <img src="../../images/test_02.png" alt="text" />
+                                    </label>
+                                </div>
                             </div>
-                            <div class="que_con list">
-                                <input type="radio" id="option01" name="option" class="radio one"/>
-                                <label for="option01">
-                                    <p>둘 개 주세요</p>
-                                </label>
-                                <input type="radio" id="option02" name="option" class="radio two"/>
-                                <label for="option02">
-                                    <p>두 개 주세요</p>
-                                </label>
+                            <div class="exam_result_box wrong">
+                                <img src="../../images/exam_wrong.png" alt="wrong">
+                                <span>Wrong answer</span>
+                                <p>
+                                    <img src="../../images/exam_check.png" alt="check">
+                                    <strong>Right :</strong>
+                                    It seems that she already went to the theater.
+                                </p>
+                                <a href="" class="close">
+                                    <img src="../../images/exam_close.png" alt="close" />
+                                </a>
                             </div>
                         </div>
+                        
                     </div>
-                   
+                    
                 </div>
                 <div class="exam_pop_btm between">
                     <button type="button" class="line_white"><img src="../../images/icon_prev.png" alt="prev" />Prev</button>
@@ -75,9 +91,14 @@
 
     <img src="../../images/examtest.jpg" alt="text" />
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="../../js/index.js"></script>
+    <script src="../../js/audioplayer.js"></script>
+    <script>
+        $(function () {
+            $('audio').audioPlayer();
+        });
+    </script>
 
     <!-- 푸터 영역 -->
     <footer id="footer">
