@@ -43,7 +43,7 @@
                                 <h3>다음을 듣고 맞는 그림을 고르세요.</h3>
                             </div>
                         </div>
-                        <div class="pop_con_btm">
+                        <div class="pop_con_btm answer">
                             <p>남자는 무엇을 샀어요?</p>
                             <audio preload="auto" controls>
                                 <source src="../../images/audio-test-01.mp3">
@@ -63,6 +63,7 @@
                                     </label>
                                 </div>
                             </div>
+                             <!-------- Answer 클래스 추가 시 Answer 알림창이 나옴 --------->
                             <div class="exam_result_box answer">
                                 <img src="../../images/exam_answer.png" alt="answer">
                                 <span>Right answer</span>
@@ -71,19 +72,20 @@
                                     <strong>Right :</strong>
                                     It seems that she already went to the theater.
                                 </p>
-                                <a href="" class="close">
+                                <button type="button" class="btn_none close">
                                     <img src="../../images/exam_close.png" alt="close" />
-                                </a>
+                                </button>
                             </div>
                         </div>
                         
                     </div>
                     
                 </div>
-                <div class="exam_pop_btm between">
-                    <button type="button" class="line_white"><img src="../../images/icon_prev.png" alt="prev" />Prev</button>
+                <div class="exam_pop_btm end">
                     <button type="button" class="bg_primary">Submission</button>
-                    <button type="button" class="line_white">Next<img src="../../images/icon_next.png" alt="next" /></button>
+                    <a href="KETA_examtest_04.html" class="line_white">
+                        Next<img src="../../images/icon_next.png" alt="next" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -98,6 +100,7 @@
         $(function () {
             $('audio').audioPlayer();
         });
+        
     </script>
 
     <include src="../include/footer2.html"></include>

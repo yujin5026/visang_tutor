@@ -120,12 +120,9 @@ $(".selector_tabs").on("click", "li", function (e) {
   });
 });
 
-// tabbed content
-// http://www.entheosweb.com/tutorials/css/tabs.asp
 $(".tab_content").hide();
 $(".tab_content:first").show();
 
-/* if in tab mode */
 $("ul.tabs.grades li").click(function () {
   $(".tab_content").hide();
   var activeTab = $(this).attr("rel");
@@ -178,7 +175,7 @@ $(".tab_drawer_heading2").click(function () {
   $("ul.tabs.grades_sub li[rel^='" + d_activeTab + "']").addClass("active");
 });
 
-// 모달 컨트롤
+/////// 모달 컨트롤
 jQuery(document).ready(function ($) {
   //open popup
   $(".cd-popup-trigger").on("click", function (event) {
@@ -206,12 +203,18 @@ jQuery(document).ready(function ($) {
   });
 });
 
+/////// 팝업 가운데 정렬
 jQuery.fn.center = function () {
     this.css("top",Math.max(0,($(window).height() - $(this).outerHeight()) / 2 + $(window).scrollTop()) + "px");
     this.css("left",Math.max(0,($(window).width() - $(this).outerWidth()) / 2 + $(window).scrollLeft()) + "px");
     return this;
   };
   $(".cd-popup-container").center();
+
+/////// 테스트 결과창
+$('.exam_result_box .close').click(function() {
+    $(this).parent().css('display','none');
+});
 
 /////// 별점
 var starRating = function () {

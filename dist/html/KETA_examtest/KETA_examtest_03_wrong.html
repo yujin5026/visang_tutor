@@ -43,7 +43,8 @@
                                 <h3>다음을 듣고 맞는 그림을 고르세요.</h3>
                             </div>
                         </div>
-                        <div class="pop_con_btm">
+                        <!-------- Wrong 클래스 추가 시 Wrong 알림창이 나옴 --------->
+                        <div class="pop_con_btm wrong">
                             <p>남자는 무엇을 샀어요?</p>
                             <audio preload="auto" controls>
                                 <source src="../../images/audio-test-01.mp3">
@@ -80,10 +81,11 @@
                     </div>
                     
                 </div>
-                <div class="exam_pop_btm between">
-                    <button type="button" class="line_white"><img src="../../images/icon_prev.png" alt="prev" />Prev</button>
+                <div class="exam_pop_btm end">
                     <button type="button" class="bg_primary">Submission</button>
-                    <button type="button" class="line_white">Next<img src="../../images/icon_next.png" alt="next" /></button>
+                    <a href="KETA_examtest_04.html" class="line_white">
+                        Next<img src="../../images/icon_next.png" alt="next" />
+                    </a>
                 </div>
             </div>
         </div>
