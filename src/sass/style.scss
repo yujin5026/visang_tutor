@@ -42,6 +42,7 @@ $gray09-color:#999999;
         border-radius: 10px;
         >li {
             width: 100%;
+            border-radius: 10px 10px 0 0;
             border-bottom: 1px solid #374cb7;
             color: #fff;
             > a {
@@ -87,13 +88,17 @@ $gray09-color:#999999;
 
             &.active {
                 > a {
-                    color: #fff;
+                    color: $orange-color;
                     font-weight: bold;
                     border: none;
-                    background: url("../images/lnb_plus.png") no-repeat right 20px center;
                     img {
                         display:none;
                     }
+                }
+            }
+            &.menu_sub {
+                > a {
+                    background: url("../images/lnb_minus.png") no-repeat right 20px center;
                 }
             }
             &.sub {
@@ -176,14 +181,15 @@ $gray09-color:#999999;
             font-size:13px;
             color:$gray06-color;
         }
-        > button {
-            > img {
-                margin-top:10px;
-            }
-        }
     }
     .card_img_sm {
         margin-right:10px;
+    }
+    .lnb_user_change {
+        background:url(../images/icon_change.png) no-repeat;
+        width:24px;
+        height:25px;
+        margin-top:10px;
     }
 }
 .card_img_sm {
@@ -238,11 +244,30 @@ $gray09-color:#999999;
     margin-bottom:35px;
     .tit {
         h3 {
+            display:inline-block;
             font-size:28px;
             color:$gray02-color;
             strong {
                 color:$blue-color;
             }
+        }
+        span {
+            margin-left:10px;
+            padding:1px 10px;
+            vertical-align: inherit;
+        }
+    }
+    .arrow {
+        .prev {
+            background:url(../images/icon_top_prev.png) no-repeat;
+            width:41px;
+            height:41px;
+            margin-right:10px;
+        }
+        .next {
+            background:url(../images/icon_top_next.png) no-repeat;
+            width:41px;
+            height:41px;
         }
     }
 }
@@ -784,6 +809,9 @@ $gray09-color:#999999;
     &.profile {
         background:#f8f9fe;
     }
+}
+.card_background  {
+    background:url()
 }
 
 ///////////////////////////////////////////////////////////////////////// 카드 컨텐츠
