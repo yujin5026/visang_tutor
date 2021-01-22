@@ -195,7 +195,13 @@ jQuery(document).ready(function ($) {
       $("body").css("overflow", "auto");
     }
   });
-  //close popup when clicking the esc keyboard button
+
+
+/////// ESC , 배경 , 클로즈 버튼 클릭시 팝업창 닫힘
+  $('.cd-popup-close').click(function() {
+    $('.cd-popup.is-visible').removeClass('is-visible');
+    });
+
   $(document).keyup(function (event) {
     if (event.which == "27") {
       $(".cd-popup").removeClass("is-visible");
@@ -256,6 +262,9 @@ starRating();
 /////// 시험테스트 확인용 - 팝업 고정일 경우
 if ($(".is-visible").length) {
   $("body").css("overflow-y", "hidden");
+} else {
+    $("body").css("overflow-y", "auto");
 }
+
 
 
