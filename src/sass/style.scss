@@ -645,6 +645,14 @@ $gray09-color:#999999;
 .exam_pop_btm  {
     margin-top:30px;
     > button {
+        position: absolute;
+        left: 42%;
+        font-size:16px;
+        padding:10px 30px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 5px -1px #6f6f6f33;
+    }
+    > a {
         font-size:16px;
         padding:10px 30px;
         border-radius: 5px;

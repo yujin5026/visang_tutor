@@ -88,6 +88,7 @@ body {
 .flex_bottom {align-self: flex-end;}
 .space {display:flex;justify-content: space-around;width:100%;box-sizing: border-box;}
 .between {display:flex;justify-content: space-between;width:100%;box-sizing: border-box;}
+.end {display:flex;justify-content: flex-end;width:100%;box-sizing: border-box;}
 .float_right {float:right;}
 .middle {vertical-align: middle;}
 .center {align-self: center;}
@@ -266,6 +267,9 @@ input[type="checkbox"].checkBox03 {
 input[type="checkbox"] {
     display:none;
     &+label {
+        cursor:pointer;
+        padding-left: 25px;
+        color:$gray06-color;
         &:after {
             display: inline-block;
             width: 25px;
@@ -712,7 +716,6 @@ img {vertical-align:middle;}
 .cd-popup-container {
   position: relative;
   width: 90%;
-  margin: 6em auto;
   background: #FFF;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
