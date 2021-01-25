@@ -64,6 +64,7 @@ body {
 }
 .wrap {width: 1280px;margin: 0 auto;padding: 3rem 0 10rem 0;min-height: 700px;}
 
+.w200 {width:200px;}
 .w100 {width:100%;}
 .w65 {width:65%;}
 .w50 {width:50%;}
@@ -149,6 +150,13 @@ input[type="text"] {
 .line_pink {color:#ff3a96;border:1px solid #ffb0d5;background:#fff;}
 
 
+// 스크롤
+.scroll40 {max-height:400px;overflow-y:scroll;}
+.scroll60 {max-height:600px;overflow-y:scroll;}
+::-webkit-scrollbar { width: 10px;margin-right:5px;}
+::-webkit-scrollbar-track { background-color:#fff; }
+::-webkit-scrollbar-thumb { background: #ddd; border-radius: 10px; }
+::-webkit-scrollbar-thumb:active { background: #808080; }
 
 // 평점 
 .star {position: relative;padding-left:20px;}
@@ -719,6 +727,12 @@ img {vertical-align:middle;}
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
   -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.cd-popup-close {
+    background:url('../images/icon_pop_close.png') no-repeat;
+    width:28px;
+    height:28px;
 }
 
 .cd-popup-container {

@@ -40,11 +40,11 @@ $gray09-color:#999999;
     .lnb-menu {
         background: #485cc7;
         border-radius: 10px;
-        >li {
+        > li {
             width: 100%;
-            border-radius: 10px 10px 0 0;
             border-bottom: 1px solid #374cb7;
             color: #fff;
+            
             > a {
                 display: block;
                 font-size: 14px;
@@ -58,8 +58,8 @@ $gray09-color:#999999;
                     float:right;
                 }
             }
-            &.active {
-                background: #374cb7;
+            &:first-child {
+                border-radius: 10px 10px 0 0;
             }
             &:last-child {
                 border-radius: 0 0 10px 10px;
@@ -67,10 +67,8 @@ $gray09-color:#999999;
             .lnb-depth03 {
                 display: none;
                 padding: 0 10px;
-
                 li {
                     margin-bottom: 15px;
-
                     a {
                         display: block;
                         position: relative;
@@ -85,20 +83,25 @@ $gray09-color:#999999;
                     }
                 }
             }
-
+            // 백그라운드 이미지 우선순위 child < active
+            &.child {
+                > a {
+                    background: url("../images/lnb_minus.png") no-repeat right 20px center;
+                }
+            }
             &.active {
+                background: #374cb7;
                 > a {
                     color: $orange-color;
                     font-weight: bold;
                     border: none;
-                    img {
-                        display:none;
-                    }
+                    background: url("../images/lnb_plus.png") no-repeat right 20px center;
                 }
             }
-            &.menu_sub {
+            // 컬러 우선순위 active < child
+            &.child {
                 > a {
-                    background: url("../images/lnb_minus.png") no-repeat right 20px center;
+                    color:#fff;
                 }
             }
             &.sub {
@@ -147,6 +150,22 @@ $gray09-color:#999999;
             padding:20px;
             font-size: 14px;
             color:$blue-color;
+            &.network  {
+                background:url(../images/icon_lnb01.png) no-repeat;
+                background-position: 90% 50%;
+            }
+            &.support  {
+                background:url(../images/icon_lnb02.png) no-repeat;
+                background-position: 90% 50%;
+            }
+            &.lesson  {
+                background:url(../images/icon_lnb03.png) no-repeat;
+                background-position: 90% 50%;
+            }
+            &.down  {
+                background:url(../images/icon_lnb04.png) no-repeat;
+                background-position: 90% 50%;
+            }
         }
         &+li {
             border-top:1px solid #eaebec;
@@ -337,8 +356,9 @@ $gray09-color:#999999;
 ///////////////////////////////////////////////////////////////////////// 마이페이지 타이틀 탭
 .my_tab {
     margin-bottom:50px;
-    > div {
+    > a {
         position:relative;
+        display:block;
         width: 100%;
         padding: 20px;
         font-size:16px;
@@ -366,6 +386,7 @@ $gray09-color:#999999;
             > img {
                 display:inline-block;
             }
+            
         }
         &.alarm {
             &::after {
@@ -764,6 +785,70 @@ $gray09-color:#999999;
     }
 }
 
+
+.pop_review_box {
+    padding: 30px 50px;
+    h2 {
+        margin-top:30px;
+        padding-bottom:30px;
+        font-size:28px;
+        font-weight:700;
+        color:$gray03-color;
+        border-bottom:1px solid $blue02-color;
+    }
+    .review_txt {
+        margin-top:30px;
+        h3 {
+            font-size:18px;
+            font-weight:700;
+            color:$blue02-color;
+            & + h4 {
+                margin-top:20px;
+            }
+        }
+        h4 {
+            margin:10px 0;
+            font-size:15px;
+            font-weight:700;
+            color:$gray03-color;
+        }
+        p {
+            font-size:14px;
+            font-weight:400;
+            color:$gray06-color;
+            & + h3 {
+                margin-top:30px;
+            }
+            & + h4 {
+                margin-top:30px;
+            }
+            & + h5 {
+                margin-top:20px;
+            }
+        }
+        h5 {
+            display:inline-block;
+            margin-bottom:10px;
+            font-size:14px;
+            font-weight:500;
+            color:$gray03-color;
+            &::after {
+                content:'';
+                display:inline-block;
+                margin:5px 10px 0 10px;
+                width:1px;
+                height:13px;
+                background:#eaeaea;
+                vertical-align: sub;
+            }
+        }
+        .star {
+            font-size:14px;
+            color:$gray03-color;
+        }
+    }
+}
+
 ///////////////////////////////////////////////////////////////////////// 뱃지
 .card_badge {
     position: absolute;
@@ -928,8 +1013,8 @@ $gray09-color:#999999;
 }
 .time_btn {
     > .time {
-        margin:0;
-        text-align:right;
+        width:70px;
+        margin-left:73px;
     }
     > button {
         margin-top:10px;
@@ -1006,6 +1091,18 @@ $gray09-color:#999999;
         overflow-y:scroll;
         box-sizing: border-box;
         resize: none;
+    }
+}
+.set_btn {
+    display: inline-block;
+    background: url(../images/icon_set_more.png) no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+    &.sub {
+        width:30px;
+        height:30px;
     }
 }
 
@@ -1896,9 +1993,9 @@ $gray09-color:#999999;
                 margin-right:3px;
             }
         }
-        > .bg_blue, .bg_gray {
+        > .line_gray02, .line_blue02 {
             margin-right:15px;
-            padding:10px 20px;
+            padding:5px 15px;
             font-size:14px;
         }
         > .preview {

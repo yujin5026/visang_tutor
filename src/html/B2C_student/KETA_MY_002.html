@@ -269,275 +269,332 @@
                 </div>
                 <!-- // 서브 타이틀 -->
 
-                <!-- 카드 -->
-                <div class="card_wrap">
-                    <div class="usage_card between">
-                        <div class="usage_left card_container">
-                            <h1>40 minutes, 5 pieces</h1>
-                            <h4>20.10.30</h4>
+               <!-- 카드 -->
+               <div class="card_wrap">
+                <div class="usage_card between">
+                    <div class="usage_left card_container">
+                        <h1>40 minutes, 5 pieces</h1>
+                        <h4>20.10.30</h4>
+                    </div>
+                    <ul class="history_tabs flex">
+                        <!-- <div class="selector"></div> -->
+                        <li class="reservation active" rel="tab1">
+                            <p>Reservation<strong>4</strong></p>
+                        </li>
+                        <li class="complete" rel="tab2">
+                            <p>complete<strong>10</strong></p>
+                        </li>
+                        <li class="unused" rel="tab3">
+                            <p>Unused<strong>9</strong></p>
+                        </li>
+                        <li class="other" rel="tab4">
+                            <p>Other<strong>15</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- tab 01 -->
+                <div id="tab1" class="tab_content3" rel="tab1">
+                    <div class="usage_card_sub">
+                        <div class="usage_card_list">
+                            <div class="usage_list_top between">
+                                <div>
+                                    <img src="../../images/icon_reser.png" alt="Reservation" />
+                                    <h3>Order an Amtericano at Stopbucks-1</h3>
+                                </div>
+                                <div>
+                                    <img src="../../images/icon_set_more.png" />
+                                </div>
+                            </div>
+                            <div class="usage_list_btm between">
+                                <div class="reservation">
+                                    <strong>08:00</strong>
+                                    <span class="usage_time">20.11.19(Thu)</span>
+                                    <p>Reserved lessons</p>
+                                </div>
+                                <div class="flex">
+                                    <div class="time on">
+                                        00:15:00
+                                    </div>
+                                    <button type="button" class="bg_primary round5 enter">
+                                        ENTER LESSON
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="selector_tabs flex">
-                            <!-- <div class="selector"></div> -->
-                            <li class="active" rel="tab1">
-                                <img src="../../images/icon_history01_on.png" alt="Reservation" class="on">
-                                <img src="../../images/icon_history01_off.png" alt="Reservation" class="off">
-                                <p>Reservation<strong>4</strong></p>
-                            </li>
-                            <li rel="tab2">
-                                <img src="../../images/icon_history02_on.png" alt="complete" class="on">
-                                <img src="../../images/icon_history02_off.png" alt="complete" class="off">
-                                <p>complete<strong>10</strong></p>
-                            </li>
-                            <li rel="tab3">
-                                <button class="btn_none"><img src="../../images/icon_history03_off.png"
-                                        alt="unused"></button>
-                                <p>Unused<strong>9</strong></p>
-                            </li>
-                            <li rel="tab4">
-                                <button class="btn_none"><img src="../../images/icon_history04_off.png"
-                                        alt="Other"></button>
-                                <p>Other<strong>15</strong></p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- tab 01 -->
-                    <div id="tab1" class="tab_content" rel="tab1">
-                        <div class="usage_card_sub">
-                            <div class="usage_card_list">
-                                <div class="usage_list_top between">
-                                    <div>
-                                        <img src="../../images/icon_reser.png" alt="Reservation" />
-                                        <h3>Order an Amtericano at Stopbucks-1</h3>
-                                    </div>
-                                    <div>
-                                        <img src="../../images/icon_set_more.png" />
-                                    </div>
+                        <div class="usage_card_list">
+                            <div class="usage_list_top between">
+                                <div>
+                                    <img src="../../images/icon_reser.png" alt="Reservation" />
+                                    <h3>Order an Amtericano at Stopbucks-1</h3>
                                 </div>
-                                <div class="usage_list_btm between">
-                                    <div class="reservation">
-                                        <strong>08:00</strong>
-                                        <span class="usage_time">20.11.19(Thu)</span>
-                                        <p>Reserved lessons</p>
-                                    </div>
-                                    <div class="flex">
-                                        <div class="time on">
-                                            00:15:00
-                                        </div>
-                                        <button type="button" class="bg_primary round5 enter">
-                                            ENTER LESSON
-                                        </button>
-                                    </div>
+                                <div>
+                                    <img src="../../images/icon_set_more.png" />
                                 </div>
                             </div>
-                            <div class="usage_card_list">
-                                <div class="usage_list_top between">
-                                    <div>
-                                        <img src="../../images/icon_reser.png" alt="Reservation" />
-                                        <h3>Order an Amtericano at Stopbucks-1</h3>
-                                    </div>
-                                    <div>
-                                        <img src="../../images/icon_set_more.png" />
-                                    </div>
+                            <div class="usage_list_btm between">
+                                <div class="reservation">
+                                    <strong>08:00</strong>
+                                    <span class="usage_time">20.11.19(Thu)</span>
+                                    <p>Reserved lessons</p>
                                 </div>
-                                <div class="usage_list_btm between">
-                                    <div class="reservation">
-                                        <strong>08:00</strong>
-                                        <span class="usage_time">20.11.19(Thu)</span>
-                                        <p>Reserved lessons</p>
+                                <div class="flex">
+                                    <div class="time on">
+                                        00:15:00
                                     </div>
-                                    <div class="flex">
-                                        <div class="time on">
-                                            00:15:00
-                                        </div>
-                                        <button type="button" class="bg_primary round5 enter">
-                                            ENTER LESSON
-                                        </button>
-                                    </div>
+                                    <button type="button" class="bg_primary round5 enter">
+                                        ENTER LESSON
+                                    </button>
                                 </div>
                             </div>
-                            <div class="usage_card_list">
-                                <div class="usage_list_top between">
-                                    <div>
-                                        <img src="../../images/icon_reser.png" alt="Reservation" />
-                                        <h3>Order an Amtericano at Stopbucks-1</h3>
-                                    </div>
-                                    <div>
-                                        <img src="../../images/icon_set_more.png" />
-                                    </div>
-                                </div>
-                                <div class="usage_list_btm between">
-                                    <div class="reservation">
-                                        <strong>08:00</strong>
-                                        <span class="usage_time">20.11.19(Thu)</span>
-                                        <p>Reserved lessons</p>
-                                    </div>
-                                    <div class="flex">
-                                        <div class="time on">
-                                            00:15:00
-                                        </div>
-                                        <button type="button" class="bg_primary round5 enter">
-                                            ENTER LESSON
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="" class="showMore">
-                                Show more
-                                <img src="../../images/icon_showMore.png" alt="showMore">
-                            </a>
                         </div>
-                    </div>
-
-                    <!-- tab 02 -->
-                    <div id="tab2" class="tab_content" rel="tab2">
-                        <div class="usage_card_sub">
-                            <div class="usage_card_list">
-                                <div class="usage_list_top between">
-                                    <div>
-                                        <img src="../../images/icon_complete.png" alt="Reservation" />
-                                        <h3>Order an Amtericano at Stopbucks-1</h3>
-                                    </div>
-                                    <div>
-                                        <img src="../../images/icon_set_more.png" />
-                                    </div>
+                        <div class="usage_card_list">
+                            <div class="usage_list_top between">
+                                <div>
+                                    <img src="../../images/icon_reser.png" alt="Reservation" />
+                                    <h3>Order an Amtericano at Stopbucks-1</h3>
                                 </div>
-                                <div class="usage_list_btm between">
-                                    <div class="complete">
-                                        <strong>11:00</strong>
-                                        <span class="usage_time">20.11.19(Thu) 11:00~11:40</span>
-                                        <span class="preview off round5">
-                                            <img src="../../images/icon_check02.png" alt="check" class="off" />
-                                            Revise
-                                        </span>
-                                        <p>Reserved lessons</p>
-                                    </div>
-                                    <div class="flex flex_bottom">
-                                        <div class="star-input">
-                                            <span class="input">
-                                                <input type="radio" name="star-input" value="1" id="p1">
-                                                <label for="p1">1</label>
-                                                <input type="radio" name="star-input" value="2" id="p2">
-                                                <label for="p2">2</label>
-                                                <input type="radio" name="star-input" value="3" id="p3">
-                                                <label for="p3">3</label>
-                                                <input type="radio" name="star-input" value="4" id="p4">
-                                                <label for="p4">4</label>
-                                                <input type="radio" name="star-input" value="5" id="p5">
-                                                <label for="p5">5</label>
-                                            </span>
-                                            <!-- <output for="star-input"><b>0</b>점</output>						 -->
-                                        </div>
-                                        <button type="button" class="line_gray02 round5 write">
-                                            Write a review
-                                        </button>
-                                    </div>
+                                <div>
+                                    <img src="../../images/icon_set_more.png" />
                                 </div>
                             </div>
-                            <div class="usage_card_list">
-                                <div class="usage_list_top between">
-                                    <div>
-                                        <img src="../../images/icon_complete.png" alt="Reservation" />
-                                        <h3>Order an Amtericano at Stopbucks-1</h3>
-                                    </div>
-                                    <div>
-                                        <img src="../../images/icon_set_more.png" />
-                                    </div>
+                            <div class="usage_list_btm between">
+                                <div class="reservation">
+                                    <strong>08:00</strong>
+                                    <span class="usage_time">20.11.19(Thu)</span>
+                                    <p>Reserved lessons</p>
                                 </div>
-                                <div class="usage_list_btm between">
-                                    <div class="complete">
-                                        <strong>11:00</strong>
-                                        <span class="usage_time">20.11.19(Thu) 11:00~11:40</span>
-                                        <span class="preview off round5">
-                                            <img src="../../images/icon_check02.png" alt="check" class="off" />
-                                            Revise
-                                        </span>
-                                        <p>Reserved lessons</p>
+                                <div class="flex">
+                                    <div class="time on">
+                                        00:15:00
                                     </div>
-                                    <div class="flex flex_bottom">
-                                        <div class="star-input">
-                                            <span class="input">
-                                                <input type="radio" name="star-input" value="1" id="p1">
-                                                <label for="p1">1</label>
-                                                <input type="radio" name="star-input" value="2" id="p2">
-                                                <label for="p2">2</label>
-                                                <input type="radio" name="star-input" value="3" id="p3">
-                                                <label for="p3">3</label>
-                                                <input type="radio" name="star-input" value="4" id="p4">
-                                                <label for="p4">4</label>
-                                                <input type="radio" name="star-input" value="5" id="p5">
-                                                <label for="p5">5</label>
-                                            </span>
-                                            <!-- <output for="star-input"><b>0</b>점</output>						 -->
-                                        </div>
-                                        <button type="button" class="line_gray02 round5 write">
-                                            Write a review
-                                        </button>
-                                    </div>
+                                    <button type="button" class="bg_primary round5 enter">
+                                        ENTER LESSON
+                                    </button>
                                 </div>
                             </div>
-                            <div class="usage_card_list">
-                                <div class="usage_list_top between">
-                                    <div>
-                                        <img src="../../images/icon_complete.png" alt="Reservation" />
-                                        <h3>Order an Amtericano at Stopbucks-1</h3>
-                                    </div>
-                                    <div>
-                                        <img src="../../images/icon_set_more.png" />
-                                    </div>
-                                </div>
-                                <div class="usage_list_btm between">
-                                    <div class="complete">
-                                        <strong>11:00</strong>
-                                        <span class="usage_time">20.11.19(Thu) 11:00~11:40</span>
-                                        <span class="preview off round5">
-                                            <img src="../../images/icon_check02.png" alt="check" class="off" />
-                                            Revise
-                                        </span>
-                                        <p>Reserved lessons</p>
-                                    </div>
-                                    <div class="flex flex_bottom">
-                                        <div class="star-input">
-                                            <span class="input">
-                                                <input type="radio" name="star-input" value="1" id="p1">
-                                                <label for="p1">1</label>
-                                                <input type="radio" name="star-input" value="2" id="p2">
-                                                <label for="p2">2</label>
-                                                <input type="radio" name="star-input" value="3" id="p3">
-                                                <label for="p3">3</label>
-                                                <input type="radio" name="star-input" value="4" id="p4">
-                                                <label for="p4">4</label>
-                                                <input type="radio" name="star-input" value="5" id="p5">
-                                                <label for="p5">5</label>
-                                            </span>
-                                            <!-- <output for="star-input"><b>0</b>점</output>						 -->
-                                        </div>
-                                        <button type="button" class="line_gray02 round5 write">
-                                            Write a review
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="" class="showMore">
-                                Show more
-                                <img src="../../images/icon_showMore.png" alt="showMore">
-                            </a>
                         </div>
-                    </div>
-                    <!-- tab 03 -->
-                    <div id="tab3" class="tab_content" rel="tab3">
-                        <h2>Tab 3 content</h2>
-                        <p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit.
-                            Pellentesque sem lorem,
-                            scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
-                    </div>
-                    <div id="tab4" class="tab_content" rel="tab4">
-                        <h2>Tab 3 content</h2>
-                        <p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit.
-                            Pellentesque sem lorem,
-                            scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
+                        <a href="" class="showMore">
+                            Show more
+                        </a>
                     </div>
                 </div>
-                <!-- // 카드 -->
+
+                <!-- tab 02 -->
+                <div id="tab2" class="tab_content3" rel="tab2">
+                    <div class="usage_card_sub">
+                        <div class="usage_card_list">
+                            <div class="usage_list_top between">
+                                <div>
+                                    <img src="../../images/icon_complete.png" alt="Reservation" />
+                                    <h3>Order an Amtericano at Stopbucks-1</h3>
+                                </div>
+                                <div>
+                                    <img src="../../images/icon_set_more.png" />
+                                </div>
+                            </div>
+                            <div class="usage_list_btm between">
+                                <div class="complete">
+                                    <strong>11:00</strong>
+                                    <span class="usage_time">20.11.19(Thu) 11:00~11:40</span>
+                                    <span class="preview off round5">
+                                        <img src="../../images/icon_check02.png" alt="check" class="off" />
+                                        Revise
+                                    </span>
+                                    <p>Reserved lessons</p>
+                                </div>
+                                <div class="flex flex_bottom">
+                                    <div class="star-input">
+                                        <span class="input">
+                                            <input type="radio" name="star-input" value="1" id="p1">
+                                            <label for="p1">1</label>
+                                            <input type="radio" name="star-input" value="2" id="p2">
+                                            <label for="p2">2</label>
+                                            <input type="radio" name="star-input" value="3" id="p3">
+                                            <label for="p3">3</label>
+                                            <input type="radio" name="star-input" value="4" id="p4">
+                                            <label for="p4">4</label>
+                                            <input type="radio" name="star-input" value="5" id="p5">
+                                            <label for="p5">5</label>
+                                        </span>
+                                        <!-- <output for="star-input"><b>0</b>점</output>						 -->
+                                    </div>
+                                    <button type="button" class="line_gray02 round5 write">
+                                        Write a review
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="usage_card_list">
+                            <div class="usage_list_top between">
+                                <div>
+                                    <img src="../../images/icon_complete.png" alt="Reservation" />
+                                    <h3>Order an Amtericano at Stopbucks-1</h3>
+                                </div>
+                                <div>
+                                    <img src="../../images/icon_set_more.png" />
+                                </div>
+                            </div>
+                            <div class="usage_list_btm between">
+                                <div class="complete">
+                                    <strong>11:00</strong>
+                                    <span class="usage_time">20.11.19(Thu) 11:00~11:40</span>
+                                    <span class="preview off round5">
+                                        <img src="../../images/icon_check02.png" alt="check" class="off" />
+                                        Revise
+                                    </span>
+                                    <p>Reserved lessons</p>
+                                </div>
+                                <div class="flex flex_bottom">
+                                    <div class="star-input">
+                                        <span class="input">
+                                            <input type="radio" name="star-input" value="1" id="p1">
+                                            <label for="p1">1</label>
+                                            <input type="radio" name="star-input" value="2" id="p2">
+                                            <label for="p2">2</label>
+                                            <input type="radio" name="star-input" value="3" id="p3">
+                                            <label for="p3">3</label>
+                                            <input type="radio" name="star-input" value="4" id="p4">
+                                            <label for="p4">4</label>
+                                            <input type="radio" name="star-input" value="5" id="p5">
+                                            <label for="p5">5</label>
+                                        </span>
+                                        <!-- <output for="star-input"><b>0</b>점</output>						 -->
+                                    </div>
+                                    <button type="button" class="line_gray02 round5 write">
+                                        Write a review
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="usage_card_list">
+                            <div class="usage_list_top between">
+                                <div>
+                                    <img src="../../images/icon_complete.png" alt="Reservation" />
+                                    <h3>Order an Amtericano at Stopbucks-1</h3>
+                                </div>
+                                <div>
+                                    <img src="../../images/icon_set_more.png" />
+                                </div>
+                            </div>
+                            <div class="usage_list_btm between">
+                                <div class="complete">
+                                    <strong>11:00</strong>
+                                    <span class="usage_time">20.11.19(Thu) 11:00~11:40</span>
+                                    <span class="preview off round5">
+                                        <img src="../../images/icon_check02.png" alt="check" class="off" />
+                                        Revise
+                                    </span>
+                                    <p>Reserved lessons</p>
+                                </div>
+                                <div class="flex flex_bottom">
+                                    <div class="star-input">
+                                        <span class="input">
+                                            <input type="radio" name="star-input" value="1" id="p1">
+                                            <label for="p1">1</label>
+                                            <input type="radio" name="star-input" value="2" id="p2">
+                                            <label for="p2">2</label>
+                                            <input type="radio" name="star-input" value="3" id="p3">
+                                            <label for="p3">3</label>
+                                            <input type="radio" name="star-input" value="4" id="p4">
+                                            <label for="p4">4</label>
+                                            <input type="radio" name="star-input" value="5" id="p5">
+                                            <label for="p5">5</label>
+                                        </span>
+                                        <!-- <output for="star-input"><b>0</b>점</output>						 -->
+                                    </div>
+                                    <button type="button" class="line_gray02 round5 write">
+                                        Write a review
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="showMore">
+                            Show more
+                        </a>
+                    </div>
+                </div>
+
+                <!-- tab 03 -->
+                <div id="tab3" class="tab_content3" rel="tab3">
+                    <div class="usage_card_sub">
+                        <div class="usage_card_list">
+                            <div class="usage_list_top between">
+                                <div>
+                                    <img src="../../images/icon_unused.png" alt="unused" />
+                                    <h3>Order an Amtericano at Stopbucks-1</h3>
+                                </div>
+                                <div>
+                                    <img src="../../images/icon_set_more.png" />
+                                </div>
+                            </div>
+                            <div class="usage_list_btm between">
+                                <div class="reservation">
+                                    <strong>08:00</strong>
+                                    <span class="usage_time">20.11.19(Thu)</span>
+                                    <p>Reserved lessons</p>
+                                </div>
+                                <div class="flex">
+                                    <button type="button" class="line_gray02 white round5">
+                                        Reservation
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="usage_card_list">
+                            <div class="usage_list_top between">
+                                <div>
+                                    <img src="../../images/icon_unused.png" alt="unused" />
+                                    <h3>Order an Amtericano at Stopbucks-1</h3>
+                                </div>
+                                <div>
+                                    <img src="../../images/icon_set_more.png" />
+                                </div>
+                            </div>
+                            <div class="usage_list_btm between">
+                                <div class="reservation">
+                                    <strong>08:00</strong>
+                                    <span class="usage_time">20.11.19(Thu)</span>
+                                    <p>Reserved lessons</p>
+                                </div>
+                                <div class="flex">
+                                    <button type="button" class="line_gray02 round5">
+                                        Canceled Lesson
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="usage_card_list">
+                            <div class="usage_list_top between">
+                                <div>
+                                    <img src="../../images/icon_unused.png" alt="Reservation" />
+                                    <h3>Order an Amtericano at Stopbucks-1</h3>
+                                </div>
+                                <div>
+                                    <img src="../../images/icon_set_more.png" />
+                                </div>
+                            </div>
+                            <div class="usage_list_btm between">
+                                <div class="reservation">
+                                    <strong>08:00</strong>
+                                    <span class="usage_time">20.11.19(Thu)</span>
+                                    <p>Reserved lessons</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="showMore">
+                            Show more
+                        </a>
+                    </div>
+                </div>
+
+                <div id="tab4" class="tab_content3" rel="tab4">
+                    <h2>Tab 3 content</h2>
+                    <p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit.
+                        Pellentesque sem lorem,
+                        scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
+                </div>
+            </div>
+            <!-- // 카드 -->
 
                 <!-- 하단 버튼 -->
                 <div class="card_btm_btn">
