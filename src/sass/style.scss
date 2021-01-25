@@ -1961,10 +1961,12 @@ $gray09-color:#999999;
                 font-size: 16px;
                 font-weight: 700;
             }
-            .write {
-                width:140px;
-                height:40px;
+            .line_gray02  {
+                height: 45px;
+                margin-top:10px;
+                padding:0 15px;
                 font-size:15px;
+                color:$gray03-color;
             }
             > .complete {
                 strong {
@@ -1993,7 +1995,7 @@ $gray09-color:#999999;
         }
     }
     .showMore {
-        padding-bottom:40px;
+        margin-bottom:40px;
     }
 }
 
@@ -2047,7 +2049,7 @@ $gray09-color:#999999;
 }
 
 ///////////////////////////////////////////////////////////////////////// 탭
-.selector_tabs {
+.history_tabs  {
     margin-right:40px;
     li {
         padding:40px 25px;
@@ -2060,22 +2062,57 @@ $gray09-color:#999999;
             }
         }
         p {
-            color: #666666;
+            margin-top:50px;
             font-size: 14px;
+            color: #666666;
             strong{
                 color: #333333;
                 font-size: 20px;
                 margin-left:5px;
             }
         }
-        &:first-child {
+        &.reservation {
+            background:url(../images/icon_history01_off.png) no-repeat;
+            background-size: 40px;
+            background-position: 51px 40px;
             &.active {
-                border-bottom:3px solid $blue-color;
+                background:url(../images/icon_history01_on.png) no-repeat;
+                background-size: 40px;
+                background-position: 51px 40px;
+                border-bottom: 3px solid #5267d5;
             }
         }
-        &:nth-child(2) {
+        &.complete {
+            background:url(../images/icon_history02_off.png) no-repeat;
+            background-size: 40px;
+            background-position: 51px 40px;
             &.active {
-                border-bottom:3px solid $orange-color;
+                background:url(../images/icon_history02_on.png) no-repeat;
+                background-size: 40px;
+                background-position: 51px 40px;
+                border-bottom: 3px solid $orange-color;
+            }
+        }
+        &.unused {
+            background:url(../images/icon_history03_off.png) no-repeat;
+            background-size: 40px;
+            background-position: 37px 40px;
+            &.active {
+                background:url(../images/icon_history03_on.png) no-repeat;
+                background-size: 40px;
+                background-position: 37px 40px;
+                border-bottom: 3px solid #bdbfc5;
+            }
+        }
+        &.other {
+            background:url(../images/icon_history04_off.png) no-repeat;
+            background-size: 40px;
+            background-position: 36px 40px;
+            &.active {
+                background:url(../images/icon_history04_on.png) no-repeat;
+                background-size: 40px;
+                background-position: 36px 40px;
+                border-bottom: 3px solid #bdbfc5;
             }
         }
         &.active {

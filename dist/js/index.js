@@ -120,6 +120,36 @@ $(".selector_tabs").on("click", "li", function (e) {
   });
 });
 
+
+$(".tab_content3").hide();
+$(".tab_content3:first").show();
+
+$("ul.history_tabs li").click(function () {
+  $(".tab_content3").hide();
+  var activeTab = $(this).attr("rel");
+  $("#" + activeTab).fadeIn();
+
+  $("ul.history_tabs li").removeClass("active");
+  $(this).addClass("active");
+
+  $(".history").removeClass("d_active");
+  $(".history[rel^='" + activeTab + "']").addClass("d_active");
+});
+/* if in drawer mode */
+$(".history").click(function () {
+  $(".tab_content3").hide();
+  var d_activeTab = $(this).attr("rel");
+  $("#" + d_activeTab).fadeIn();
+
+  $(".history").removeClass("d_active");
+  $(this).addClass("d_active");
+
+  $("ul.history_tabs li").removeClass("active");
+  $("ul.history_tabs li[rel^='" + d_activeTab + "']").addClass("active");
+});
+
+
+
 $(".tab_content").hide();
 $(".tab_content:first").show();
 
@@ -146,6 +176,7 @@ $(".tab_drawer_heading").click(function () {
   $("ul.tabs.grades li").removeClass("active");
   $("ul.tabs.grades li[rel^='" + d_activeTab + "']").addClass("active");
 });
+
 
 $(".tab_content_sub").hide();
 $(".tab_content_sub:first").show();

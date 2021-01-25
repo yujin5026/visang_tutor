@@ -155,7 +155,15 @@ input[type="text"] {
 .star::before {content:'';position: absolute;top:3px;left:0;background:url('../images/icon_star.png');width:15px;height:15px;}
 
 // 더보기
-.showMore {display:inline-block;font-size:14px;color:$blue-color;font-weight:500;}
+.showMore {
+    background: url(../images/icon_showMore.png) no-repeat;
+    background-size: 12px;
+    background-position: right 4px bottom 4px;
+    display: inline-block;
+    padding-right: 26px;
+    font-size: 14px;
+    color: #5267d5;
+}
 
 // input 스타일
 input[type="checkbox"].checkBox {
