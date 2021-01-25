@@ -822,7 +822,7 @@ $gray09-color:#999999;
 
 ///////////////////////////////////////////////////////////////////////// 카드 컨테이너
 .card_wrap  + .card_wrap  {margin-top: 30px;}
-.card_wrap + .my_tit_sub {margin-top:30px;}
+.card_wrap + .my_tit_sub {margin-top:40px;}
 .card_wrap {
     position: relative;
     margin-bottom: 15px;
@@ -852,6 +852,14 @@ $gray09-color:#999999;
     border:1px solid #dddddd;
     border-radius: 10px;
     background:#fff;
+}
+.card_txtarea {
+    position: relative;
+    margin-top:30px;
+    padding:30px 50px;
+    background:#fff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px 1px #6f6f6f17;
 }
 
 
@@ -986,6 +994,18 @@ $gray09-color:#999999;
         padding:5px 15px;
         float:right;
         vertical-align: top;
+    }
+}
+.card_txtarea {
+    textarea {
+        width:100%;
+        min-height:130px;
+        padding:20px 25px;
+        color:#bbbbbb;
+        border:1px solid #eaeaea;
+        overflow-y:scroll;
+        box-sizing: border-box;
+        resize: none;
     }
 }
 
@@ -1936,7 +1956,6 @@ $gray09-color:#999999;
         }
         .usage_list_btm {
             margin-top:20px;
-            > 
             .enter {
                 width: 180px;
                 font-size: 16px;
@@ -2208,7 +2227,7 @@ $gray09-color:#999999;
         width:18px;
         height:20px;
         &.on {
-            background-image: url(../images/icon_data_off.png);
+            background-image: url(../images/icon_data_on.png);
         }
         &.off {
             background-image: url(../images/icon_data_off.png);
@@ -2238,11 +2257,23 @@ $gray09-color:#999999;
             background-image: url(../images/icon_search_off.png);
         }
     }
+    &.curri {
+        background-repeat: no-repeat;
+        background-position: 18px;
+        width:20px;
+        height:20px;
+        &.on {
+            background-image: url(../images/icon_curri_on.png);
+        }
+        &.off {
+            background-image: url(../images/icon_curri_off.png);
+        }
+    }
 }
 
 ///////////////////////////////////////////////////////////////////////// 하단 버튼
 .card_btm_btn {
-    margin-top:30px;
+    margin-top:50px;
     text-align:center;
     > button {
         padding:15px 50px;
