@@ -1643,6 +1643,24 @@ $gray09-color:#999999;
             background-position: right 10px;
         }
     }
+    .myle_bottom {
+        margin-top:20px;
+        > div {
+           > div {
+                &:first-child {
+                    margin-right:20px;
+                }
+                span {
+                    font-weight:500;
+                }
+           }
+           > button {
+                font-size:16px;
+                font-weight:700;
+                padding:5px 30px;
+            }
+        }
+    }
 }
 
 
