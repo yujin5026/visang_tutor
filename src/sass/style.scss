@@ -238,6 +238,24 @@ $gray09-color:#999999;
         bottom: -5px;
     }
 }
+.card_img_lg {
+    background: url(../images/user_icon.png) no-repeat left top;
+    background-size: cover;
+    width: 105px;
+    height: 105px;
+    text-decoration: none;
+    position: relative;
+    span {
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        position: absolute;
+        background: url(../images/teacher01.png) center center/cover no-repeat;
+        left: 0;
+        overflow: hidden;
+        border: 1px solid #e1e1e1;
+    }
+}
 
 ///////////////////////////////////////////////////////////////////////// 마이페이지 타이틀
 .my_tit {
@@ -786,6 +804,20 @@ $gray09-color:#999999;
             margin: 6px 20px;
         }
     }
+    &.not_use {
+        background:url(../images/badge_use_n.png) no-repeat;
+        width:103px;
+        > span {
+            margin: 7px 19px;
+        }
+    }
+    &.completion {
+        background:url(../images/badge_completion.png) no-repeat;
+        width:166px;
+        > span {
+            margin: 7px 21px;
+        }
+    }
 }
 
 ///////////////////////////////////////////////////////////////////////// 카드 컨테이너
@@ -1321,6 +1353,81 @@ $gray09-color:#999999;
             font-size:15px;
             font-weight:300;
             color:$gray06-color;
+        }
+    }
+}
+
+.purchase {
+    > div {
+        &:first-child {
+            > div {
+                display:inline-block;
+                vertical-align: top;
+                margin-top:5px;
+                & + div {
+                    margin-left:30px;
+                }
+            }
+            .pur_tit {
+                h3 {
+                    font-size:24px;
+                    font-weight:700;
+                    color:$gray03-color;
+                }
+                h4 {
+                    font-size:16px;
+                    font-weight:400;
+                    color:$gray06-color;
+                    margin-bottom:25px;
+                }
+                span {
+                    font-size:14px;
+                    color:$gray06-color;
+                    &::after {
+                        content:'';
+                        display:inline-block;
+                        width:1px;
+                        height:15px;
+                        background:#dbdbdb;
+                        margin:0 10px;
+                        vertical-align: sub;
+                    }
+                }
+                strong {
+                    font-size:14px;
+                    font-weight:500;
+                    color:$gray03-color;
+                }
+            }
+        }
+        
+    }
+    .pur_rig {
+        text-align:center;
+        span {
+            font-size:14px;
+            color:$gray06-color;
+            
+        }
+        h5 {
+            font-size:34px;
+            font-weight:500;
+            margin-bottom:10px;
+        }
+        button {
+            font-size:15px;
+            padding:10px 20px;
+        }
+        &.on {
+            h5 {
+                color:$blue02-color;
+            }
+        }
+        &.off {
+            align-self: center;
+            h5 {
+                color:$gray02-color;
+            }
         }
     }
 }
