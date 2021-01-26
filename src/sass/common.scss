@@ -172,6 +172,15 @@ input[type="text"] {
     font-size: 14px;
     color: #5267d5;
 }
+.fold {
+    background: url(../images/icon_fold.png) no-repeat;
+    background-size: 12px;
+    background-position: right 4px bottom 5px;
+    display: inline-block;
+    padding-right: 26px;
+    font-size: 14px;
+    color: #5267d5;
+}
 
 // input 스타일
 input[type="checkbox"].checkBox {
